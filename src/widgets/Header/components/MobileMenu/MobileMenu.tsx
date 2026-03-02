@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { LogoIcon } from "@/app/shared/ui";
+import { LogoIcon } from "@/shared/ui";
 import styles from './MobileMenu.module.scss';
 
 interface NavLink {
@@ -15,16 +15,13 @@ interface MenuProps {
 
 export const MobileMenu = ({ items, close, isOpen }: MenuProps) => {
   return (
-   <>
     <div
         className={`${styles.backdrop} ${isOpen ? styles.backdropOpen : ''}`}
         onClick={close}
-        aria-hidden={!isOpen}
-      />
+    >
       <aside
         id="mobile-menu"
         className={`${styles.drawer} ${isOpen ? styles.drawerOpen : ''}`}
-        aria-hidden={!isOpen}
       >
         <div className={styles.drawerHeader}>
           <Link href="/" className={styles.drawerLogo} onClick={close} aria-label="На главную">
@@ -48,6 +45,6 @@ export const MobileMenu = ({ items, close, isOpen }: MenuProps) => {
           </ul>
         </nav>
       </aside>
-   </>
+   </div>
   );
 };

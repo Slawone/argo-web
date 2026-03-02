@@ -3,8 +3,25 @@
 @use 'variables';
 
 body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
   background-color: var(--color-light);
   color: var(--color-dark);
   font-family: var(--font-main);
   font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-title);
+}
+
+main {
+  flex: 1;
+  max-width: 1250px;
+  margin-inline: auto;
+  padding-inline: 15px;
 }

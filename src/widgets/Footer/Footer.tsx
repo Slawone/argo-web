@@ -1,6 +1,6 @@
 'use client';
 
-import { MaxIcon } from "@/app/shared/ui";
+import { MaxIcon } from "@/shared/ui";
 import styles from './Footer.module.scss';
 
 export const Footer = () => {

@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import Link from "next/link";
 import { usePathname } from 'next/navigation';
-import { LogoIcon } from "@/app/shared/ui";
+import { LogoIcon } from "@/shared/ui";
 import { Menu } from './components';
 import { MobileMenu } from './components';
 import { Actions } from './components';
