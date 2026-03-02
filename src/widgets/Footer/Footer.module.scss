@@ -1,0 +1,52 @@
+.footer {
+  padding: 60px 15px;
+}
+
+.wrapper {
+  max-width: 1250px;
+  margin-inline: auto;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    column-gap: 60px;
+  }
+}
+
+.company {
+  max-width: 300px;
+}
+
+.title {
+  color: var(--color-dark);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.item {
+  color: var(--color-text);
+}
+
+.link {
+  color: var(--color-text);
+  transition: color var(--transition-duration) ease;
+
+  &:hover {
+    color: var(--color-dark);
+  }
+}
+
+.icon {
+  color: var(--color-dark);
+}
