@@ -1,0 +1,67 @@
+.actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: auto;
+}
+
+.button {
+  display: none;
+  font-size: 18px;
+  padding: 5px 15px;
+  border-radius: 8px;
+  color: var(--color-light);
+  background: var(--color-dark);
+  transition: opacity var(--transition-duration) ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.burger {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: var(--color-dark);
+  cursor: pointer;
+  position: relative;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.lines {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 18px;
+  height: 2px;
+  background: var(--color-light);
+  transform: translate(-50%, -50%);
+  border-radius: 2px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 18px;
+    height: 2px;
+    background: var(--color-light);
+    border-radius: 2px;
+  }
+
+  &::before {
+    top: -6px;
+  }
+
+  &::after {
+    top: 6px;
+  }
+}

@@ -1,0 +1,27 @@
+.nav {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: inline-block;
+  }
+}
+
+.list {
+  display: flex;
+  gap: 20px;
+}
+
+.link {
+  color: var(--color-text);
+  font-size: 18px;
+  font-weight: 500;
+  transition: color var(--transition-duration) ease;
+
+  &:hover {
+    color: var(--color-dark);
+  }
+}
+
+.active {
+  color: var(--color-dark);
+}

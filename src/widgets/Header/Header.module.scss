@@ -1,0 +1,25 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background-color: var(--color-light);
+}
+
+.wrapper {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.logo {
+  display: flex;
+  color: var(--color-dark);
+  width: 150px;
+
+  @media (min-width: 1024px) {
+    width: 180px;
+  }
+}

@@ -1,0 +1,10 @@
+@use 'reset';
+@use 'fonts';
+@use 'variables';
+
+body {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  font-family: var(--font-main);
+  font-size: 14px;
+}
