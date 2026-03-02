@@ -13,6 +13,7 @@ import styles from './Header.module.scss';
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
 
   const isActive = (href: string) => {
@@ -34,8 +35,17 @@ export const Header = () => {
     };
   }, [isOpen]);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   return (
-    <header className={styles.header}>
+    <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
       <div className={styles.wrapper}>
         <Link href={'/'}>
           <LogoIcon className={styles.logo} />

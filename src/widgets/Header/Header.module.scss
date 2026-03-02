@@ -5,6 +5,10 @@
   background-color: var(--color-light);
 }
 
+.scrolled {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
 .wrapper {
   max-width: 1350px;
   margin: 0 auto;
