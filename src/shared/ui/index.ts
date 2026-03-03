@@ -1,6 +1,9 @@
 /* Button */
 export { Button } from "./Button";
 
+/* SideControls */
+export { SideControls } from './SideControls';
+
 /* icons */
 export { SunIcon } from "./icons";
 export { MoonIcon } from "./icons";

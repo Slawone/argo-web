@@ -3,11 +3,11 @@ interface IconProps {
 }
 
 export const Monitoring = ({ className }: IconProps) => (
-  <svg 
-    width="554" 
-    height="262" 
-    viewBox="0 0 554 262" 
-    fill="none" 
+  <svg
+    width="554"
+    height="262"
+    viewBox="0 0 554 262"
+    fill="none"
     xmlns="http://www.w3.org/2000/svg"
     className={className}
   >
@@ -69,7 +69,7 @@ export const Monitoring = ({ className }: IconProps) => (
                       x1="0%" y1="0%"
                       x2="100%" y2="0%"
                       gradientUnits="userSpaceOnUse">
-        
+
         <stop offset="0%"  stopColor="#0029CC"/>
         <stop offset="40%" stopColor="#66A3FF"/>
         <stop offset="50%" stopColor="#FFFFFF"/>
@@ -88,7 +88,7 @@ export const Monitoring = ({ className }: IconProps) => (
                       x1="0%" y1="0%"
                       x2="100%" y2="0%"
                       gradientUnits="userSpaceOnUse">
-        
+
         <stop offset="0%"  stopColor="#C300FF"/>
         <stop offset="40%" stopColor="#FF7CFF"/>
         <stop offset="50%" stopColor="#FFFFFF"/>
@@ -100,14 +100,14 @@ export const Monitoring = ({ className }: IconProps) => (
           type="translate"
           from="-300 0"
           to="300 0"
-          dur="4s"
+          dur="3s"
           repeatCount="indefinite"/>
       </linearGradient>
       <linearGradient id="flowCyan"
                       x1="0%" y1="0%"
                       x2="100%" y2="0%"
                       gradientUnits="userSpaceOnUse">
-        
+
         <stop offset="0%"  stopColor="#00B6CC"/>
         <stop offset="40%" stopColor="#6FFFFF"/>
         <stop offset="50%" stopColor="#FFFFFF"/>
@@ -119,14 +119,14 @@ export const Monitoring = ({ className }: IconProps) => (
           type="translate"
           from="-300 0"
           to="300 0"
-          dur="4s"
+          dur="3s"
           repeatCount="indefinite"/>
       </linearGradient>
       <linearGradient id="flowMagenta"
                       x1="0%" y1="0%"
                       x2="100%" y2="0%"
                       gradientUnits="userSpaceOnUse">
-        
+
         <stop offset="0%"  stopColor="#FF00E6"/>
         <stop offset="40%" stopColor="#FF8CF5"/>
         <stop offset="50%" stopColor="#FFFFFF"/>
@@ -138,7 +138,7 @@ export const Monitoring = ({ className }: IconProps) => (
           type="translate"
           from="-300 0"
           to="300 0"
-          dur="4s"
+          dur="3s"
           repeatCount="indefinite"/>
       </linearGradient>
     </defs>

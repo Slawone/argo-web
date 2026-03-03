@@ -6,6 +6,8 @@ export const HomePage = () => {
     <>
       <Announcement />
       <System />
+      <System />
+      <System />
     </>
   )
 };

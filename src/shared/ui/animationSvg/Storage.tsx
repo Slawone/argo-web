@@ -3,10 +3,10 @@ interface IconProps {
 }
 
 export const Storage = ({ className }: IconProps) => (
-  <svg 
-    width="572" 
-    height="284" 
-    viewBox="0 0 572 284" 
+  <svg
+    width="572"
+    height="284"
+    viewBox="0 0 572 284"
     fill="none" xmlns="http://www.w3.org/2000/svg"
     className={className}
     >
@@ -55,7 +55,7 @@ export const Storage = ({ className }: IconProps) => (
               type="translate"
               from="250 250"
               to="-250 -250"
-              dur="6s"
+              dur="3s"
               repeatCount="indefinite"/>
       </linearGradient>
     </defs>

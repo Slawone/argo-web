@@ -1,14 +1,19 @@
 :root {
   --color-dark: #000;
   --color-light: #fff;
-  // --color-text: #a1a1a1;
   --color-text: #666666;
   --color-accent: #00b6cc;
   --color-border: #a3a3a3;
 
   --transition-duration: 0.4s;
 
-  --font-main: 'Venryn-Sans', sans-serif;
-  --font-title: 'Ringtails', sans-serif;
-  --font-info: 'Veles', sans-serif;
+  --font-main: "Venryn-Sans", sans-serif;
+  --font-title: "Ringtails", sans-serif;
+  --font-info: "Veles", sans-serif;
+}
+
+[data-theme="dark"] {
+  --color-dark: #fff;
+  --color-light: #000;
+  --color-text: #a1a1a1;
 }
