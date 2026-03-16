@@ -1,4 +1,4 @@
-import { Hero, Tabs, News, Info, TextGrid } from "@/sections";
+import { Hero, Tabs, News, Info, TextGrid, SmallTextGrid } from "@/sections";
 import { textsVariants } from "@/config";
 
 export default function Home() {
@@ -16,6 +16,7 @@ export default function Home() {
           <Info text="Индивидуальность в каждом продукте" />
           <TextGrid items={textItems2} />
           <Info text="Инсталяция в составе решения" />
+          <SmallTextGrid />
         </main>
       </div>
     </>
