@@ -1,0 +1,84 @@
+"use client";
+
+import { motion } from "framer-motion";
+import Image from "next/image"
+import { cn } from "@/utils";
+import { motionVariants } from "@/config";
+
+export const Footer = () => {
+  const {containerVariants, itemVariants, textVariants } = motionVariants;
+
+  return (
+    <motion.footer
+      variants={containerVariants}
+      initial="hidden"
+      whileInView="visible"
+      className="bg-white dark:bg-black text-black dark:text-zinc-50 w-full"
+    >
+      <div className="max-w-7xl mx-auto px-4 section-py flex flex-col gap-5 md:flex-row md:gap-10">
+        <div className="">
+          <motion.h4
+            variants={textVariants}
+            className="text-black dark:text-white font-sans mb-2"
+          >
+              Компания
+          </motion.h4>
+          <motion.ul
+            variants={itemVariants}
+            className="text-zinc-600 dark:text-zinc-400 text-sm flex flex-col gap-1.5"
+          >
+            <li className="hover:translate-x-1 transition hover:text-black dark:hover:text-white">
+              <a href="mailto:info@argo.tech">E-mail: info@argo.tech</a>
+            </li>
+            <li className="hover:translate-x-1 transition hover:text-black dark:hover:text-white">
+              <a href="tel:84994300054">8 (499) 430 00 54</a>
+            </li>
+            <li>
+              <address>
+                Юридический адрес: 111250, город Москва, <br />
+                проезд Завода Серп и Молот, дом 6, корпус 1, <br />
+                эт. 7, комн. 709
+              </address>
+            </li>
+            <li>
+              <span>ИНН: 5010052504</span>
+            </li>
+            <li>
+              <span>ООО «АРГО ТЕХНОЛОДЖИ ИСТ»</span>
+            </li>
+          </motion.ul>
+        </div>
+        <div className="">
+          <motion.h4
+            variants={textVariants}
+            className="text-black dark:text-white mb-2">
+            Социальные сети
+          </motion.h4>
+          <motion.ul
+            variants={itemVariants}
+            className="text-zinc-600 dark:text-zinc-400 text-sm flex flex-col gap-1.5"
+          >
+            <li className="hover:translate-x-1 transition hover:text-black dark:hover:text-white">
+              <a className="flex items-center gap-2" href="mailto:info@argo.tech">
+                <Image
+                  className={cn(
+                    "dark:invert",
+                  )}
+                  src="/max-light.svg"
+                  alt=""
+                  width={15}
+                  height={15}
+                  priority
+                />
+                Max
+              </a>
+            </li>
+            <li className="hover:translate-x-1 transition hover:text-black dark:hover:text-white">
+              <a href="https://companies.rbc.ru/id/1165007052583-argotech/">РБК Компании</a>
+            </li>
+          </motion.ul>
+        </div>
+      </div>
+    </motion.footer>
+  )
+}
