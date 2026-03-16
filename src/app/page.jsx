@@ -1,5 +1,7 @@
 import { Hero, Tabs, News, Info, TextGrid, SmallTextGrid } from "@/sections";
 import { textsVariants } from "@/config";
+import { EcoSystem } from "@/ui/svg/EcoSystem";
+import { WebStorage } from "@/ui/svg/WebStorage";
 
 export default function Home() {
   const {textItems1, textItems2} = textsVariants;
@@ -17,6 +19,8 @@ export default function Home() {
           <TextGrid items={textItems2} />
           <Info text="Инсталяция в составе решения" />
           <SmallTextGrid />
+          <EcoSystem />
+          <WebStorage />
         </main>
       </div>
     </>
