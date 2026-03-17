@@ -13,6 +13,7 @@ export const Footer = () => {
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"
+      viewport={{ once: true }}
       className="bg-white dark:bg-black text-black dark:text-zinc-50 w-full"
     >
       <div className="max-w-7xl mx-auto px-4 section-py flex flex-col gap-5 md:flex-row md:gap-10">

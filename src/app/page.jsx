@@ -23,6 +23,7 @@ export default function Home() {
           <motion.section variants={containerVariants}
             initial="hidden"
             whileInView="visible"
+            viewport={{ once: true }}
             className="text-color section-border max-w-7xl mx-auto grid md:grid-cols-2"
           >
             <div className="py-5 px-4 md:border-r border-black/8 dark:border-white/14 md:py-10 px-6">

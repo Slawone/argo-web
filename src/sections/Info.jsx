@@ -17,6 +17,7 @@ export const Info = ({ text }) => {
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"
+      viewport={{ once: true }}
       className="section-border max-w-7xl mx-auto section-py text-center font-sans md:text-xl relative"
     >
       <motion.p variants={textVariants}>

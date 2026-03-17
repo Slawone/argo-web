@@ -12,6 +12,7 @@ export const TextGrid = ({ items }) => {
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"
+      viewport={{ once: true }}
       className="section-border max-w-7xl mx-auto"
     >
       <div className="grid md:grid-cols-2 place-items-center font-sans relative">

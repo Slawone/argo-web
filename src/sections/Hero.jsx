@@ -16,6 +16,7 @@ export function Hero() {
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"
+      viewport={{ once: true }}
       className="mx-auto min-h-[calc(100vh-204px)] dark:bg-[url('/hero-bg.jpg')] bg-cover bg-center relative md:flex md:items-center"
     >
       <div className="absolute inset-0 dark:bg-black/70 z-0"></div>
