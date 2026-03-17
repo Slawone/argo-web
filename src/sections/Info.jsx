@@ -26,7 +26,7 @@ export const Info = ({ text }) => {
         </span>{" "}
         <span className="text-color">{restText}</span>
       </motion.p>
-      <Plus className="absolute text-color right-[-12] bottom-[-12]" />
+      <Plus className="absolute text-color right-[-12] top-[-12]" />
     </motion.section>
   );
 };
