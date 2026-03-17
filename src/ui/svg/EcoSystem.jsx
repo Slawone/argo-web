@@ -26,7 +26,7 @@ const pathVariants = {
   },
 };
 
-export const EcoSystem = () => {
+export const EcoSystem = ({ className }) => {
   return (
     <motion.svg
       variants={svgVariants}
@@ -38,6 +38,7 @@ export const EcoSystem = () => {
       viewBox="0 0 554 262"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <motion.path
         variants={pathVariants}
