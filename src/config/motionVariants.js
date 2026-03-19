@@ -46,9 +46,35 @@ const imageVariants = {
   }
 }
 
+const svgVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const pathVariants = {
+  hidden: {
+    pathLength: 0,
+    opacity: 0,
+  },
+  visible: {
+    pathLength: 1,
+    opacity: 1,
+    transition: {
+      duration: 0.8,
+      ease: "easeInOut",
+    },
+  },
+};
+
 export const motionVariants = {
   containerVariants,
   itemVariants,
   textVariants,
   imageVariants,
+  svgVariants,
+  pathVariants,
 };

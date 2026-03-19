@@ -2,5 +2,7 @@ export { News } from './News';
 export { Hero } from './Hero';
 export { Tabs } from './Tabs';
 export { Info } from './Info';
+export { DataSecurity } from './DataSecurity';
+export { Monitoring } from './Monitoring';
 export { TextGrid } from './TextGrid';
 export { SmallTextGrid } from './SmallTextGrid';

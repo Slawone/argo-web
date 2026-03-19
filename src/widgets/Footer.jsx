@@ -16,13 +16,13 @@ export const Footer = () => {
       viewport={{ once: true }}
       className="bg-white dark:bg-black text-black dark:text-zinc-50 w-full"
     >
-      <div className="max-w-7xl mx-auto px-4 section-py flex flex-col gap-5 md:flex-row md:gap-10">
+      <div className="section-border max-w-7xl mx-auto px-4 section-py flex flex-col gap-5 md:flex-row md:gap-10">
         <div className="">
           <motion.h4
             variants={textVariants}
             className="text-black dark:text-white font-sans mb-2"
           >
-              Компания
+            Компания
           </motion.h4>
           <motion.ul
             variants={itemVariants}
@@ -52,7 +52,8 @@ export const Footer = () => {
         <div className="">
           <motion.h4
             variants={textVariants}
-            className="text-black dark:text-white mb-2">
+            className="text-black dark:text-white mb-2"
+          >
             Социальные сети
           </motion.h4>
           <motion.ul
@@ -60,11 +61,12 @@ export const Footer = () => {
             className="text-zinc-600 dark:text-zinc-400 text-sm flex flex-col gap-1.5"
           >
             <li className="hover:translate-x-1 transition hover:text-black dark:hover:text-white">
-              <a className="flex items-center gap-2" href="mailto:info@argo.tech">
+              <a
+                className="flex items-center gap-2"
+                href="mailto:info@argo.tech"
+              >
                 <Image
-                  className={cn(
-                    "dark:invert",
-                  )}
+                  className={cn("dark:invert")}
                   src="/max-light.svg"
                   alt=""
                   width={15}
@@ -75,11 +77,13 @@ export const Footer = () => {
               </a>
             </li>
             <li className="hover:translate-x-1 transition hover:text-black dark:hover:text-white">
-              <a href="https://companies.rbc.ru/id/1165007052583-argotech/">РБК Компании</a>
+              <a href="https://companies.rbc.ru/id/1165007052583-argotech/">
+                РБК Компании
+              </a>
             </li>
           </motion.ul>
         </div>
       </div>
     </motion.footer>
-  )
+  );
 }

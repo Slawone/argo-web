@@ -1,38 +1,6 @@
-"use client";
-
-import { motion } from "framer-motion";
-
-const svgVariants = {
-  hidden: {},
-  visible: {
-    transition: {
-      staggerChildren: 0.2,
-    },
-  },
-};
-
-const pathVariants = {
-  hidden: {
-    pathLength: 0,
-    opacity: 0,
-  },
-  visible: {
-    pathLength: 1,
-    opacity: 1,
-    transition: {
-      duration: 0.8,
-      ease: "easeInOut",
-    },
-  },
-};
-
 export const WebStorage = ({ className }) => {
   return (
-    <motion.svg
-      variants={svgVariants}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.4 }}
+    <svg
       width="572"
       height="284"
       viewBox="0 0 572 284"
@@ -205,15 +173,10 @@ export const WebStorage = ({ className }) => {
           y2="206.32"
           gradientUnits="userSpaceOnUse"
         >
-          <stop
-            stopColor="#ededed"
-          />
-          <stop
-            offset="1"
-            stopColor="#00B6CC"
-          />
+          <stop stopColor="#ededed" />
+          <stop offset="1" stopColor="#00B6CC" />
         </linearGradient>
       </defs>
-    </motion.svg>
+    </svg>
   );
 };

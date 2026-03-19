@@ -1,32 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-
-const svgVariants = {
-  hidden: {},
-  visible: {
-    transition: {
-      staggerChildren: 0.2,
-    },
-  },
-};
-
-const pathVariants = {
-  hidden: {
-    pathLength: 0,
-    opacity: 0,
-  },
-  visible: {
-    pathLength: 1,
-    opacity: 1,
-    transition: {
-      duration: 0.8,
-      ease: "easeInOut",
-    },
-  },
-};
+import { motionVariants } from "@/config";
 
 export const EcoSystem = ({ className }) => {
+  const { svgVariants, pathVariants } = motionVariants;
+
   return (
     <motion.svg
       variants={svgVariants}
