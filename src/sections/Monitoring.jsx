@@ -68,8 +68,8 @@ export const Monitoring = () => {
         variants={imageVariants}
         className="absolute bottom-0 right-0 w-1/2 h-1/4 md:h-2/6 lg:h-1/2"
       >
-        <MonitoringStat className="absolute left-0 bottom-0 w-30 h-20 md:w-40 md:h-40 md:bottom-15 lg:w-50 lg:h-50" />
-        <TopServices className="absolute right-10 top-0 w-25 h-20 md:w-40 md:h-40 lg:right-25 lg:w-50 lg:h-50" />
+        <MonitoringStat className="absolute left-0 bottom-0 w-30 h-25 md:w-40 md:h-40 md:bottom-15 lg:w-50 lg:h-50" />
+        <TopServices className="absolute right-5 top-0 w-25 h-20 md:w-40 md:h-40 lg:right-25 lg:w-50 lg:h-50" />
       </motion.div>
     </motion.section>
   );
