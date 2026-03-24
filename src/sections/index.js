@@ -6,3 +6,4 @@ export { DataSecurity } from './DataSecurity';
 export { Monitoring } from './Monitoring';
 export { TextGrid } from './TextGrid';
 export { SmallTextGrid } from './SmallTextGrid';
+export { Support } from './Support';

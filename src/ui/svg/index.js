@@ -3,3 +3,6 @@ export { WebStorage } from './WebStorage';
 export { Schedule } from './Schedule';
 export { MonitoringStat } from './MonitoringStat';
 export { TopServices } from './TopServices';
+export { ArgoStorage } from './ArgoStorage';
+export { ArgoForm } from './ArgoForm';
+export { ArgoChat } from './ArgoChat';
