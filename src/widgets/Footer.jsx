@@ -52,7 +52,7 @@ export const Footer = () => {
         <div className="">
           <motion.h4
             variants={textVariants}
-            className="text-black dark:text-white mb-2"
+            className="text-black font-sans dark:text-white mb-2"
           >
             Социальные сети
           </motion.h4>
