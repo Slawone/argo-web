@@ -12,7 +12,8 @@ export const News = () => {
         </span>
       </div>
       <LinkAsButton
-        href="https://t.me/argo_technology_ist"
+        href="https://max.ru/join/A9BI2uNQbcqGW2DuMSXPXK1BlxoEZkYoez2rA5vA84U"
+        target="_blank"
       >
         <Image
           className={cn(

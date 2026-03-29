@@ -16,7 +16,7 @@ export const Footer = () => {
       viewport={{ once: true }}
       className="bg-white dark:bg-black text-black px-4 dark:text-zinc-50 w-full"
     >
-      <div className="section-border max-w-7xl mx-auto px-4 section-py flex flex-col gap-5 md:flex-row md:gap-10">
+      <div className="max-w-7xl mx-auto px-4 section-py flex flex-col gap-5 md:flex-row md:gap-10">
         <div className="">
           <motion.h4
             variants={textVariants}
@@ -63,7 +63,8 @@ export const Footer = () => {
             <li className="hover:translate-x-1 transition hover:text-black dark:hover:text-white">
               <a
                 className="flex items-center gap-2"
-                href="mailto:info@argo.tech"
+                href="https://max.ru/join/A9BI2uNQbcqGW2DuMSXPXK1BlxoEZkYoez2rA5vA84U"
+                target="_blank"
               >
                 <Image
                   className={cn("dark:invert")}
