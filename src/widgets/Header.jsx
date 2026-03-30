@@ -61,7 +61,7 @@ export const Header = () => {
           </Button>
           <Button
             variant="secondary"
-            className="md:hidden"
+            className="py-2 px-3 md:hidden"
             onClick={() => setOpen(!open)}
           >
             <Menu />

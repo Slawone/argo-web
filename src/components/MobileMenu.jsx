@@ -21,11 +21,12 @@ export const MobileMenu = ({ items, open, onClick }) => {
           open ? "translate-x-0" : "translate-x-full"
         )}
       >
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between gap-2">
           <Logo className="w-30" />
           <Button
             variant="secondary"
             onClick={onClick}
+            className="py-1 px-3"
           >
             <X />
           </Button>
@@ -35,7 +36,7 @@ export const MobileMenu = ({ items, open, onClick }) => {
             <Link
               key={item.label}
               href={item.href}
-              className="text-black dark:text-white"
+              className="text-black dark:text-white font-sans"
             >
               {item.label}
             </Link>
@@ -43,6 +44,7 @@ export const MobileMenu = ({ items, open, onClick }) => {
         </nav>
         <Button
           variant="secondary"
+          className="py-2 px-3"
         >
           Контакты
         </Button>

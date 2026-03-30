@@ -16,7 +16,7 @@ export const Button = ({
   return (
     <button
       className={cn(
-        "h-11 flex items-center justify-center gap-2 rounded-full border border-solid px-5 font-sans cursor-pointer md:hover:scale-110 transition-all",
+        "px-3 md:px-6 md:py-2 flex items-center justify-center gap-2 rounded-full border border-solid font-sans cursor-pointer md:hover:scale-110 transition-all",
         variants[variant],
         disabled && "opacity-50, cursor-not-allowed",
         className,

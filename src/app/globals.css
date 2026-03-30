@@ -25,12 +25,20 @@ body {
   color: var(--foreground);
 }
 
+.page-container {
+  @apply max-w-7xl mx-auto px-4;
+}
+
 .flex-center {
   @apply flex justify-center items-center;
 }
 
 .section-py {
-  @apply py-10;
+  @apply py-5 md:py-10;
+}
+
+.main-border {
+  @apply border-black/8 dark:border-white/14;
 }
 
 .section-border {
@@ -43,4 +51,16 @@ body {
 
 .text-color {
   @apply text-zinc-600 dark:text-zinc-400;
+}
+
+.accent-color {
+  @apply text-[#00B6CC];
+}
+
+.accent-border {
+  @apply border-[#00B6CC];
+}
+
+.main-text {
+  @apply text-sm leading-5 md:text-base md:leading-6 lg:text-lg lg:leading-7.5
 }

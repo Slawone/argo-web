@@ -13,38 +13,34 @@ export const SmallTextGrid = ({ items }) => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className="section-border max-w-7xl mx-auto"
+      className="section-border"
     >
-      <div className="grid md:grid-cols-3 place-items-center font-sans text-color relative">
+      <div className="grid md:grid-cols-3 place-items-start font-sans text-color relative">
         <motion.div
           variants={textVariants}
-          className="px-5 h-60 md:h-75 lg:h-85 xl:h-70 flex flex-col justify-center md:pt-10 md:justify-start border-b border-black/8 dark:border-white/14 md:border-b-0 md:border-r text-sm md:text-md lg:text-lg"
+          className="flex flex-col gap-1 md:gap-2 justify-between px-4 py-4"
         >
-          <span className="title-color">
-            Опыт внедрения в региональных ИТ-инфраструктурах.
-          </span>{" "}
-          Наши решения развёрнуты в разных регионах России, включая удалённые
-          площадки и новые территории. Обеспечиваем стабильность инфраструктуры
-          и поддержку проектов даже при ограниченных ресурсах.
+          <h4 className="title-color">Опыт внедрения в региональных ИТ-инфраструктурах.</h4>Наши решения развёрнуты в разных регионах России, включая удалённые
+          площадки и новые территории, в том числе Республике Крым.
         </motion.div>
         <motion.div
           variants={textVariants}
-          className="px-5 h-60 md:h-75 lg:h-85 xl:h-70 flex flex-col justify-center md:pt-10 md:justify-start border-b border-black/8 dark:border-white/14 md:border-b-0 md:border-r text-sm md:text-md lg:text-lg"
+          className="flex flex-col gap-1 md:gap-2 justify-between px-4 py-4 border-t border-b border-black/8 dark:border-white/14 md:border-b-0 md:border-t-0 md:border-r md:border-l"
         >
-          <span className="title-color">
+          <h4 className="title-color">
             Решения для проектов любой сложности.
-          </span>{" "}
+          </h4>{" "}
           Наши продукты разворачиваются в корпоративных инфраструктурах,
           дата-центрах и на стратегических объектах. Настраиваем конфигурации
           под нагрузки и условия эксплуатации.
         </motion.div>
         <motion.div
           variants={textVariants}
-          className="px-5 h-60 md:h-75 lg:h-85 xl:h-70 flex flex-col justify-center md:pt-10 md:justify-start border-b border-black/8 dark:border-white/14 md:border-b-0 text-sm md:text-md lg:text-lg"
+          className="flex flex-col gap-1 md:gap-2 justify-between px-4 py-4"
         >
-          <span className="title-color">
+          <h4 className="title-color">
             Для инфраструктуры с повышенными требованиями.
-          </span>{" "}
+          </h4>{" "}
           Мы адаптируем решения под условия эксплуатации и требования
           безопасности критичной инфраструктуры, обеспечивая стабильную работу
           ИТ-систем.

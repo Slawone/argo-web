@@ -17,46 +17,43 @@ export function Hero() {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className="mx-auto min-h-[calc(100vh-204px)] dark:bg-[url('/hero-bg.jpg')] bg-cover bg-center relative md:flex md:items-center"
+      className="min-h-[calc(100vh-204px)] dark:bg-[url('/hero-bg.jpg')] bg-cover bg-center relative md:flex md:items-center"
     >
       <div className="absolute inset-0 dark:bg-black/70 z-0"></div>
 
-      <div className="max-w-7xl mx-auto flex flex-col items-center md:flex-row md:justify-between">
+      <div className="flex flex-col items-center md:flex-row md:justify-between">
         <div className="py-10 md:py-20 relative z-20">
           <motion.h1
             variants={textVariants}
-            className="font-sans text-black font-bold dark:text-white uppercase mb-5 text-xl md:text-3xl lg:text-4xl xl:text-5xl"
+            className="font-sans title-color font-bold uppercase mb-5 text-xl md:text-3xl lg:text-4xl xl:text-5xl md:leading-10 xl:leading-16"
           >
             Больше, чем <br /> система хранения данных
           </motion.h1>
           <motion.p
             variants={textVariants}
-            className="max-w-150 md:max-w-150 mb-10 text-sm md:text-md lg:text-lg text-color"
+            className="max-w-150 mb-10 leading-7.5 text-sm md:text-lg lg:text-xl text-color"
           >
-            <span className="text-black dark:text-white">ARGO.TECH</span> с 2016
-            года разрабатывает отечественные сертифицированные программные
-            решения для хранения и обработки данных, используемые в
-            корпоративных и государственных ИТ-системах
+            ARGO.TECH разрабатывает сертифицированное программное обеспечение для хранения и обработки данных с 2016 года. Решения для корпоративных и госструктур: безопасность, надежность, соответствие стандартам РФ
           </motion.p>
           <motion.div
             variants={itemVariants}
             className="flex items-center gap-5"
           >
             <Link href={"/storage"}>
-              <Button variant="primary" className="w-30">
+              <Button variant="primary" className="">
                 Storage
               </Button>
             </Link>
-            <Button variant="secondary" className="w-30">
+            <Button variant="secondary" className="">
               Связаться
             </Button>
           </motion.div>
-          <Plus className="absolute text-color top-0 md:top-10 left-[-10]" />
         </div>
         <motion.div
           variants={imageVariants}
           className="relative flex items-center justify-center rounded-full
-            bg-[radial-gradient(circle,rgba(0,182,204,0.35)_0%,rgba(0,182,204,0.2)_35%,transparent_70%)] z-0"
+            bg-[radial-gradient(circle,rgba(0,182,204,0.6)_0%,rgba(0,182,204,0.6)_35%,transparent_70%)]
+            dark:bg-[radial-gradient(circle,rgba(0,182,204,0.8)_0%,rgba(0,182,204,0.4)_35%,transparent_70%)] z-0"
         >
           <Image
             src="/triangle.svg"

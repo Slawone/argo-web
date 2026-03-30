@@ -26,26 +26,29 @@ export const Footer = () => {
           </motion.h4>
           <motion.ul
             variants={itemVariants}
-            className="text-zinc-600 dark:text-zinc-400 text-sm flex flex-col gap-1.5"
-          >
-            <li className="hover:translate-x-1 transition hover:text-black dark:hover:text-white">
-              <a href="mailto:info@argo.tech">E-mail: info@argo.tech</a>
-            </li>
-            <li className="hover:translate-x-1 transition hover:text-black dark:hover:text-white">
-              <a href="tel:84994300054">8 (499) 430 00 54</a>
-            </li>
+            className="text-zinc-600 dark:text-zinc-400 font-sans text-sm flex flex-col gap-2"
+          > 
             <li>
-              <address>
-                Юридический адрес: 111250, город Москва, <br />
-                проезд Завода Серп и Молот, дом 6, корпус 1, <br />
-                эт. 7, комн. 709
-              </address>
+              <span>ООО «АРГО ТЕХНОЛОДЖИ ИСТ»</span>
             </li>
             <li>
               <span>ИНН: 5010052504</span>
             </li>
             <li>
-              <span>ООО «АРГО ТЕХНОЛОДЖИ ИСТ»</span>
+              <span>ОКВЭД: 62.01</span>
+            </li>
+            <li>
+              <span>
+                Адрес: 111250, город Москва, <br />
+                проезд Завода Серп и Молот, дом 6, корпус 1, <br />
+                эт. 7, комн. 709
+              </span>
+            </li>
+            <li className="hover:translate-x-1 transition hover:text-black dark:hover:text-white">
+              <a href="tel:84994300054">8 (499) 430 00 54</a>
+            </li>
+            <li className="hover:translate-x-1 transition hover:text-black dark:hover:text-white">
+              <a href="mailto:info@argo.tech">E-mail: info@argo.tech</a>
             </li>
           </motion.ul>
         </div>
@@ -58,7 +61,7 @@ export const Footer = () => {
           </motion.h4>
           <motion.ul
             variants={itemVariants}
-            className="text-zinc-600 dark:text-zinc-400 text-sm flex flex-col gap-1.5"
+            className="text-zinc-600 dark:text-zinc-400 text-sm font-sans flex flex-col gap-2"
           >
             <li className="hover:translate-x-1 transition hover:text-black dark:hover:text-white">
               <a
