@@ -50,12 +50,13 @@ export const Header = () => {
         <Link href={'/'}>
           <Logo />
         </Link>
-        <DesktopMenu items={navItems} />
+        {/* <DesktopMenu items={navItems} /> */}
+        <span className="hidden md:inline-block text-color font-sans text-sm">Меню находится в разработке...</span>
         <div className="flex items-center justify-between gap-2 ml-auto">
           <Button
             variant="secondary"
             className="hidden md:flex"
-          > 
+          >
             Контакты
           </Button>
           <Button

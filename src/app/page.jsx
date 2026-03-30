@@ -1,4 +1,4 @@
-import { Hero, Tabs, News, DataSecurity, Monitoring, Info, TextGrid, SmallTextGrid, Support } from "@/sections";
+import { Hero, Tabs, News, DataSecurity, Monitoring, Info, TextGrid, SmallTextGrid, Support, AboutSection } from "@/sections";
 import { textsVariants } from "@/config";
 import { ArgoChat, ArgoForm, ArgoStorage } from "@/ui";
 
@@ -13,10 +13,11 @@ export default function Home() {
           <Hero />
           <Tabs />
           <Info text="Хранение от Терабайтов до Зеттабайтов" />
+          <AboutSection />
           <DataSecurity />
           <Monitoring />
           <TextGrid items={textItems1} />
-          <Support />
+          {/* <Support /> */}
           <Info text="Индивидуальность в каждом продукте" />
           <TextGrid items={textItems2} />
           {/* active */}

@@ -2,6 +2,7 @@
 export { Logo } from "./Logo";
 export { Button } from "./Button";
 export { LinkAsButton } from "./LinkAsButton";
+export { Tooltip } from "./Tooltip";
 
 /* svg */
 export { EcoSystem } from './svg';

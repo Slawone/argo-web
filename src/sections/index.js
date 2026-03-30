@@ -7,3 +7,4 @@ export { Monitoring } from './Monitoring';
 export { TextGrid } from './TextGrid';
 export { SmallTextGrid } from './SmallTextGrid';
 export { Support } from './Support';
+export { AboutSection } from './AboutSection';
