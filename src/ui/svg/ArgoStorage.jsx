@@ -47,8 +47,8 @@ export const ArgoStorage = ({ className }) => {
       <path
         d="M300.741 18.0342C293.958 20.9567 288.53 26.8428 286.47 34.5306C282.897 47.8672 290.811 61.5756 304.148 65.1492C317.485 68.7227 331.193 60.8082 334.767 47.4715C338.34 34.1349 330.426 20.4264 317.089 16.8529C313.579 15.9124 310.043 15.7676 306.673 16.308"
         stroke="#00B6CC"
-        stroke-width="2"
-        stroke-linecap="round"
+        strokeWidth="2"
+        strokeLinecap="round"
       />
       <rect
         x="0.5"
@@ -89,14 +89,14 @@ export const ArgoStorage = ({ className }) => {
       <path
         d="M285.975 161.683C289.183 167.154 294.461 171.415 301.071 173.186C314.408 176.76 328.117 168.845 331.69 155.509C335.264 142.172 327.349 128.463 314.012 124.89C310.502 123.949 306.967 123.805 303.597 124.345"
         stroke="#00B6CC"
-        stroke-width="2"
-        stroke-linecap="round"
+        strokeWidth="2"
+        strokeLinecap="round"
       />
       <path
         d="M283.584 156.194C282.298 151.903 282.149 147.212 283.394 142.568C285.454 134.88 290.881 128.994 297.664 126.071"
         className="stroke-zinc-300 dark:stroke-zinc-800"
-        stroke-width="2"
-        stroke-linecap="round"
+        strokeWidth="2"
+        strokeLinecap="round"
       />
       <rect
         x="0.5"
@@ -137,14 +137,14 @@ export const ArgoStorage = ({ className }) => {
       <path
         d="M303.978 281.235C317.314 284.809 331.023 276.894 334.596 263.558C338.17 250.221 330.255 236.512 316.919 232.939C313.409 231.998 309.873 231.854 306.503 232.394"
         className="stroke-black dark:stroke-zinc-50"
-        stroke-width="2"
-        stroke-linecap="round"
+        strokeWidth="2"
+        strokeLinecap="round"
       />
       <path
         d="M298.617 279.116C288.616 273.757 283.236 262.05 286.3 250.616C288.36 242.928 293.787 237.042 300.57 234.12"
         className="stroke-zinc-300 dark:stroke-zinc-800"
-        stroke-width="2"
-        stroke-linecap="round"
+        strokeWidth="2"
+        strokeLinecap="round"
       />
       <rect
         x="0.5"
@@ -185,14 +185,14 @@ export const ArgoStorage = ({ className }) => {
       <path
         d="M322.141 344.586C320.564 343.769 318.875 343.108 317.089 342.63C313.579 341.689 310.043 341.545 306.673 342.085"
         className="stroke-black dark:stroke-zinc-50"
-        stroke-width="2"
-        stroke-linecap="round"
+        strokeWidth="2"
+        strokeLinecap="round"
       />
       <path
         d="M327.04 347.919C334.007 353.995 337.321 363.716 334.767 373.247C331.193 386.584 317.485 394.498 304.148 390.925C290.811 387.351 282.897 373.643 286.47 360.306C288.53 352.618 293.958 346.732 300.741 343.81"
         className="stroke-zinc-300 dark:stroke-zinc-800"
-        stroke-width="2"
-        stroke-linecap="round"
+        strokeWidth="2"
+        strokeLinecap="round"
       />
     </svg>
   );
