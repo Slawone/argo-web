@@ -1,8 +1,6 @@
 export const ArgoStorage = ({ className }) => {
   return (
     <svg
-      // width="365"
-      // height="409"
       viewBox="0 0 365 409"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
