@@ -15,10 +15,10 @@ export default function Home() {
           <AboutSection />
           <DataSecurity />
           <Monitoring />
-          {/* <TextGrid items={textItems1} /> */}
+          <TextGrid items={textItems1} />
           {/* <Support /> */}
           <Info text="Индивидуальность в каждом продукте" />
-          {/* <TextGrid items={textItems2} /> */}
+          <TextGrid items={textItems2} />
           {/* active */}
           <Info text="Инсталяция в составе решения" />
           {/* world */}

@@ -13,17 +13,21 @@ export const TextGrid = ({ items }) => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className="section-border max-w-7xl mx-auto"
+      className="section-border"
     >
-      <div className="grid md:grid-cols-2 place-items-center font-sans relative">
+      <div className="grid md:grid-cols-2 place-items-center font-sans main-text relative">
         {items.map(item => (
-          <div key={item.title} className="px-5 h-60 md:h-75 lg:h-85 xl:h-70 flex flex-col justify-center md:pt-15 md:justify-start border-b last-of-type:border-b-0 border-black/8 dark:border-white/14 md:border-b-0 md:odd:border-r md:nth-[-n+2]:border-b">
+          <div key={item.title} className="px-5 h-40 md:h-65 lg:h-70 flex flex-col justify-center md:pt-15 md:justify-start border-b last-of-type:border-b-0 border-black/8 dark:border-white/14 md:border-b-0 md:odd:border-r md:nth-[-n+2]:border-b">
             <motion.h3
             variants={textVariants}
-            className="title-color font-bold mb-3 text-lg md:text-xl lg:text-2xl">{item.title}</motion.h3>
+            className="title-color mb-3 text-lg md:text-xl lg:text-2xl">
+              {item.title
+            }</motion.h3>
             <motion.p
             variants={textVariants}
-            className="text-color text-sm md:text-md lg:text-lg">{item.label}</motion.p>
+            className="text-color">
+              {item.label}
+            </motion.p>
           </div>
         ))}
         <Plus
