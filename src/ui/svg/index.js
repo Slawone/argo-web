@@ -6,3 +6,4 @@ export { TopServices } from './TopServices';
 export { ArgoStorage } from './ArgoStorage';
 export { ArgoForm } from './ArgoForm';
 export { ArgoChat } from './ArgoChat';
+export { World } from './World';

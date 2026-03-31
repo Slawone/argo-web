@@ -19,11 +19,8 @@ export default function Home() {
           <Support />
           <Info text="Индивидуальность в каждом продукте" />
           <TextGrid items={textItems2} />
-          {/* active */}
           <Info text="Инсталяция в составе решения" />
-          {/* world */}
           <SmallTextGrid />
-          {/* form */}
         </main>
       </div>
     </>

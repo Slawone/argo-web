@@ -15,28 +15,29 @@ export const SmallTextGrid = ({ items }) => {
       viewport={{ once: true }}
       className="section-border"
     >
-      <div className="grid md:grid-cols-3 place-items-start font-sans text-color relative">
+      <div className="grid md:grid-cols-3 place-items-start font-sans text-color main-text relative">
         <motion.div
           variants={textVariants}
-          className="flex flex-col gap-1 md:gap-2 justify-between px-4 py-4"
+          className="flex flex-col gap-1 md:gap-2 px-4 py-4 md:border-b border-black/8 dark:border-white/14 md:h-55 xl:h-50"
         >
-          <h4 className="title-color">Опыт внедрения в региональных ИТ-инфраструктурах.</h4>Наши решения развёрнуты в разных регионах России, включая удалённые
+          <h4 className="title-color">
+            Опыт внедрения в региональных ИТ-инфраструктурах.
+          </h4>
+          Наши решения развёрнуты в разных регионах России, включая удалённые
           площадки и новые территории, в том числе Республике Крым.
         </motion.div>
         <motion.div
           variants={textVariants}
-          className="flex flex-col gap-1 md:gap-2 justify-between px-4 py-4 border-t border-b border-black/8 dark:border-white/14 md:border-b-0 md:border-t-0 md:border-r md:border-l"
+          className="flex flex-col gap-1 md:gap-2 px-4 py-4 border-t border-b border-black/8 dark:border-white/14 md:border-t-0 md:border-r md:border-l md:h-55 xl:h-50"
         >
-          <h4 className="title-color">
-            Решения для проектов любой сложности.
-          </h4>{" "}
+          <h4 className="title-color">Решения для проектов любой сложности.</h4>{" "}
           Наши продукты разворачиваются в корпоративных инфраструктурах,
           дата-центрах и на стратегических объектах. Настраиваем конфигурации
           под нагрузки и условия эксплуатации.
         </motion.div>
         <motion.div
           variants={textVariants}
-          className="flex flex-col gap-1 md:gap-2 justify-between px-4 py-4"
+          className="flex flex-col gap-1 md:gap-2 px-4 py-4 border-b border-black/8 dark:border-white/14 md:h-55 xl:h-50"
         >
           <h4 className="title-color">
             Для инфраструктуры с повышенными требованиями.
