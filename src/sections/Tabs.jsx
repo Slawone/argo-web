@@ -135,7 +135,7 @@ export const Tabs = () => {
         <span className="absolute left-4 top-5 hidden md:block text-[12px] md:text-sm text-[#00B6CC] border rounded-full px-4 py-2 uppercase">
           Кейсы
         </span>
-        <div className="w-full px-4 py-5 md:border-r md:border-r-black/8 md:dark:border-white/14 h-30 md:h-70 lg:h-80 md:pt-20">
+        <div className="w-full px-4 py-5 md:border-r md:border-r-black/8 md:dark:border-white/14 h-40 md:h-70 lg:h-80 md:pt-20">
           <AnimatePresence mode="wait">
             <motion.div
               key={active.id}
@@ -150,7 +150,7 @@ export const Tabs = () => {
           </AnimatePresence>
         </div>
         {/* right */}
-        <div className="w-full px-4 py-5 mb-6 md:mb-0 h-30 md:h-70 lg:h-80 md:pt-20 relative">
+        <div className="w-full px-4 py-5 mb-6 md:mb-0 h-40 md:h-70 lg:h-80 md:pt-20 relative">
           <AnimatePresence mode="wait">
             <motion.div
               key={active.id + "right"}

@@ -12,9 +12,9 @@ export default function Home() {
           <Hero />
           <Tabs />
           <Info text="Хранение от Терабайтов до Зеттабайтов" />
-          {/* <AboutSection /> */}
-          {/* <DataSecurity /> */}
-          {/* <Monitoring /> */}
+          <AboutSection />
+          <DataSecurity />
+          <Monitoring />
           {/* <TextGrid items={textItems1} /> */}
           {/* <Support /> */}
           <Info text="Индивидуальность в каждом продукте" />
