@@ -10,8 +10,8 @@ export const AboutSection = () => {
         <div className="w-25 md:w-30 text-center text-[12px] md:text-sm text-[#00B6CC] border rounded-full px-4 py-2 uppercase mb-5">
           О Компании
         </div>
-        <p className="text-xl md:text-[28px] font-light wrap-balance md:*:pr-4">
-          <span className="title-color">ООО “АРГО ТЕХНОЛОДЖИ ИСТ”</span> это
+        <p className="text-xl md:text-[24px] font-light wrap-balance md:*:pr-4">
+          <span className="title-color">ООО “АРГО ТЕХНОЛОДЖИ ИСТ”</span>это
           компания разработчик программного обеспечения, работающий с передовыми
           технологиями, таким и как искусственный интеллект и системы хранения
           данных .

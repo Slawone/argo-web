@@ -10,7 +10,7 @@ export default function Home() {
         <main className="page-container">
           <News />
           <Hero />
-          {/* <Tabs /> */}
+          <Tabs />
           <Info text="Хранение от Терабайтов до Зеттабайтов" />
           {/* <AboutSection /> */}
           {/* <DataSecurity /> */}

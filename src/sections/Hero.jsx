@@ -21,7 +21,7 @@ export function Hero() {
     >
       <div className="absolute inset-0 dark:bg-black/70 z-0"></div>
 
-      <div className="flex flex-col items-center md:flex-row md:justify-between">
+      <div className=" mx-auto flex flex-col items-center md:flex-row md:justify-between">
         <div className="py-10 md:py-20 relative z-20">
           <motion.h1
             variants={textVariants}
@@ -33,18 +33,21 @@ export function Hero() {
             variants={textVariants}
             className="max-w-150 mb-10 leading-7.5 text-sm md:text-lg lg:text-xl text-color"
           >
-            ARGO.TECH разрабатывает сертифицированное программное обеспечение для хранения и обработки данных с 2016 года. Решения для корпоративных и госструктур: безопасность, надежность, соответствие стандартам РФ
+            ARGO.TECH разрабатывает сертифицированное программное обеспечение
+            для хранения и обработки данных с 2016 года. Решения для
+            корпоративных и госструктур: безопасность, надежность, соответствие
+            стандартам РФ
           </motion.p>
           <motion.div
             variants={itemVariants}
             className="flex items-center gap-5"
           >
             <Link href={"/storage"}>
-              <Button variant="primary" className="">
+              <Button variant="primary">
                 Storage
               </Button>
             </Link>
-            <Button variant="secondary" className="">
+            <Button variant="secondary">
               Связаться
             </Button>
           </motion.div>
