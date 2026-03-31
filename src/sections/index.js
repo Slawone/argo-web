@@ -8,3 +8,4 @@ export { TextGrid } from './TextGrid';
 export { SmallTextGrid } from './SmallTextGrid';
 export { Support } from './Support';
 export { AboutSection } from './AboutSection';
+export { NodeAppliance } from './NodeAppliance';

@@ -1,4 +1,4 @@
-import { Hero, Tabs, News, DataSecurity, Monitoring, Info, TextGrid, SmallTextGrid, Support, AboutSection } from "@/sections";
+import { Hero, Tabs, News, DataSecurity, Monitoring, Info, TextGrid, SmallTextGrid, Support, AboutSection, NodeAppliance } from "@/sections";
 import { textsVariants } from "@/config";
 
 export default function Home() {
@@ -20,6 +20,7 @@ export default function Home() {
           <Info text="Индивидуальность в каждом продукте" />
           <TextGrid items={textItems2} />
           <Info text="Инсталяция в составе решения" />
+          <NodeAppliance />
           <SmallTextGrid />
         </main>
       </div>

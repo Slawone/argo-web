@@ -23,7 +23,7 @@ export const World = ({ className }) => {
       <path d="M103.443 208.443H926.984" stroke="#A1A1A1" />
       <path d="M43.4707 311.33H986.955" stroke="#A1A1A1" />
       <path d="M10.9004 414.217H1019.53" stroke="#A1A1A1" />
-      <path d="M0.5 518.102H1029.93" stroke="#A1A1A1" />
+      {/* <path d="M0.5 518.102H1029.93" stroke="#A1A1A1" /> */}
       <path
         fillRule="evenodd"
         clipRule="evenodd"
