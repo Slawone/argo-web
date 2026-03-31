@@ -17,7 +17,7 @@ export const TextGrid = ({ items }) => {
     >
       <div className="grid md:grid-cols-2 place-items-center font-sans main-text relative">
         {items.map(item => (
-          <div key={item.title} className="px-5 h-40 md:h-65 lg:h-70 flex flex-col justify-center md:pt-15 md:justify-start border-b last-of-type:border-b-0 border-black/8 dark:border-white/14 md:border-b-0 md:odd:border-r md:nth-[-n+2]:border-b">
+          <div key={item.title} className="px-5 h-65 md:h-65 lg:h-70 flex flex-col justify-center md:pt-15 md:justify-start border-b last-of-type:border-b-0 border-black/8 dark:border-white/14 md:border-b-0 md:odd:border-r md:nth-[-n+2]:border-b">
             <motion.h3
             variants={textVariants}
             className="title-color mb-3 text-lg md:text-xl lg:text-2xl">

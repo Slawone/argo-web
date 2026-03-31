@@ -16,7 +16,7 @@ export default function Home() {
           <DataSecurity />
           <Monitoring />
           <TextGrid items={textItems1} />
-          {/* <Support /> */}
+          <Support />
           <Info text="Индивидуальность в каждом продукте" />
           <TextGrid items={textItems2} />
           {/* active */}
