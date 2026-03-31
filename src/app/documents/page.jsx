@@ -44,7 +44,7 @@ export default function DocumentsPage() {
             </span>
             <a
               className="py-5 px-5"
-              href="/example.pdf"
+              href="/docs/Информация_о_реализуемых_продуктах,_оказываемых_услугах_или_работах.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -60,7 +60,7 @@ export default function DocumentsPage() {
             </span>
             <a
               className="py-5 px-5"
-              href="/example.pdf"
+              href="/docs/Достоверная_информация_о_стоимости_Прайс_Лист_открытый_2026.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -76,7 +76,7 @@ export default function DocumentsPage() {
             </span>
             <a
               className="py-5 px-5"
-              href="/example.pdf"
+              href="/docs/Описание_технологического_стека_используемые_языки_программирования.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
