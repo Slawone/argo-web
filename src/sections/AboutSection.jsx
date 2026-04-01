@@ -15,7 +15,7 @@ export const AboutSection = () => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className="section-border text-color px-4 grid md:grid-cols-[7fr_5fr] items-center"
+      className="section-border text-color font-sans px-4 grid md:grid-cols-[7fr_5fr] items-start"
     >
       <div className="py-5 md:py-10 md:border-r md:border-r-black/8 md:dark:border-r-white/14">
         <div className="w-25 md:w-30 text-center text-[12px] md:text-sm text-[#00B6CC] border rounded-full px-4 py-2 uppercase mb-5">
@@ -23,21 +23,27 @@ export const AboutSection = () => {
         </div>
         <motion.p
           variants={textVariants}
-          className="wrap-balance text-sm md:text-base lg:text-lg"
+          className="wrap-balance text-sm md:text-base lg:text-lg font-light leading-6 max-w-162.5"
         >
-          <span className="title-color">ООО “АРГО ТЕХНОЛОДЖИ ИСТ”</span> это
-          компания разработчик программного обеспечения, работающий с передовыми
-          технологиями, таким и как искусственный интеллект и системы хранения
-          данных .
+          <span className="title-color">ООО “АРГО ТЕХНОЛОДЖИ ИСТ”</span>{" "}
+          разрабатывает программные комплексы для современных систем хранения
+          данных и прикладных решений в области искусственного интеллекта. Наш
+          программный комплекс служит интеллектуальным ядром СХД - он
+          автоматизирует управление данными, гарантирует их отказоустойчивость и
+          безопасность, а также обеспечивает линейное масштабирование под
+          растущие задачи бизнеса.
         </motion.p>
       </div>
       <div className="py-5 md:py-10 md:pl-4">
+        <div className="w-25 md:w-30 text-center text-[12px] md:text-sm text-[#00B6CC] border rounded-full px-4 py-2 uppercase mb-5 hidden md:block invisible">
+          О Компании
+        </div>
         <motion.p
           variants={textVariants}
-          className="mb-5 text-sm md:text-base lg:text-lg"
+          className="mb-5 text-sm md:text-base lg:text-lg font-light leading-6"
         >
-          Мы - эффективная команда разработчиков, программных комплексов, систем
-          управления и мониторинга.
+          Мы создаем решения с учетом политики импортозамещения и стандартов
+          критической информационной инфраструктуры.
         </motion.p>
         <motion.div variants={itemVariants} className="flex items-center gap-5">
           <a
