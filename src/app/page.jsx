@@ -22,6 +22,7 @@ export default function Home() {
           <Info text="Инсталяция в составе решения" />
           <NodeAppliance />
           <SmallTextGrid />
+          {/* end */}
         </main>
       </div>
     </>
