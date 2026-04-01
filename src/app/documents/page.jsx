@@ -21,9 +21,9 @@ export default function DocumentsPage() {
         </p>
 
         <ul className="border border-black/8 dark:border-white/14 rounded-2xl">
-          <li className="flex items-center justify-between text-color font-light pl-4 border-b border-b-black/8 dark:border-b-white/14">
+          <li className="flex items-center justify-between text-color font-light pl-4 border-b border-b-black/8 dark:border-b-white/14 py-1 md:py-0">
             <span className="flex items-center gap-2.5">
-              <FileText width={20} height={20} />
+              <FileText width={20} height={20} className="shrink-0" />
               Реквизиты Арго Технолоджи Ист
             </span>
             <a
@@ -35,9 +35,9 @@ export default function DocumentsPage() {
               <ChevronRight />
             </a>
           </li>
-          <li className="flex items-center justify-between text-color font-light pl-4 border-b border-b-black/8 dark:border-b-white/14">
+          <li className="flex items-center justify-between text-color font-light pl-4 border-b border-b-black/8 dark:border-b-white/14 py-1 md:py-0">
             <span className="flex items-center gap-2.5">
-              <FileText width={20} height={20} />
+              <FileText width={20} height={20} className="shrink-0" />
               Карточка записи реестра Арго Технолоджи Ист (№5850 от 20.09.2019)
             </span>
             <a
@@ -49,9 +49,9 @@ export default function DocumentsPage() {
               <ChevronRight />
             </a>
           </li>
-          <li className="flex items-center justify-between text-color font-light pl-4 border-b border-b-black/8 dark:border-b-white/14">
+          <li className="flex items-center justify-between text-color font-light pl-4 border-b border-b-black/8 dark:border-b-white/14 py-1 md:py-0">
             <span className="flex items-center gap-2.5">
-              <FileText width={20} height={20} />
+              <FileText width={20} height={20} className="shrink-0" />
               Карточка записи реестра Арго Технолоджи Ист (№31727 от 26.01.2026)
             </span>
             <a
@@ -63,9 +63,9 @@ export default function DocumentsPage() {
               <ChevronRight />
             </a>
           </li>
-          <li className="flex items-center justify-between text-color font-light pl-4 border-b border-b-black/8 dark:border-b-white/14">
+          <li className="flex items-center justify-between text-color font-light pl-4 border-b border-b-black/8 dark:border-b-white/14 py-1 md:py-0">
             <span className="flex items-center gap-2.5">
-              <FileText width={20} height={20} />
+              <FileText width={20} height={20} className="shrink-0" />
               Свидетельство о государственной регистрации программы для ЭВМ
               (2017618991)
             </span>
@@ -78,9 +78,9 @@ export default function DocumentsPage() {
               <ChevronRight />
             </a>
           </li>
-          <li className="flex items-center justify-between text-color font-light pl-4 border-b border-b-black/8 dark:border-b-white/14">
+          <li className="flex items-center justify-between text-color font-light pl-4 border-b border-b-black/8 dark:border-b-white/14 py-1 md:py-0">
             <span className="flex items-center gap-2.5">
-              <FileText width={20} height={20} />
+              <FileText width={20} height={20} className="shrink-0" />
               Политика обработки персональных данных
             </span>
             <a
@@ -92,16 +92,16 @@ export default function DocumentsPage() {
               <ChevronRight />
             </a>
           </li>
-          <li className="flex items-center justify-between text-color font-light pl-4 border-b border-b-black/8 dark:border-b-white/14 py-5">
+          <li className="flex items-center justify-between text-color font-light px-4 border-b border-b-black/8 dark:border-b-white/14 py-5">
             <span className="flex items-center gap-2.5">
-              <FileText width={20} height={20} />
+              <FileText width={20} height={20} className="shrink-0" />
               Коды видов деятельности по приказу Минцифры от 11.05.2023 № 449:
               Основной ОКВЭД: 26.01
             </span>
           </li>
-          <li className="flex items-center justify-between text-color font-light pl-4 border-b border-b-black/8 dark:border-b-white/14">
+          <li className="flex items-center justify-between text-color font-light pl-4 border-b border-b-black/8 dark:border-b-white/14 py-1 md:py-0">
             <span className="flex items-center gap-2.5">
-              <FileText width={20} height={20} />
+              <FileText width={20} height={20} className="shrink-0" />
               Информация о реализуемых продуктах, оказываемых услугах или
               работах
             </span>
@@ -115,9 +115,9 @@ export default function DocumentsPage() {
             </a>
           </li>
 
-          <li className="flex items-center justify-between text-color font-light pl-4 border-b border-b-black/8 dark:border-b-white/14">
+          <li className="flex items-center justify-between text-color font-light pl-4 border-b border-b-black/8 dark:border-b-white/14 py-1 md:py-0">
             <span className="flex items-center gap-2.5">
-              <FileText width={20} height={20} />
+              <FileText width={20} height={20} className="shrink-0" />
               Достоверная информация о стоимости товаров, работ, услуг с учётом
               соблюдения требований законодательства РФ
             </span>
@@ -131,9 +131,9 @@ export default function DocumentsPage() {
             </a>
           </li>
 
-          <li className="flex items-center justify-between text-color font-light pl-4">
+          <li className="flex items-center justify-between text-color font-light pl-4 py-1 md:py-0">
             <span className="flex items-center gap-2.5">
-              <FileText width={20} height={20} />
+              <FileText width={20} height={20} className="shrink-0" />
               Описание технологического стека: используемые языки
               программирования, фреймворки, ПО
             </span>
