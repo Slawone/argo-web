@@ -194,7 +194,7 @@ export const Tabs = () => {
               key={tab.id}
               id={`tab-${tab.id}`}
               onClick={() => setActive(tab)}
-              className={`cursor-pointer relative flex-1 px-4 py-2 text-sm rounded-full transition text-center z-10 ${
+              className={`cursor-pointer relative font-light flex-1 px-4 py-2 text-sm rounded-full transition text-center z-10 ${
                 active.id === tab.id
                   ? "bg-[#171717] dark:bg-[#ededed] border-transparent text-white dark:text-[#0a0a0a] hover:bg-[#383838] dark:hover:bg-[#ccc]"
                   : "text-[#0a0a0a] dark:text-white"

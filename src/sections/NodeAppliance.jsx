@@ -17,14 +17,14 @@ export const NodeAppliance = () => {
     >
       <motion.h2
         variants={textVariants}
-        className="text-center md:text-xl lg:text-[28px]"
+        className="text-center md:text-[18px] max-w-205"
       >
         СХД от ARGO.TECH на базе архитектуры Storage Node Appliance
-        масштабируется без простоев. Каждый узел - <br /> готовое решение «из
-        коробки», которое легко добавить в систему при росте <br /> данных.
+        масштабируется без простоев. Каждый узел - готовое решение «из
+        коробки», которое легко добавить в систему при росте данных.
         Надёжность и удобство в каждой детали.
       </motion.h2>
-      <World className="w-[90%] h-auto" />
+      <World className="w-[60%] h-auto" />
     </motion.section>
   );
 };

@@ -13,12 +13,12 @@ export default function Home() {
           <Tabs />
           <Info text="Хранение от Терабайтов до Зеттабайтов" />
           <AboutSection />
-          <DataSecurity />
           <Monitoring />
           <TextGrid items={textItems1} />
-          <Support />
           <Info text="Индивидуальность в каждом продукте" />
+          <DataSecurity />
           <TextGrid items={textItems2} />
+          <Support />
           <Info text="Инсталяция в составе решения" />
           <NodeAppliance />
           <SmallTextGrid />
