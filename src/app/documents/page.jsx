@@ -24,18 +24,81 @@ export default function DocumentsPage() {
           <li className="flex items-center justify-between text-color font-light pl-4 border-b border-b-black/8 dark:border-b-white/14">
             <span className="flex items-center gap-2.5">
               <FileText width={20} height={20} />
-              Коды видов деятельности по приказу Минцифры от 11.05.2023 № 449
+              Реквизиты Арго Технолоджи Ист
             </span>
             <a
               className="py-5 px-5"
-              href="/example.pdf"
+              href="/docs/Арго_Реквизиты__2026.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
               <ChevronRight />
             </a>
           </li>
-
+          <li className="flex items-center justify-between text-color font-light pl-4 border-b border-b-black/8 dark:border-b-white/14">
+            <span className="flex items-center gap-2.5">
+              <FileText width={20} height={20} />
+              Карточка записи реестра Арго Технолоджи Ист (№5850 от 20.09.2019)
+            </span>
+            <a
+              className="py-5 px-5"
+              href="https://reestr.digital.gov.ru/reestr/307200/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <ChevronRight />
+            </a>
+          </li>
+          <li className="flex items-center justify-between text-color font-light pl-4 border-b border-b-black/8 dark:border-b-white/14">
+            <span className="flex items-center gap-2.5">
+              <FileText width={20} height={20} />
+              Карточка записи реестра Арго Технолоджи Ист (№31727 от 26.01.2026)
+            </span>
+            <a
+              className="py-5 px-5"
+              href="https://reestr.digital.gov.ru/reestr/6130221/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <ChevronRight />
+            </a>
+          </li>
+          <li className="flex items-center justify-between text-color font-light pl-4 border-b border-b-black/8 dark:border-b-white/14">
+            <span className="flex items-center gap-2.5">
+              <FileText width={20} height={20} />
+              Свидетельство о государственной регистрации программы для ЭВМ
+              (2017618991)
+            </span>
+            <a
+              className="py-5 px-5"
+              href="/docs/Данные_о_наличии_исключительных_прав_на_программное_обеспечение.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <ChevronRight />
+            </a>
+          </li>
+          <li className="flex items-center justify-between text-color font-light pl-4 border-b border-b-black/8 dark:border-b-white/14">
+            <span className="flex items-center gap-2.5">
+              <FileText width={20} height={20} />
+              Политика обработки персональных данных
+            </span>
+            <a
+              className="py-5 px-5"
+              href="/docs/Политика_о_защите,_хранении,_обработке_и_передаче_персональных_данных.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <ChevronRight />
+            </a>
+          </li>
+          <li className="flex items-center justify-between text-color font-light pl-4 border-b border-b-black/8 dark:border-b-white/14 py-5">
+            <span className="flex items-center gap-2.5">
+              <FileText width={20} height={20} />
+              Коды видов деятельности по приказу Минцифры от 11.05.2023 № 449:
+              Основной ОКВЭД: 26.01
+            </span>
+          </li>
           <li className="flex items-center justify-between text-color font-light pl-4 border-b border-b-black/8 dark:border-b-white/14">
             <span className="flex items-center gap-2.5">
               <FileText width={20} height={20} />
