@@ -43,9 +43,9 @@ export const DataSecurity = () => {
             соответствие требованиям.
           </motion.p>
         </div>
-        <motion.div variants={imageVariants}>
+        <div>
           <WebStorage className="w-full h-auto" />
-        </motion.div>
+        </div>
       </div>
     </motion.section>
   );

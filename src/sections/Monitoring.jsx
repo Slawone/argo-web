@@ -14,7 +14,7 @@ export const Monitoring = () => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className="relative section-border section-py md:h-192.5 font-sans main-text"
+      className="relative section-border section-py md:h-192.5 font-sans font-light main-text"
     >
       <div className="mb-5 pt-5 md:pt-10 pl-4 relative z-10">
         <motion.h2
@@ -25,7 +25,7 @@ export const Monitoring = () => {
         </motion.h2>
         <motion.p
           variants={textVariants}
-          className="text-center md:text-left text-color max-w-155 mb-10"
+          className="text-center md:text-left text-color max-w-155 mb-10 pr-4"
         >
           <span className="title-color">MONITORING</span>{" "}
           <span className="title-color">
