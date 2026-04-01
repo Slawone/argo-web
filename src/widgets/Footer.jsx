@@ -21,13 +21,13 @@ export const Footer = () => {
         <div className="">
           <motion.h4
             variants={textVariants}
-            className="text-black dark:text-white font-sans mb-2"
+            className="text-black dark:text-white font-sans mb-2 md:text-[18px]"
           >
             Компания
           </motion.h4>
           <motion.ul
             variants={itemVariants}
-            className="text-zinc-600 dark:text-zinc-400 font-sans text-sm flex flex-col gap-2"
+            className="text-zinc-600 dark:text-zinc-400 font-sans text-sm md:text-[18px] font-light flex flex-col gap-2"
           >
             <li>
               <span>ООО «АРГО ТЕХНОЛОДЖИ ИСТ»</span>
@@ -56,13 +56,13 @@ export const Footer = () => {
         <div className="">
           <motion.h4
             variants={textVariants}
-            className="text-black font-sans dark:text-white mb-2"
+            className="text-black font-sans dark:text-white mb-2 md:text-[18px]"
           >
             Социальные сети
           </motion.h4>
           <motion.ul
             variants={itemVariants}
-            className="text-zinc-600 dark:text-zinc-400 text-sm font-sans flex flex-col gap-2"
+            className="text-zinc-600 dark:text-zinc-400 text-sm font-sans md:text-[18px] font-light flex flex-col gap-2"
           >
             <li className="hover:translate-x-1 transition hover:text-black dark:hover:text-white">
               <a

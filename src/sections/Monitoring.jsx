@@ -39,9 +39,9 @@ export const Monitoring = () => {
           variants={itemVariants}
           className="flex flex-col items-center md:flex-row gap-4"
         >
-          <LinkAsButton href="#" className="pointer-events-none">
+          {/* <LinkAsButton href="#" className="pointer-events-none">
             Смотреть презентацию
-          </LinkAsButton>
+          </LinkAsButton> */}
           <Button variant="secondary" className="pointer-events-none">
             Связаться c командой
           </Button>
