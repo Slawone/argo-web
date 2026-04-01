@@ -129,7 +129,7 @@ export const Tabs = () => {
   const containerRef = useRef(null);
 
   return (
-    <section className="section-border mx-auto relative">
+    <section className="section-border mx-auto relative font-sans">
       <div className="md:grid md:grid-cols-[7fr_5fr] relative">
         {/* left */}
         <span className="absolute left-4 top-5 hidden md:block text-[12px] md:text-sm text-[#00B6CC] border rounded-full px-4 py-2 uppercase">
@@ -139,7 +139,7 @@ export const Tabs = () => {
           <AnimatePresence mode="wait">
             <motion.div
               key={active.id}
-              className="text-sm md:text-md lg:text-lg text-color "
+              className="text-sm md:text-md lg:text-lg text-color font-sans font-light leading-6"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
@@ -160,13 +160,16 @@ export const Tabs = () => {
               exit={{ opacity: 0, x: -10 }}
               transition={{ duration: 0.4 }}
             >
-              <p className="text-sm md:text-md lg:text-lg mb-5 text-color md:mb-10">
+              <p className="text-sm md:text-md lg:text-lg mb-5 text-color md:mb-10 font-sans font-light leading-6">
                 {active.rightText}
               </p>
             </motion.div>
           </AnimatePresence>
           {active.id === "storage" && (
-            <Button variant="primary" className="lg:max-w-1/2 md:absolute bottom-10">
+            <Button
+              variant="primary"
+              className="lg:max-w-1/2 md:absolute bottom-10 pointer-events-none"
+            >
               Перейти к продукту
               <Image
                 className="invert dark:invert-0"

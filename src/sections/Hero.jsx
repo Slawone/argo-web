@@ -16,7 +16,7 @@ export function Hero() {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className="min-h-[calc(100vh-204px)] dark:bg-[url('/hero-bg.jpg')] bg-cover bg-center relative md:flex md:items-center"
+      className="section-border px-4 dark:bg-[url('/hero-bg.jpg')] bg-cover bg-center relative md:flex md:items-center"
     >
       <div className="absolute inset-0 dark:bg-black/70 z-0"></div>
 
@@ -41,12 +41,10 @@ export function Hero() {
             variants={itemVariants}
             className="flex items-center gap-5"
           >
-            <Link href={"/storage"}>
-              <Button variant="primary">
-                Storage
-              </Button>
+            <Link href={"/storage"} className="pointer-events-none">
+              <Button variant="primary">Storage</Button>
             </Link>
-            <Button variant="secondary">
+            <Button variant="secondary" className="pointer-events-none">
               Связаться
             </Button>
           </motion.div>

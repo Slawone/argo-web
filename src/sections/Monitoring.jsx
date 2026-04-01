@@ -39,8 +39,12 @@ export const Monitoring = () => {
           variants={itemVariants}
           className="flex flex-col items-center md:flex-row gap-4"
         >
-          <LinkAsButton href="#">Смотреть презентацию</LinkAsButton>
-          <Button variant="secondary">Связаться c командой</Button>
+          <LinkAsButton href="#" className="pointer-events-none">
+            Смотреть презентацию
+          </LinkAsButton>
+          <Button variant="secondary" className="pointer-events-none">
+            Связаться c командой
+          </Button>
         </motion.div>
       </div>
       <Schedule className="hidden md:block absolute bottom-30 z-5 max-w-full" />

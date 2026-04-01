@@ -15,6 +15,7 @@ export const Footer = () => {
       whileInView="visible"
       viewport={{ once: true }}
       className="bg-white dark:bg-black text-black px-4 dark:text-zinc-50 w-full"
+      id="footer"
     >
       <div className="max-w-7xl mx-auto px-4 section-py flex flex-col gap-5 md:flex-row md:gap-10">
         <div className="">
@@ -27,7 +28,7 @@ export const Footer = () => {
           <motion.ul
             variants={itemVariants}
             className="text-zinc-600 dark:text-zinc-400 font-sans text-sm flex flex-col gap-2"
-          > 
+          >
             <li>
               <span>ООО «АРГО ТЕХНОЛОДЖИ ИСТ»</span>
             </li>

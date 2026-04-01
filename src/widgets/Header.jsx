@@ -39,6 +39,13 @@ export const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const scrollToElement = (elementId) => {
+    const element = document.getElementById(elementId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start"});
+    }
+  };
+
   return (
     <header className={cn(
       "bg-white dark:bg-black text-black dark:text-zinc-50 sticky top-0 z-50 h-20 w-full",
@@ -56,6 +63,7 @@ export const Header = () => {
           <Button
             variant="secondary"
             className="hidden md:flex"
+            onClick={() => scrollToElement("footer")}
           >
             Контакты
           </Button>
