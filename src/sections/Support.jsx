@@ -27,15 +27,15 @@ export const Support = () => {
       </motion.h3>
       <div className="grid md:grid-cols-3 text-center">
         <motion.div variants={imageVariants} className="px-4 py-5 flex flex-col items-center md:pt-30 lg:pt-40">
-          <ArgoStorage className="w-3/4 h-auto mb-5 md:w-full md:hover:scale-105 transition-all" />
+          <ArgoStorage className="w-3/4 h-auto mb-5 md:w-full md:hover:-translate-y-1 transition-all" />
           <motion.p variants={textVariants}>Визуализация состояния оборудования и нагрузки</motion.p>
         </motion.div>
         <div className="border-black/8 dark:border-white/14 md:border-r md:border-l px-4 flex flex-col items-center md:pt-30 lg:pt-40">
-          <ArgoForm className="w-3/4 h-auto mb-5 md:w-full md:hover:scale-105 transition-all" />
+          <ArgoForm className="w-3/4 h-auto mb-5 md:w-full md:hover:-translate-y-1 transition-all" />
           <motion.p variants={textVariants}>Управление через личные кабинеты</motion.p>
         </div>
         <motion.div variants={imageVariants} className="px-4 py-5 flex flex-col items-center md:pt-30 lg:pt-40">
-          <ArgoChat className="w-3/4 h-auto mb-5 md:w-full md:hover:scale-105 transition-all" />
+          <ArgoChat className="w-3/4 h-auto mb-5 md:w-full md:hover:-translate-y-1 transition-all" />
           <motion.p variants={textVariants}>
             Поддержка в режиме реального времени{" "}
             <span className="title-color">реальными</span> инженерами
