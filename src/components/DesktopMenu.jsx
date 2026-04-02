@@ -13,5 +13,5 @@ export const DesktopMenu = ({ items }) => {
         </Link>
       ))}
     </nav>
-  )
-}
+  );
+};
