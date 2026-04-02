@@ -22,7 +22,7 @@ export default function DocumentsPage() {
           материалы в кратчайшие сроки.
         </p>
 
-        <ul className="border border-black/8 dark:border-white/14 rounded-2xl">
+        <ul className="font-light border border-black/8 dark:border-white/14 rounded-2xl">
           <li className="flex items-center justify-between text-color md:text-[18px] pl-4 border-b border-b-black/8 dark:border-b-white/14 py-1 md:py-0">
             <span className="flex items-center gap-2.5">
               <FileText width={20} height={20} className="shrink-0" />
