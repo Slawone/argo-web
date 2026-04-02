@@ -7,3 +7,5 @@ export { ArgoStorage } from './ArgoStorage';
 export { ArgoForm } from './ArgoForm';
 export { ArgoChat } from './ArgoChat';
 export { World } from './World';
+export { Active } from './Active';
+export { AiArgo } from './AiArgo';
