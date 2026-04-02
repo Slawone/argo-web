@@ -85,8 +85,8 @@ export const World = ({ className }) => {
         initial="hidden"
         animate="visible"
         d="M102.793 427.537C111.63 427.537 118.793 420.374 118.793 411.537C118.793 402.701 111.63 395.537 102.793 395.537C93.9564 395.537 86.793 402.701 86.793 411.537C86.793 420.374 93.9564 427.537 102.793 427.537Z"
-        fill="#0A0A0A"
         stroke="#00B6CC"
+        className="fill-white dark:fill-[#0A0A0A]"
       />
       <motion.path
         variants={infinitePathVariants}
@@ -109,8 +109,8 @@ export const World = ({ className }) => {
         initial="hidden"
         animate="visible"
         d="M373.732 326.312C382.569 326.312 389.732 319.149 389.732 310.312C389.732 301.476 382.569 294.312 373.732 294.312C364.896 294.312 357.732 301.476 357.732 310.312C357.732 319.149 364.896 326.312 373.732 326.312Z"
-        fill="#0A0A0A"
         stroke="#00B6CC"
+        className="fill-white dark:fill-[#0A0A0A]"
       />
       <motion.path
         variants={infinitePathVariants}
@@ -133,8 +133,8 @@ export const World = ({ className }) => {
         initial="hidden"
         animate="visible"
         d="M334.318 120.541C343.155 120.541 350.318 113.378 350.318 104.541C350.318 95.7045 343.155 88.541 334.318 88.541C325.482 88.541 318.318 95.7045 318.318 104.541C318.318 113.378 325.482 120.541 334.318 120.541Z"
-        fill="#0A0A0A"
         stroke="#00B6CC"
+        className="fill-white dark:fill-[#0A0A0A]"
       />
       <motion.path
         variants={infinitePathVariants}
@@ -157,8 +157,8 @@ export const World = ({ className }) => {
         initial="hidden"
         animate="visible"
         d="M642.322 223.426C651.159 223.426 658.322 216.262 658.322 207.426C658.322 198.589 651.159 191.426 642.322 191.426C633.486 191.426 626.322 198.589 626.322 207.426C626.322 216.262 633.486 223.426 642.322 223.426Z"
-        fill="#0A0A0A"
         stroke="#00B6CC"
+        className="fill-white dark:fill-[#0A0A0A]"
       />
       <motion.path
         variants={infinitePathVariants}
@@ -181,8 +181,8 @@ export const World = ({ className }) => {
         initial="hidden"
         animate="visible"
         d="M903.752 326.312C912.589 326.312 919.752 319.149 919.752 310.312C919.752 301.476 912.589 294.312 903.752 294.312C894.915 294.312 887.752 301.476 887.752 310.312C887.752 319.149 894.915 326.312 903.752 326.312Z"
-        fill="#0A0A0A"
         stroke="#00B6CC"
+        className="fill-white dark:fill-[#0A0A0A]"
       />
       <motion.path
         variants={infinitePathVariants}
@@ -262,7 +262,7 @@ export const World = ({ className }) => {
           gradientUnits="userSpaceOnUse"
         >
           <stop />
-          <stop offset="0.509615" stopColor="#EDEDED" />
+          {/* <stop offset="0.509615" stopColor="#EDEDED" /> */}
           <stop offset="0.725962" stopColor="#00B6CC" />
           <stop offset="0.9999" />
         </linearGradient>
