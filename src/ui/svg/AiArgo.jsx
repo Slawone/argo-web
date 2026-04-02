@@ -12,11 +12,10 @@ export const AiArgo = ({ className }) => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.4 }}
-      width="235"
-      height="264"
       viewBox="0 0 235 264"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <g filter="url(#filter0_d_365_545)">
         <circle

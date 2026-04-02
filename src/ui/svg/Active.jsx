@@ -12,8 +12,6 @@ export const Active = ({ className }) => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.4 }}
-      width="695"
-      height="239"
       viewBox="0 0 695 239"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

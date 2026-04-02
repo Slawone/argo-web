@@ -18,7 +18,7 @@ export const Footer = () => {
       id="footer"
     >
       <div className="max-w-7xl mx-auto px-4 section-py grid gap-5 md:grid-cols-[2fr_1fr]">
-        <div className="">
+        <div className="pl-4">
           <motion.h4
             variants={textVariants}
             className="text-black dark:text-white font-sans mb-2 md:text-[18px]"
@@ -53,7 +53,7 @@ export const Footer = () => {
             </li>
           </motion.ul>
         </div>
-        <div className="">
+        <div className="pl-4">
           <motion.h4
             variants={textVariants}
             className="text-black font-sans dark:text-white mb-2 md:text-[18px]"
@@ -82,7 +82,7 @@ export const Footer = () => {
               </a>
             </li>
             <li className="hover:translate-x-1 transition hover:text-black dark:hover:text-white">
-              <a href="https://companies.rbc.ru/id/1165007052583-argotech/">
+              <a href="https://companies.rbc.ru/id/1165007052583-argotech/" target="_blank">
                 РБК Компании
               </a>
             </li>

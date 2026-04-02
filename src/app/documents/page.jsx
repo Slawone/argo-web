@@ -5,7 +5,7 @@ export default function DocumentsPage() {
   return (
     <section className="font-sans section-py bg-white dark:bg-black">
       <div className="max-w-7xl mx-auto px-4">
-        <Breadcrumbs className="mb-5 font-light"/>
+        <Breadcrumbs className="mb-5 font-light text-color"/>
         <h1 className="text-[20px] md:text-[45px] uppercase title-color font-medium mb-7.5">
           {"Документы ооо “арго технолоджи ист”"}
         </h1>
