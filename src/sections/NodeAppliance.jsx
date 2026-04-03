@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { motionVariants } from "@/config";
 import { World } from "@/ui/svg";
+import Globe from "@/components/Globe";
 
 export const NodeAppliance = () => {
   const { containerVariants, textVariants } = motionVariants;
@@ -24,7 +25,8 @@ export const NodeAppliance = () => {
         коробки», которое легко добавить в систему при росте данных.
         Надёжность и удобство в каждой детали.
       </motion.h2>
-      <World className="w-[60%] h-auto" />
+      {/* <World className="w-[60%] h-auto" /> */}
+      <Globe />
     </motion.section>
   );
 };
