@@ -19,7 +19,7 @@ export const Union = () => {
         <div className="mb-5">
           <Active className="w-full h-auto" />
         </div>
-        <p className="text-center text-sm md:text-base lg:text-lg font-light leading-6">
+        <p className="text-sm md:text-base lg:text-lg font-light leading-6">
           <span className="title-color">Мы объединяем</span> системы хранения
           данных с аналитикой и автоматизированным управлением, чтобы упростить
           эксплуатацию и повысить эффективность инфраструктуры. Решение
@@ -28,12 +28,12 @@ export const Union = () => {
         </p>
       </div>
 
-      <div className="py-5 md:py-10  h-full flex flex-col">
+      <div className="py-5 md:py-10  h-full flex flex-col md:pl-4">
         <div className="relative flex items-center justify-center mb-5">
           <AiArgo className="w-auto h-42.5 md:h-60" />
           <div className="absolute inset-x-0 bottom-0 h-1/3 bg-lanier-to-t from-black/50 to-transparent pointer-events-none"></div>
         </div>
-        <p className="text-center text-sm md:text-base lg:text-lg font-light leading-6 pl-3">
+        <p className="text-sm md:text-base lg:text-lg font-light leading-6">
           Решения соответствуют требованиям ФСТЭК, ФЗ-152 и ISO. Поддерживаются
           пилотное и защищённое развертывание, контроль доступа (RBAC, MFA),
           моделирование угроз и управление безопасностью.
