@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
 function toXYZ(lat, lng) {
   return [
@@ -47,8 +47,8 @@ const ARCS = generateArcs();
 
 export default function Globe({
   size = 500,
-  dotColor = "rgba(150,130,255,{a})",
-  arcColor = "rgba(190,170,255,{a})",
+  dotColor = "rgba(0,182,204,{a})",
+  arcColor = "rgba(0,182,204,{a})",
   headColor = "rgba(230,220,255,{a})",
   glowColor = "rgba(120,100,255,0.08)",
   lineColor = "rgba(180,160,255,{a})",
@@ -280,42 +280,8 @@ export default function Globe({
   );
 }
 
-// ── Demo ────────────────────────────────────────────────────────────────────
-// Remove everything below if you're using Globe as a standalone component.
-
-export function GlobeDemo() {
+export const GlobeDemo = () => {
   return (
-    <div
-      style={{
-        minHeight: "100vh",
-        background: "#080812",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        fontFamily: "'DM Sans', sans-serif",
-        gap: "2rem",
-      }}
-    >
-      <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&display=swap"
-        rel="stylesheet"
-      />
-      <p
-        style={{
-          color: "rgba(200,190,255,0.4)",
-          fontSize: 12,
-          letterSpacing: "0.15em",
-          textTransform: "uppercase",
-          margin: 0,
-        }}
-      >
-        drag to rotate
-      </p>
-      <Globe size={480} />
-      <p style={{ color: "rgba(200,190,255,0.25)", fontSize: 13, margin: 0 }}>
-        Globe.jsx — Vercel-style canvas animation
-      </p>
-    </div>
+    <Globe size={480} className="mx-auto max-w-75 max-h-75 md:max-w-full md:max-h-full" />
   );
 }
