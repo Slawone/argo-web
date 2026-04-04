@@ -15,23 +15,28 @@ export const TextGrid = ({ items }) => {
       viewport={{ once: true }}
       className="section-border"
     >
-      <div className="grid md:grid-cols-2 place-items-center font-sans main-text relative">
+      <div className="grid md:grid-cols-2 font-sans main-text relative">
         {items.map(item => (
-          <div key={item.title} className="px-5 h-65 md:h-65 lg:h-70 flex flex-col justify-center md:pt-15 md:justify-start border-b last-of-type:border-b-0 border-black/8 dark:border-white/14 md:border-b-0 md:odd:border-r md:nth-[-n+2]:border-b">
+          <div
+            key={item.title}
+            className="px-5 py-10 flex flex-col justify-start border-b last-of-type:border-b-0 border-black/8 dark:border-white/14 md:border-b-0 md:odd:border-r md:nth-[-n+2]:border-b"
+          >
             <motion.h3
-            variants={textVariants}
-            className="title-color mb-3 text-lg md:text-xl lg:text-2xl">
-              {item.title
-            }</motion.h3>
+              variants={textVariants}
+              className="title-color mb-3 text-lg md:text-xl lg:text-2xl"
+            >
+              {item.title}
+            </motion.h3>
             <motion.p
-            variants={textVariants}
-            className="text-color">
+              variants={textVariants}
+              className="text-color"
+            >
               {item.label}
             </motion.p>
           </div>
         ))}
         <Plus
-          className='absolute text-color right-[-12] bottom-[-12] md:right-1/2 md:bottom-1/2 md:translate-x-1/2 md:translate-y-1/2'
+          className="absolute text-color right-[-12] bottom-[-12] md:right-1/2 md:bottom-1/2 md:translate-x-1/2 md:translate-y-1/2"
         />
       </div>
     </motion.section>

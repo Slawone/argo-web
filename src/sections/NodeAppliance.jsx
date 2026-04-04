@@ -18,7 +18,7 @@ export const NodeAppliance = () => {
     >
       <motion.h2
         variants={textVariants}
-        className="text-center md:text-[18px] max-w-205 mx-auto mb-5 md:mb-10"
+        className="text-center md:text-[18px] max-w-205 mx-auto mb-5 md:mb-7"
       >
         СХД от ARGO.TECH на базе архитектуры Storage Node Appliance
         масштабируется без простоев. Каждый узел - готовое решение «из

@@ -1,14 +1,18 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Button } from "@/ui";
+import { OrderForm } from "@/components";
 import { motionVariants } from "@/config";
 
 export function Hero() {
   const { containerVariants, itemVariants, textVariants, imageVariants } =
     motionVariants;
+
+  const [formOpen, setformOpen] = useState(false);
 
   return (
     <motion.section
@@ -44,7 +48,7 @@ export function Hero() {
             <Link href={"/storage"} className="pointer-events-none">
               <Button variant="primary">Storage</Button>
             </Link>
-            <Button variant="secondary" className="pointer-events-none">
+            <Button variant="secondary" className="" onClick={() => setformOpen(true)}>
               Связаться
             </Button>
           </motion.div>
@@ -65,6 +69,7 @@ export function Hero() {
           />
         </motion.div>
       </div>
+      <OrderForm isOpen={formOpen} onClose={() => setformOpen(false)} />
     </motion.section>
   );
 }

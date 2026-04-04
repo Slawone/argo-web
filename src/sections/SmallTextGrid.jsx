@@ -15,10 +15,10 @@ export const SmallTextGrid = ({ items }) => {
       viewport={{ once: true }}
       className="section-border"
     >
-      <div className="grid md:grid-cols-3 place-items-start font-sans text-color main-text relative">
+      <div className="grid md:grid-cols-3 font-sans text-color main-text relative">
         <motion.div
           variants={textVariants}
-          className="flex flex-col gap-1 md:gap-2 px-4 py-4 md:border-b border-black/8 dark:border-white/14 md:h-55 xl:h-50"
+          className="flex flex-col gap-1 md:gap-2 px-4 py-6 md:py-8 border-b border-black/8 dark:border-white/14 md:border-r"
         >
           <h4 className="title-color">
             Опыт внедрения в региональных ИТ-инфраструктурах.
@@ -28,7 +28,7 @@ export const SmallTextGrid = ({ items }) => {
         </motion.div>
         <motion.div
           variants={textVariants}
-          className="flex flex-col gap-1 md:gap-2 px-4 py-4 border-t border-b border-black/8 dark:border-white/14 md:border-t-0 md:border-r md:border-l md:h-55 xl:h-50"
+          className="flex flex-col gap-1 md:gap-2 px-4 py-6 md:py-8 border-b border-black/8 dark:border-white/14 md:border-r"
         >
           <h4 className="title-color">Решения для проектов любой сложности.</h4>{" "}
           Наши продукты разворачиваются в корпоративных инфраструктурах,
@@ -37,7 +37,7 @@ export const SmallTextGrid = ({ items }) => {
         </motion.div>
         <motion.div
           variants={textVariants}
-          className="flex flex-col gap-1 md:gap-2 px-4 py-4 border-b border-black/8 dark:border-white/14 md:h-55 xl:h-50"
+          className="flex flex-col gap-1 md:gap-2 px-4 py-6 md:py-8 border-b border-black/8 dark:border-white/14"
         >
           <h4 className="title-color">
             Для инфраструктуры с повышенными требованиями.
