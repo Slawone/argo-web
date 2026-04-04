@@ -3,54 +3,9 @@
 import { useState, useEffect, useRef } from "react";
 import { X, MailCheck } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { IMaskInput } from "react-imask";
+import { InputField } from "@/ui";
+import { URL_BASE } from "@/config";
 
-// Улучшенный InputField с поддержкой ошибок
-export const InputField = ({ id, label, type = "text", form, setForm, errors }) => {
-  const inputRef = useRef(null);
-
-  useEffect(() => {
-    if (inputRef.current) {
-      inputRef.current.style.borderColor = errors[id] ? "red" : "#d1d5db"; // tailwind gray-300
-      inputRef.current.style.boxShadow = errors[id]
-        ? "0 0 0 2px rgba(239,68,68,0.5)" // red-500
-        : "0 0 0 2px rgba(59,130,246,0.25)"; // blue-300
-    }
-  }, [errors, id]);
-
-  return (
-    <div className="flex flex-col">
-      <label htmlFor={id} className="mb-1 text-sm font-medium">{label}</label>
-
-      {id === "phone" ? (
-        <IMaskInput
-          mask="+{7} (000) 000-00-00"
-          value={form[id]}
-          onAccept={(value) => setForm((prev) => ({ ...prev, [id]: value }))}
-          unmask={false}
-          placeholder="+7 (___) ___-__-__"
-          inputRef={inputRef}
-          className="w-full p-3 pl-5 border rounded-full focus:outline-none transition-colors"
-        />
-      ) : (
-        <input
-          id={id}
-          type={type}
-          value={form[id]}
-          onChange={(e) => setForm((prev) => ({ ...prev, [id]: e.target.value }))}
-          placeholder={type === "email" ? "example@mail.ru" : ""}
-          className={`w-full p-3 pl-5 border rounded-full focus:outline-none focus:ring-2 transition-colors ${
-            errors[id] ? "border-red-500 focus:ring-red-300" : "border-gray-300 focus:ring-blue-300"
-          }`}
-        />
-      )}
-
-      {errors[id] && <p className="mt-1 text-sm text-red-500">{errors[id]}</p>}
-    </div>
-  );
-};
-
-// Основная форма OrderForm
 export const OrderForm = ({ isOpen, onClose }) => {
   const overlayRef = useRef(null);
   const [form, setForm] = useState({ name: "", phone: "", email: "" });
@@ -98,7 +53,7 @@ export const OrderForm = ({ isOpen, onClose }) => {
     setServerError("");
 
     try {
-      const res = await fetch("/api/send", {
+      const res = await fetch(URL_BASE, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
