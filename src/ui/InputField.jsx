@@ -17,7 +17,7 @@ export const InputField = ({ id, label, type = "text", form, setForm, errors }) 
 
   return (
     <div className="flex flex-col">
-      <label htmlFor={id} className="mb-1 text-sm font-medium">{label}</label>
+      <label htmlFor={id} className="mb-1 text-sm font-light title-color">{label}</label>
 
       {id === "phone" ? (
         <IMaskInput
