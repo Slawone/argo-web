@@ -6,6 +6,15 @@ import { cn } from "@/utils";
 import { Button, Logo } from "@/ui";
 
 export const MobileMenu = ({ items, open, onClick }) => {
+
+  const scrollToElement = (elementId) => {
+    const element = document.getElementById(elementId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start"});
+      onClick();
+    }
+  };
+
   return (
     <>
       <div
@@ -31,7 +40,7 @@ export const MobileMenu = ({ items, open, onClick }) => {
             <X />
           </Button>
         </div>
-        <nav className="flex flex-col items-center gap-6">
+        {/* <nav className="flex flex-col items-center gap-6">
           {items.map((item) => (
             <Link
               key={item.label}
@@ -41,10 +50,12 @@ export const MobileMenu = ({ items, open, onClick }) => {
               {item.label}
             </Link>
           ))}
-        </nav>
+        </nav> */}
+        <span className="inline-block text-color font-sans text-sm">Меню находится в разработке...</span>
         <Button
           variant="secondary"
           className="py-2 px-3"
+          onClick={() => scrollToElement("footer")}
         >
           Контакты
         </Button>
