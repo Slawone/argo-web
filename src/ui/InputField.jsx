@@ -23,7 +23,18 @@ export const InputField = ({ id, label, type = "text", form, setForm, errors }) 
         <IMaskInput
           mask="+{7} (000) 000-00-00"
           value={form[id]}
-          onAccept={(value) => setForm((prev) => ({ ...prev, [id]: value }))}
+          // onAccept={(value) => setForm((prev) => ({ ...prev, [id]: value }))}
+          onAccept={(value) => {
+            // Убираем все нецифровые символы для проверки длины
+            const digitsOnly = value.replace(/\D/g, '');
+            // Полная длина номера (7 + 10 цифр = 11 цифр)
+            const isValidLength = digitsOnly.length === 11;
+
+            // Обновляем состояние только если длина корректная
+            if (isValidLength || digitsOnly.length === 0) {
+              setForm((prev) => ({ ...prev, [id]: value }));
+            }
+          }}
           unmask={false}
           placeholder="+7 (___) ___-__-__"
           inputRef={inputRef}
@@ -36,9 +47,8 @@ export const InputField = ({ id, label, type = "text", form, setForm, errors }) 
           value={form[id]}
           onChange={(e) => setForm((prev) => ({ ...prev, [id]: e.target.value }))}
           placeholder={type === "email" ? "example@mail.ru" : ""}
-          className={`w-full p-3 pl-5 border rounded-full focus:outline-none focus:ring-2 transition-colors title-color ${
-            errors[id] ? "border-red-500 focus:ring-red-300" : "border-gray-300 focus:ring-blue-300"
-          }`}
+          className={`w-full p-3 pl-5 border rounded-full focus:outline-none focus:ring-2 transition-colors title-color ${errors[id] ? "border-red-500 focus:ring-red-300" : "border-gray-300 focus:ring-blue-300"
+            }`}
         />
       )}
 
