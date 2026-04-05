@@ -24,7 +24,7 @@ export function Hero() {
     >
       <div className="absolute inset-0 dark:bg-black/70 z-0"></div>
 
-      <div className=" mx-auto flex flex-col items-center md:flex-row md:justify-between">
+      <div className="mx-auto flex flex-col items-center md:flex-row md:justify-between">
         <div className="py-10 md:py-20 relative z-20">
           <motion.h1
             variants={textVariants}
@@ -45,10 +45,10 @@ export function Hero() {
             variants={itemVariants}
             className="flex items-center gap-5"
           >
-            <Link href={"/storage"} className="pointer-events-none">
+            <Link href={"/storage"}>
               <Button variant="primary">Storage</Button>
             </Link>
-            <Button variant="secondary" className="" onClick={() => setformOpen(true)}>
+            <Button variant="secondary" onClick={() => setformOpen(true)}>
               Связаться
             </Button>
           </motion.div>

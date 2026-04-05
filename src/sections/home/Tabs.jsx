@@ -2,6 +2,7 @@
 
 import { useState, useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { ExternalLink } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/ui";
@@ -166,20 +167,22 @@ export const Tabs = () => {
             </motion.div>
           </AnimatePresence>
           {active.id === "storage" && (
-            <Button
-              variant="primary"
-              className="lg:max-w-1/2 md:absolute bottom-10 pointer-events-none"
-            >
-              Перейти к продукту
-              <Image
-                className="invert dark:invert-0"
-                src="/stars.svg"
-                alt="Логотип ARGO.TECH"
-                width={20}
-                height={20}
-                priority
-              />
-            </Button>
+            <Link href="/storage">
+              <Button
+                variant="primary"
+                className="lg:max-w-1/2 md:absolute bottom-10"
+              >
+                Перейти к продукту
+                <Image
+                  className="invert dark:invert-0"
+                  src="/stars.svg"
+                  alt="Логотип ARGO.TECH"
+                  width={20}
+                  height={20}
+                  priority
+                />
+              </Button>
+            </Link>
           )}
         </div>
       </div>

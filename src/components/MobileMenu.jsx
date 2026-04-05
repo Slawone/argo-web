@@ -40,18 +40,18 @@ export const MobileMenu = ({ items, open, onClick }) => {
             <X />
           </Button>
         </div>
-        {/* <nav className="flex flex-col items-center gap-6">
+        <nav className="flex flex-col items-center gap-6">
           {items.map((item) => (
             <Link
               key={item.label}
               href={item.href}
               className="text-black dark:text-white font-sans"
+              onClick={onClick}
             >
               {item.label}
             </Link>
           ))}
-        </nav> */}
-        <span className="inline-block text-color font-sans text-sm">Меню находится в разработке...</span>
+        </nav>
         <Button
           variant="secondary"
           className="py-2 px-3"

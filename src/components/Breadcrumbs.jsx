@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation"
 
 const ruMap = {
   documents: "Документы",
+  storage: "Хранение",
 };
 
 export const Breadcrumbs = ({className}) => {
@@ -15,7 +16,7 @@ export const Breadcrumbs = ({className}) => {
     <nav
       className={className}
     >
-      <Link href={'/'}>Главная</Link>
+      <Link href={'/'} className="hover:text-black dark:hover:text-white">Главная</Link>
 
       {segments.map((segment, index) => {
         const href = "/" + segments.slice(0, index + 1).join("/");
