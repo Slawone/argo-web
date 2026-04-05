@@ -1,12 +1,16 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { motionVariants } from "@/config";
-import { Button, LinkAsButton, MonitoringStat, Schedule, TopServices } from "@/ui";
+import { Button, MonitoringStat, Schedule, TopServices } from "@/ui";
+import { OrderForm } from "@/components";
 
 export const Monitoring = () => {
   const { containerVariants, itemVariants, textVariants, imageVariants } =
     motionVariants;;
+
+  const [formOpen, setformOpen] = useState(false);
 
   return (
     <motion.section
@@ -42,7 +46,7 @@ export const Monitoring = () => {
           {/* <LinkAsButton href="#" className="pointer-events-none">
             Смотреть презентацию
           </LinkAsButton> */}
-          <Button variant="secondary" className="pointer-events-none">
+          <Button variant="secondary" onClick={() => setformOpen(true)}>
             Связаться c командой
           </Button>
         </motion.div>
@@ -55,6 +59,7 @@ export const Monitoring = () => {
         <MonitoringStat className="absolute left-0 bottom-0 w-30 h-25 md:w-40 md:h-40 md:bottom-15 lg:w-50 lg:h-50" />
         <TopServices className="absolute right-5 top-0 w-25 h-20 md:w-40 md:h-40 lg:right-25 lg:w-50 lg:h-50" />
       </motion.div>
+      <OrderForm isOpen={formOpen} onClose={() => setformOpen(false)} />
     </motion.section>
   );
 };
