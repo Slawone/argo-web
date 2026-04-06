@@ -65,7 +65,7 @@ export function Hero() {
             width={320}
             height={180}
             priority
-            className="relative z-10 mb-20 md:mb-0 w-55 md:w-80"
+            className="relative z-10 mb-20 md:mb-0 w-55 md:w-80 h-auto"
           />
         </motion.div>
       </div>

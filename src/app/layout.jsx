@@ -1,8 +1,11 @@
-import { IBM_Plex_Sans, Oswald } from "next/font/google";
+import { Suspense } from "react";
 import { ThemeProvider } from "next-themes";
+import { IBM_Plex_Sans, Oswald } from "next/font/google";
 import { Header } from "@/widgets";
 import { Footer } from "@/widgets";
+import { Metrika } from "@/components";
 import "./globals.css";
+import { CookieBanner } from "../components/CookieBanner";
 
 const ibmPlexSans = IBM_Plex_Sans({
   variable: "--font-ibm-sans",
@@ -37,6 +40,10 @@ export default function RootLayout({ children }) {
             {children}
           <Footer />
         </ThemeProvider>
+        <CookieBanner />
+        <Suspense fallback={null}>
+          <Metrika />
+        </Suspense>
       </body>
     </html>
   );
