@@ -35,7 +35,7 @@ export const MobileMenu = ({ items, open, onClick }) => {
           <Button
             variant="secondary"
             onClick={onClick}
-            className="py-1 px-3"
+            className="border-none"
           >
             <X />
           </Button>
@@ -54,7 +54,6 @@ export const MobileMenu = ({ items, open, onClick }) => {
         </nav>
         <Button
           variant="secondary"
-          className="py-2 px-3"
           onClick={() => scrollToElement("footer")}
         >
           Контакты

@@ -46,7 +46,7 @@ export const Monitoring = () => {
           {/* <LinkAsButton href="#" className="pointer-events-none">
             Смотреть презентацию
           </LinkAsButton> */}
-          <Button variant="secondary" onClick={() => setformOpen(true)}>
+          <Button variant="secondary" onClick={() => setformOpen(true)} >
             Связаться c командой
           </Button>
         </motion.div>

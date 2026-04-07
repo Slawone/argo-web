@@ -47,14 +47,14 @@ export const AboutSection = () => {
         </motion.p>
         <motion.div variants={itemVariants} className="flex items-center gap-5">
           <a
-            className="font-light flex items-center gap-2 text-[14px] lg:text-[16px] bg-[#171717] dark:bg-[#ededed] border-transparent text-white dark:text-[#0a0a0a] hover:bg-[#383838] dark:hover:bg-[#ccc] rounded-full px-3 py-1 md:hover:scale-110 transition-all lg:px-5 lg:py-2"
+            className="button button-primary flex-center"
             href="/docs/Арго_Реквизиты__2026.pdf"
             target="_blank"
           >
             Реквизиты <ExternalLink width={18} height={18} />
           </a>
           <Link
-            className="font-light flex items-center gap-2 text-[12px] md:text-[14px] lg:text-[16px] bg-[#171717] dark:bg-[#ededed] border-transparent text-white dark:text-[#0a0a0a] hover:bg-[#383838] dark:hover:bg-[#ccc] rounded-full px-3 py-1 md:hover:scale-110 transition-all lg:px-5 lg:py-2"
+            className="button button-primary flex-center"
             href={"/documents"}
           >
             Для МИНЦИФРЫ <ExternalLink width={18} height={18} />

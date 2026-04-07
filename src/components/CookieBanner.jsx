@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { Button } from "@/ui";
 
 export const CookieBanner = () => {
   const [visible, setVisible] = useState(false);
@@ -21,17 +22,16 @@ export const CookieBanner = () => {
 
   return (
     <div className="fixed bottom-4 left-4 right-4 z-50 flex justify-center">
-      <div className="max-w-xl w-full bg-black text-white rounded-2xl shadow-lg p-4 flex flex-col sm:flex-row items-center gap-4">
-        <p className="text-sm text-gray-300">
+      <div className="max-w-xl w-full bg-foreground dark:bg-background rounded-xl shadow-lg p-4 border border-black/8 dark:border-white/14 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p className="title-color font-light font-sans main-text">
           Мы используем cookie, чтобы улучшить работу сайта.
         </p>
 
-        <button
+        <Button
           onClick={acceptCookies}
-          className="bg-white text-black px-4 py-2 rounded-xl text-sm font-medium hover:bg-gray-200 transition"
         >
           Принять
-        </button>
+        </Button>
       </div>
     </div>
   );

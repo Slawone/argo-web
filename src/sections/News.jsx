@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { LinkAsButton } from "@/ui";
 import { cn } from "@/utils";
 
 export const News = () => {
@@ -9,7 +8,9 @@ export const News = () => {
         <div className="main-text accent-color uppercase border rounded-full px-4 py-0.5 md:px-4 md:py-1 lg:px-5">New</div>
         <div className="text-color main-text">Мы обновляем сайт. Следите за новостями:</div>
         <a 
-          className="main-text px-3 md:px-5 md:py-1 flex items-center bg-[#171717] dark:bg-[#ededed] border-transparent text-white dark:text-[#0a0a0a] hover:bg-[#383838] dark:hover:bg-[#ccc] gap-2 rounded-full border border-solid md:hover:scale-110 transition-all font-sans cursor-pointer"
+          className={cn(
+            "main-text button button-primary flex-center",
+          )}
           href="https://max.ru/join/A9BI2uNQbcqGW2DuMSXPXK1BlxoEZkYoez2rA5vA84U"
           target="_blank"
         >

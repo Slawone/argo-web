@@ -5,6 +5,7 @@ import { X, MailCheck } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { InputField } from "@/ui";
 import { URL_BASE } from "@/config";
+import { Button } from "@/ui";
 
 export const OrderForm = ({ isOpen, onClose }) => {
   const overlayRef = useRef(null);
@@ -147,13 +148,13 @@ export const OrderForm = ({ isOpen, onClose }) => {
                     <p className="mt-4 text-sm text-red-400 text-center">{serverError}</p>
                   )}
 
-                  <button
+                  <Button
                     onClick={handleSubmit}
                     disabled={status === "loading"}
-                    className="mt-6 w-full py-3.5 rounded-full font-light bg-[#0a0a0a] dark:bg-white text-white dark:text-[#0a0a0a] hover:bg-[#383838] dark:hover:bg-[#ccc] transition-colors disabled:opacity-50 disabled:cursor-not-allowed md:cursor-pointer"
+                    className="mt-6 w-full flex-center"
                   >
                     {status === "loading" ? "Отправляем..." : "Отправить заявку"}
-                  </button>
+                  </Button>
 
                   <p className="mt-4 text-center text-[14px] title-color leading-4">
                     Нажимая кнопку, вы соглашаетесь с{" "}

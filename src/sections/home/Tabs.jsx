@@ -170,7 +170,7 @@ export const Tabs = () => {
             <Link href="/storage">
               <Button
                 variant="primary"
-                className="lg:max-w-1/2 md:absolute bottom-10"
+                className="lg:max-w-1/2 md:absolute bottom-10 flex-center"
               >
                 Перейти к продукту
                 <Image
@@ -190,14 +190,14 @@ export const Tabs = () => {
       <div className="w-full px-4 relative bottom-3 left-1/2 -translate-x-1/2 md:absolute md:max-w-6/12 lg:max-w-5/12 xl:max-w-4/12 md:left-0 md:translate-x-0 md:bottom-10">
         <div
           ref={containerRef}
-          className="flex border border-black/8 dark:border-white/[.145] rounded-full p-1 overflow-hidden"
+          className="flex border border-black/8 dark:border-white/[.145] rounded-xl p-1 overflow-hidden"
         >
           {tabs.map((tab) => (
             <button
               key={tab.id}
               id={`tab-${tab.id}`}
               onClick={() => setActive(tab)}
-              className={`cursor-pointer relative font-light flex-1 px-4 py-2 text-sm rounded-full transition text-center z-10 ${
+              className={`cursor-pointer relative font-light flex-1 px-4 py-2 text-sm rounded-xl transition text-center z-10 ${
                 active.id === tab.id
                   ? "bg-[#171717] dark:bg-[#ededed] border-transparent text-white dark:text-[#0a0a0a] hover:bg-[#383838] dark:hover:bg-[#ccc]"
                   : "text-[#0a0a0a] dark:text-white"

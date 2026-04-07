@@ -48,7 +48,7 @@ export const Header = () => {
 
   return (
     <header className={cn(
-      "bg-white dark:bg-black text-black dark:text-zinc-50 sticky top-0 z-50 h-20 w-full",
+      "bg-foreground dark:bg-background text-black dark:text-zinc-50 sticky top-0 z-50 h-20 w-full",
       scrolled
       ? "border-b border-b-solid border-b-black/8 dark:border-b-white/14"
       : "border-b-0 shadow-none"
@@ -58,18 +58,17 @@ export const Header = () => {
           <Logo />
         </Link>
         <DesktopMenu items={navItems} />
-        {/* <span className="hidden md:inline-block text-color font-sans text-sm">Меню находится в разработке...</span> */}
-        <div className="flex items-center justify-between gap-2 ml-auto">
+        <div className="flex-center gap-2 ml-auto">
           <Button
             variant="secondary"
-            className="hidden md:flex"
+            className="hidden md:flex items-center"
             onClick={() => scrollToElement("footer")}
           >
             Контакты
           </Button>
           <Button
             variant="secondary"
-            className="py-2 px-3 md:hidden"
+            className="md:hidden border-none"
             onClick={() => setOpen(!open)}
           >
             <Menu />

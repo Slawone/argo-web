@@ -124,7 +124,7 @@ export const Compound = () => {
             <a
               href="https://reestr.digital.gov.ru/reestr/307200/"
               target="_blank"
-              className="font-light flex items-center gap-2 text-[14px] lg:text-[16px] bg-[#171717] dark:bg-[#ededed] border-transparent text-white dark:text-[#0a0a0a] hover:bg-[#383838] dark:hover:bg-[#ccc] rounded-full px-3 py-1 md:hover:scale-110 transition-all lg:px-5 lg:py-2"
+              className="button button-primary flex-center"
             >
               <Image src="/reestr.svg" width={20} height={20} alt="reestr" className="dark:invert" />
               Реестр программного обеспечения
@@ -160,7 +160,7 @@ export const Compound = () => {
               <a
                 href="/docs/presentation.pdf"
                 target="_blank"
-                className="font-light flex items-center gap-2 text-[14px] lg:text-[16px] bg-[#171717] dark:bg-[#ededed] border-transparent text-white dark:text-[#0a0a0a] hover:bg-[#383838] dark:hover:bg-[#ccc] rounded-full px-3 py-1 md:hover:scale-110 transition-all lg:px-5 lg:py-2"
+                className="button button-primary flex-center"
               >
                 <Image src="/download.svg" width={20} height={20} alt="reestr" className="invert dark:invert-0" />
                 Presentation
@@ -168,7 +168,7 @@ export const Compound = () => {
               <a
                 href="/docs/options.pdf"
                 target="_blank"
-                className="font-light flex items-center gap-2 text-[14px] lg:text-[16px] border border-black/8 text-[#0a0a0a] dark:text-white hover:border-transparent hover:bg-black/4 dark:border-white/[.145] dark:hover:bg-[#1a1a1a] rounded-full px-3 py-1 md:hover:scale-110 transition-all lg:px-5 lg:py-2"
+                className="button button-secondary flex-center"
               >
                 <Image src="/download.svg" width={20} height={20} alt="reestr" className="dark:invert" />
                 Options
