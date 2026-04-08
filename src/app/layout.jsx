@@ -21,7 +21,8 @@ const oswald = Oswald({
 
 export const metadata = {
   title: "Argo.tech | Больше, чем система хранения данных",
-  description: "Argo.tech | Больше, чем система хранения данных",
+  description:
+    "ARGO.TECH с 2016 разрабатывает СХД и прикладные ИИ‑решения для бизнеса и госсектора. Все продукты компании в реестре и имеют поддержку до 10 лет.",
 };
 
 export default function RootLayout({ children }) {

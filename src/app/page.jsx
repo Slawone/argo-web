@@ -6,7 +6,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="flex items-center justify-center font-sans bg-foreground dark:bg-background">
+      <div className="flex items-center justify-center font-sans bg-white dark:bg-black">
         <main className="page-container">
           <News />
           <Hero />

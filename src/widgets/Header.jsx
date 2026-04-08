@@ -47,14 +47,16 @@ export const Header = () => {
   };
 
   return (
-    <header className={cn(
-      "bg-foreground dark:bg-background text-black dark:text-zinc-50 sticky top-0 z-50 h-20 w-full",
-      scrolled
-      ? "border-b border-b-solid border-b-black/8 dark:border-b-white/14"
-      : "border-b-0 shadow-none"
-    )}>
+    <header
+      className={cn(
+        "bg-white dark:bg-black text-black dark:text-zinc-50 sticky top-0 z-50 h-20 w-full",
+        scrolled
+          ? "border-b border-b-solid border-b-black/8 dark:border-b-white/14"
+          : "border-b-0 shadow-none",
+      )}
+    >
       <div className="flex max-w-7xl h-full mx-auto px-4 gap-10 items-center">
-        <Link href={'/'}>
+        <Link href={"/"}>
           <Logo />
         </Link>
         <DesktopMenu items={navItems} />
