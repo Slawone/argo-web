@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation"
 
-const ruMap = {
+const ruMap = { 
   documents: "Документы",
   storage: "Хранение",
 };

@@ -15,8 +15,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #000000;
+    --foreground: #ffffff;
   }
 }
 
@@ -63,4 +63,16 @@ body {
 
 .main-text {
   @apply text-sm font-light leading-5 md:text-base md:leading-6 lg:text-lg lg:leading-7.5;
+}
+
+.button {
+  @apply h-8 md:h-10 border rounded-xl px-4 md:px-6 gap-2  font-sans font-light cursor-pointer md:hover:scale-105 transition-all;
+}
+
+.button-primary {
+  @apply bg-[#171717] dark:bg-[#ededed] text-white dark:text-[#0a0a0a] hover:bg-[#383838] dark:hover:bg-[#ccc];
+}
+
+.button-secondary {
+  @apply border-black/8 text-[#0a0a0a] dark:text-white hover:border-transparent hover:bg-black/4 dark:border-white/[.145] dark:hover:bg-[#1a1a1a];
 }

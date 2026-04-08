@@ -38,7 +38,7 @@ export const InputField = ({ id, label, type = "text", form, setForm, errors }) 
           unmask={false}
           placeholder="+7 (___) ___-__-__"
           inputRef={inputRef}
-          className="w-full p-3 pl-5 border rounded-full focus:outline-none transition-colors title-color"
+          className="w-full p-2 pl-5 border rounded-xl focus:outline-none transition-colors title-color"
         />
       ) : (
         <input
@@ -47,7 +47,7 @@ export const InputField = ({ id, label, type = "text", form, setForm, errors }) 
           value={form[id]}
           onChange={(e) => setForm((prev) => ({ ...prev, [id]: e.target.value }))}
           placeholder={type === "email" ? "example@mail.ru" : ""}
-          className={`w-full p-3 pl-5 border rounded-full focus:outline-none focus:ring-2 transition-colors title-color ${errors[id] ? "border-red-500 focus:ring-red-300" : "border-gray-300 focus:ring-blue-300"
+          className={`w-full p-2 pl-5 border rounded-xl focus:outline-none focus:ring-2 transition-colors title-color ${errors[id] ? "border-red-500 focus:ring-red-300" : "border-gray-300 focus:ring-blue-300"
             }`}
         />
       )}
