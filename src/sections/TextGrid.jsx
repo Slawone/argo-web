@@ -15,11 +15,11 @@ export const TextGrid = ({ items }) => {
       viewport={{ once: true }}
       className="section-border"
     >
-      <div className="grid md:grid-cols-2 font-sans main-text relative">
-        {items.map(item => (
+      <div className="grid md:grid-cols-2 font-sans main-text">
+        {items.map((item, index) => (
           <div
             key={item.title}
-            className="px-5 py-10 flex flex-col justify-start border-b last-of-type:border-b-0 border-black/8 dark:border-white/14 md:border-b-0 md:odd:border-r md:nth-[-n+2]:border-b"
+            className="px-5 py-10 flex flex-col justify-start border-b last-of-type:border-b-0 border-black/8 dark:border-white/14 md:border-b-0 md:odd:border-r md:nth-[-n+2]:border-b relative"
           >
             <motion.h3
               variants={textVariants}
@@ -33,11 +33,13 @@ export const TextGrid = ({ items }) => {
             >
               {item.label}
             </motion.p>
+            {index === 0 && (
+              <Plus
+                className="absolute text-color right-0 bottom-0 translate-x-1/2 translate-y-1/2"
+              />
+            )}
           </div>
         ))}
-        <Plus
-          className="absolute text-color right-[-12] bottom-[-12] md:right-1/2 md:bottom-1/2 md:translate-x-1/2 md:translate-y-1/2"
-        />
       </div>
     </motion.section>
   );
