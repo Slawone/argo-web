@@ -21,13 +21,13 @@ export const Footer = () => {
         <div className="pl-4">
           <motion.h4
             variants={textVariants}
-            className="text-black dark:text-white font-sans mb-2 md:text-[18px]"
+            className="title-color font-sans mb-2 md:text-[18px]"
           >
             Компания
           </motion.h4>
           <motion.ul
             variants={itemVariants}
-            className="text-zinc-600 dark:text-zinc-400 font-sans text-sm md:text-[18px] font-light flex flex-col gap-2"
+            className="text-color font-sans text-sm md:text-[18px] font-light flex flex-col gap-2"
           >
             <li>
               <span>ООО «АРГО ТЕХНОЛОДЖИ ИСТ»</span>
@@ -45,8 +45,10 @@ export const Footer = () => {
                 эт. 7, комн. 709
               </span>
             </li>
-            <li className="hover:translate-x-1 transition hover:text-black dark:hover:text-white">
-              <a href="tel:84994300054">8 (499) 430 00 54</a>
+            <li>
+              <a href="tel:+74994300054" className="lg:pointer-events-none">
+                8 <span>(499)</span> 430 00 54
+              </a>
             </li>
             <li className="hover:translate-x-1 transition hover:text-black dark:hover:text-white">
               <a href="mailto:info@argo.tech">E-mail: info@argo.tech</a>
@@ -56,13 +58,13 @@ export const Footer = () => {
         <div className="pl-4">
           <motion.h4
             variants={textVariants}
-            className="text-black font-sans dark:text-white mb-2 md:text-[18px]"
+            className="title-color font-sans mb-2 md:text-[18px]"
           >
             Социальные сети
           </motion.h4>
           <motion.ul
             variants={itemVariants}
-            className="text-zinc-600 dark:text-zinc-400 text-sm font-sans md:text-[18px] font-light flex flex-col gap-2"
+            className="text-color text-sm font-sans md:text-[18px] font-light flex flex-col gap-2"
           >
             <li className="hover:translate-x-1 transition hover:text-black dark:hover:text-white">
               <a
@@ -82,7 +84,10 @@ export const Footer = () => {
               </a>
             </li>
             <li className="hover:translate-x-1 transition hover:text-black dark:hover:text-white">
-              <a href="https://companies.rbc.ru/id/1165007052583-argotech/" target="_blank">
+              <a
+                href="https://companies.rbc.ru/id/1165007052583-argotech/"
+                target="_blank"
+              >
                 РБК Компании
               </a>
             </li>
