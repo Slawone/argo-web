@@ -9,3 +9,4 @@ export { ArgoChat } from './ArgoChat';
 export { World } from './World';
 export { Active } from './Active';
 export { AiArgo } from './AiArgo';
+export { Lines } from './Lines';
