@@ -6,3 +6,4 @@ export { OrderForm } from './OrderForm';
 export { Accordian } from './Accordian';
 export { Metrika } from './Metrika';
 export { ThemedSvg } from './ThemedSvg';
+export { CookieBanner } from './CookieBanner';

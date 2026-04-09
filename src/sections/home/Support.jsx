@@ -13,7 +13,7 @@ export const Support = () => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className="relative section-border font-sans main-text text-color"
+      className="relative page-container section-border font-sans main-text text-color"
     >
       <motion.h3
         variants={textVariants}

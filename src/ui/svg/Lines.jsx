@@ -342,9 +342,10 @@ const DarkLines = (props) => {
   );
 };
 
-export const Lines = () => {
+export const Lines = ({ className }) => {
   return (
     <ThemedSvg
+      className={className}
       lightSvg={LightLines}
       darkSvg={DarkLines}
     />

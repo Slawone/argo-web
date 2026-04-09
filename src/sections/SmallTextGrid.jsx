@@ -13,7 +13,7 @@ export const SmallTextGrid = ({ items }) => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className="section-border"
+      className="page-container section-border"
     >
       <div className="grid md:grid-cols-3 font-sans text-color main-text relative">
         <motion.div

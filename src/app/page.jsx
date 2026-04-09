@@ -6,8 +6,8 @@ export default function Home() {
 
   return (
     <>
-      <div className="flex items-center justify-center font-sans bg-white dark:bg-black">
-        <main className="page-container">
+      <div className="font-sans bg-white dark:bg-black">
+        <main>
           <News />
           <Hero />
           <Tabs />

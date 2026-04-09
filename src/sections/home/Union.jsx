@@ -13,7 +13,7 @@ export const Union = () => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className="section-border text-color font-sans px-4 grid md:grid-cols-[7fr_5fr] items-stretch"
+      className="page-container section-border text-color font-sans px-4 grid md:grid-cols-[7fr_5fr] items-stretch"
     >
       <div className="py-5 md:py-10 md:pr-4 md:border-r md:border-r-black/8 md:dark:border-r-white/14 h-full flex flex-col  justify-end">
         <div className="mb-5">

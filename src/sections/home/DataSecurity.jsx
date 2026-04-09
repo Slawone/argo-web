@@ -13,7 +13,7 @@ export const DataSecurity = () => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className="text-color main-text section-border grid md:grid-cols-2"
+      className="page-container text-color main-text section-border grid md:grid-cols-2"
     >
       <div className="py-5 px-4 grid grid-rows-[auto_1fr] md:border-r border-black/8 dark:border-white/14 md:py-10 md:px-4">
         <div className="">

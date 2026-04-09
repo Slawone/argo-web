@@ -139,7 +139,7 @@ export const Tabs = () => {
   const containerRef = useRef(null);
 
   return (
-    <section className="section-border mx-auto relative font-sans">
+    <section className="page-container section-border mx-auto relative font-sans">
       <div className="md:grid md:grid-cols-[7fr_5fr] relative">
         {/* left */}
         <span className="absolute left-4 top-5 hidden md:block text-[12px] md:text-sm text-[#00B6CC] border rounded-full px-4 py-2 uppercase">

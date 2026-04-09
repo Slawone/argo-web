@@ -102,7 +102,7 @@ export const Compound = () => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className="section-border"
+      className="page-container section-border"
     >
       <div className="relative">
         <div className="grid lg:grid-cols-[5fr_7fr]">

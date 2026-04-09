@@ -15,7 +15,7 @@ export const AboutSection = () => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className="section-border text-color font-sans px-4 grid md:grid-cols-[7fr_5fr] items-start"
+      className="page-container section-border text-color font-sans px-4 grid md:grid-cols-[7fr_5fr] items-start"
     >
       <div className="py-5 md:py-10 md:border-r md:border-r-black/8 md:dark:border-r-white/14">
         <div className="w-25 md:w-30 text-center text-[12px] md:text-sm text-[#00B6CC] border rounded-full px-4 py-2 uppercase mb-5">

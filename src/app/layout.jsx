@@ -4,8 +4,8 @@ import { IBM_Plex_Sans, Oswald } from "next/font/google";
 import { Header } from "@/widgets";
 import { Footer } from "@/widgets";
 import { Metrika } from "@/components";
+import { CookieBanner } from "@/components";
 import "./globals.css";
-import { CookieBanner } from "../components/CookieBanner";
 
 const ibmPlexSans = IBM_Plex_Sans({
   variable: "--font-ibm-sans",

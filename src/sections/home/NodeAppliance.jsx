@@ -14,7 +14,7 @@ export const NodeAppliance = () => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className="section-border font-sans main-text text-color px-4 pt-5 md:pt-10"
+      className="page-container section-border font-sans main-text text-color px-4 pt-5 md:pt-10"
     >
       <motion.h2
         variants={textVariants}

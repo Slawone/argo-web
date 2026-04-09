@@ -13,7 +13,7 @@ export const TextGrid = ({ items }) => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className="section-border"
+      className="page-container section-border"
     >
       <div className="grid md:grid-cols-2 font-sans main-text">
         {items.map((item, index) => (

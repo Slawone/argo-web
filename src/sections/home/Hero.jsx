@@ -2,13 +2,13 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { motion } from "framer-motion";
-import { Button } from "@/ui";
-import { OrderForm } from "@/components";
 import { motionVariants } from "@/config";
+import { OrderForm } from "@/components";
+import { Button } from "@/ui";
+import { Lines } from "@/ui/svg";
 
-export function Hero() {
+export function Hero({ className }) {
   const { containerVariants, itemVariants, textVariants, imageVariants } =
     motionVariants;
 
@@ -20,24 +20,22 @@ export function Hero() {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className="section-border px-4 dark:bg-[url('/hero-bg.jpg')] bg-cover bg-center relative md:flex md:items-center"
+      className="relative"
     >
-      <div className="absolute inset-0 dark:bg-black/70 z-0"></div>
-
-      <div className="mx-auto flex flex-col items-center md:flex-row md:justify-between">
-        <div className="py-10 md:py-20 relative z-20">
+      <div className="section-py">
+        <div className="flex flex-col items-center px-4">
           <motion.h1
             variants={textVariants}
-            className="font-sans title-color font-bold uppercase mb-5 text-xl md:text-3xl lg:text-4xl xl:text-5xl md:leading-10 xl:leading-16"
+            className="font-sans text-center title-color font-medium uppercase leading-[130%] text-[24px] md:text-7xl mb-2.5 md:mb-5"
           >
             Больше, чем <br /> система хранения данных
           </motion.h1>
           <motion.p
             variants={textVariants}
-            className="max-w-150 mb-10 leading-7.5 text-sm md:text-lg lg:text-xl text-color"
+            className="text-color font-light main-text text-center mb-5 md:mb-10"
           >
             ARGO.TECH разрабатывает сертифицированное программное обеспечение
-            для хранения и обработки данных с 2016 года. Решения для
+            для хранения и обработки <br /> данных с 2016 года. Решения для
             корпоративных и госструктур: безопасность, надежность, соответствие
             стандартам РФ
           </motion.p>
@@ -45,29 +43,15 @@ export function Hero() {
             variants={itemVariants}
             className="flex items-center gap-5"
           >
-            <Link href={"/storage"}>
-              <Button variant="primary">Storage</Button>
-            </Link>
-            <Button variant="secondary" onClick={() => setformOpen(true)}>
+            <Button variant="primary" onClick={() => setformOpen(true)}>
               Связаться
             </Button>
+            <Link href={"/storage"}>
+              <Button variant="secondary">Хранение</Button>
+            </Link>
           </motion.div>
         </div>
-        <motion.div
-          variants={imageVariants}
-          className="relative flex items-center justify-center rounded-full
-            bg-[radial-gradient(circle,rgba(0,182,204,0.6)_0%,rgba(0,182,204,0.6)_35%,transparent_70%)]
-            dark:bg-[radial-gradient(circle,rgba(0,182,204,0.8)_0%,rgba(0,182,204,0.4)_35%,transparent_70%)] z-0"
-        >
-          <Image
-            src="/triangle.svg"
-            alt="triangle"
-            width={320}
-            height={180}
-            priority
-            className="relative z-10 mb-20 md:mb-0 w-55 md:w-80 h-auto"
-          />
-        </motion.div>
+        <Lines className="md:-mt-10 w-screen" />
       </div>
       <OrderForm isOpen={formOpen} onClose={() => setformOpen(false)} />
     </motion.section>

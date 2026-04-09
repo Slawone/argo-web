@@ -18,7 +18,7 @@ export const Info = ({ text }) => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className="section-border section-py text-center font-sans text-base md:text-[28px] relative"
+      className="page-container section-border section-py text-center font-sans text-base md:text-[28px] relative"
     >
       <motion.p variants={textVariants}>
         <span className="text-black dark:text-white font-bold uppercase text-sm md:text-[24px]">
