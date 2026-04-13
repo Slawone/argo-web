@@ -10,6 +10,7 @@ const LightLines = (props) => {
       viewBox="0 0 1440 296"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      style={{width: '100%'}}
       {...props}
     >
       <path
@@ -125,6 +126,7 @@ const DarkLines = (props) => {
       viewBox="0 0 1440 296"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      style={{ width: "100%" }}
       {...props}
     >
       <g filter="url(#filter0_f_460_126)">
