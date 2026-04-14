@@ -30,7 +30,7 @@ export default function DocumentsPage() {
             </span>
             <a
               className="py-5 px-5"
-              href="/docs/Арго_Реквизиты__2026.pdf"
+              href="/documents/Арго_Реквизиты__2026.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -73,7 +73,7 @@ export default function DocumentsPage() {
             </span>
             <a
               className="py-5 px-5"
-              href="/docs/Данные_о_наличии_исключительных_прав_на_программное_обеспечение.pdf"
+              href="/documents/Данные_о_наличии_исключительных_прав_на_программное_обеспечение.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -87,7 +87,7 @@ export default function DocumentsPage() {
             </span>
             <a
               className="py-5 px-5"
-              href="/docs/Политика_о_защите,_хранении,_обработке_и_передаче_персональных_данных.pdf"
+              href="/documents/Политика_о_защите,_хранении,_обработке_и_передаче_персональных_данных.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -109,7 +109,7 @@ export default function DocumentsPage() {
             </span>
             <a
               className="py-5 px-5"
-              href="/docs/Информация_о_реализуемых_продуктах,_оказываемых_услугах_или_работах.pdf"
+              href="/documents/Информация_о_реализуемых_продуктах,_оказываемых_услугах_или_работах.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -125,7 +125,7 @@ export default function DocumentsPage() {
             </span>
             <a
               className="py-5 px-5"
-              href="/docs/Достоверная_информация_о_стоимости_Прайс_Лист_открытый_2026.pdf"
+              href="/documents/Достоверная_информация_о_стоимости_Прайс_Лист_открытый_2026.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -141,7 +141,7 @@ export default function DocumentsPage() {
             </span>
             <a
               className="py-5 px-5"
-              href="/docs/Описание_технологического_стека_используемые_языки_программирования.pdf"
+              href="/documents/Описание_технологического_стека_используемые_языки_программирования.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
