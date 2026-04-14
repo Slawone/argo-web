@@ -55,7 +55,7 @@ export const AboutSection = () => {
           </a>
           <Link
             className="button button-primary flex-center"
-            href={"/documents"}
+            href={"/docs"}
           >
             Для МИНЦИФРЫ <ExternalLink width={18} height={18} />
           </Link>
