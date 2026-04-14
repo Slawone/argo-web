@@ -10,3 +10,4 @@ export { World } from './World';
 export { Active } from './Active';
 export { AiArgo } from './AiArgo';
 export { Lines } from './Lines';
+export { Pools } from './Pools';

@@ -14,3 +14,5 @@ export { TopServices } from './svg';
 export { ArgoStorage } from './svg';
 export { ArgoForm } from './svg';
 export { ArgoChat } from './svg';
+export { Lines } from './svg';
+export { Pools } from './svg';

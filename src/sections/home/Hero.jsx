@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { motionVariants } from "@/config";
 import { OrderForm } from "@/components";
 import { Button } from "@/ui";
-import { Lines } from "@/ui/svg";
+import { Lines } from "@/ui";
 
 export function Hero({ className }) {
   const { containerVariants, itemVariants, textVariants, imageVariants } =
