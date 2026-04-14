@@ -55,7 +55,7 @@ export const Header = () => {
           : "border-b-0 shadow-none",
       )}
     >
-      <div className="flex max-w-7xl h-full mx-auto px-4 gap-10 items-center">
+      <div className="flex page-container h-full gap-10 items-center">
         <Link href={"/"}>
           <Logo />
         </Link>
