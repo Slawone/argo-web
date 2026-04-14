@@ -4,7 +4,7 @@ import {cn} from "@/utils";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 
-export default function ThemeToggleFooter() {
+export default function ThemeToggleFooter({ className }) {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
@@ -14,11 +14,124 @@ export default function ThemeToggleFooter() {
 
   const isActive = (value) => mounted && theme === value;
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    })
+  }
+
   return (
     <div
       aria-label="Theme selector"
-      className="flex w-fit p-0.75 rounded-full border border-solid border-[hsla(0,0%,92%,1)] dark:border-[hsla(0,0%,18%,1)]"
+      className={cn(
+        "flex w-fit p-0.75 rounded-xl border border-solid border-[hsla(0,0%,92%,1)] dark:border-[hsla(0,0%,18%,1)]",
+        className,
+      )}
     >
+      {/* System */}
+      {/* <button
+        type="button"
+        disabled={!mounted}
+        aria-pressed={isActive("system")}
+        onClick={() => mounted && setTheme("system")}
+        className={cn(
+          "cursor-pointer rounded-[inherit] w-8 h-8 flex justify-center items-center transition-colors",
+          mounted ? "cursor-pointer" : "cursor-default pointer-events-none",
+          isActive("system")
+            ? "bg-[hsla(0,0%,90%,1)] dark:bg-[hsla(0,0%,16%,1)] text-[#111] dark:text-[#fafafa]"
+            : "text-[hsla(0,0%,40%,1)] dark:text-[hsla(0,0%,63%,1)] hover:text-[#111] dark:hover:text-[#fafafa]",
+        )}
+      >
+        <svg viewBox="0 0 16 16" width="16" height="16">
+          <path
+            fill="currentColor"
+            fillRule="evenodd"
+            d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8.5a1 1 0 0 1-1 1H8.75v3h1.75V16h-5v-1.5h1.75v-3H1a1 1 0 0 1-1-1zm1.5.5V10h13V2.5z"
+            clipRule="evenodd"
+          ></path>
+        </svg>
+      </button> */}
+
+      {/* Up Button */}
+
+      <button
+        onClick={scrollToTop}
+        className={cn(
+          "cursor-pointer rounded-[inherit] w-8 h-8 flex justify-center items-center transition-colors",
+        )}
+      >
+        <svg
+          viewBox="0 0 16 16"
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M10.2866 6.36399L14.2866 0.636719L10.2866 6.36399Z"
+            fill="#A1A1A1"
+          />
+          <path
+            d="M10.2866 6.36399L14.2866 0.636719"
+            stroke="#00B6CC"
+            stroke-width="0.844246"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M11.999 9.54492L17.999 10.8176L11.999 9.54492Z"
+            fill="#A1A1A1"
+          />
+          <path
+            d="M11.999 9.54492L17.999 10.8176"
+            stroke="#FF00E6"
+            stroke-width="0.844246"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M11.4287 7.63725L18.0002 5.0918L11.4287 7.63725Z"
+            fill="#00FF66"
+          />
+          <path
+            d="M11.4287 7.63725L18.0002 5.0918"
+            stroke="#00FF66"
+            stroke-width="0.844246"
+            stroke-linejoin="round"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M7.02365 1.99341L8.00002 0L8.97638 1.99341L13.9221 12.0909L14.8572 14H12.9045H3.09558H1.14286L2.07792 12.0909L3.79221 8.59091H0L0 6.68182H4.72728L7.02365 1.99341ZM4.03065 12.0909L8.00002 3.98681L11.9694 12.0909H4.03065Z"
+            fill="#A1A1A1"
+          />
+        </svg>
+      </button>
+
+      {/* Dark */}
+      <button
+        type="button"
+        disabled={!mounted}
+        aria-pressed={isActive("dark")}
+        onClick={() => mounted && setTheme("dark")}
+        className={cn(
+          "cursor-pointer rounded-[inherit] w-8 h-8 flex justify-center items-center transition-colors",
+          mounted ? "cursor-pointer" : "cursor-default pointer-events-none",
+          isActive("dark")
+            ? "bg-[hsla(0,0%,90%,1)] dark:bg-[hsla(0,0%,16%,1)] text-[#111] dark:text-[#fafafa]"
+            : "text-[hsla(0,0%,40%,1)] dark:text-[hsla(0,0%,63%,1)] hover:text-[#111] dark:hover:text-[#fafafa]",
+        )}
+      >
+        {/* Moon Icon */}
+        <svg viewBox="0 0 16 16" width="16" height="16">
+          <path
+            fill="currentColor"
+            fillRule="evenodd"
+            d="M1.5 8a6 6 0 0 1 3.62-5.51 7 7 0 0 0 7.08 9.25A5.99 5.99 0 0 1 1.5 8M6.42.58a7.5 7.5 0 1 0 7.96 10.41l-.92-1.01a5.5 5.5 0 0 1-6.3-8.25zm6.83.42v1.75H15v1.5h-1.75V6h-1.5V4.25H10v-1.5h1.75V1z"
+            clipRule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
       {/* light Button */}
       <button
         type="button"
@@ -48,56 +161,6 @@ export default function ThemeToggleFooter() {
               <rect width="16" height="16" fill="white"></rect>
             </clipPath>
           </defs>
-        </svg>
-      </button>
-
-      {/* System */}
-      <button
-        type="button"
-        disabled={!mounted}
-        aria-pressed={isActive("system")}
-        onClick={() => mounted && setTheme("system")}
-        className={cn(
-          "cursor-pointer rounded-[inherit] w-8 h-8 flex justify-center items-center transition-colors",
-          mounted ? "cursor-pointer" : "cursor-default pointer-events-none",
-          isActive("system")
-            ? "bg-[hsla(0,0%,90%,1)] dark:bg-[hsla(0,0%,16%,1)] text-[#111] dark:text-[#fafafa]"
-            : "text-[hsla(0,0%,40%,1)] dark:text-[hsla(0,0%,63%,1)] hover:text-[#111] dark:hover:text-[#fafafa]",
-        )}
-      >
-        {/* System Icon */}
-        <svg viewBox="0 0 16 16" width="16" height="16">
-          <path
-            fill="currentColor"
-            fillRule="evenodd"
-            d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8.5a1 1 0 0 1-1 1H8.75v3h1.75V16h-5v-1.5h1.75v-3H1a1 1 0 0 1-1-1zm1.5.5V10h13V2.5z"
-            clipRule="evenodd"
-          ></path>
-        </svg>
-      </button>
-
-      {/* Dark */}
-      <button
-        type="button"
-        disabled={!mounted}
-        aria-pressed={isActive("dark")}
-        onClick={() => mounted && setTheme("dark")}
-        className={cn(
-          "cursor-pointer rounded-[inherit] w-8 h-8 flex justify-center items-center transition-colors",
-          mounted ? "cursor-pointer" : "cursor-default pointer-events-none",
-          isActive("dark")
-            ? "bg-[hsla(0,0%,90%,1)] dark:bg-[hsla(0,0%,16%,1)] text-[#111] dark:text-[#fafafa]"
-            : "text-[hsla(0,0%,40%,1)] dark:text-[hsla(0,0%,63%,1)] hover:text-[#111] dark:hover:text-[#fafafa]",
-        )}
-      >
-        {/* Moon Icon */}
-        <svg viewBox="0 0 16 16" width="16" height="16">
-          <path
-            fill="currentColor"
-            fillRule="evenodd"
-            d="M1.5 8a6 6 0 0 1 3.62-5.51 7 7 0 0 0 7.08 9.25A5.99 5.99 0 0 1 1.5 8M6.42.58a7.5 7.5 0 1 0 7.96 10.41l-.92-1.01a5.5 5.5 0 0 1-6.3-8.25zm6.83.42v1.75H15v1.5h-1.75V6h-1.5V4.25H10v-1.5h1.75V1z"
-            clipRule="evenodd"
-          ></path>
         </svg>
       </button>
     </div>

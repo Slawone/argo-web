@@ -38,7 +38,7 @@ export default function ThemeToggle() {
       disabled={!mounted}
       onClick={toggleTheme}
       className={cn(
-        "shrink-0 flex items-center justify-center p-3 rounded-full border-solid transition-colors",
+        "shrink-0 flex items-center justify-center p-3 rounded-xl border-solid transition-colors",
         "border-black/8 dark:border-white/14",
         mounted
           ? "cursor-pointer hover:border-transparent hover:bg-black/4 dark:hover:bg-[#1a1a1a]"
