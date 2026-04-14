@@ -24,7 +24,7 @@ export const metadata = {
   description:
     "ARGO.TECH с 2016 разрабатывает СХД и прикладные ИИ‑решения для бизнеса и госсектора. Все продукты компании в реестре и имеют поддержку до 10 лет.",
   icons: {
-    icon: "/favicon.ico?v=2",
+    icon: "/favicon.ico?v=3",
   }
 };
 
