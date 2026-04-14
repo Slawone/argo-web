@@ -13,6 +13,7 @@ export { Union } from './home/Union';
 export { StorageHero } from './storage/StorageHero';
 export { Compound } from './storage/Compound';
 export { Control } from './storage/Control';
+export { Safety } from './storage/Safety';
 
 export { News } from './News';
 export { TextGrid } from './TextGrid';
