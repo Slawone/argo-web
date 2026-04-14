@@ -13,9 +13,10 @@ const tabs = [
     label: "Storage",
     leftText: (
       <>
-        <a href="https://www.tadviser.ru/index.php/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82:%D0%9E%D0%B1%D1%8A%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F_%D1%81%D1%83%D0%B4%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%BA%D0%BE%D1%80%D0%BF%D0%BE%D1%80%D0%B0%D1%86%D0%B8%D1%8F_%28%D0%9E%D0%A1%D0%9A%29_%28Argo.Tech_Storage_%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81_%D1%85%D1%80%D0%B0%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%29?ysclid=mnmtcx10m0328713095"
-        target="_blank"
-        className="inline-flex items-center gap-1 title-color"
+        <a
+          href="https://www.tadviser.ru/index.php/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82:%D0%9E%D0%B1%D1%8A%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F_%D1%81%D1%83%D0%B4%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%BA%D0%BE%D1%80%D0%BF%D0%BE%D1%80%D0%B0%D1%86%D0%B8%D1%8F_%28%D0%9E%D0%A1%D0%9A%29_%28Argo.Tech_Storage_%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81_%D1%85%D1%80%D0%B0%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%29?ysclid=mnmtcx10m0328713095"
+          target="_blank"
+          className="inline-flex items-center gap-1 title-color"
         >
           Объединённая судостроительная корпорация (ОСК)
           <ExternalLink width={18} height={18} />
@@ -27,12 +28,29 @@ const tabs = [
       </>
     ),
     rightText: (
-      <>
-        Продукты <span className="title-color uppercase">Argo.tech</span>{" "}
-        разрабатываются в России и сопровождаются
-        <span className="title-color uppercase"> до 10 лет</span>, обеспечивая
-        стабильную работу инфраструктуры на всём жизненном цикле.
-      </>
+      <div className="flex flex-col">
+        <p className="text-sm md:text-md lg:text-lg mb-5 text-color md:mb-11 lg:mb-21 font-sans font-light leading-6">
+          Продукты <span className="title-color uppercase">Argo.tech</span>{" "}
+          разрабатываются в России и сопровождаются
+          <span className="title-color uppercase"> до 10 лет</span>, обеспечивая
+          стабильную работу инфраструктуры на всём жизненном цикле.
+        </p>
+        <div className="">
+          <Link href="/storage">
+            <Button variant="primary" className="flex-center">
+              Перейти к продукту
+              <Image
+                className="invert dark:invert-0"
+                src="/stars.svg"
+                alt="Логотип ARGO.TECH"
+                width={20}
+                height={20}
+                priority
+              />
+            </Button>
+          </Link>
+        </div>
+      </div>
     ),
   },
   {
@@ -55,12 +73,12 @@ const tabs = [
       </>
     ),
     rightText: (
-      <>
+      <p className="text-sm md:text-md lg:text-lg mb-5 text-color md:mb-10 font-sans font-light leading-6">
         Экономия места при хранении больших объёмов данных.{" "}
         <span className="title-color font-bold">S3-хранилище</span> работает без
         ограничений по вложенным каталогам и обеспечивает быстрый доступ к
         данным с высокой надёжностью.
-      </>
+      </p>
     ),
   },
   {
@@ -80,10 +98,10 @@ const tabs = [
       </>
     ),
     rightText: (
-      <>
+      <p className="text-sm md:text-md lg:text-lg mb-5 text-color md:mb-10 font-sans font-light leading-6">
         Нам доверяют <span className="title-color font-bold">с 2015 года</span>,
         хранение - управление - обработку и мониторинг систем и вычислений ИИ.
-      </>
+      </p>
     ),
   },
   {
@@ -105,7 +123,7 @@ const tabs = [
       </>
     ),
     rightText: (
-      <>
+      <p className="text-sm md:text-md lg:text-lg mb-5 text-color md:mb-10 font-sans font-light leading-6">
         <a
           className="inline-flex glex-wrap gap-1 title-color"
           href="https://companies.rbc.ru/news/UvW8JznLj8/ii-sokratil-srok-zakryitiya-vakansij-s-28-do-14-dnej/"
@@ -129,7 +147,7 @@ const tabs = [
           <ExternalLink className="w-4 h-4 title-color" />
         </a>{" "}
         повышает эффективность и сокращает издержки.
-      </>
+      </p>
     ),
   },
 ];
@@ -170,14 +188,12 @@ export const Tabs = () => {
               exit={{ opacity: 0, x: -10 }}
               transition={{ duration: 0.4 }}
             >
-              <p className="text-sm md:text-md lg:text-lg mb-5 text-color md:mb-10 font-sans font-light leading-6">
-                {active.rightText}
-              </p>
+              {active.rightText}
             </motion.div>
           </AnimatePresence>
 
           {/* Кнопка показывается только для вкладки storage */}
-          {active.id === "storage" && (
+          {/* {active.id === "storage" && (
             <div className="md:block md:absolute md:bottom-10 md:left-4 md:right-auto mt-6 md:mt-0">
               <Link href="/storage">
                 <Button
@@ -196,7 +212,7 @@ export const Tabs = () => {
                 </Button>
               </Link>
             </div>
-          )}
+          )} */}
         </div>
       </div>
       {/* tabs */}

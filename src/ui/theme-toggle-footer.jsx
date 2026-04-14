@@ -75,8 +75,8 @@ export default function ThemeToggleFooter({ className }) {
           <path
             d="M10.2866 6.36399L14.2866 0.636719"
             stroke="#00B6CC"
-            stroke-width="0.844246"
-            stroke-linejoin="round"
+            strokeWidth="0.844246"
+            strokeLinejoin="round"
           />
           <path
             d="M11.999 9.54492L17.999 10.8176L11.999 9.54492Z"
@@ -85,8 +85,8 @@ export default function ThemeToggleFooter({ className }) {
           <path
             d="M11.999 9.54492L17.999 10.8176"
             stroke="#FF00E6"
-            stroke-width="0.844246"
-            stroke-linejoin="round"
+            strokeWidth="0.844246"
+            strokeLinejoin="round"
           />
           <path
             d="M11.4287 7.63725L18.0002 5.0918L11.4287 7.63725Z"
@@ -95,12 +95,12 @@ export default function ThemeToggleFooter({ className }) {
           <path
             d="M11.4287 7.63725L18.0002 5.0918"
             stroke="#00FF66"
-            stroke-width="0.844246"
-            stroke-linejoin="round"
+            strokeWidth="0.844246"
+            strokeLinejoin="round"
           />
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M7.02365 1.99341L8.00002 0L8.97638 1.99341L13.9221 12.0909L14.8572 14H12.9045H3.09558H1.14286L2.07792 12.0909L3.79221 8.59091H0L0 6.68182H4.72728L7.02365 1.99341ZM4.03065 12.0909L8.00002 3.98681L11.9694 12.0909H4.03065Z"
             fill="#A1A1A1"
           />
