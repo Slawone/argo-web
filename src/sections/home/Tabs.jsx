@@ -175,23 +175,27 @@ export const Tabs = () => {
               </p>
             </motion.div>
           </AnimatePresence>
+
+          {/* Кнопка показывается только для вкладки storage */}
           {active.id === "storage" && (
-            <Link href="/storage">
-              <Button
-                variant="primary"
-                className="lg:max-w-1/2 md:absolute bottom-10 flex-center"
-              >
-                Перейти к продукту
-                <Image
-                  className="invert dark:invert-0"
-                  src="/stars.svg"
-                  alt="Логотип ARGO.TECH"
-                  width={20}
-                  height={20}
-                  priority
-                />
-              </Button>
-            </Link>
+            <div className="md:block md:absolute md:bottom-10 md:left-4 md:right-auto mt-6 md:mt-0">
+              <Link href="/storage">
+                <Button
+                  variant="primary"
+                  className="flex-center"
+                >
+                  Перейти к продукту
+                  <Image
+                    className="invert dark:invert-0"
+                    src="/stars.svg"
+                    alt="Логотип ARGO.TECH"
+                    width={20}
+                    height={20}
+                    priority
+                  />
+                </Button>
+              </Link>
+            </div>
           )}
         </div>
       </div>
