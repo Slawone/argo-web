@@ -12,6 +12,7 @@ export { Union } from './home/Union';
 /* storage */
 export { StorageHero } from './storage/StorageHero';
 export { Compound } from './storage/Compound';
+export { Control } from './storage/Control';
 
 export { News } from './News';
 export { TextGrid } from './TextGrid';

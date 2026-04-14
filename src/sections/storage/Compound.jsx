@@ -110,7 +110,7 @@ export const Compound = () => {
           <div className="flex flex-col items-start gap-8 font-light section-py px-4 md:border-r md:border-r-black/8 md:dark:border-white/14">
             <motion.h2
               variants={textVariants}
-              className="text-base md:text-xl lg:text-[28px]font-light uppercase leading-none title-color"
+              className="text-base md:text-xl lg:text-[28px] font-light uppercase leading-none title-color"
             >
               Состав
             </motion.h2>
