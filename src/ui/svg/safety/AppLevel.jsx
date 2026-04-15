@@ -1,6 +1,6 @@
 export const AppLevel = () => {
   return (
-    <svg width="478" height="354" viewBox="0 0 478 354" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="0 0 478 354" fill="none" xmlns="http://www.w3.org/2000/svg">
       <rect x="1" y="29.8779" width="475.093" height="152.208" rx="10.1472" fill="black" stroke="#1F1F1F" strokeWidth="2" />
       <rect x="27" y="43.5234" width="48.7361" height="48.7361" rx="9.14723" fill="black" />
       <rect x="27" y="43.5234" width="48.7361" height="48.7361" rx="9.14723" stroke="#1F1F1F" strokeWidth="2" />

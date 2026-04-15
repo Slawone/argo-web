@@ -1,6 +1,6 @@
 export const DecisionLevel = () => {
   return (
-    <svg width="809" height="353" viewBox="0 0 809 353" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="0 0 809 353" fill="none" xmlns="http://www.w3.org/2000/svg">
       <rect x="1" y="201.191" width="806.949" height="150.207" rx="9.14709" fill="black" stroke="#1F1F1F" strokeWidth="2" />
       <rect x="26.3677" y="213.875" width="175.574" height="48.7355" rx="9.14709" fill="black" />
       <rect x="26.3677" y="213.875" width="175.574" height="48.7355" rx="9.14709" stroke="#EDEDED" strokeWidth="2" />

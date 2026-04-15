@@ -1,6 +1,6 @@
 export const SiteLevel = () => {
   return (
-    <svg width="478" height="697" viewBox="0 0 478 697" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="0 0 478 697" fill="none" xmlns="http://www.w3.org/2000/svg">
       <rect x="2" y="375.34" width="471.07" height="150.218" rx="9.14789" fill="black" stroke="#1F1F1F" strokeWidth="2" />
       <rect x="26.8042" y="388.025" width="175.588" height="48.7394" rx="9.14789" fill="black" />
       <rect x="26.8042" y="388.025" width="175.588" height="48.7394" rx="9.14789" stroke="#1F1F1F" strokeWidth="2" />
