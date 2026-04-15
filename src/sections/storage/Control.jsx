@@ -9,7 +9,8 @@ export const Control = () => {
     motionVariants;
 
   return (
-    <motion.section variants={containerVariants}
+    <motion.section
+      variants={containerVariants}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
@@ -27,10 +28,19 @@ export const Control = () => {
         </div>
         {/* Правая колонка */}
         <div className="flex flex-col items-start gap-8 section-py px-4">
-          <motion.div variants={textVariants} className="text-color text-base font-light">
-            <span className="title-color leading-7.5 text-sm md:text-lg lg:text-xl">Мониторинг системы – </span><br /> статистика, состояние, сервисы, сеть из одного окна
+          <motion.div
+            variants={textVariants}
+            className="text-color main-text font-light"
+          >
+            <span className="title-color text-lg md:text-xl lg:text-2xl md:mb-5">
+              Мониторинг системы –{" "}
+            </span>
+            <br /> статистика, состояние, сервисы, сеть из одного окна
           </motion.div>
-          <motion.div variants={textVariants} className="leading-7.5 text-sm md:text-lg lg:text-xl title-color">
+          <motion.div
+            variants={textVariants}
+            className="leading-7.5 text-sm md:text-lg lg:text-xl title-color"
+          >
             Write Bandwidth: All <span className="accent-color">pools</span>
           </motion.div>
           <Pools />

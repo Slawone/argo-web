@@ -14,7 +14,7 @@ export const Safety = () => {
         <div className="">
           <div className="md:grid md:grid-cols-2 justify-between border-b border-b-black/8 md:dark:border-b-white/14">
             <div className="section-py px-4">
-              <div className="title-color text-lg md:text-xl lg:text-2xl md:mb-5">
+              <div className="title-color text-lg md:text-xl lg:text-2xl md:mb-5 font-light">
                 На уровне приложений
               </div>
 
@@ -29,7 +29,7 @@ export const Safety = () => {
             </div>
           </div>
           <div className="section-py px-4 border-b border-b-black/8 md:dark:border-b-white/14">
-            <div className="title-color text-lg md:text-xl lg:text-2xl md:mb-5">
+            <div className="title-color text-lg md:text-xl lg:text-2xl md:mb-5 font-light">
               На уровне решения
             </div>
 
@@ -42,7 +42,7 @@ export const Safety = () => {
           </div>
           <div className="md:grid md:grid-cols-2 justify-between">
             <div className="section-py px-4">
-              <div className="title-color text-lg md:text-xl lg:text-2xl md:mb-5">
+              <div className="title-color text-lg md:text-xl lg:text-2xl md:mb-5 font-light">
                 На уровне площадки
               </div>
 
