@@ -83,7 +83,5 @@ export const AppLevel = () => {
         </linearGradient>
       </defs>
     </svg>
-
-
   )
 }

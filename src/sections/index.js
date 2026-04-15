@@ -14,6 +14,7 @@ export { StorageHero } from './storage/StorageHero';
 export { Compound } from './storage/Compound';
 export { Control } from './storage/Control';
 export { Safety } from './storage/Safety';
+export { Controllers } from './storage/Controllers';
 
 export { News } from './News';
 export { TextGrid } from './TextGrid';

@@ -1,8 +1,6 @@
 import { Breadcrumbs } from "@/components";
-import { Compound, StorageHero, Info, TextGrid, Faq } from "@/sections";
+import { Compound, Control, StorageHero, Safety, Info, TextGrid, Controllers, Faq } from "@/sections";
 import { textsVariants } from "@/config";
-import { Control } from "@/sections";
-import { Safety } from "@/sections";
 
 export default function Storage() {
   const { textItems3 } = textsVariants;
@@ -18,6 +16,7 @@ export default function Storage() {
           <Info text="Многоконтроллерность повышает отказоустойчивость" />
           <TextGrid items={textItems3} />
           <Safety />
+          <Controllers />
           <Faq />
         </main>
       </div>
