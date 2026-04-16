@@ -1,27 +1,42 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { motionVariants } from "@/config";
 import { AppLevel, DecisionLevel, SiteLevel, Shield, X8 } from "@/ui/svg";
 
 export const Safety = () => {
+  const { containerVariants, textVariants } = motionVariants;
+
   return (
-    <section className="page-container section-border">
+    <motion.section
+      variants={containerVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      className="page-container section-border"
+    >
       <div className="grid md:grid-cols-[4fr_8fr]">
         {/* Левая колонка */}
         <div className="font-light section-py px-4 md:border-r md:border-r-black/8 md:dark:border-white/14">
-          <h2 className="text-base md:text-xl lg:text-[28px] font-light uppercase leading-none title-color sticky top-30">
+          <motion.h2
+            variants={textVariants}
+            className="text-base md:text-xl lg:text-[28px] font-light uppercase leading-none title-color sticky top-30"
+          >
             Надежность
-          </h2>
+          </motion.h2>
         </div>
         {/* Правая колонка */}
         <div className="">
           <div className="md:grid md:grid-cols-2 justify-between border-b border-b-black/8 md:dark:border-b-white/14">
             <div className="section-py px-4">
-              <div className="title-color text-lg md:text-xl lg:text-2xl md:mb-5 font-light">
+              <motion.div variants={textVariants} className="title-color text-lg md:text-xl lg:text-2xl md:mb-5 font-light">
                 На уровне приложений
-              </div>
+              </motion.div>
 
-              <div className="text-color main-text font-light mb-10">
+              <motion.div variants={textVariants} className="text-color main-text font-light mb-10">
                 Без ограничения по функционалу. <br /> Коммутация дисковых полок
                 на базе шины Serial Attached SCSI (SAS)
-              </div>
+              </motion.div>
               <AppLevel />
             </div>
             <div className="section-py px-4 flex justify-center items-center">
@@ -57,6 +72,6 @@ export const Safety = () => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };

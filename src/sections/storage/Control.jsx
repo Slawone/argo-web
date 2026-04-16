@@ -5,8 +5,7 @@ import { motionVariants } from "@/config";
 import { Pools } from "@/ui";
 
 export const Control = () => {
-    const { containerVariants, textVariants } =
-    motionVariants;
+  const { containerVariants, textVariants } = motionVariants;
 
   return (
     <motion.section

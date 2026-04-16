@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 
-export const Initiators = () => {
+export const Initiators = ({ className}) => {
   return (
     <svg
       width="353"
@@ -10,6 +10,7 @@ export const Initiators = () => {
       viewBox="0 0 353 414"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <rect
         x="0.656738"

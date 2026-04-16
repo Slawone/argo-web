@@ -5,7 +5,7 @@ import { motionVariants } from "@/config";
 import { ArgoChat, ArgoForm, ArgoStorage } from "@/ui";
 
 export const Support = () => {
-  const { containerVariants, textVariants, imageVariants } = motionVariants;
+  const { containerVariants, textVariants } = motionVariants;
 
   return (
     <motion.section

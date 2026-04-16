@@ -9,7 +9,7 @@ export default function Storage() {
     <>
       <div className="font-sans bg-white dark:bg-black">
         <main className="">
-          <Breadcrumbs className="page-container pt-2 mb-5 font-light text-color"/>
+          <Breadcrumbs className="page-container pt-2 mb-5 font-light text-color" />
           <StorageHero />
           <Compound />
           <Control />
@@ -17,6 +17,7 @@ export default function Storage() {
           <TextGrid items={textItems3} />
           <Safety />
           <Controllers />
+          <Info text="Данные - опора цифрового сувернитета" />
           <Faq />
         </main>
       </div>

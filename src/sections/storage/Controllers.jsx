@@ -52,8 +52,8 @@ export const Controllers = () => {
           </ul>
         </div>
         {/* right */}
-        <div className="section-py flex justify-center">
-          <Initiators />
+        <div className="section-py flex justify-center px-4">
+          <Initiators className="w-full" />
         </div>
       </div>
     </section>
