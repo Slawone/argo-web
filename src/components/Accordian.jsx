@@ -22,7 +22,7 @@ export const Accordian = ({ items, className }) => {
             onClick={() => toggleAccordion(index)}
             className="flex justify-between items-center w-full cursor-pointer"
           >
-            <div className="font-light title-color text-lg md:text-xl mb-2">
+            <div className="font-light title-color text-lg md:text-xl mb-2 text-left">
               {item.title}
             </div>
             {open === index ? (
