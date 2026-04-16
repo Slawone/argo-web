@@ -114,19 +114,23 @@ export const Compound = () => {
             >
               Состав
             </motion.h2>
-            <motion.p
-              variants={textVariants}
-              className="text-color"
-            >
-              ISCRA OS (Intellectual Scalable Clusterised Appliance) (OpenSolaris Base); ZFS; High
-              Availability Framework; Cluster Framework; Web; Monitoring
+            <motion.p variants={textVariants} className="text-color">
+              ISCRA OS (Intellectual Scalable Clusterised Appliance)
+              (OpenSolaris Base); ZFS; High Availability Framework; Cluster
+              Framework; Web; Monitoring
             </motion.p>
             <a
               href="https://reestr.digital.gov.ru/reestr/307200/"
               target="_blank"
               className="button button-primary flex-center"
             >
-              <Image src="/reestr.svg" width={20} height={20} alt="reestr" className="dark:invert" />
+              <Image
+                src="/reestr.svg"
+                width={20}
+                height={20}
+                alt="reestr"
+                className="dark:invert"
+              />
               Реестр программного обеспечения
             </a>
           </div>
@@ -151,26 +155,40 @@ export const Compound = () => {
                   initial={{ opacity: 0, x: 20 }}
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -20 }}
-                  transition={{ duration: 0.4 }} className="p-5">
+                  transition={{ duration: 0.4 }}
+                  className="p-5"
+                >
                   {tabContent[activeTab]}
                 </motion.div>
               </AnimatePresence>
             </div>
             <div className="flex flex-wrap items-center gap-5">
               <a
-                href="/docs/presentation.pdf"
+                href="/documents/presentation.pdf"
                 target="_blank"
                 className="button button-primary flex-center"
               >
-                <Image src="/download.svg" width={20} height={20} alt="reestr" className="invert dark:invert-0" />
+                <Image
+                  src="/download.svg"
+                  width={20}
+                  height={20}
+                  alt="reestr"
+                  className="invert dark:invert-0"
+                />
                 Presentation
               </a>
               <a
-                href="/docs/options.pdf"
+                href="/documents/options.pdf"
                 target="_blank"
                 className="button button-secondary flex-center"
               >
-                <Image src="/download.svg" width={20} height={20} alt="reestr" className="dark:invert" />
+                <Image
+                  src="/download.svg"
+                  width={20}
+                  height={20}
+                  alt="reestr"
+                  className="dark:invert"
+                />
                 Options
               </a>
             </div>
