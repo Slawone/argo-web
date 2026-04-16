@@ -17,7 +17,7 @@ export const Support = () => {
     >
       <motion.h3
         variants={textVariants}
-        className=" mx-4 text-center mt-5 text-base md:text-xl lg:text-[28px] md:absolute md:w-150 lg:w-200 md:left-1/2 md:-translate-x-1/2 md:mt-7"
+        className="mx-4 text-center mt-5 text-base md:text-xl lg:text-[28px] md:absolute md:w-150 lg:w-200 md:left-1/2 md:-translate-x-1/2 md:mt-7"
       >
         <span className="title-color">
           Расширенная поддержка без лишних затрат.
