@@ -9,6 +9,7 @@ import {
   Controllers,
   Faq,
   Properties,
+  Partnerships,
 } from "@/sections";
 import { textsVariants } from "@/config";
 
@@ -28,6 +29,7 @@ export default function Storage() {
         <Controllers />
         <Properties />
         <Info text="Данные - опора цифрового сувернитета" />
+        <Partnerships />
         <Faq />
       </main>
     </>
