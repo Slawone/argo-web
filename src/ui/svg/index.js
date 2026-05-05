@@ -18,3 +18,4 @@ export { DecisionLevel } from './safety/DecisionLevel';
 export { SiteLevel } from './safety/SiteLevel';
 export { Shield } from './safety/Shield';
 export { X8 } from './safety/X8';
+export { Scaling } from './Scaling';

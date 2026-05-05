@@ -17,6 +17,7 @@ export { Safety } from './storage/Safety';
 export { Controllers } from './storage/Controllers';
 export { Properties } from './storage/Properties';
 export { Partnerships } from './storage/Partnerships';
+export { Scale } from './storage/Scale';
 
 export { News } from './News';
 export { TextGrid } from './TextGrid';

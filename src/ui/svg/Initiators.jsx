@@ -27,7 +27,7 @@ export const Initiators = ({ className }) => {
         rx="7.5"
         className="stroke-black dark:stroke-zinc-50"
         strokeWidth="2"
-        stroke-dasharray="3 3"
+        strokeDasharray="3 3"
         animate={{
           strokeDashoffset: [0, -24],
         }}
@@ -38,8 +38,8 @@ export const Initiators = ({ className }) => {
         }}
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M20.7246 24.4824C21.415 24.4824 21.9746 23.9228 21.9746 23.2324C21.9746 22.5421 21.415 21.9824 20.7246 21.9824C20.0342 21.9824 19.4746 22.5421 19.4746 23.2324C19.4746 23.9228 20.0342 24.4824 20.7246 24.4824ZM20.7246 29.7324C21.415 29.7324 21.9746 29.1728 21.9746 28.4824C21.9746 27.7921 21.415 27.2324 20.7246 27.2324C20.0342 27.2324 19.4746 27.7921 19.4746 28.4824C19.4746 29.1728 20.0342 29.7324 20.7246 29.7324ZM21.9746 33.7324C21.9746 34.4228 21.415 34.9824 20.7246 34.9824C20.0342 34.9824 19.4746 34.4228 19.4746 33.7324C19.4746 33.042 20.0342 32.4824 20.7246 32.4824C21.415 32.4824 21.9746 33.042 21.9746 33.7324ZM24.9746 22.4824H24.2246V23.9824H24.9746H32.4746H33.2246V22.4824H32.4746H24.9746ZM24.9746 27.7324H24.2246V29.2324H24.9746H32.4746H33.2246V27.7324H32.4746H24.9746ZM24.9746 32.9824H24.2246V34.4824H24.9746H32.4746H33.2246V32.9824H32.4746H24.9746Z"
         className="fill-black dark:fill-zinc-50"
       />
@@ -76,8 +76,8 @@ export const Initiators = ({ className }) => {
         className="fill-white dark:fill-[#0A0A0A] stroke-black/8 dark:stroke-white/14"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M33.4942 381.354V383.981H19.0463V379.384H23.6434L25.3946 380.698C25.963 381.124 26.6543 381.354 27.3648 381.354H33.4942ZM17.0761 383.981V379.384V377.414H19.0463H23.8623C24.1465 377.414 24.423 377.506 24.6504 377.677L26.5767 379.122C26.8041 379.292 27.0806 379.384 27.3648 379.384H33.4942H35.4644V381.354V383.981H36.7779L36.5589 385.951L35.789 392.881C35.6042 394.544 34.1986 395.802 32.5254 395.802H20.0151C18.342 395.802 16.9364 394.544 16.7516 392.881L15.9816 385.951L15.7627 383.981H17.0761ZM34.151 385.951H18.3896H17.9639L18.7097 392.664C18.7836 393.329 19.3459 393.832 20.0151 393.832H32.5254C33.1946 393.832 33.7569 393.329 33.8309 392.664L34.5767 385.951H34.151Z"
         fill="#A1A1A1"
       />
@@ -90,8 +90,8 @@ export const Initiators = ({ className }) => {
         className="fill-white dark:fill-[#0A0A0A] stroke-black/8 dark:stroke-white/14"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M133.387 381.354V383.981H118.939V379.384H123.536L125.288 380.698C125.856 381.124 126.547 381.354 127.258 381.354H133.387ZM116.969 383.981V379.384V377.414H118.939H123.755C124.039 377.414 124.316 377.506 124.543 377.677L126.47 379.122C126.697 379.292 126.974 379.384 127.258 379.384H133.387H135.357V381.354V383.981H136.671L136.452 385.951L135.682 392.881C135.497 394.544 134.092 395.802 132.418 395.802H119.908C118.235 395.802 116.829 394.544 116.645 392.881L115.875 385.951L115.656 383.981H116.969ZM134.044 385.951H118.283H117.857L118.603 392.664C118.677 393.329 119.239 393.832 119.908 393.832H132.418C133.088 393.832 133.65 393.329 133.724 392.664L134.47 385.951H134.044Z"
         fill="#A1A1A1"
       />
@@ -105,8 +105,8 @@ export const Initiators = ({ className }) => {
         stroke="#00B6CC"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M233.273 381.354V383.981H218.825V379.384H223.423L225.174 380.698C225.742 381.124 226.434 381.354 227.144 381.354H233.273ZM216.855 383.981V379.384V377.414H218.825H223.641C223.926 377.414 224.202 377.506 224.43 377.677L226.356 379.122C226.583 379.292 226.86 379.384 227.144 379.384H233.273H235.244V381.354V383.981H236.557L236.338 385.951L235.568 392.881C235.383 394.544 233.978 395.802 232.305 395.802H219.794C218.121 395.802 216.716 394.544 216.531 392.881L215.761 385.951L215.542 383.981H216.855ZM233.93 385.951H218.169H217.743L218.489 392.664C218.563 393.329 219.125 393.832 219.794 393.832H232.305C232.974 393.832 233.536 393.329 233.61 392.664L234.356 385.951H233.93Z"
         fill="#00B6CC"
       />
@@ -126,7 +126,7 @@ export const Initiators = ({ className }) => {
           height="62.5404"
           rx="13"
           stroke="white"
-          stroke-width="10"
+          strokeWidth="10"
         />
       </g>
       <g filter="url(#filter1_f_591_22869)">
@@ -145,7 +145,7 @@ export const Initiators = ({ className }) => {
           height="62.5404"
           rx="13"
           stroke="#54FE5A"
-          stroke-width="10"
+          strokeWidth="10"
         />
       </g>
       <rect
@@ -157,8 +157,8 @@ export const Initiators = ({ className }) => {
         className="fill-white dark:fill-[#0A0A0A] stroke-black/8 dark:stroke-white/14"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M233.273 381.354V383.981H218.825V379.384H223.423L225.174 380.698C225.742 381.124 226.434 381.354 227.144 381.354H233.273ZM216.855 383.981V379.384V377.414H218.825H223.641C223.926 377.414 224.202 377.506 224.43 377.677L226.356 379.122C226.583 379.292 226.86 379.384 227.144 379.384H233.273H235.244V381.354V383.981H236.557L236.338 385.951L235.568 392.881C235.383 394.544 233.978 395.802 232.305 395.802H219.794C218.121 395.802 216.716 394.544 216.531 392.881L215.761 385.951L215.542 383.981H216.855ZM233.93 385.951H218.169H217.743L218.489 392.664C218.563 393.329 219.125 393.832 219.794 393.832H232.305C232.974 393.832 233.536 393.329 233.61 392.664L234.356 385.951H233.93Z"
         fill="#00FF66"
       />
@@ -173,12 +173,12 @@ export const Initiators = ({ className }) => {
         rx="8"
         fill="#00450D"
         stroke="#00FF66"
-        stroke-width="20"
+        strokeWidth="20"
         mask="url(#path-21-inside-1_591_22869)"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M233.273 381.354V383.981H218.825V379.384H223.423L225.174 380.698C225.742 381.124 226.434 381.354 227.144 381.354H233.273ZM216.855 383.981V379.384V377.414H218.825H223.641C223.926 377.414 224.202 377.506 224.43 377.677L226.356 379.122C226.583 379.292 226.86 379.384 227.144 379.384H233.273H235.244V381.354V383.981H236.557L236.338 385.951L235.568 392.881C235.383 394.544 233.978 395.802 232.305 395.802H219.794C218.121 395.802 216.716 394.544 216.531 392.881L215.761 385.951L215.542 383.981H216.855ZM233.93 385.951H218.169H217.743L218.489 392.664C218.563 393.329 219.125 393.832 219.794 393.832H232.305C232.974 393.832 233.536 393.329 233.61 392.664L234.356 385.951H233.93Z"
         fill="#00FF66"
       />
@@ -192,8 +192,8 @@ export const Initiators = ({ className }) => {
         stroke="#00FF66"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M233.273 381.354V383.981H218.825V379.384H223.423L225.174 380.698C225.742 381.124 226.434 381.354 227.144 381.354H233.273ZM216.855 383.981V379.384V377.414H218.825H223.641C223.926 377.414 224.202 377.506 224.43 377.677L226.356 379.122C226.583 379.292 226.86 379.384 227.144 379.384H233.273H235.244V381.354V383.981H236.557L236.338 385.951L235.568 392.881C235.383 394.544 233.978 395.802 232.305 395.802H219.794C218.121 395.802 216.716 394.544 216.531 392.881L215.761 385.951L215.542 383.981H216.855ZM233.93 385.951H218.169H217.743L218.489 392.664C218.563 393.329 219.125 393.832 219.794 393.832H232.305C232.974 393.832 233.536 393.329 233.61 392.664L234.356 385.951H233.93Z"
         fill="#00FF66"
       />
@@ -206,8 +206,8 @@ export const Initiators = ({ className }) => {
         className="fill-white dark:fill-[#0A0A0A] stroke-black/8 dark:stroke-white/14"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M333.182 381.354V383.981H318.734V379.384H323.331L325.083 380.698C325.651 381.124 326.342 381.354 327.053 381.354H333.182ZM316.764 383.981V379.384V377.414H318.734H323.55C323.834 377.414 324.111 377.506 324.338 377.677L326.265 379.122C326.492 379.292 326.769 379.384 327.053 379.384H333.182H335.152V381.354V383.981H336.466L336.247 385.951L335.477 392.881C335.292 394.544 333.887 395.802 332.213 395.802H319.703C318.03 395.802 316.624 394.544 316.44 392.881L315.67 385.951L315.451 383.981H316.764ZM333.839 385.951H318.078H317.652L318.398 392.664C318.472 393.329 319.034 393.832 319.703 393.832H332.213C332.883 393.832 333.445 393.329 333.519 392.664L334.265 385.951H333.839Z"
         fill="#A1A1A1"
       />
@@ -219,9 +219,9 @@ export const Initiators = ({ className }) => {
           width="172.54"
           height="172.541"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -240,9 +240,9 @@ export const Initiators = ({ className }) => {
           width="122.54"
           height="122.541"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -262,7 +262,7 @@ export const Initiators = ({ className }) => {
           y2="339.948"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.9999" stop-color="#00FF66" />
+          <stop offset="0.9999" stopColor="#00FF66" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_591_22869"
@@ -272,8 +272,8 @@ export const Initiators = ({ className }) => {
           y2="138.748"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.9999" stop-color="#00FF66" />
-          <stop offset="1" stop-color="#EDEDED" />
+          <stop offset="0.9999" stopColor="#00FF66" />
+          <stop offset="1" stopColor="#EDEDED" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_591_22869"
@@ -283,7 +283,7 @@ export const Initiators = ({ className }) => {
           y2="140.793"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.9999" stop-color="#00FF66" />
+          <stop offset="0.9999" stopColor="#00FF66" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_591_22869"
@@ -293,8 +293,8 @@ export const Initiators = ({ className }) => {
           y2="343.077"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.9999" stop-color="#00FF66" />
-          <stop offset="1" stop-color="#EDEDED" />
+          <stop offset="0.9999" stopColor="#00FF66" />
+          <stop offset="1" stopColor="#EDEDED" />
         </linearGradient>
       </defs>
     </svg>

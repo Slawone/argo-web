@@ -26,7 +26,7 @@ body {
 }
 
 .page-container {
-  @apply max-w-7xl mx-4 xl:mx-auto;
+  @apply max-w-305 mx-4 xl:mx-auto;
 }
 
 .flex-center {
