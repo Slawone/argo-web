@@ -14,8 +14,8 @@ export const Scale = () => {
           </h2>
         </div>
         {/* Правая колонка */}
-        <div className="section-py">
-          <p className="px-4 mb-10 leading-7.5 text-sm md:text-lg lg:text-xl text-color">
+        <div className="">
+          <p className="px-4 mb-10 leading-7.5 font-light text-sm md:text-lg lg:text-xl text-color border-b border-black/8 md:border-white/14 section-py">
             <span className="title-color">Горизонтальное масштабирование</span> позволяет добавлять узлы хранения по
             мере роста данных, без зависимости от аппаратного производителя
           </p>
