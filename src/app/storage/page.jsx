@@ -11,6 +11,7 @@ import {
   Properties,
   Partnerships,
   Scale,
+  StorageInfo,
 } from "@/sections";
 import { textsVariants } from "@/config";
 
@@ -32,6 +33,7 @@ export default function Storage() {
         <Info text="Данные - опора цифрового сувернитета" />
         <Scale />
         <Partnerships />
+        <StorageInfo />
         <Faq />
       </main>
     </>

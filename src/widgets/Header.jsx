@@ -64,7 +64,7 @@ export const Header = () => {
           <Button
             variant="secondary"
             className="hidden md:flex items-center"
-            onClick={() => scrollToElement("footer")}
+            onClick={() => scrollToBottom("footer")}
           >
             Контакты
           </Button>

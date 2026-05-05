@@ -7,7 +7,7 @@ export const Scale = () => {
         {/* Левая колонка */}
         <div className="font-light section-py px-4 md:border-r md:border-r-black/8 md:dark:border-white/14">
           <h2
-            className="text-base md:text-xl lg:text-[28px] font-light uppercase leading-none title-color sticky top-30 flex flex-col gap-12.5"
+            className="text-base md:text-xl lg:text-[28px] font-light uppercase leading-none title-color sticky top-30 flex flex-col gap-6 md:gap-12"
           >
             <span>Масштабируй</span>
             <span className="leading-10 text-[#00FF66]">От террабайта <br /> до зеттабайта</span>
