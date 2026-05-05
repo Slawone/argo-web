@@ -159,7 +159,7 @@ export const OrderForm = ({ isOpen, onClose }) => {
                   <p className="mt-4 text-center text-[14px] title-color leading-4">
                     Нажимая кнопку, вы соглашаетесь с{" "}
                     <a
-                      href="/docs/Политика_о_защите,_хранении,_обработке_и_передаче_персональных_данных.pdf"
+                      href="/documents/Политика_о_защите,_хранении,_обработке_и_передаче_персональных_данных.pdf"
                       className="underline underline-offset-2 hover:text-black/60 dark:hover:text-white/60 transition-colors"
                       target="_blank"
                     >
