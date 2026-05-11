@@ -21,6 +21,26 @@ const faqStorage = [
   },
 ];
 
+const faqAbout = [
+  {
+    title: "Где внедрялись решения компании ARGO.TECH?",
+    answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione distinctio quod vel aperiam fuga corrupti dolores assumenda natus, veritatis et.",
+  },
+  {
+    title: "Рыночная позиция и клиенты?",
+    answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione distinctio quod vel aperiam fuga corrupti dolores assumenda natus, veritatis et.",
+  },
+  {
+    title: "Как стать Вашим партнером?",
+    answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione distinctio quod vel aperiam fuga corrupti dolores assumenda natus, veritatis et.",
+  },
+  {
+    title: "Почему я раньше не слышал о Вас?",
+    answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione distinctio quod vel aperiam fuga corrupti dolores assumenda natus, veritatis et.",
+  },
+];
+
 export const faqVariants = {
   faqStorage,
+  faqAbout,
 };

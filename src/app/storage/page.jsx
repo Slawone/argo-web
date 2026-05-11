@@ -14,9 +14,11 @@ import {
   StorageInfo,
 } from "@/sections";
 import { textsVariants } from "@/config";
+import { faqVariants } from "@/config"
 
 export default function Storage() {
   const { textItems3 } = textsVariants;
+  const { faqStorage } = faqVariants;
 
   return (
     <>
@@ -34,7 +36,7 @@ export default function Storage() {
         <Scale />
         <Partnerships />
         <StorageInfo />
-        <Faq />
+        <Faq variants={faqStorage} />
       </main>
     </>
   );
