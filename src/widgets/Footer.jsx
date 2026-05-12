@@ -18,7 +18,7 @@ export const Footer = () => {
       className="bg-white dark:bg-black text-black dark:text-zinc-50 w-full"
       id="footer"
     >
-      <div className="relative max-w-7xl mx-auto px-4 section-py grid gap-5 md:grid-cols-[2fr_1fr]">
+      <div className="relative max-w-305 mx-auto px-4 section-py grid gap-5 md:grid-cols-[2fr_1fr]">
         <div className="pl-4 xl:pl-0">
           <motion.h4
             variants={textVariants}

@@ -43,7 +43,11 @@ export const Accordian = ({ items, className }) => {
             className={`grid overflow-hidden transition-all duration-300 ${open === index ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}
           >
             <div className="overflow-hidden text-color font-light">
-              {item.answer}
+              {/<\/?[a-z][\s\S]*>/i.test(item.answer) ? (
+                <div dangerouslySetInnerHTML={{ __html: item.answer }} />
+              ) : (
+                <div className="whitespace-pre-line">{item.answer}</div>
+              )}
             </div>
           </div>
         </div>
