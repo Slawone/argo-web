@@ -1,6 +1,6 @@
 import { Breadcrumbs } from "@/components";
 import { AboutHero, Faq } from "@/sections";
-import { faqVariants } from "@/config"
+import { faqVariants } from "@/config";
 
 
 export default function Storage() {
