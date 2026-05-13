@@ -1,4 +1,4 @@
-import { PartnersList, PartnersHero } from "@/sections";
+import { PartnersList, PartnersHero, PartnersTech } from "@/sections";
 import { Breadcrumbs } from "@/components";
 import { partnersLogos } from "@/config";
 
@@ -10,6 +10,7 @@ export default function Partners() {
       <Breadcrumbs className="page-container pt-2 mb-5 font-light text-color" />
       <PartnersHero />
       <PartnersList logos={logos1} />
+      <PartnersTech />
       <PartnersList logos={logos2} />
       <PartnersList logos={logos3} />
     </main>

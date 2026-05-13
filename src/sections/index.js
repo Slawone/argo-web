@@ -23,6 +23,7 @@ export { StorageInfo } from "./storage/StorageInfo";
 /* partners */
 export { PartnersHero } from "./partners/PartnersHero";
 export { PartnersList } from "./partners/PartnersList";
+export { PartnersTech } from "./partners/PartnersTech";
 
 /* about */
 export { AboutHero } from "./about/AboutHero";

@@ -8,8 +8,8 @@ export const PartnersList = ({ logos }) => {
 
   return (
     <section className="page-container section-border relative overflow-hidden section-py">
-      <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-24 bg-gradient-to-r from-white dark:from-black to-transparent" />
-      <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-24 bg-gradient-to-l from-white dark:from-black to-transparent" />
+      <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-24 bg-linear-to-r from-white dark:from-black to-transparent" />
+      <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-24 bg-linear-to-l from-white dark:from-black to-transparent" />
 
       <div className="overflow-hidden">
         <motion.div
@@ -26,7 +26,7 @@ export const PartnersList = ({ logos }) => {
             },
           }}
         >
-          {[...logos, ...logos].map((logo, index) => (
+          {duplicatedLogos.map((logo, index) => (
             <div
               key={index}
               className="flex shrink-0 items-center justify-center px-6"
