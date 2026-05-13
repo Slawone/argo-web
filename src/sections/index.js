@@ -20,6 +20,10 @@ export { Partnerships } from "./storage/Partnerships";
 export { Scale } from "./storage/Scale";
 export { StorageInfo } from "./storage/StorageInfo";
 
+/* partners */
+export { PartnersHero } from "./partners/PartnersHero";
+export { PartnersList } from "./partners/PartnersList";
+
 /* about */
 export { AboutHero } from "./about/AboutHero";
 

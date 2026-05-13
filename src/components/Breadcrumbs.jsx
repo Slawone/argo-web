@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation"
 const ruMap = {
   docs: "Документы",
   storage: "Хранение",
+  partners: "Партнеры",
   about: "О компании"
 };
 
