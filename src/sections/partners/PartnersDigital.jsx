@@ -1,5 +1,44 @@
 import Image from "next/image";
 
+const images = [
+  {
+    source: "/partnersList/beresta.svg",
+    alt: "beresta",
+  },
+  {
+    source: "/partnersList/rosa.svg",
+    alt: "rosa",
+  },
+  {
+    source: "/partnersList/gorizont.svg",
+    alt: "gorizont",
+  },
+  {
+    source: "/partnersList/arena.svg",
+    alt: "arena",
+  },
+  {
+    source: "/partnersList/zu1rt.svg",
+    alt: "zu1rt",
+  },
+  {
+    source: "/partnersList/redos.svg",
+    alt: "redos",
+  },
+  {
+    source: "/partnersList/butinet.svg",
+    alt: "butinet",
+  },
+  {
+    source: "/partnersList/orion.svg",
+    alt: "orion",
+  },
+  {
+    source: "/partnersList/space.svg",
+    alt: "space",
+  },
+];
+
 export const PartnersDigital = () => {
   return (
     <section className="page-container">
@@ -249,8 +288,19 @@ export const PartnersDigital = () => {
           <span className="title-color">Цифровые</span> партнерства
         </p>
       </div>
+      <div className="section-border grid grid-cols-2 md:grid-cols-3 divide-x divide-y divide-black/8 dark:divide-white/14 md:[&>*:nth-child(3n)]:border-r-0">
+        {images.map((item, index) => (
+          <div key={index} className="flex justify-center py-10">
+            <Image
+              src={item.source}
+              alt={item.alt}
+              width={item.source === "/partnersList/rosa.svg" ? 60 : 110}
+              height={50}
+              className="border"
+            />
+          </div>
+        ))}
+      </div>
     </section>
   );
 };
-
-export default PartnersDigital;
