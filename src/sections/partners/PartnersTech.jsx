@@ -1,4 +1,8 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
+import { div } from "framer-motion/client";
 
 const images = [
   {
@@ -29,9 +33,19 @@ const images = [
     source: "/partnersList/triniti.svg",
     alt: "triniti",
   },
+  {
+    source: "/partnersList/loading.svg",
+    alt: "loading",
+  },
+  {
+    source: "/partnersList/loading.svg",
+    alt: "loading",
+  },
 ];
 
 export const PartnersTech = () => {
+  const [imgWidth, setImgWidth] = useState(110);
+
   return (
     <section className="page-container">
       <div className="section-border grid md:grid-cols-[8fr_4fr]">
@@ -137,16 +151,16 @@ export const PartnersTech = () => {
           <span className="title-color">Технологические</span> партнерства
         </p>
       </div>
-      <div className="section-border grid grid-cols-2 md:grid-cols-3">
+      <div className="section-border grid grid-cols-2 md:grid-cols-3 divide-x divide-y divide-black/8 dark:divide-white/14 md:[&>*:nth-child(3n)]:border-r-0">
         {images.map((item, index) => (
           <div
             key={index}
-            className="flex justify-center py-10 [&:not(:last-child)]:border-b [&:not(:nth-child(3n))]:border-r border-black/8 dark:border-white/14"
+            className="flex justify-center py-10"
           >
             <Image
               src={item.source}
               alt={item.alt}
-              width={110}
+              width={item.source === '/partnersList/loading.svg' ? 40 : 110}
               height={50}
             />
           </div>
