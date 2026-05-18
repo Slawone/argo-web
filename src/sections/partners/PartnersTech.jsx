@@ -41,7 +41,6 @@ const images = [
 ];
 
 export const PartnersTech = () => {
-
   return (
     <section className="page-container">
       <div className="section-border grid md:grid-cols-[8fr_4fr]">
@@ -55,11 +54,12 @@ export const PartnersTech = () => {
         </div>
         <div className="section-py px-4 md:flex md:justify-center">
           <svg
-            width="274"
-            height="174"
+            // width="274"
+            // height="174"
             viewBox="0 0 274 174"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            className="w-full"
           >
             <rect
               x="0.5"
@@ -149,55 +149,56 @@ export const PartnersTech = () => {
       </div>
       <div className="section-border grid grid-cols-2 md:grid-cols-3 divide-x divide-y divide-black/8 dark:divide-white/14 md:[&>*:nth-child(3n)]:border-r-0">
         {images.map((item, index) => (
-          <div
-            key={index}
-            className="flex justify-center py-10"
-          >
+          <div key={index} className="flex justify-center py-10">
             <Image
               src={item.source}
               alt={item.alt}
-              width={item.source === '/partnersList/loading.svg' ? 40 : 110}
+              width={item.source === "/partnersList/loading.svg" ? 40 : 110}
               height={50}
             />
           </div>
         ))}
       </div>
       <div className="section-border grid md:grid-cols-3 place-items-stretch">
-  <div className="px-4 py-5 flex flex-col gap-5 md:h-80 lg:h-100">
-    <div className="flex-1 flex items-start justify-center">
-      <Iser className="w-full" />
-    </div>
+        <div className="px-4 py-5 flex flex-col gap-5 md:h-80 lg:h-100">
+          <div className="flex-1 flex items-start justify-center">
+            <Iser className="w-full" />
+          </div>
 
-    <p className="text-color font-light">
-      <span className="title-color">Единая поддержка</span>
-      {" "}на программно-аппаратные комплексы, включённые в реестры.
-      Обновление системы без остановки приложений.
-    </p>
-  </div>
+          <p className="text-color font-light">
+            <span className="title-color">Единая поддержка</span> на
+            программно-аппаратные комплексы, включённые в реестры. Обновление
+            системы без остановки приложений.
+          </p>
+        </div>
 
-  <div className="text-color font-light px-4 py-5 flex flex-col gap-5 md:h-80 lg:h-100 border-black/8 dark:border-white/14 md:border-r md:border-l">
-    <div className="flex-1 flex items-start justify-center">
-      <Software className="w-full" />
-    </div>
+        <div className="text-color font-light px-4 py-5 flex flex-col gap-5 md:h-80 lg:h-100 border-black/8 dark:border-white/14 md:border-r md:border-l">
+          <div className="flex-1 flex items-start justify-center">
+            <Software className="w-full" />
+          </div>
 
-    <p>
-      <span className="title-color">Доступ к решениям</span>
-      {" "}и технической поддержке через партнёрскую сеть в регионах.
-      Локально, быстро, удобно, всегда 24/7.<br className="hidden lg:block" /> <br className="hidden xl:block" />
-    </p>
-  </div>
+          <p>
+            <span className="title-color">Доступ к решениям</span> и технической
+            поддержке через партнёрскую сеть в регионах. Локально, быстро,
+            удобно, всегда 24/7.
+            <br className="hidden lg:block" />{" "}
+            <br className="hidden xl:block" />
+          </p>
+        </div>
 
-  <div className="text-color font-light px-4 py-5 flex flex-col gap-5 md:h-80 lg:h-100">
-    <div className="flex-1 flex items-start justify-center">
-      <Support className="w-full" />
-    </div>
+        <div className="text-color font-light px-4 py-5 flex flex-col gap-5 md:h-80 lg:h-100">
+          <div className="flex-1 flex items-start justify-center">
+            <Support className="w-full" />
+          </div>
 
-    <p>
-      <span className="title-color">Наши продукты</span>
-      {" "}разработаны в России и имеют возможность поставки и в страны ОПЕК+.<br className="hidden md:block" /> <br className="hidden md:block" />
-    </p>
-  </div>
-</div>
+          <p>
+            <span className="title-color">Наши продукты</span> разработаны в
+            России и имеют возможность поставки и в страны ОПЕК+.
+            <br className="hidden md:block" />{" "}
+            <br className="hidden md:block" />
+          </p>
+        </div>
+      </div>
     </section>
   );
 };
