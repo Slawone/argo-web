@@ -1,8 +1,5 @@
-"use client";
-
-import { useState } from "react";
+import { Iser, Software, Support } from "@/ui/svg";
 import Image from "next/image";
-import { div } from "framer-motion/client";
 
 const images = [
   {
@@ -44,7 +41,6 @@ const images = [
 ];
 
 export const PartnersTech = () => {
-  const [imgWidth, setImgWidth] = useState(110);
 
   return (
     <section className="page-container">
@@ -166,6 +162,42 @@ export const PartnersTech = () => {
           </div>
         ))}
       </div>
+      <div className="section-border grid md:grid-cols-3 place-items-stretch">
+  <div className="px-4 py-5 flex flex-col gap-5 md:h-80 lg:h-100">
+    <div className="flex-1 flex items-start justify-center">
+      <Iser className="w-full" />
+    </div>
+
+    <p className="text-color font-light">
+      <span className="title-color">Единая поддержка</span>
+      {" "}на программно-аппаратные комплексы, включённые в реестры.
+      Обновление системы без остановки приложений.
+    </p>
+  </div>
+
+  <div className="text-color font-light px-4 py-5 flex flex-col gap-5 md:h-80 lg:h-100 border-black/8 dark:border-white/14 md:border-r md:border-l">
+    <div className="flex-1 flex items-start justify-center">
+      <Software className="w-full" />
+    </div>
+
+    <p>
+      <span className="title-color">Доступ к решениям</span>
+      {" "}и технической поддержке через партнёрскую сеть в регионах.
+      Локально, быстро, удобно, всегда 24/7.<br className="hidden lg:block" /> <br className="hidden xl:block" />
+    </p>
+  </div>
+
+  <div className="text-color font-light px-4 py-5 flex flex-col gap-5 md:h-80 lg:h-100">
+    <div className="flex-1 flex items-start justify-center">
+      <Support className="w-full" />
+    </div>
+
+    <p>
+      <span className="title-color">Наши продукты</span>
+      {" "}разработаны в России и имеют возможность поставки и в страны ОПЕК+.<br className="hidden md:block" /> <br className="hidden md:block" />
+    </p>
+  </div>
+</div>
     </section>
   );
 };
