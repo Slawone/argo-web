@@ -29,6 +29,7 @@ export { PartnersWork } from "./partners/PartnersWork";
 
 /* about */
 export { AboutHero } from "./about/AboutHero";
+export { Timeline } from "./about/Timeline";
 
 export { News } from "./News";
 export { TextGrid } from "./TextGrid";
