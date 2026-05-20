@@ -1,4 +1,4 @@
-import { PartnersList, PartnersHero, PartnersTech, PartnersDigital } from "@/sections";
+import { PartnersList, PartnersHero, PartnersTech, PartnersDigital, PartnersWork } from "@/sections";
 import { Breadcrumbs } from "@/components";
 import { partnersLogos } from "@/config";
 
@@ -13,6 +13,7 @@ export default function Partners() {
       <PartnersTech />
       <PartnersList logos={logos2} />
       <PartnersDigital />
+      <PartnersWork />
       <PartnersList logos={logos3} />
     </main>
   );

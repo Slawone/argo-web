@@ -25,6 +25,7 @@ export { PartnersHero } from "./partners/PartnersHero";
 export { PartnersList } from "./partners/PartnersList";
 export { PartnersTech } from "./partners/PartnersTech";
 export { PartnersDigital } from "./partners/PartnersDigital";
+export { PartnersWork } from "./partners/PartnersWork";
 
 /* about */
 export { AboutHero } from "./about/AboutHero";
