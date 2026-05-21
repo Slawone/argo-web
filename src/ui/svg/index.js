@@ -22,3 +22,4 @@ export { Scaling } from './Scaling';
 export { Iser } from './partnerTech/Iser';
 export { Software } from './partnerTech/Software';
 export { Support } from './partnerTech/Support';
+export { Separator_1 } from './timeline/Separator_1';
