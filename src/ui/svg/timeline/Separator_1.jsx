@@ -47,7 +47,7 @@ export const Separator_1 = ({ className }) => {
         stroke="#0A0A0A"
         strokeWidth="0.699012"
       />
-      <g clip-path="url(#clip0_1_2228)">
+      <g clipPath="url(#clip0_1_2228)">
         {/* <mask
           id="mask0_1_2228"
           style="mask-type:luminance"

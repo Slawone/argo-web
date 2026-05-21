@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { ExternalLink } from "lucide-react";
 import { cn } from "@/utils";
-import { Separator_1 } from "@/ui/svg";
+import { Help, Separator_1, Separator_2, Separator_3 } from "@/ui/svg";
 
 export const Timeline = () => {
   return (
@@ -84,6 +84,116 @@ export const Timeline = () => {
             </div>
             <div className="flex justify-center">
               <Separator_1 className="w-full md:w-3/4" />
+            </div>
+          </div>
+        </div>
+        <div className="text-color mb-5 md:grid grid-cols-2">
+          <div className="mb-5 text-center">
+            <h3 className="">
+              <span className="title-color">Инновации</span>
+            </h3>
+          </div>
+          <div className="flex flex-col gap-5">
+            <p className="">Где еще может помочь AI.ARGO</p>
+            <Help />
+            <p>
+              <span className="title-color">2021</span> – Создание прототипов
+              государственных облачных платформ для стран-партнёров (ОПЕК+).
+            </p>
+            <div className="flex justify-center">
+              <Separator_2 className="w-full md:w-3/4" />
+            </div>
+            <p>
+              <span className="title-color">2022</span>– Новые партнерства и
+              первые внедрения на оборудовании из списка Минпромторга.
+            </p>
+            <div className="grid grid-cols-3 place-items-center">
+              <Image src="/about/norsi.svg" width={150} height={38} alt="" />
+              <Image src="/about/ctt.svg" width={86} height={38} alt="" />
+              <Image src="/about/openyard.svg" width={150} height={38} alt="" />
+            </div>
+            <p>
+              Соглашение о сотрудничестве с ведущим Дистрибьютером России
+              Treolan (входит в группу «Ланит»)
+            </p>
+            <div className="flex justify-center gap-5">
+              <a
+                className={cn("main-text button button-secondary flex-center")}
+                href="#"
+                target="_blank"
+              >
+                Новость
+                <ExternalLink width={18} height={18} />
+              </a>
+            </div>
+            <p>
+              <span className="title-color">2023</span> – Внесение в реестр как
+              СХД/ПАК (с оборудованием «Гравитон»). Первые поставки в цифровые
+              регионы.Создание ПАК Варя.
+            </p>
+            <div className="grid grid-cols-2 place-items-center">
+              <Image src="/about/graviton.svg" width={215} height={38} alt="" />
+              <Image src="/about/ipdevice.svg" width={215} height={38} alt="" />
+            </div>
+            <p>
+              МТС предлагает корпоративным клиентам российские решения с
+              хранением от ARGO.TECH в составе ПАК Варя
+            </p>
+            <div className="flex justify-center gap-5">
+              <a
+                className={cn("main-text button button-secondary flex-center")}
+                href="#"
+                target="_blank"
+              >
+                Новость
+                <ExternalLink width={18} height={18} />
+              </a>
+            </div>
+            <p>
+              <span className="title-color">2024</span> – Расширение и
+              переработка системы мониторинга. Улучшение механизмов
+              отказоустойчивости. Внесение в реестр универсального ИИ-решения.
+            </p>
+            <div className="grid grid-cols-2 place-items-center">
+              <Image src="/about/loongson.svg" width={215} height={38} alt="" />
+              <Image src="/about/amd.svg" width={88} height={88} alt="" />
+            </div>
+            <p>
+              Рост общей выручки до <span className="title-color">7 млрд рублей</span> 
+            </p>
+            <div className="flex justify-center gap-5">
+              <a
+                className={cn("main-text button button-secondary flex-center")}
+                href="#"
+                target="_blank"
+              >
+                РБК
+                <ExternalLink width={18} height={18} />
+              </a>
+            </div>
+            <p>
+              <span className="title-color">2025</span> – Выделение объектного доступа как самостоятельного решения. Альтернативные аппаратные платформы. Оптимизация производительности. Новая эра партнерств и технологий. Внедрение новых Framework. Создание РБК и Телеграм каналов.
+            </p>
+            <div className="grid grid-cols-3 gap-3 place-items-center">
+              <Image src="/about/kraftway.svg" width={215} height={38} alt="" />
+              <Image src="/about/bitblaze.svg" width={188} height={38} alt="" />
+              <Image src="/about/mirea.svg" width={105} height={75} alt="" />
+            </div>
+            <p>
+              Содружество с ведущим производственным университетом страны МИРЭА
+            </p>
+            <div className="flex justify-center gap-5">
+              <a
+                className={cn("main-text button button-secondary flex-center")}
+                href="#"
+                target="_blank"
+              >
+                Ссылка
+                <ExternalLink width={18} height={18} />
+              </a>
+            </div>
+            <div className="flex justify-center">
+              <Separator_3 className="w-full md:w-3/4" />
             </div>
           </div>
         </div>
