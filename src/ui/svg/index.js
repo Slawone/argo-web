@@ -23,6 +23,8 @@ export { Iser } from './partnerTech/Iser';
 export { Software } from './partnerTech/Software';
 export { Support } from './partnerTech/Support';
 export { Help } from './timeline/Help';
+export { Version } from './timeline/Version';
+export { NewVersion } from './timeline/NewVersion';
 export { Separator_1 } from './timeline/Separator_1';
 export { Separator_2 } from './timeline/Separator_2';
 export { Separator_3 } from './timeline/Separator_3';
