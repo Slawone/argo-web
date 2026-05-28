@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { ExternalLink } from "lucide-react";
-import { Iser, Software, Support } from "@/ui/svg";
 
 const images = [
   {
@@ -73,43 +72,24 @@ export const PartnersTech = () => {
           </div>
         ))}
       </div>
-      <div className="section-border grid md:grid-cols-3 place-items-stretch">
-        <div className="px-4 py-5 flex flex-col gap-5 md:h-80 lg:h-100">
-          <div className="flex-1 flex items-start justify-center">
-            <Iser className="w-full" />
+      <div className="section-border grid md:grid-cols-2">
+        <div className="text-color font-light px-4 py-5 border-black/8 dark:border-white/14 md:border-r">
+          <div className="md:flex justify-center mb-5 h-[176px]">
+            <Image src={"/partners/software.svg"} width={374} height={135} alt="" />
           </div>
 
-          <p className="text-color font-light">
-            <span className="title-color">Единая поддержка</span> на
-            программно-аппаратные комплексы, включённые в реестры. Обновление
-            системы без остановки приложений.
+          <p className="">
+            Гарантийная и сервисная поддержка производится инженерами <span className="title-color">ARGO.TECH</span> и сервисными службами партнёров. Срок предлагаемых пакетов гарантийной поддержки может равняться 1, 3, 5, 10 лет и может быть расширен или продлен при активной сервисной поддержке.
           </p>
         </div>
 
-        <div className="text-color font-light px-4 py-5 flex flex-col gap-5 md:h-80 lg:h-100 border-black/8 dark:border-white/14 md:border-r md:border-l">
-          <div className="flex-1 flex items-start justify-center">
-            <Software className="w-full" />
+        <div className="text-color font-light px-4 py-5">
+          <div className="md:flex justify-center mb-10 md:mb-5 h-[176px]">
+            <Image src={"/partners/support.svg"} width={359} height={176} alt="" />
           </div>
 
-          <p>
-            <span className="title-color">Доступ к решениям</span> и технической
-            поддержке через партнёрскую сеть в регионах. Локально, быстро,
-            удобно, всегда 24/7.
-            <br className="hidden lg:block" />{" "}
-            <br className="hidden xl:block" />
-          </p>
-        </div>
-
-        <div className="text-color font-light px-4 py-5 flex flex-col gap-5 md:h-80 lg:h-100">
-          <div className="flex-1 flex items-start justify-center">
-            <Support className="w-full" />
-          </div>
-
-          <p>
-            <span className="title-color">Наши продукты</span> разработаны в
-            России и имеют возможность поставки и в страны ОПЕК+.
-            <br className="hidden md:block" />{" "}
-            <br className="hidden md:block" />
+          <p className="">
+            <span className="title-color">Наши продукты</span> разработаны в России и имеют возможность поставки и в страны ОПЕК+.  Выбирая наши решения, клиенты из дружественных стран получают не просто продукт, а комплексную систему поддержки на всех этапах - от внедрения до эксплуатации с учетом: международных стандартов качества и безопасности. 
           </p>
         </div>
       </div>
