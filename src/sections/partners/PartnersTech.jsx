@@ -6,30 +6,22 @@ const images = [
   {
     source: "/partnersList/graviton.svg",
     alt: "graviton",
+    link: "https://graviton.ru/catalog/servery-i-khranenie-dannykh/skhd/skhd-graviton-skh424i24bm-ar/",
   },
   {
     source: "/partnersList/norsi.svg",
     alt: "norsi",
-  },
-  {
-    source: "/partnersList/sutinet.svg",
-    alt: "sutinet",
-  },
-  {
-    source: "/partnersList/kraft.svg",
-    alt: "kraft",
-  },
-  {
-    source: "/partnersList/rwd.svg",
-    alt: "rwd",
+    link: "https://servers.nt.ru/catalog/shd/argo-tech-/dvukhkontrollernaya-sistema-khraneniya-dannykh-tiara-a4/?ysclid=mpnp5ueewy708705695",
   },
   {
     source: "/partnersList/depop.svg",
     alt: "depop",
+    link: "https://www.depo.ru/catalog/sistemy-khraneniya-dannykh/",
   },
   {
-    source: "/partnersList/triniti.svg",
-    alt: "triniti",
+    source: "/partnersList/sutinet.svg",
+    alt: "sutinet",
+    link: "https://utinet.ru/?ysclid=mpnp6iafom625954926",
   },
   {
     source: "/partnersList/loading.svg",
@@ -70,12 +62,14 @@ export const PartnersTech = () => {
       <div className="section-border grid grid-cols-2 md:grid-cols-3 divide-x divide-y divide-black/8 dark:divide-white/14 md:[&>*:nth-child(3n)]:border-r-0">
         {images.map((item, index) => (
           <div key={index} className="flex justify-center py-10">
-            <Image
-              src={item.source}
-              alt={item.alt}
-              width={item.source === "/partnersList/loading.svg" ? 40 : 110}
-              height={50}
-            />
+            <a href={item.link} className="flex items-center" target="_blank">
+              <Image
+                src={item.source}
+                alt={item.alt}
+                width={item.source === "/partnersList/loading.svg" ? 40 : 110}
+                height={50}
+              />
+            </a>
           </div>
         ))}
       </div>
