@@ -13,20 +13,20 @@ import {
 export const Timeline = () => {
   return (
     <section className="section-border page-container section-py relative">
-      <div className="hidden md:block absolute left-[300px] top-0 h-full w-[2px] -translate-x-1/2 rounded-full bg-gradient-to-b from-pink-500 via-purple-500 to-cyan-500" />
+      <div className="hidden md:block absolute left-75 top-0 h-full w-0.5 -translate-x-1/2 rounded-full bg-linear-to-b from-pink-500 via-purple-500 to-cyan-500" />
       <Image
         src="/about/start.svg"
         width={36}
         height={36}
         alt=""
-        className="hidden md:block absolute left-[300px] top-0 -translate-x-1/2 invert dark:invert-0"
+        className="hidden md:block absolute left-75 top-0 -translate-x-1/2 invert dark:invert-0"
       />
       <Image
         src="/about/start.svg"
         width={36}
         height={36}
         alt=""
-        className="hidden md:block absolute left-[300px] bottom-0 -translate-x-1/2 invert dark:invert-0"
+        className="hidden md:block absolute left-75 bottom-0 -translate-x-1/2 invert dark:invert-0"
       />
       <div className="flex flex-col gap-10 px-8">
         <div className="text-color mb-5 md:grid md:grid-cols-[300px_2fr]">
