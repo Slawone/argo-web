@@ -74,7 +74,7 @@ export const PartnersTech = () => {
       </div>
       <div className="section-border grid md:grid-cols-2">
         <div className="text-color font-light px-4 py-5 border-black/8 dark:border-white/14 md:border-r">
-          <div className="md:flex justify-center mb-5 h-[176px]">
+          <div className="md:flex justify-center mb-5 h-44">
             <Image src={"/partners/software.svg"} width={374} height={135} alt="" />
           </div>
 
@@ -84,7 +84,7 @@ export const PartnersTech = () => {
         </div>
 
         <div className="text-color font-light px-4 py-5">
-          <div className="md:flex justify-center mb-10 md:mb-5 h-[176px]">
+          <div className="md:flex justify-center mb-10 md:mb-5 h-44">
             <Image src={"/partners/support.svg"} width={359} height={176} alt="" />
           </div>
 

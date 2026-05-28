@@ -10,7 +10,7 @@ export const PartnersWork = () => {
       </h3>
       <div className="grid md:grid-cols-2 text-center">
         <div className="px-4 py-15 flex flex-col md:items-center gap-2 md:gap-5 md:pt-30 lg:pt-40">
-          <div className="h-[239px]">
+          <div className="h-59.75">
             <Image src="/partnersWork/ai.svg" width={297} height={207} alt="" />
           </div>
           <p className="text-left">
@@ -18,7 +18,7 @@ export const PartnersWork = () => {
           </p>
         </div>
         <div className="border-black/8 dark:border-white/14 md:border-r md:border-l px-4 flex flex-col md:items-center gap-2 md:gap-5 md:pt-30 lg:pt-40">
-          <div className="h-[239px]">
+          <div className="h-59.75">
             <Image
               src="/partnersWork/chat.svg"
               width={352}
