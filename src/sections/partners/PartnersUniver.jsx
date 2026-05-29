@@ -135,17 +135,21 @@ export const PartnersUniver = () => {
           </p>
         </div>
       </div>
-      <div className="section-border relative font-sans font-light text-base grid md:grid-cols-2">
-        <span className="title-color absolute">Совместная</span> разработка и тестирование программных продуктов.
-        <Image
-            src={"/partners/teamdev.svg"}
-            alt="РТУ МИРЭА"
-            width={147}
-            height={95}
-            className="absolute left-1/2 -translate-x-1/2 "
-        />
-        <div className="h-45"></div>
-        <div className="h-45"></div>
+      <div className="section-border relative font-sans font-light text-base">
+        <h3 className="absolute top-5 left-4 md:top-10">
+          <span className="title-color ">Совместная</span> разработка и тестирование программных продуктов.
+        </h3>
+          <Image
+              src={"/partners/teamdev.svg"}
+              alt="РТУ МИРЭА"
+              width={957}
+              height={95}
+              className="max-w-140 md:max-w-170 h-auto px-4 absolute top-1/5 left-1/2 -translate-x-1/2"
+          />
+        <div className="md:grid md:grid-cols-2">
+          <div className="h-35 md:h-90 md:border-r border-black/8 dark:border-white/14"></div>
+          <div className="h-35 md:h-90"></div>
+        </div>
       </div>
       <div className="section-border font-sans font-light text-base grid md:grid-cols-[2fr_8fr] items-center">
         <div className="px-4 section-py md:border-r border-black/8 dark:border-white/14">
