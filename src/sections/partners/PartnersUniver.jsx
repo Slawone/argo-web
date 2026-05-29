@@ -137,15 +137,16 @@ export const PartnersUniver = () => {
       </div>
       <div className="section-border relative font-sans font-light text-base">
         <h3 className="absolute top-5 left-4 md:top-10">
-          <span className="title-color ">Совместная</span> разработка и тестирование программных продуктов.
+          <span className="title-color ">Совместная</span> разработка и
+          тестирование программных продуктов.
         </h3>
-          <Image
-              src={"/partners/teamdev.svg"}
-              alt="РТУ МИРЭА"
-              width={957}
-              height={95}
-              className="max-w-140 md:max-w-170 h-auto px-4 absolute top-1/5 left-1/2 -translate-x-1/2"
-          />
+        <Image
+          src={"/partners/teamdev.svg"}
+          alt="РТУ МИРЭА"
+          width={957}
+          height={95}
+          className="max-w-90 md:max-w-170 h-auto px-4 absolute top-1/3 md:top-1/5 left-1/2 -translate-x-1/2"
+        />
         <div className="md:grid md:grid-cols-2">
           <div className="h-35 md:h-90 md:border-r border-black/8 dark:border-white/14"></div>
           <div className="h-35 md:h-90"></div>
@@ -163,12 +164,75 @@ export const PartnersUniver = () => {
         </div>
         <div className="px-4 section-py">
           <p className="max-w-190">
-            <span className="title-color">НИУ МЭИ</span> — ведущий вуз России в области энергетики, электротехники,
-            радиотехники, электроники и информационных технологий. Между НИУ МЭИ
-            и ARGO.TECH налажена кооперация в области разработки прикладных
-            решений на базе искусственного интеллекта в различных областях
-            промышленности.
+            <span className="title-color">НИУ МЭИ</span> — ведущий вуз России в
+            области энергетики, электротехники, радиотехники, электроники и
+            информационных технологий. Между НИУ МЭИ и ARGO.TECH налажена
+            кооперация в области разработки прикладных решений на базе
+            искусственного интеллекта в различных областях промышленности.
           </p>
+        </div>
+      </div>
+      <div className="border border-black/8 dark:border-white/14 font-sans font-light text-base grid md:grid-cols-2">
+        <div className="section-py px-4 md:border-r border-black/8 dark:border-white/14">
+          <h3 className="mb-5"><span className="title-color">Мы сотрудничаем с ведущими вузами,</span> чтобы:</h3>
+          <ul className="mb-5 flex flex-col gap-5">
+            <li className="flex items-center gap-1">
+              <Image
+                src={"/partners/lightning.svg"}
+                alt=""
+                width={12}
+                height={20}
+                className=""
+              />
+              <p><span className="title-color">внедрять</span> передовые исследования в реальные продукты;</p>
+            </li>
+            <li className="flex items-center gap-1">
+              <Image
+                src={"/partners/lightning.svg"}
+                alt=""
+                width={12}
+                height={20}
+                className=""
+              />
+              <p><span className="title-color">готовить</span> кадры для индустрии ИИ;</p>
+            </li>
+            <li className="flex items-center gap-1">
+              <Image
+                src={"/partners/lightning.svg"}
+                alt=""
+                width={12}
+                height={20}
+                className=""
+              />
+              <p>совместно <span className="title-color">разрабатывать</span> инновационные решения.</p>
+            </li>
+          </ul>
+          <p className="mb-10 md:mb-15">
+            <span className="title-color">Партнёрства с университетами</span> — ключ к технологическому лидерству.
+          </p>
+          <Image
+            src={"/partners/board.svg"}
+            alt=""
+            width={543}
+            height={253}
+            className=""
+          />
+        </div>
+        <div className="section-py px-4">
+          <p className="mb-10 md:mb-50">
+            <span className="title-color">Сотрудничество с университетами: от теории  к продукту.</span>{" "}
+            Наши разработчики ИИ активно 
+            взаимодействуют с университетскими лабораториями и
+            кафедрами, объединяя академическую глубину 
+            и индустриальную эффективность.
+          </p>
+          <Image
+            src={"/partners/argonet.svg"}
+            alt=""
+            width={530}
+            height={206}
+            className=""
+          />
         </div>
       </div>
     </section>
