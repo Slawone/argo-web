@@ -3,8 +3,8 @@ import { ExternalLink } from "lucide-react";
 
 const images = [
   {
-    source: "/partnersList/beresta.svg",
-    alt: "beresta",
+    source: "/partnersList/basealt.svg",
+    alt: "basealt",
   },
   {
     source: "/partnersList/rosa.svg",
@@ -13,7 +13,7 @@ const images = [
   {
     source: "/partnersList/gorizont.svg",
     alt: "gorizont",
-  },
+  }, 
   {
     source: "/partnersList/arena.svg",
     alt: "arena",
@@ -27,16 +27,16 @@ const images = [
     alt: "redos",
   },
   {
-    source: "/partnersList/butinet.svg",
-    alt: "butinet",
+    source: "/partnersList/space.svg",
+    alt: "space",
   },
   {
     source: "/partnersList/orion.svg",
     alt: "orion",
   },
   {
-    source: "/partnersList/space.svg",
-    alt: "space",
+    source: "/partnersList/loading.svg",
+    alt: "loading",
   },
 ];
 
@@ -87,7 +87,7 @@ export const PartnersDigital = () => {
             <Image
               src={item.source}
               alt={item.alt}
-              width={item.source === "/partnersList/rosa.svg" ? 60 : 110}
+              width={item.source === "/partnersList/rosa.svg" || item.source === "/partnersList/loading.svg" ? 60 : 100}
               height={50}
               className="border"
             />
