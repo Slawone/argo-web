@@ -1,19 +1,13 @@
 "use client";
 
-import { useState } from "react";
 import { ExternalLink } from "lucide-react";
-import { OrderForm } from "@/components";
-import { Button } from "@/ui";
+import Image from "next/image";
 
 export const AboutHero = () => {
-  const [formOpen, setformOpen] = useState(false);
-
   return (
     <>
       <section className="page-container section-border">
         <svg
-          // width="1221"
-          // height="441"
           viewBox="0 0 1221 441"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -232,34 +226,6 @@ export const AboutHero = () => {
             className="fill-zinc-600 dark:fill-zinc-400"
             stroke="#0A0A0A"
           />
-          {/* <g clip-path="url(#clip0_0_1)">
-            <mask
-              id="mask0_0_1"
-              style="mask-type:luminance"
-              maskUnits="userSpaceOnUse"
-              x="349"
-              y="194"
-              width="39"
-              height="39"
-            >
-              <path
-                d="M350.557 195.255V231.406H386.708V195.255H350.557Z"
-                fill="white"
-                stroke="white"
-                strokeWidth="1.68313"
-              />
-            </mask>
-            <g mask="url(#mask0_0_1)">
-              <path
-                fillRule="evenodd"
-                clipRule="evenodd"
-                d="M355.64 228.017H357.335V231.406H355.64C352.833 231.406 350.557 229.13 350.557 226.322L350.557 223.498H353.946V226.322C353.946 227.258 354.705 228.017 355.64 228.017ZM359.595 228.017H364.113V231.406H359.595V228.017ZM364.113 195.255L359.595 195.255V198.644H364.113V195.255ZM353.946 200.339V203.163H350.557L350.557 200.339C350.557 197.531 352.833 195.255 355.64 195.255L357.335 195.255V198.644H355.64C354.705 198.644 353.946 199.403 353.946 200.339ZM353.946 221.239V214.46H350.557L350.557 221.239H353.946ZM353.946 205.422V212.201H350.557L350.557 205.422H353.946ZM365.243 226.322C365.243 229.13 367.519 231.406 370.327 231.406H381.624C384.432 231.406 386.708 229.13 386.708 226.322V200.339C386.708 197.531 384.432 195.255 381.624 195.255L370.327 195.255C367.519 195.255 365.243 197.531 365.243 200.339V226.322ZM370.327 228.017C369.391 228.017 368.632 227.258 368.632 226.322V200.339C368.632 199.403 369.391 198.644 370.327 198.644H381.624C382.56 198.644 383.319 199.403 383.319 200.339V226.322C383.319 227.258 382.56 228.017 381.624 228.017H370.327Z"
-                className="fill-zinc-600 dark:fill-zinc-400"
-                stroke="#0A0A0A"
-                strokeWidth="1.68313"
-              />
-            </g>
-          </g> */}
           <line
             x1="420.201"
             y1="195.28"
