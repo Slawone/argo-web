@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import { ExternalLink } from "lucide-react";
 import { OrderForm } from "@/components";
 import { Button } from "@/ui";
-
 
 export const AboutHero = () => {
   const [formOpen, setformOpen] = useState(false);
@@ -420,7 +420,7 @@ export const AboutHero = () => {
           </defs>
         </svg>
       </section>
-      <section className="page-container section-border section-py">
+      {/* <section className="page-container section-border section-py">
         <div className="flex flex-col items-center text-center">
           <h2 className="text-base md:text-xl lg:text-[28px] font-light uppercase leading-none title-color mb-7">Сохраняй своё</h2>
           <p className="text-color main-text font-light mb-7">
@@ -430,6 +430,42 @@ export const AboutHero = () => {
           <Button onClick={() => setformOpen(true)}>Связаться с командой</Button>
         </div>
         <OrderForm isOpen={formOpen} onClose={() => setformOpen(false)} />
+      </section> */}
+      <section
+        className="page-container section-border text-color font-sans px-4 grid md:grid-cols-[7fr_5fr] items-start"
+      >
+        <div className="py-5 md:py-10 md:border-r md:border-r-black/8 md:dark:border-r-white/14">
+          <div className="w-25 md:w-30 text-center text-[12px] md:text-sm text-[#00B6CC] border rounded-full px-4 py-2 uppercase mb-5">
+            Миссия
+          </div>
+          <p
+            className="wrap-balance text-sm md:text-base lg:text-lg font-light leading-6 max-w-162.5"
+          >
+            <span className="title-color">Меняем правила игры:</span> создаем инновационные программные решения, чтобы Российский бизнес работал на собственных технологиях - стабильно, безопасно. эффективно. Мы не просто пишем код - мы строим цифровую инфраструктуру будущего. <span className="title-color">Каждый наш продукт</span> - это шаг к технологической независимости, возможность для компаний работать без сбоев, защищать данные и уверенно развиваться в условиях глобальных вызовов.
+          </p>
+        </div>
+        <div className="py-5 md:py-10 md:pl-4">
+          <div className="w-25 md:w-30 text-center text-[12px] md:text-sm text-[#00B6CC] border rounded-full px-4 py-2 uppercase mb-5 hidden md:block invisible">
+            О Компании
+          </div>
+          <p
+            className="mb-5 text-sm md:text-base lg:text-lg font-light leading-6"
+          >
+            Мы создаем решения с учетом политики импортозамещения и стандартов
+            критической информационной инфраструктуры.
+          </p>
+          <div
+            className="flex items-center gap-5"
+          >
+            <a
+              className="button button-primary flex-center"
+              href="https://www.cnews.ru/news/line/2025-11-20_argotech_vpervye_predstavila?ysclid=mpv1gkokj5920313653"
+              target="_blank"
+            >
+              Подробнее <ExternalLink width={18} height={18} />
+            </a>
+          </div>
+        </div>
       </section>
     </>
   );

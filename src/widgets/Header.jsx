@@ -11,7 +11,7 @@ import ThemeToggle from "@/ui/theme-toggle";
 const navItems = [
   { label: "Хранение", href: "/storage" },
   { label: "Партнеры", href: "/partners" },
-  // { label: "О компании", href: "/about" },
+  { label: "О компании", href: "/about" },
 ];
 
 export const Header = () => {
