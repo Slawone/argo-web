@@ -420,17 +420,6 @@ export const AboutHero = () => {
           </defs>
         </svg>
       </section>
-      {/* <section className="page-container section-border section-py">
-        <div className="flex flex-col items-center text-center">
-          <h2 className="text-base md:text-xl lg:text-[28px] font-light uppercase leading-none title-color mb-7">Сохраняй своё</h2>
-          <p className="text-color main-text font-light mb-7">
-            <span className="title-color">Миссия.</span> Создание инновационных и импортонезависимых программных
-            продуктов <br /> отвечающих современным стандартам и требованиям заказчиков
-          </p>
-          <Button onClick={() => setformOpen(true)}>Связаться с командой</Button>
-        </div>
-        <OrderForm isOpen={formOpen} onClose={() => setformOpen(false)} />
-      </section> */}
       <section
         className="page-container section-border text-color font-sans px-4 grid md:grid-cols-[7fr_5fr] items-start"
       >
