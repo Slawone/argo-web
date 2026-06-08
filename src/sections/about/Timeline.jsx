@@ -2,18 +2,13 @@ import Image from "next/image";
 import { ExternalLink } from "lucide-react";
 import { cn } from "@/utils";
 import {
-  Help,
-  NewVersion,
-  Separator_1,
-  Separator_2,
   Separator_3,
-  Version,
 } from "@/ui/svg";
 
 export const Timeline = () => {
   return (
     <section className="section-border page-container section-py relative">
-      <div className="hidden md:block absolute left-75 top-0 h-full w-0.5 -translate-x-1/2 rounded-full bg-linear-to-b from-pink-500 via-purple-500 to-cyan-500" />
+      <div className="hidden md:block absolute left-75 top-0 h-full w-0.5 -translate-x-1/2 rounded-full bg-linear-to-b from-orange-500 via-pink-500 to-cyan-500" />
       <Image
         src="/about/start.svg"
         width={36}
@@ -51,11 +46,11 @@ export const Timeline = () => {
             />
             <p className="relative md:mb-20">
               <Image
-                src="/about/arrow-up.svg"
+                src="/about/arrow-up-orange.svg"
                 width={36}
                 height={36}
                 alt=""
-                className="hidden md:block absolute -left-12.5 -top-1 invert dark:invert-0"
+                className="hidden md:block absolute -left-12.5 -top-1"
               />
               <span className="title-color">2011</span> – (MVP) Создание первой
               версии продукта, на базе решения Illumos.
@@ -71,11 +66,11 @@ export const Timeline = () => {
           <div className="flex flex-col gap-5 main-text">
             <p className="relative md:mb-20">
               <Image
-                src="/about/arrow-up.svg"
+                src="/about/arrow-up-orange.svg"
                 width={36}
                 height={36}
                 alt=""
-                className="hidden md:block absolute -left-12.5 -top-1 invert dark:invert-0"
+                className="hidden md:block absolute -left-12.5 -top-1"
               />
               <span className="title-color">2015</span> – Инсталляция первого
               импортонезависимого решения хранения на 20PB в России, проект
@@ -83,22 +78,22 @@ export const Timeline = () => {
             </p>
             <p className="relative md:mb-20">
               <Image
-                src="/about/arrow-up.svg"
+                src="/about/arrow-up-orange.svg"
                 width={36}
                 height={36}
                 alt=""
-                className="hidden md:block absolute -left-12.5 -top-1 invert dark:invert-0"
+                className="hidden md:block absolute -left-12.5 -top-1"
               />
               <span className="title-color">2016</span> – Внедрение блочного и
               объектного доступа, к файловой системе Zfs.
             </p>
             <p className="relative md:mb-20">
               <Image
-                src="/about/arrow-up.svg"
+                src="/about/arrow-up-orange.svg"
                 width={36}
                 height={36}
                 alt=""
-                className="hidden md:block absolute -left-12.5 -top-1 invert dark:invert-0"
+                className="hidden md:block absolute -left-12.5 -top-1"
               />
               <span className="title-color">2017</span> – Оптимизация системы
               мониторинга для систем хранения больших видео потоков.
@@ -114,11 +109,11 @@ export const Timeline = () => {
           <div className="flex flex-col gap-5 main-text">
             <p className=" relative">
               <Image
-                src="/about/arrow-up.svg"
+                src="/about/arrow-up-pink.svg"
                 width={36}
                 height={36}
                 alt=""
-                className="hidden md:block absolute -left-12.5 -top-1 invert dark:invert-0"
+                className="hidden md:block absolute -left-12.5 -top-1"
               />
               <span className="title-color">2018</span> – Создание платформы
               хранения для работы с ИИ-кластерами.
@@ -132,11 +127,11 @@ export const Timeline = () => {
             />
             <p className="mb-5 relative">
               <Image
-                src="/about/arrow-up.svg"
+                src="/about/arrow-up-pink.svg"
                 width={36}
                 height={36}
                 alt=""
-                className="hidden md:block absolute -left-12.5 -top-1 invert dark:invert-0"
+                className="hidden md:block absolute -left-12.5 -top-1"
               />
               <span className="title-color">2019</span> - Внесение платформы
               хранения в Реестр Минцифры (Система хранения данных АРГО)
@@ -171,21 +166,21 @@ export const Timeline = () => {
           <div className="flex flex-col gap-5 main-text">
             <p className="relative md:mb-20">
               <Image
-                src="/about/arrow-up.svg"
+                src="/about/arrow-up-pink.svg"
                 width={36}
                 height={36}
                 alt=""
-                className="hidden md:block absolute -left-12.5 -top-1 invert dark:invert-0"
+                className="hidden md:block absolute -left-12.5 -top-1"
               />
               <span className="title-color">2022</span> – Развёртывание ИИ-кластера с импортонезависимой системой хранения данных для обработки медицинских данных и исследований в период COVID-19.
             </p>
             <p className="relative">
               <Image
-                src="/about/arrow-up.svg"
+                src="/about/arrow-up-pink.svg"
                 width={36}
                 height={36}
                 alt=""
-                className="hidden md:block absolute -left-12.5 -top-1 invert dark:invert-0"
+                className="hidden md:block absolute -left-12.5 -top-1"
               />
               Где еще может помочь AI.ARGO
             </p>
@@ -198,22 +193,22 @@ export const Timeline = () => {
               />
             <p className="relative md:mb-20">
               <Image
-                src="/about/arrow-up.svg"
+                src="/about/arrow-up-pink.svg"
                 width={36}
                 height={36}
                 alt=""
-                className="hidden md:block absolute -left-12.5 -top-1 invert dark:invert-0"
+                className="hidden md:block absolute -left-12.5 -top-1"
               />
               <span className="title-color">2021</span> – Создание прототипов
               государственных облачных платформ для стран-партнёров (ОПЕК+).
             </p>
             <p className="relative md:mb-20">
               <Image
-                src="/about/arrow-up.svg"
+                src="/about/arrow-up-pink.svg"
                 width={36}
                 height={36}
                 alt=""
-                className="hidden md:block absolute -left-12.5 -top-1 invert dark:invert-0"
+                className="hidden md:block absolute -left-12.5 -top-1"
               />
               <span className="title-color">2022</span>– Новые партнерства и
               первые внедрения на оборудовании из списка Минпромторга.
@@ -239,11 +234,11 @@ export const Timeline = () => {
             </div>
             <p className="relative">
               <Image
-                src="/about/arrow-up.svg"
+                src="/about/arrow-up-pink.svg"
                 width={36}
                 height={36}
                 alt=""
-                className="hidden md:block absolute -left-12.5 -top-1 invert dark:invert-0"
+                className="hidden md:block absolute -left-12.5 -top-1"
               />
               <span className="title-color">2023</span> – Внесение в реестр как
               СХД/ПАК (с оборудованием «Гравитон»). Первые поставки в цифровые
@@ -269,11 +264,11 @@ export const Timeline = () => {
             </div>
             <p className="relative">
               <Image
-                src="/about/arrow-up.svg"
+                src="/about/arrow-up-pink.svg"
                 width={36}
                 height={36}
                 alt=""
-                className="hidden md:block absolute -left-12.5 -top-1 invert dark:invert-0"
+                className="hidden md:block absolute -left-12.5 -top-1"
               />
               <span className="title-color">2024</span> – Расширение и
               переработка системы мониторинга. Улучшение механизмов
@@ -285,11 +280,11 @@ export const Timeline = () => {
             </div>
             <p className="relative">
               <Image
-                src="/about/arrow-up.svg"
+                src="/about/arrow-up-pink.svg"
                 width={36}
                 height={36}
                 alt=""
-                className="hidden md:block absolute -left-12.5 -top-1 invert dark:invert-0"
+                className="hidden md:block absolute -left-12.5 -top-1"
               />
               <span className="title-color">2025</span> – Выделение объектного
               доступа как самостоятельного решения. Альтернативные аппаратные
@@ -329,11 +324,11 @@ export const Timeline = () => {
           <div className="flex flex-col gap-5 main-text">
             <p className="mb-5 md:mb-20 relative">
               <Image
-                src="/about/arrow-up.svg"
+                src="/about/arrow-up-cyan.svg"
                 width={36}
                 height={36}
                 alt=""
-                className="hidden md:block absolute -left-12.5 -top-1 invert dark:invert-0"
+                className="hidden md:block absolute -left-12.5 -top-1"
               />
               Новая платформа хранения{" "}
               <span className="title-color">ISCRA</span>. Новая версия решения{" "}

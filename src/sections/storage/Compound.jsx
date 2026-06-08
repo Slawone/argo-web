@@ -5,9 +5,6 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { motionVariants } from "@/config";
 
-const imgTabUnderline = "https://www.figma.com/api/mcp/asset/c69426bc-18d8-4700-8aa4-f645698da466";
-const imgCopy = "https://www.figma.com/api/mcp/asset/330df76d-e74e-4dd2-9b2e-e6535c643318";
-
 const tabs = [
   { id: "resilience", label: "Отказоустойчивость" },
   { id: "performance", label: "Производительность" },
