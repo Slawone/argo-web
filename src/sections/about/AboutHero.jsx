@@ -17,21 +17,16 @@ export const AboutHero = () => {
     mounted && resolvedTheme === "dark"
       ? "/about/hero-dark.svg"
       : "/about/hero-light.svg";
-  
-  const mb = 
-    mounted && resolvedTheme === "dark"
-      ? ""
-      : "mb-5 md:mb-15";
 
   return (
     <>
-      <section className="page-container section-border flex justify-center">
+      <section className="page-container section-border grid place-items-center px-4">
         <Image 
           src={srcPath}
           width={888}
-          height={405}
+          height={265}
           alt=""
-          className={mb}
+          className=""
         />
       </section>
       <section

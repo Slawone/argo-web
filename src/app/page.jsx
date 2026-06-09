@@ -20,7 +20,7 @@ export default function Home() {
           <DataSecurity />
           <TextGrid items={textItems2} />
           <Support />
-          <Info text="Инсталяция в составе решения" />
+          <Info text="Инсталляция в составе решения" />
           <NodeAppliance />
           <SmallTextGrid />
         </main>
