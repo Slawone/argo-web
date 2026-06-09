@@ -20,7 +20,7 @@ export const AboutHero = () => {
 
   return (
     <>
-      <section className="page-container section-border grid place-items-center px-4">
+      <section className="page-container section-border py-5 md:py-15 grid place-items-center px-4">
         <Image 
           src={srcPath}
           width={888}
