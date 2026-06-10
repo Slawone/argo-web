@@ -34,7 +34,7 @@ export const Timeline = () => {
           <div className="flex flex-col gap-5 main-text">
             <p className="relative">
               <span className="title-color">2009</span> – Начало разработки
-              собственной архитектуры хранения данныхучастникамми OpenSolaris
+              собственной архитектуры хранения данных участникамми OpenSolaris
               Community и формирование коммерческой версии.
             </p>
             <Image
@@ -60,7 +60,7 @@ export const Timeline = () => {
         <div className="text-color mb-5 md:grid md:grid-cols-[300px_2fr]">
           <div className="mb-5 text-center md:text-left">
             <h3 className="text-lg md:text-xl lg:text-2xl xl:text-3xl">
-              Проект <span className="title-color">"Плантон"</span>
+              Проект <span className="title-color">"Платон"</span>
             </h3>
           </div>
           <div className="flex flex-col gap-5 main-text">
@@ -151,7 +151,7 @@ export const Timeline = () => {
                 href="https://reestr.fstec.ru/regview2?guid=06d5b959-3bcf-420e-958c-1141ba1fc228"
                 target="_blank"
               >
-                Фстэк
+                ФСТЭК
                 <ExternalLink width={18} height={18} />
               </a>
             </div>
@@ -242,7 +242,7 @@ export const Timeline = () => {
               />
               <span className="title-color">2023</span> – Внесение в реестр как
               СХД/ПАК (с оборудованием «Гравитон»). Первые поставки в цифровые
-              регионы.Создание ПАК Варя.
+              регионы. Создание ПАК Варя.
             </p>
             <div className="flex items-center gap-5 justify-center flex-wrap mb-5 md:mb-10">
               <Image src="/about/graviton.svg" width={215} height={38} alt="" />

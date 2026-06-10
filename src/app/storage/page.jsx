@@ -32,7 +32,7 @@ export default function Storage() {
         <Safety />
         <Controllers />
         <Properties />
-        <Info text="Данные - опора цифрового сувернитета" />
+        <Info text="Данные - опора цифрового суверенитета" />
         <Scale />
         <Partnerships />
         <StorageInfo />
