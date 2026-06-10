@@ -73,7 +73,7 @@ export const PartnersUniver = () => {
       </div>
       <div className="section-border py-5 font-sans font-light text-base md:text-[28px] flex items-center justify-center gap-5">
         <p className="text-color">
-          <div className="title-color">Технологии</div>
+          <span className="title-color">Технологии</span>
         </p>
         <Image
           src="/partners/aiargo.svg"
