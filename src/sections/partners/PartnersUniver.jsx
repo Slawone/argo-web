@@ -85,7 +85,7 @@ export const PartnersUniver = () => {
       </div>
       <div className="section-border grid grid-cols-2 md:grid-cols-3 divide-x divide-y divide-black/8 dark:divide-white/14 md:[&>*:nth-child(3n)]:border-r-0">
         {images.map((item, index) => (
-          <div key={index} className="flex justify-center py-10">
+          <div key={index} className="flex items-center justify-center py-10">
             <Image
               src={item.source}
               alt={item.alt}
