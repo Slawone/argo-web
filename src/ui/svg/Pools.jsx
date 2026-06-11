@@ -63,20 +63,20 @@ export const Pools = ({ className }) => {
       <motion.path variants={pathVariants} d="M63.2285 332.932L106.345 317.048H135.5L162.086 257.728L204.677 63.0391L227.63 100.134H255.619L280.245 124.172L294.729 231.266L322.093 275.065H348.915L362.91 242.411L386.234 229.583L418.551 114.269L457.372 160.777L485.361 173.605L521.514 216.755L553.001 192.265H588.521L605.095 138.319L669.141 63.1724L681.491 114.975L700.017 165.406L706.94 259.904" strokeWidth="2" className="stroke-black dark:stroke-white" />
       <circle cx="64.6895" cy="332.328" r="4.27786" className="fill-black dark:fill-white" />
       <circle cx="106.257" cy="316.56" r="4.27786" className="fill-black dark:fill-white" />
-      <circle cx="64.6895" cy="264.898" r="4.27786" fill="#00B6CC" />
-      <circle cx="121" cy="274.898" r="4.27786" fill="#00B6CC" />
-      <circle cx="157.766" cy="233.646" r="4.27786" fill="#00B6CC" />
-      <circle cx="223.788" cy="225.09" r="4.27786" fill="#00B6CC" />
-      <circle cx="306.714" cy="130.586" r="4.27786" fill="#00B6CC" />
-      <circle cx="334.006" cy="172.439" r="4.27786" fill="#00B6CC" />
-      <circle cx="380.16" cy="187.043" r="4.27786" fill="#00B6CC" />
-      <circle cx="462.153" cy="333.143" r="4.27786" fill="#00B6CC" />
-      <circle cx="496.711" cy="285.572" r="4.27786" fill="#00B6CC" />
-      <circle cx="543.066" cy="275.016" r="4.27786" fill="#00B6CC" />
-      <circle cx="566.579" cy="224.682" r="4.27786" fill="#00B6CC" />
-      <circle cx="623.207" cy="182.457" r="4.27786" fill="#00B6CC" />
-      <circle cx="704.919" cy="330.058" r="4.27786" fill="#00B6CC" />
-      <motion.path variants={pathVariants} d="M63.8213 265.073L120.875 275.855L157.31 234.036L224.588 225.355L307.057 130.587L333.1 171.822L380.846 187.014L461.868 333.144L495.869 285.398L543.614 275.855L566.04 225.355L623.19 182.673L706.383 333.144" stroke="#00B6CC" strokeWidth="2" />
+      <circle cx="64.6895" cy="264.898" r="4.27786" fill="#00FF66" />
+      <circle cx="121" cy="274.898" r="4.27786" fill="#00FF66" />
+      <circle cx="157.766" cy="233.646" r="4.27786" fill="#00FF66" />
+      <circle cx="223.788" cy="225.09" r="4.27786" fill="#00FF66" />
+      <circle cx="306.714" cy="130.586" r="4.27786" fill="#00FF66" />
+      <circle cx="334.006" cy="172.439" r="4.27786" fill="#00FF66" />
+      <circle cx="380.16" cy="187.043" r="4.27786" fill="#00FF66" />
+      <circle cx="462.153" cy="333.143" r="4.27786" fill="#00FF66" />
+      <circle cx="496.711" cy="285.572" r="4.27786" fill="#00FF66" />
+      <circle cx="543.066" cy="275.016" r="4.27786" fill="#00FF66" />
+      <circle cx="566.579" cy="224.682" r="4.27786" fill="#00FF66" />
+      <circle cx="623.207" cy="182.457" r="4.27786" fill="#00FF66" />
+      <circle cx="704.919" cy="330.058" r="4.27786" fill="#00FF66" />
+      <motion.path variants={pathVariants} d="M63.8213 265.073L120.875 275.855L157.31 234.036L224.588 225.355L307.057 130.587L333.1 171.822L380.846 187.014L461.868 333.144L495.869 285.398L543.614 275.855L566.04 225.355L623.19 182.673L706.383 333.144" stroke="#00FF66" strokeWidth="2" />
       <circle cx="136.091" cy="316.56" r="4.27786" className="fill-black dark:fill-white" />
       <circle cx="162.043" cy="256.995" r="4.27786" className="fill-black dark:fill-white" />
       <circle cx="204.609" cy="61.9663" r="4.27786" className="fill-black dark:fill-white" />

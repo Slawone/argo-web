@@ -345,10 +345,9 @@ export const Timeline = () => {
             />
             <p className="">
               Еще больше функциональных возможностей в новой версии{" "}
-              <span className="title-color">STORAGE</span>, <br /> будут доступны для
+              <span className="text-[#00FF66]">STORAGE</span>, <br /> будут доступны для
               всех инсталированых систем
             </p>
-            {/* <NewVersion className="lg:w-3/4" /> */}
             <Image 
               src="/about/newvers.svg"
               width={860}

@@ -40,7 +40,7 @@ export const Control = () => {
             variants={textVariants}
             className="leading-7.5 text-sm md:text-lg lg:text-xl title-color"
           >
-            Write Bandwidth: All <span className="accent-color">pools</span>
+            Write Bandwidth: All <span className="text-[#00FF66]">pools</span>
           </motion.div>
           <Pools />
         </div>
