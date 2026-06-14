@@ -71,6 +71,23 @@ export const Footer = () => {
               <li className="inline-20 hover:translate-x-1 transition hover:text-black dark:hover:text-white">
                 <a
                   className="flex items-center gap-2"
+                  href="https://t.me/argo_technology_ist"
+                  target="_blank"
+                >
+                  <Image
+                    className={cn("dark:invert")}
+                    src="/tg.svg"
+                    alt=""
+                    width={15}
+                    height={15}
+                    priority
+                  />
+                  Телеграмм
+                </a>
+              </li>
+              <li className="inline-20 hover:translate-x-1 transition hover:text-black dark:hover:text-white">
+                <a
+                  className="flex items-center gap-2"
                   href="https://max.ru/join/A9BI2uNQbcqGW2DuMSXPXK1BlxoEZkYoez2rA5vA84U"
                   target="_blank"
                 >

@@ -11,20 +11,20 @@ export const News = () => {
           className={cn(
             "main-text button button-primary flex-center",
           )}
-          href="https://max.ru/join/A9BI2uNQbcqGW2DuMSXPXK1BlxoEZkYoez2rA5vA84U"
+          href="https://t.me/argo_technology_ist"
           target="_blank"
         >
           <Image
             className={cn(
-              "dark:invert",
+              "invert dark:invert-0",
             )}
-            src="/max.svg"
+            src="/tg.svg"
             alt=""
             width={18}
             height={18}
             priority
           />
-          <span>Max</span>
+          <span>ARGO.TECH</span>
         </a>
       </div>
     </section>
