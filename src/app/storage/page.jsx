@@ -12,6 +12,7 @@ import {
   Partnerships,
   Scale,
   StorageInfo,
+  HardwareSection,
 } from "@/sections";
 import { textsVariants } from "@/config";
 import { faqVariants } from "@/config"
@@ -36,6 +37,7 @@ export default function Storage() {
         <Scale />
         <Partnerships />
         <StorageInfo />
+        <HardwareSection />
         <Faq variants={faqStorage} />
       </main>
     </>

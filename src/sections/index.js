@@ -19,6 +19,7 @@ export { Properties } from "./storage/Properties";
 export { Partnerships } from "./storage/Partnerships";
 export { Scale } from "./storage/Scale";
 export { StorageInfo } from "./storage/StorageInfo";
+export { HardwareSection } from "./storage/HardwareSection";
 
 /* partners */
 export { PartnersHero } from "./partners/PartnersHero";
