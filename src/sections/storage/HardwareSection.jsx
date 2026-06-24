@@ -1,27 +1,34 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
+import { cn } from "@/utils";
 
 const steps = [
   {
     image: "/storage/controller.svg",
     label: "Визуализация",
     icon: "/storage/meter.svg",
+    iconActive: "/storage/meter-active.svg",
     title: "Визуализация",
+    titleColor: 'text-[#34C759]',
     text: "Отображение состояния оборудования и программных модулей в едином интерфейсе. Интуитивное управление с встроенной защитой повышает прозрачность и контроль за системой хранения",
   },
   {
     image: "/storage/pool.svg",
     label: "Диагностика",
     icon: "/storage/chart.svg",
+    iconActive: "/storage/chart-active.svg",
     title: "Диагностика",
+    titleColor: 'text-[#007AFF]',
     text: "Модуль расширенной самодиагностики, позволяющий выполнять мониторинг работоспособности компонентов программного обеспечения с точностью до сервиса",
   },
   {
     image: "/storage/file-system.svg",
     label: "Интерфейс",
     icon: "/storage/arrow-up.svg",
+    iconActive: "/storage/arrow-up-active.svg",
     title: "Интерфейс",
+    titleColor: 'text-[#007AFF]',
     text: "Графический интерфейс для управления комплексом хранения данных, позволяет создавать, удалять пулы из установленных жестких дисков, менять размер созданных пулов и томов",
   },
 ];
@@ -40,28 +47,36 @@ export const HardwareSection = () => {
   };
 
   return (
-    <section className="page-container section-border">
-      <div className="">
+    <section className="page-container section-border section-py px-4 min-h-180">
+      <div className="flex justify-between">
         <div className="">
           <Image src={steps[active].image} width={618} height={100} alt="" />
         </div>
-        <div className="">
+        <div className="flex flex-col gap-30">
           {steps.map((step, i) => (
-            <button
-              key={i}
-              onClick={() => handleSelect(i)}
-              aria-label={step.title}
-            >
-              <Image
-                src={step.icon}
-                width={36}
-                height={36}
-                alt=""
-              />
-            </button>
+            <div key={i} className="flex items-start gap-15">
+              <button
+                onClick={() => handleSelect(i)}
+                aria-label={step.title}
+                className="mt-1"
+              >
+                <Image
+                  src={active === i ? step.iconActive : step.icon}
+                  width={36}
+                  height={36}
+                  alt=""
+                />
+              </button>
+
+              <div className="max-w-105">
+                <h3 className={cn(
+                  active === i ? step.titleColor : 'text-color'
+                )}>{step.title}</h3>
+                <p className="text-color">{step.text}</p>
+              </div>
+            </div>
           ))}
         </div>
-        
       </div>
     </section>
   );
