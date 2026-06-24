@@ -25,7 +25,7 @@ export default function Storage() {
     <>
       <main className="font-sans bg-white dark:bg-black">
         <Breadcrumbs className="page-container pt-2 mb-5 font-light text-color" />
-        {/* <StorageHero />
+        <StorageHero />
         <Compound />
         <Control />
         <Info text="Многоконтроллерность повышает отказоустойчивость" />
@@ -36,7 +36,7 @@ export default function Storage() {
         <Info text="Данные - опора цифрового суверенитета" />
         <Scale />
         <Partnerships />
-        <StorageInfo /> */}
+        <StorageInfo />
         <HardwareSection />
         <Faq variants={faqStorage} />
       </main>
