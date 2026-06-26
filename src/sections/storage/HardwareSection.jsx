@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { cn } from "@/utils";
 
 const steps = [
@@ -66,12 +66,13 @@ export const HardwareSection = () => {
       <section className="hidden md:block page-container section-border px-4">
         <div className="flex justify-between">
           <div className="section-py flex flex-col items-start">
+            <AnimatePresence mode="wait">
               <motion.div
                 key={active}
-                initial={{ opacity: 0, x: 10 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x:  10 }}
-                transition={{ duration: 0.5 }}
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y:  10 }}
+                transition={{ duration: 0.3, ease: "easeInOut", delay: 0.05 }}
                 className="w-[70%] xl:w-[90%] xl:self-center"
               >
                 <Image
@@ -82,6 +83,7 @@ export const HardwareSection = () => {
                   className="w-full"
                 />
               </motion.div>
+            </AnimatePresence>
           </div>
           <div className="flex flex-col gap-10 lg:gap-15 xl:gap-20 relative section-py">
             <div className="hidden md:block absolute z-0 -left-15 top-0 h-full w-0.5 -translate-x-1/2 rounded-full bg-linear-to-b from-[#34C759] to-[#007AFF]" />
