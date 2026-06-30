@@ -86,7 +86,7 @@ export const HardwareSection = () => {
             </AnimatePresence>
           </div>
           <div className="flex flex-col gap-10 lg:gap-15 xl:gap-20 relative section-py">
-            <div className="hidden md:block absolute z-0 -left-15 top-0 h-full w-0.5 -translate-x-1/2 rounded-full bg-linear-to-b from-[#34C759] to-[#007AFF]" />
+            {/* <div className="hidden md:block absolute z-0 -left-15 top-0 h-full w-0.5 -translate-x-1/2 rounded-full bg-linear-to-b from-[#34C759] to-[#007AFF]" /> */}
             {steps.map((step, i) => (
               <div key={i} className="flex items-start gap-15 z-10">
                 <button
