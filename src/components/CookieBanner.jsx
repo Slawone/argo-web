@@ -2,23 +2,17 @@
 
 import { useEffect, useState } from "react";
 import { Button } from "@/ui";
+import { useConsent } from "./ConsentProvider";
 
 export const CookieBanner = () => {
-  const [visible, setVisible] = useState(false);
+  const { consent, acceptCookies } = useConsent();
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    const consent = localStorage.getItem("cookie_consent");
-    if (!consent) {
-      setVisible(true);
-    }
+    setMounted(true);
   }, []);
 
-  const acceptCookies = () => {
-    localStorage.setItem("cookie_consent", "true");
-    setVisible(false);
-  };
-
-  if (!visible) return null;
+  if (!mounted || consent) return null;
 
   return (
     <div className="fixed bottom-4 left-4 right-4 z-50 flex justify-center">

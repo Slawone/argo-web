@@ -241,8 +241,27 @@ export default function Globe({
       s.raf = requestAnimationFrame(loop);
     }
 
-    s.raf = requestAnimationFrame(loop);
-    return () => cancelAnimationFrame(s.raf);
+    function start() {
+      if (s.raf) return;
+      s.raf = requestAnimationFrame(loop);
+    }
+
+    function stop() {
+      if (!s.raf) return;
+      cancelAnimationFrame(s.raf);
+      s.raf = null;
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => (entry.isIntersecting ? start() : stop()),
+      { threshold: 0.01 },
+    );
+    observer.observe(canvas);
+
+    return () => {
+      observer.disconnect();
+      stop();
+    };
   }, [size, dotColor, arcColor, headColor, glowColor, lineColor]);
 
   // Pointer handlers

@@ -7,7 +7,12 @@ const ruMap = {
   docs: "Документы",
   storage: "Хранение",
   partners: "Партнеры",
-  about: "О компании"
+  about: "О компании",
+  documentation: "Документация",
+  blog: "Блог",
+  s3: "S3",
+  monitoring: "Мониторинг",
+  ai: "ИИ",
 };
 
 export const Breadcrumbs = ({className}) => {

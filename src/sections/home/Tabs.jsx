@@ -61,7 +61,7 @@ const tabs = [
         Локальное объектное хранилище с поддержкой{" "}
         <a
           href="https://www.cnews.ru/news/line/2025-11-25_argotech_predstavila_lokalnoe?ysclid=mihhibz4fu353566861"
-          className="inline-flex glex-wrap gap-1 title-color"
+          className="inline-flex flex-wrap gap-1 title-color"
           target="_blank"
         >
           S3 API <ExternalLink className="w-4 h-4 title-color" />
@@ -88,7 +88,7 @@ const tabs = [
       <>
         Метрополитен доверяет нам критическую{" "}
         <a
-          className="inline-flex glex-wrap gap-1 title-color"
+          className="inline-flex flex-wrap gap-1 title-color"
           href="https://www.cnews.ru/news/line/2021-05-13_rossijskij_proizvoditel?ysclid=mihhyxf3ht361827532"
           target="_blank"
         >
@@ -111,7 +111,7 @@ const tabs = [
       <>
         Автоматизация документов на базе{" "}
         <a
-          className="inline-flex glex-wrap gap-1 title-color"
+          className="inline-flex flex-wrap gap-1 title-color"
           href="https://companies.rbc.ru/news/HvgmtDeJGo/ii-sokratil-podgotovku-dokumentov-s-2-dnej-do-74-sekund/"
           target="_blank"
         >
@@ -125,7 +125,7 @@ const tabs = [
     rightText: (
       <p className="text-sm md:text-md lg:text-lg mb-5 text-color md:mb-10 font-sans font-light leading-6">
         <a
-          className="inline-flex glex-wrap gap-1 title-color"
+          className="inline-flex flex-wrap gap-1 title-color"
           href="https://companies.rbc.ru/news/UvW8JznLj8/ii-sokratil-srok-zakryitiya-vakansij-s-28-do-14-dnej/"
           target="_blank"
         >
@@ -139,7 +139,7 @@ const tabs = [
         Автоматизация сократила подготовку с 2 дней до 74 секунд — меньше
         рисков, больше эффективности.{" "}
         <a
-          className="inline-flex glex-wrap gap-1 title-color"
+          className="inline-flex flex-wrap gap-1 title-color"
           href="https://companies.rbc.ru/news/JCe1TlzNXp/ii-na-proizvodstve-povyishenie-distsiplinyi-i-sokraschenie-izderzhek-na-20/"
           target="_blank"
         >
@@ -192,27 +192,6 @@ export const Tabs = () => {
             </motion.div>
           </AnimatePresence>
 
-          {/* Кнопка показывается только для вкладки storage */}
-          {/* {active.id === "storage" && (
-            <div className="md:block md:absolute md:bottom-10 md:left-4 md:right-auto mt-6 md:mt-0">
-              <Link href="/storage">
-                <Button
-                  variant="primary"
-                  className="flex-center"
-                >
-                  Перейти к продукту
-                  <Image
-                    className="invert dark:invert-0"
-                    src="/stars.svg"
-                    alt="Логотип ARGO.TECH"
-                    width={20}
-                    height={20}
-                    priority
-                  />
-                </Button>
-              </Link>
-            </div>
-          )} */}
         </div>
       </div>
       {/* tabs */}

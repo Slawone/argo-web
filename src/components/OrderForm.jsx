@@ -37,7 +37,7 @@ export const OrderForm = ({ isOpen, onClose }) => {
   const validate = () => {
     const e = {};
     if (!form.name.trim()) e.name = "Введите имя";
-    if (!form.phone.trim()) e.phone = "Введите телефон";
+    if (form.phone.replace(/\D/g, "").length !== 11) e.phone = "Введите телефон полностью";
     if (!form.email.trim()) e.email = "Введите e-mail";
     else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) e.email = "Некорректный e-mail";
     return e;

@@ -10,6 +10,8 @@ import ThemeToggle from "@/ui/theme-toggle";
 
 const navItems = [
   { label: "Хранение", href: "/storage" },
+  { label: "Документация", href: "/documentation" },
+  { label: "Блог", href: "/blog" },
   { label: "Партнеры", href: "/partners" },
   { label: "О компании", href: "/about" },
 ];

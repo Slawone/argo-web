@@ -1,17 +1,12 @@
 import { Suspense } from "react";
 import { ThemeProvider } from "next-themes";
-import { IBM_Plex_Sans, Oswald } from "next/font/google";
+import { Oswald } from "next/font/google";
 import { Header } from "@/widgets";
 import { Footer } from "@/widgets";
 import { Metrika } from "@/components";
 import { CookieBanner } from "@/components";
+import { ConsentProvider } from "@/components";
 import "./globals.css";
-
-const ibmPlexSans = IBM_Plex_Sans({
-  variable: "--font-ibm-sans",
-  subsets: ["cyrillic"],
-  weight: ["300", "400", "500", "700"],
-});
 
 const oswald = Oswald({
   variable: "--font-oswald",
@@ -22,7 +17,7 @@ const oswald = Oswald({
 export const metadata = {
   title: "Argo.tech | Больше, чем система хранения данных",
   description:
-    "",
+    "ARGO.TECH разрабатывает сертифицированное программное обеспечение для хранения и обработки данных с 2016 года. Решения для корпоративных и государственных структур: безопасность, надёжность, соответствие стандартам РФ.",
   icons: {
     icon: "/favicon.ico?v=3",
   }
@@ -40,14 +35,16 @@ export default function RootLayout({ children }) {
           enableSystem
           disableTransitionOnChange
         >
-          <Header />
-            {children}
-          <Footer />
+          <ConsentProvider>
+            <Header />
+              {children}
+            <Footer />
+            <CookieBanner />
+            <Suspense fallback={null}>
+              <Metrika />
+            </Suspense>
+          </ConsentProvider>
         </ThemeProvider>
-        <CookieBanner />
-        <Suspense fallback={null}>
-          <Metrika />
-        </Suspense>
       </body>
     </html>
   );

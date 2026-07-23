@@ -1,9 +1,14 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
 import { motionVariants } from "@/config";
-import { GlobeDemo } from "@/components";
 import { World } from "@/ui/svg";
+
+const GlobeDemo = dynamic(
+  () => import("@/components/Globe").then((mod) => mod.GlobeDemo),
+  { ssr: false },
+);
 
 export const NodeAppliance = () => {
   const { containerVariants, textVariants } = motionVariants;
