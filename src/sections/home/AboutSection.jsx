@@ -48,7 +48,7 @@ export const AboutSection = () => {
         <motion.div variants={itemVariants} className="flex items-center gap-5">
           <a
             className="button button-primary flex-center"
-            href="/docs/Арго_Реквизиты__2026.pdf"
+            href="/documents/Арго_Реквизиты__2026.pdf"
             target="_blank"
           >
             Реквизиты <ExternalLink width={18} height={18} />
