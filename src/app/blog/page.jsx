@@ -1,6 +1,6 @@
 import { Breadcrumbs } from "@/components";
 import { getBlogPosts } from "@/lib/mdx";
-import { BlogCard } from "@/sections/blog/BlogCard";
+import { BlogList } from "@/sections/blog/BlogList";
 
 export const metadata = {
   title: "Блог | ARGO.TECH",
@@ -26,11 +26,7 @@ export default function BlogPage() {
         {posts.length === 0 ? (
           <p className="font-light text-color">Публикаций пока нет.</p>
         ) : (
-          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {posts.map((post) => (
-              <BlogCard key={post.slug} post={post} />
-            ))}
-          </div>
+          <BlogList posts={posts} />
         )}
       </div>
     </section>
