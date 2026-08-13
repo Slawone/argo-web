@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Breadcrumbs } from "@/components";
 import { getBlogPost, getBlogSlugs } from "@/lib/mdx";
 import { buildArticleJsonLd } from "@/lib/jsonLd";
+import { getTagColorClass } from "@/config";
 
 export function generateStaticParams() {
   return getBlogSlugs().map((slug) => ({ slug }));
@@ -61,7 +62,10 @@ export default async function BlogPostPage({ params }) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
       />
       <div className="page-container">
-        <Breadcrumbs className="mb-5 font-light text-color" lastLabel={post.title} />
+        <Breadcrumbs
+          className="mb-5 font-light text-color"
+          lastLabel={post.title}
+        />
 
         {post.cover && (
           <div className="relative mb-7.5 aspect-video w-[50%] overflow-hidden rounded-2xl">
@@ -83,7 +87,7 @@ export default async function BlogPostPage({ params }) {
             {post.tags.map((tag) => (
               <span
                 key={tag}
-                className="accent-color accent-border rounded-full border px-2 py-0.5 text-xs uppercase"
+                className={`${getTagColorClass(tag)} rounded-full border px-2 py-0.5 text-xs uppercase`}
               >
                 {tag}
               </span>

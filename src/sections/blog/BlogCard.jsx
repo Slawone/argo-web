@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { getTagColorClass } from "@/config";
 
 const formatDate = (date) =>
   new Date(date).toLocaleDateString("ru-RU", {
@@ -35,7 +36,7 @@ export const BlogCard = ({ post }) => (
           {post.tags.map((tag) => (
             <span
               key={tag}
-              className="accent-color accent-border rounded-full border px-2 py-0.5 text-xs uppercase"
+              className={`${getTagColorClass(tag)} rounded-full border px-2 py-0.5 text-xs uppercase`}
             >
               {tag}
             </span>
