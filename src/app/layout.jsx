@@ -14,6 +14,29 @@ const oswald = Oswald({
   weight: ["300", "400", "500", "700"],
 });
 
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "ARGO.TECH",
+  legalName: "ООО «АРГО ТЕХНОЛОДЖИ ИСТ»",
+  url: "https://argo.tech",
+  logo: "https://argo.tech/logo.svg",
+  foundingDate: "2016",
+  email: "info@argo.tech",
+  telephone: "+7-499-430-00-54",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "проезд Завода Серп и Молот, дом 6, корпус 1, эт. 7, комн. 709",
+    addressLocality: "Москва",
+    postalCode: "111250",
+    addressCountry: "RU",
+  },
+  sameAs: [
+    "https://t.me/argo_technology_ist",
+    "https://companies.rbc.ru/id/1165007052583-argotech/",
+  ],
+};
+
 export const metadata = {
   metadataBase: new URL("https://argo.tech"),
   title: "СХД РФ: Реестр Минцифры, Минпромторга для импортозамещения",
@@ -44,6 +67,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ru" suppressHydrationWarning>
       <body className={`${oswald.variable} antialiased`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
