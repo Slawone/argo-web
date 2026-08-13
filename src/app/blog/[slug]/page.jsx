@@ -13,7 +13,7 @@ export async function generateMetadata({ params }) {
   const post = await getBlogPost(slug);
   if (!post) return {};
 
-  const image = post.cover || "/hero-bg.jpg";
+  const image = post.cover || "/og-image.png";
 
   return {
     title: `${post.title} | Блог ARGO.TECH`,

@@ -16,7 +16,7 @@ export const buildArticleJsonLd = (post) => ({
   "@type": "Article",
   headline: post.title,
   description: post.excerpt,
-  image: `https://argo.tech${post.cover || "/hero-bg.jpg"}`,
+  image: `https://argo.tech${post.cover || "/og-image.png"}`,
   datePublished: post.date,
   author: {
     "@type": "Organization",
