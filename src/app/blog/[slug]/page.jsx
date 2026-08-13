@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import { Breadcrumbs } from "@/components";
 import { getBlogPost, getBlogSlugs } from "@/lib/mdx";
+import { buildArticleJsonLd } from "@/lib/jsonLd";
 
 export function generateStaticParams() {
   return getBlogSlugs().map((slug) => ({ slug }));
@@ -51,10 +52,16 @@ export default async function BlogPostPage({ params }) {
   const post = await getBlogPost(slug);
   if (!post) notFound();
 
+  const articleJsonLd = buildArticleJsonLd(post);
+
   return (
     <section className="font-sans section-py bg-white dark:bg-black">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
       <div className="page-container">
-        <Breadcrumbs className="mb-5 font-light text-color" />
+        <Breadcrumbs className="mb-5 font-light text-color" lastLabel={post.title} />
 
         {post.cover && (
           <div className="relative mb-7.5 aspect-video w-[50%] overflow-hidden rounded-2xl">

@@ -68,7 +68,7 @@ const faqAbout = [
         Да, все основные кейсы мы публикуем на платформе РБК. <br />
         Перейдите по ссылке -
         <a 
-          href="https://companies.rbc.ru/id/1165007052583-argotech/?ysclid=mp2k2swrwj696346029"
+          href="https://companies.rbc.ru/id/1165007052583-argotech/"
           target="_blank"
           rel="noopener noreferrer"
           class="title-color underline"

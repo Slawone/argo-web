@@ -16,6 +16,7 @@ import {
 } from "@/sections";
 import { textsVariants } from "@/config";
 import { faqVariants } from "@/config";
+import { buildFaqJsonLd } from "@/lib/jsonLd";
 
 export const metadata = {
   title: "СХД АРГО — реестр №5850, для госзаказчиков и импортозамещения",
@@ -24,7 +25,7 @@ export const metadata = {
   alternates: {
     canonical: "/storage/",
   },
-   openGraph: {
+  openGraph: {
     type: "website",
     locale: "ru_RU",
     siteName: "ARGO.TECH",
@@ -45,9 +46,14 @@ export const metadata = {
 export default function Storage() {
   const { textItems3 } = textsVariants;
   const { faqStorage } = faqVariants;
+  const faqJsonLd = buildFaqJsonLd(faqStorage);
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <main className="font-sans bg-white dark:bg-black">
         <Breadcrumbs className="page-container pt-2 mb-5 font-light text-color" />
         <StorageHero />
