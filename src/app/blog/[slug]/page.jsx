@@ -12,9 +12,30 @@ export async function generateMetadata({ params }) {
   const post = await getBlogPost(slug);
   if (!post) return {};
 
+  const image = post.cover || "/hero-bg.jpg";
+
   return {
     title: `${post.title} | Блог ARGO.TECH`,
     description: post.excerpt,
+    alternates: {
+      canonical: `/blog/${slug}/`,
+    },
+    openGraph: {
+      type: "article",
+      locale: "ru_RU",
+      siteName: "ARGO.TECH",
+      url: `https://argo.tech/blog/${slug}/`,
+      title: `${post.title} | Блог ARGO.TECH`,
+      description: post.excerpt,
+      publishedTime: post.date,
+      images: [
+        {
+          url: image,
+          width: 1200,
+          height: 630,
+        },
+      ],
+    },
   };
 }
 
