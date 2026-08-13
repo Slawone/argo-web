@@ -30,11 +30,6 @@ export const BlogCard = ({ post }) => (
       <h2 className="title-color text-lg font-medium md:text-xl">
         {post.title}
       </h2>
-      {post.excerpt && (
-        <p className="text-color text-sm font-light md:text-base">
-          {post.excerpt}
-        </p>
-      )}
       {post.tags?.length > 0 && (
         <div className="mt-auto flex flex-wrap gap-2 pt-2">
           {post.tags.map((tag) => (
