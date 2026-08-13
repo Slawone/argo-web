@@ -15,7 +15,32 @@ import {
   HardwareSection,
 } from "@/sections";
 import { textsVariants } from "@/config";
-import { faqVariants } from "@/config"
+import { faqVariants } from "@/config";
+
+export const metadata = {
+  title: "СХД АРГО — реестр №5850, для госзаказчиков и импортозамещения",
+  description:
+    "Блочная СХД с возможностью объединения до 4 кластеров (8 контроллеров) под единым управлением. Кэширование L2ARC, снимки, репликация, дедупликация. В реестрах Минцифры и Минпромторга.",
+  alternates: {
+    canonical: "/storage/",
+  },
+   openGraph: {
+    type: "website",
+    locale: "ru_RU",
+    siteName: "ARGO.TECH",
+    url: "https://argo.tech/storage/",
+    title: "СХД АРГО — реестр №5850, для госзаказчиков и импортозамещения",
+    description:
+      "Блочная СХД с возможностью объединения до 4 кластеров (8 контроллеров) под единым управлением. Кэширование L2ARC, снимки, репликация, дедупликация. В реестрах Минцифры и Минпромторга.",
+    images: [
+      {
+        url: "/hero-bg.jpg",
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
+};
 
 export default function Storage() {
   const { textItems3 } = textsVariants;
