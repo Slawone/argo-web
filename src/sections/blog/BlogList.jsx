@@ -52,7 +52,7 @@ export const BlogList = ({ posts }) => {
             <button
               type="button"
               onClick={() => handleTagChange(null)}
-              className={`cursor-pointer text-sm font-light uppercase transition-colors title-color`}
+              className={`cursor-pointer text-sm font-light px-2 uppercase transition-colors title-color`}
             >
               Все статьи
             </button>
@@ -62,9 +62,9 @@ export const BlogList = ({ posts }) => {
               <button
                 type="button"
                 onClick={() => handleTagChange(tag)}
-                className={`cursor-pointer text-sm uppercase transition-colors ${getTagColorClass(tag)} ${
+                className={`cursor-pointer text-sm uppercase px-2 text-color transition-colors ${
                   activeTag === tag
-                    ? "font-medium underline underline-offset-4"
+                    ? `font-medium rounded-full border ${getTagColorClass(tag)}` 
                     : "font-light"
                 }`}
               >
