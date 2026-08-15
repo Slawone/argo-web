@@ -101,6 +101,17 @@ export function getBlogPosts() {
     .sort((a, b) => new Date(b.date) - new Date(a.date));
 }
 
+export function getRelatedPosts(post, limit = 3) {
+  const others = getBlogPosts().filter((item) => item.slug !== post.slug);
+
+  const tagged = others.filter((item) =>
+    item.tags?.some((tag) => post.tags?.includes(tag)),
+  );
+  const rest = others.filter((item) => !tagged.includes(item));
+
+  return [...tagged, ...rest].slice(0, limit);
+}
+
 export async function getBlogPost(slug) {
   const filePath = path.join(BLOG_DIR, `${slug}.mdx`);
   if (!fs.existsSync(filePath)) return null;

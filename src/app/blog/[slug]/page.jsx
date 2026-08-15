@@ -1,7 +1,8 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import { Breadcrumbs } from "@/components";
-import { getBlogPost, getBlogSlugs } from "@/lib/mdx";
+import { getBlogPost, getBlogSlugs, getRelatedPosts } from "@/lib/mdx";
+import { BlogCard } from "@/sections/blog/BlogCard";
 import { buildArticleJsonLd } from "@/lib/jsonLd";
 import { getTagColorClass } from "@/config";
 
@@ -53,6 +54,7 @@ export default async function BlogPostPage({ params }) {
   const post = await getBlogPost(slug);
   if (!post) notFound();
 
+  const relatedPosts = getRelatedPosts(post);
   const articleJsonLd = buildArticleJsonLd(post);
 
   return (
@@ -92,6 +94,18 @@ export default async function BlogPostPage({ params }) {
                 {tag}
               </span>
             ))}
+          </div>
+        )}
+        {relatedPosts.length > 0 && (
+          <div className="mt-10">
+            <h2 className="title-color mb-5 text-lg font-medium uppercase md:text-xl">
+              Похожие статьи
+            </h2>
+            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+              {relatedPosts.map((relatedPost) => (
+                <BlogCard key={relatedPost.slug} post={relatedPost} />
+              ))}
+            </div>
           </div>
         )}
       </div>

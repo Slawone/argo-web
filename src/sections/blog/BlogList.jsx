@@ -46,7 +46,7 @@ export const BlogList = ({ posts }) => {
 
   return (
     <div className="grid gap-4 md:grid-cols-[120px_1fr]">
-      <aside>
+      <aside className="md:sticky top-25 self-start">
         <ul className="flex flex-col gap-2">
           <li>
             <button

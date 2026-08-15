@@ -36,7 +36,7 @@ export const BlogCard = ({ post }) => (
           {post.excerpt}
         </p>
       )}
-      <span className="title-color text-sm uppercase tracking-wide transition-transform group-hover:translate-x-1 flex items-center gap-2 line-clamp-2 min-h-12">
+      <span className="title-color text-sm uppercase tracking-wide transition-transform group-hover:translate-x-1 flex items-center gap-2">
         <span>Читать далее</span><span>→</span>
       </span>
       {post.tags?.length > 0 && (
