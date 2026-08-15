@@ -28,9 +28,17 @@ export const BlogCard = ({ post }) => (
       <span className="text-color text-xs font-light uppercase tracking-wide">
         {formatDate(post.date)}
       </span>
-      <h2 className="title-color text-lg font-medium md:text-xl">
+      <h2 className="title-color text-lg font-medium md:text-xl line-clamp-2 min-h-14">
         {post.title}
       </h2>
+      {post.excerpt && (
+        <p className="text-color text-sm font-light md:text-base">
+          {post.excerpt}
+        </p>
+      )}
+      <span className="title-color text-sm uppercase tracking-wide transition-transform group-hover:translate-x-1 flex items-center gap-2 line-clamp-2 min-h-12">
+        <span>Читать далее</span><span>→</span>
+      </span>
       {post.tags?.length > 0 && (
         <div className="mt-auto flex flex-wrap gap-2 pt-2">
           {post.tags.map((tag) => (
