@@ -1,5 +1,6 @@
 import { Children, isValidElement } from "react";
 import {MdxFigure} from './MdxFigure';
+import { MdxFile } from './MdxFile';
 
 const MdxImage = ({ src, alt, ...props }) => (
   <figure className="my-6">
@@ -20,6 +21,7 @@ const MdxImage = ({ src, alt, ...props }) => (
 
 export const mdxComponents = {
   MdxFigure,
+  MdxFile,
   pre: (props) => (
     <pre
       {...props}
