@@ -34,7 +34,7 @@ export default function BlogPage() {
     <section className="font-sans section-py bg-white dark:bg-black">
       <div className="page-container">
         <Breadcrumbs className="mb-5 font-light text-color" />
-        <h1 className="text-[20px] md:text-[45px] uppercase title-color font-medium mb-7.5">
+        <h1 className="text-[20px] md:text-[30px] uppercase title-color font-medium mb-7.5">
           Блог
         </h1>
 

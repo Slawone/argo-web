@@ -76,7 +76,7 @@ export default async function BlogPostPage({ params }) {
         <span className="text-color text-xs font-light uppercase tracking-wide">
           {formatDate(post.date)}
         </span>
-        <h1 className="text-[20px] md:text-[45px] uppercase title-color font-medium mt-2 mb-7.5">
+        <h1 className="text-[20px] md:text-[30px] uppercase title-color font-medium mt-2 mb-7.5">
           {post.title}
         </h1>
 
