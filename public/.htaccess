@@ -1,0 +1,4 @@
+# .htaccess 
+Options -Indexes
+
+ErrorDocument 404 /404.html

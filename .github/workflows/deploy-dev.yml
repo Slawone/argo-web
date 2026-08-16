@@ -32,6 +32,5 @@ jobs:
           local-dir: ./out/
           server-dir: /fullweb/public_html/
           exclude: |
-            **/.htaccess
             **/send.php
             **/PHPMailer/**
