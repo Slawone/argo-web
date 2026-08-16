@@ -1,11 +1,10 @@
 export const dynamic = "force-static";
 
 import { getBlogPosts } from "@/lib/mdx";
-import { docsProducts } from "@/config";
 
 const BASE_URL = "https://argo.tech";
 
-const staticRoutes = ["", "/about", "/storage", "/partners", "/docs", "/blog", "/documentation"];
+const staticRoutes = ["", "/about", "/storage", "/partners", "/docs", "/blog"];
 
 export default function sitemap() {
   const staticEntries = staticRoutes.map((route) => ({
@@ -17,9 +16,5 @@ export default function sitemap() {
     lastModified: post.date,
   }));
 
-  const docsEntries = docsProducts.map((product) => ({
-    url: `${BASE_URL}/documentation/${product.slug}/`,
-  }));
-
-  return [...staticEntries, ...blogEntries, ...docsEntries];
+  return [...staticEntries, ...blogEntries];
 }
