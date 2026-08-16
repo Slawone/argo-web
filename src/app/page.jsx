@@ -1,6 +1,12 @@
 import { Hero, Tabs, News, DataSecurity, Monitoring, Info, TextGrid, SmallTextGrid, Support, AboutSection, NodeAppliance, Union } from "@/sections";
 import { textsVariants } from "@/config";
 
+export const metadata = {
+  alternates: {
+    canonical: "/",
+  },
+};
+
 export default function Home() {
   const { textItems1, textItems2 } = textsVariants;
 

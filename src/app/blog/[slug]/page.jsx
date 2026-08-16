@@ -1,7 +1,10 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import { Breadcrumbs } from "@/components";
-import { getBlogPost, getBlogSlugs } from "@/lib/mdx";
+import { getBlogPost, getBlogSlugs, getRelatedPosts } from "@/lib/mdx";
+import { BlogCard } from "@/sections/blog/BlogCard";
+import { buildArticleJsonLd } from "@/lib/jsonLd";
+import { getTagColorClass } from "@/config";
 
 export function generateStaticParams() {
   return getBlogSlugs().map((slug) => ({ slug }));
@@ -12,9 +15,30 @@ export async function generateMetadata({ params }) {
   const post = await getBlogPost(slug);
   if (!post) return {};
 
+  const image = post.cover || "/og-image.png";
+
   return {
     title: `${post.title} | Блог ARGO.TECH`,
     description: post.excerpt,
+    alternates: {
+      canonical: `/blog/${slug}/`,
+    },
+    openGraph: {
+      type: "article",
+      locale: "ru_RU",
+      siteName: "ARGO.TECH",
+      url: `https://argo.tech/blog/${slug}/`,
+      title: `${post.title} | Блог ARGO.TECH`,
+      description: post.excerpt,
+      publishedTime: post.date,
+      images: [
+        {
+          url: image,
+          width: 1200,
+          height: 630,
+        },
+      ],
+    },
   };
 }
 
@@ -30,10 +54,20 @@ export default async function BlogPostPage({ params }) {
   const post = await getBlogPost(slug);
   if (!post) notFound();
 
+  const relatedPosts = getRelatedPosts(post);
+  const articleJsonLd = buildArticleJsonLd(post);
+
   return (
     <section className="font-sans section-py bg-white dark:bg-black">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
       <div className="page-container">
-        <Breadcrumbs className="mb-5 font-light text-color" />
+        <Breadcrumbs
+          className="mb-5 font-light text-color"
+          lastLabel={post.title}
+        />
 
         {post.cover && (
           <div className="relative mb-7.5 aspect-video w-[50%] overflow-hidden rounded-2xl">
@@ -44,7 +78,7 @@ export default async function BlogPostPage({ params }) {
         <span className="text-color text-xs font-light uppercase tracking-wide">
           {formatDate(post.date)}
         </span>
-        <h1 className="text-[20px] md:text-[45px] uppercase title-color font-medium mt-2 mb-7.5">
+        <h1 className="text-[20px] md:text-[30px] uppercase title-color font-medium mt-2 mb-7.5">
           {post.title}
         </h1>
 
@@ -55,11 +89,23 @@ export default async function BlogPostPage({ params }) {
             {post.tags.map((tag) => (
               <span
                 key={tag}
-                className="accent-color accent-border rounded-full border px-2 py-0.5 text-xs uppercase"
+                className={`${getTagColorClass(tag)} rounded-full border px-2 py-0.5 text-xs uppercase`}
               >
                 {tag}
               </span>
             ))}
+          </div>
+        )}
+        {relatedPosts.length > 0 && (
+          <div className="mt-10">
+            <h2 className="title-color mb-5 text-lg font-medium uppercase md:text-xl">
+              Похожие статьи
+            </h2>
+            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+              {relatedPosts.map((relatedPost) => (
+                <BlogCard key={relatedPost.slug} post={relatedPost} />
+              ))}
+            </div>
           </div>
         )}
       </div>
