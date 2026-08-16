@@ -50,6 +50,6 @@ export const mdxComponents = {
       isValidElement(childArray[0]) &&
       childArray[0].type === MdxImage;
 
-    return isSoleImage ? children : <p>{children}</p>;
+    return isSoleImage ? children : <p className="font-light">{children}</p>;
   },
 };
