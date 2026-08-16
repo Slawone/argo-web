@@ -26,11 +26,11 @@ jobs:
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: 92.53.96.243
+          server: ${{ secrets.PROD_FTP_SERVER }}
           username: ${{ secrets.PROD_FTP_USERNAME }}
           password: ${{ secrets.PROD_FTP_PASSWORD }}
           local-dir: ./out/
-          server-dir: argo.tech_new/public_html/
+          server-dir: /argo.tech_new/public_html/
           exclude: |
             **/send.php
             **/PHPMailer/**
