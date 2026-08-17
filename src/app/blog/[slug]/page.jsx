@@ -6,8 +6,8 @@ import { BlogCard } from "@/sections/blog/BlogCard";
 import { buildArticleJsonLd } from "@/lib/jsonLd";
 import { getTagColorClass } from "@/config";
 
-export function generateStaticParams() {
-  return getBlogSlugs().map((slug) => ({ slug }));
+export async function generateStaticParams() {
+  return (await getBlogSlugs()).map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }) {
@@ -54,7 +54,7 @@ export default async function BlogPostPage({ params }) {
   const post = await getBlogPost(slug);
   if (!post) notFound();
 
-  const relatedPosts = getRelatedPosts(post);
+  const relatedPosts = await getRelatedPosts(post);
   const articleJsonLd = buildArticleJsonLd(post);
 
   return (

@@ -1,13 +1,11 @@
 import fs from "node:fs";
 import path from "node:path";
-import matter from "gray-matter";
 import { compileMDX } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
 import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import { mdxComponents } from "@/components/mdx/MDXComponents";
 
-const DOCS_DIR = path.join(process.cwd(), "src/content/docs");
 const BLOG_DIR = path.join(process.cwd(), "src/content/blog");
 
 const mdxOptions = {
@@ -17,6 +15,24 @@ const mdxOptions = {
   },
   parseFrontmatter: true,
 };
+
+const STRAPI_URL = process.env.STRAPI_URL || "https://cms.myfullweb.ru";
+const STRAPI_API_TOKEN = process.env.STRAPI_API_TOKEN;
+
+async function strapiFetch(query) {
+  const res = await fetch(`${STRAPI_URL}${query}`, {
+    headers: { Authorization: `Bearer ${STRAPI_API_TOKEN}` },
+  });
+  if (!res.ok) {
+    throw new Error(`Strapi request failed: ${res.status} ${query}`);
+  }
+  return res.json();
+}
+
+function normalizeCoverUrl(cover) {
+  if (!cover?.url) return null;
+  return cover.url.startsWith("http") ? cover.url : `${STRAPI_URL}${cover.url}`;
+}
 
 const parseFilename = (filename) => {
   const match = filename.match(/^(\d+)-(.+)\.mdx$/);
@@ -76,33 +92,31 @@ export async function getDocsArticles(productSlug) {
   return articles.sort((a, b) => a.order - b.order);
 }
 
-export function getBlogSlugs() {
-  if (!fs.existsSync(BLOG_DIR)) return [];
-  return fs
-    .readdirSync(BLOG_DIR)
-    .filter((file) => file.endsWith(".mdx"))
-    .map((file) => file.replace(/\.mdx$/, ""));
+function mapBlogPost(entry) {
+  return {
+    slug: entry.slug,
+    title: entry.title,
+    date: entry.date,
+    excerpt: entry.excerpt || deriveExcerpt(entry.content || ""),
+    cover: normalizeCoverUrl(entry.cover),
+    tags: entry.tags?.map((tag) => tag.name) || [],
+  };
 }
 
-export function getBlogPosts() {
-  return getBlogSlugs()
-    .map((slug) => {
-      const source = fs.readFileSync(path.join(BLOG_DIR, `${slug}.mdx`), "utf8");
-      const { data, content } = matter(source);
-      return {
-        slug,
-        title: data.title,
-        date: data.date,
-        excerpt: data.excerpt || deriveExcerpt(content),
-        cover: data.cover || null,
-        tags: data.tags || [],
-      };
-    })
-    .sort((a, b) => new Date(b.date) - new Date(a.date));
+export async function getBlogSlugs() {
+  const json = await strapiFetch("/api/blog-posts?fields[0]=slug&pagination[pageSize]=100");
+  return json.data.map((entry) => entry.slug);
 }
 
-export function getRelatedPosts(post, limit = 3) {
-  const others = getBlogPosts().filter((item) => item.slug !== post.slug);
+export async function getBlogPosts() {
+  const json = await strapiFetch(
+    "/api/blog-posts?populate=*&sort=date:desc&pagination[pageSize]=100",
+  );
+  return json.data.map(mapBlogPost);
+}
+
+export async function getRelatedPosts(post, limit = 3) {
+  const others = (await getBlogPosts()).filter((item) => item.slug !== post.slug);
 
   const tagged = others.filter((item) =>
     item.tags?.some((tag) => post.tags?.includes(tag)),
@@ -113,24 +127,17 @@ export function getRelatedPosts(post, limit = 3) {
 }
 
 export async function getBlogPost(slug) {
-  const filePath = path.join(BLOG_DIR, `${slug}.mdx`);
-  if (!fs.existsSync(filePath)) return null;
+  const json = await strapiFetch(
+    `/api/blog-posts?filters[slug][$eq]=${encodeURIComponent(slug)}&populate=*`,
+  );
+  const entry = json.data[0];
+  if (!entry) return null;
 
-  const source = fs.readFileSync(filePath, "utf8");
-  const { content: rawBody } = matter(source);
-  const { content, frontmatter } = await compileMDX({
-    source,
+  const { content } = await compileMDX({
+    source: entry.content || "",
     components: mdxComponents,
     options: mdxOptions,
   });
 
-  return {
-    slug,
-    title: frontmatter.title,
-    date: frontmatter.date,
-    excerpt: frontmatter.excerpt || deriveExcerpt(rawBody),
-    cover: frontmatter.cover || null,
-    tags: frontmatter.tags || [],
-    content,
-  };
+  return { ...mapBlogPost(entry), content };
 }
