@@ -27,8 +27,8 @@ export const metadata = {
   },
 };
 
-export default function BlogPage() {
-  const posts = getBlogPosts();
+export default async function BlogPage() {
+  const posts = await getBlogPosts();
 
   return (
     <section className="font-sans section-py bg-white dark:bg-black">

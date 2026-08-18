@@ -6,12 +6,12 @@ const BASE_URL = "https://argo.tech";
 
 const staticRoutes = ["", "/about", "/storage", "/partners", "/docs", "/blog"];
 
-export default function sitemap() {
+export default async function sitemap() {
   const staticEntries = staticRoutes.map((route) => ({
     url: `${BASE_URL}${route}/`,
   }));
 
-  const blogEntries = getBlogPosts().map((post) => ({
+  const blogEntries = (await getBlogPosts()).map((post) => ({
     url: `${BASE_URL}/blog/${post.slug}/`,
     lastModified: post.date,
   }));
