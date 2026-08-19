@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { Button } from "@/ui";
-import { OrderForm } from "@/components";
+import { useOrderForm } from "@/components";
 
 const images = [
   {
@@ -36,7 +36,8 @@ const images = [
 export const Partnerships = () => {
   const { resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
-  const [formOpen, setformOpen] = useState(false);
+
+  const { open } = useOrderForm();
 
   useEffect(() => {
     setMounted(true);
@@ -74,7 +75,7 @@ export const Partnerships = () => {
             ))}
           </div>
           <div className="border-b border-black/8 dark:border-white/14 md:border-0 pl-4 py-5">
-            <Button onClick={() => setformOpen(true)}>Стать партнером</Button>
+            <Button onClick={() => open("Стать партнером")}>Стать партнером</Button>
           </div>
         </div>
         {/* right */}
@@ -88,7 +89,6 @@ export const Partnerships = () => {
           </div>
         </div>
       </div>
-      <OrderForm isOpen={formOpen} onClose={() => setformOpen(false)} />
     </section>
   );
 };

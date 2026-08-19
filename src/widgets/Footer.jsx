@@ -1,17 +1,16 @@
 "use client";
 
-import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image"
 import { ExternalLink } from "lucide-react";
-import { OrderForm } from "@/components";
+import { useOrderForm } from "@/components";
 import { cn } from "@/utils";
 import { motionVariants } from "@/config";
 import ThemeToggleFooter from "@/ui/theme-toggle-footer";
 
 export const Footer = () => {
-  const [formOpen, setformOpen] = useState(false);
   const {containerVariants, itemVariants, textVariants } = motionVariants;
+  const { open } = useOrderForm();
 
   return (
     <motion.footer
@@ -89,7 +88,7 @@ export const Footer = () => {
               </p>
               <button 
                 className="button button-primary flex-center w-45"
-                onClick={() => setformOpen(true)} 
+                onClick={() => open("Обсудить проект")}
               >
                 Обсудить проект <ExternalLink width={18} height={18} />
               </button>
@@ -156,7 +155,6 @@ export const Footer = () => {
           <ThemeToggleFooter className="" />
         </div>
       </div>
-      <OrderForm isOpen={formOpen} onClose={() => setformOpen(false)} />
     </motion.footer>
   );
 }

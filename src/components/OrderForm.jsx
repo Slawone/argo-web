@@ -7,7 +7,7 @@ import { InputField } from "@/ui";
 import { URL_BASE } from "@/config";
 import { Button } from "@/ui";
 
-export const OrderForm = ({ isOpen, onClose }) => {
+export const OrderForm = ({ isOpen, onClose, source }) => {
   const overlayRef = useRef(null);
   const [form, setForm] = useState({ name: "", phone: "", email: "" });
   const [errors, setErrors] = useState({});
@@ -57,7 +57,7 @@ export const OrderForm = ({ isOpen, onClose }) => {
       const res = await fetch(URL_BASE, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
+        body: JSON.stringify({...form, source}),
       });
       const data = await res.json();
       if (data.success) setStatus("success");

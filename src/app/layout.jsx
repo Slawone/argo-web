@@ -6,6 +6,7 @@ import { Footer } from "@/widgets";
 import { Metrika } from "@/components";
 import { CookieBanner } from "@/components";
 import { ConsentProvider } from "@/components";
+import { OrderFormProvider } from "@/components"
 import "./globals.css";
 
 const oswald = Oswald({
@@ -36,13 +37,15 @@ export default function RootLayout({ children }) {
           disableTransitionOnChange
         >
           <ConsentProvider>
-            <Header />
-              {children}
-            <Footer />
-            <CookieBanner />
-            <Suspense fallback={null}>
-              <Metrika />
-            </Suspense>
+            <OrderFormProvider>
+              <Header />
+                {children}
+              <Footer />
+              <CookieBanner />
+              <Suspense fallback={null}>
+                <Metrika />
+              </Suspense>
+            </OrderFormProvider>
           </ConsentProvider>
         </ThemeProvider>
       </body>

@@ -1,10 +1,9 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { motionVariants } from "@/config";
-import { OrderForm } from "@/components";
+import { useOrderForm } from "@/components";
 import { Button } from "@/ui";
 import { Lines } from "@/ui";
 
@@ -12,7 +11,7 @@ export function Hero({ className }) {
   const { containerVariants, itemVariants, textVariants, imageVariants } =
     motionVariants;
 
-  const [formOpen, setformOpen] = useState(false);
+  const { open } = useOrderForm();
 
   return (
     <motion.section
@@ -43,7 +42,7 @@ export function Hero({ className }) {
             variants={itemVariants}
             className="flex items-center gap-5"
           >
-            <Button variant="primary" onClick={() => setformOpen(true)}>
+            <Button variant="primary" onClick={() => open("Связаться")}>
               Связаться
             </Button>
             <Link href={"/storage"}>
@@ -53,7 +52,6 @@ export function Hero({ className }) {
         </div>
         <Lines className="md:-mt-10 w-screen" />
       </div>
-      <OrderForm isOpen={formOpen} onClose={() => setformOpen(false)} />
     </motion.section>
   );
 }
