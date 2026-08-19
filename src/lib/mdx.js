@@ -26,6 +26,25 @@ const parseFilename = (filename) => {
   return { order: Number(match[1]), slug: match[2] };
 };
 
+const MAX_EXCERPT_LENGTH = 155;
+
+const stripMarkdown = (text) => {
+  return text
+    .replace(/<[^>]+>/g, " ")
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+    .replace(/[#>*_`~]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+const deriveExcerpt = (body) => {
+  const plain = stripMarkdown(body);
+  if (plain.length <= MAX_EXCERPT_LENGTH) return plain;
+  const truncated = plain.slice(0, MAX_EXCERPT_LENGTH);
+  const lastSpace = truncated.lastIndexOf(" ");
+  return `${truncated.slice(0, lastSpace)}…`;
+};
+
 export async function getDocsArticles(productSlug) {
   const dir = path.join(DOCS_DIR, productSlug);
   if (!fs.existsSync(dir)) return [];
@@ -69,12 +88,12 @@ export function getBlogPosts() {
   return getBlogSlugs()
     .map((slug) => {
       const source = fs.readFileSync(path.join(BLOG_DIR, `${slug}.mdx`), "utf8");
-      const { data } = matter(source);
+      const { data, content } = matter(source);
       return {
         slug,
         title: data.title,
         date: data.date,
-        excerpt: data.excerpt || "",
+        excerpt: data.excerpt || deriveExcerpt(content),
         cover: data.cover || null,
         tags: data.tags || [],
       };
@@ -82,11 +101,23 @@ export function getBlogPosts() {
     .sort((a, b) => new Date(b.date) - new Date(a.date));
 }
 
+export function getRelatedPosts(post, limit = 3) {
+  const others = getBlogPosts().filter((item) => item.slug !== post.slug);
+
+  const tagged = others.filter((item) =>
+    item.tags?.some((tag) => post.tags?.includes(tag)),
+  );
+  const rest = others.filter((item) => !tagged.includes(item));
+
+  return [...tagged, ...rest].slice(0, limit);
+}
+
 export async function getBlogPost(slug) {
   const filePath = path.join(BLOG_DIR, `${slug}.mdx`);
   if (!fs.existsSync(filePath)) return null;
 
   const source = fs.readFileSync(filePath, "utf8");
+  const { content: rawBody } = matter(source);
   const { content, frontmatter } = await compileMDX({
     source,
     components: mdxComponents,
@@ -97,7 +128,7 @@ export async function getBlogPost(slug) {
     slug,
     title: frontmatter.title,
     date: frontmatter.date,
-    excerpt: frontmatter.excerpt || "",
+    excerpt: frontmatter.excerpt || deriveExcerpt(rawBody),
     cover: frontmatter.cover || null,
     tags: frontmatter.tags || [],
     content,
