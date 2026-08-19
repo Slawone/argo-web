@@ -5,14 +5,15 @@ import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { motionVariants } from "@/config";
-import { OrderForm } from "@/components";
+import { useOrderForm } from "@/components";
 import { Button } from "@/ui";
 
 export const StorageHero = () => {
   const { containerVariants, textVariants, imageVariants } = motionVariants;
-  const [formOpen, setformOpen] = useState(false);
   const { resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+
+  const { open } = useOrderForm();
 
   useEffect(() => {
     setMounted(true);
@@ -61,9 +62,8 @@ export const StorageHero = () => {
             className=""
           />
         </motion.div>
-        <Button onClick={() => setformOpen(true)}>Запросить цену</Button>
+        <Button onClick={() => open("Запросить цену")}>Запросить цену</Button>
       </div>
-      <OrderForm isOpen={formOpen} onClose={() => setformOpen(false)} />
     </motion.section>
   );
 };

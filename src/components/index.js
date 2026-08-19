@@ -8,3 +8,4 @@ export { Metrika } from './Metrika';
 export { ThemedSvg } from './ThemedSvg';
 export { CookieBanner } from './CookieBanner';
 export { ConsentProvider, useConsent } from './ConsentProvider';
+export { OrderFormProvider, useOrderForm } from './OrderFormProvider';

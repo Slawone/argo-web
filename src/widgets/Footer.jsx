@@ -2,12 +2,15 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image"
+import { ExternalLink } from "lucide-react";
+import { useOrderForm } from "@/components";
 import { cn } from "@/utils";
 import { motionVariants } from "@/config";
 import ThemeToggleFooter from "@/ui/theme-toggle-footer";
 
 export const Footer = () => {
   const {containerVariants, itemVariants, textVariants } = motionVariants;
+  const { open } = useOrderForm();
 
   return (
     <motion.footer
@@ -19,43 +22,80 @@ export const Footer = () => {
       id="footer"
     >
       <div className="relative max-w-305 mx-auto px-4 section-py grid gap-5 md:grid-cols-[2fr_1fr]">
-        <div className="pl-4 xl:pl-0">
-          <motion.h4
-            variants={textVariants}
-            className="title-color font-sans mb-2 md:text-[18px]"
-          >
-            Компания
-          </motion.h4>
-          <motion.ul
+        <div className="pl-4 xl:pl-0 flex flex-col gap-5 md:flex-row md:gap-20">
+          <div className="">
+            <motion.h4
+              variants={textVariants}
+              className="title-color font-sans mb-2 md:text-[18px]"
+            >
+              Компания
+            </motion.h4>
+            <motion.ul
+              variants={itemVariants}
+              className="text-color font-sans text-sm md:text-[18px] font-light flex flex-col gap-2"
+            >
+              <li>
+                <span>ООО «АРГО ТЕХНОЛОДЖИ ИСТ»</span>
+              </li>
+              <li>
+                <span>ИНН: 5010052504</span>
+              </li>
+              <li>
+                <span>ОКВЭД: 62.01</span>
+              </li>
+              <li>
+                <span>
+                  Адрес: 111250, город Москва, <br />
+                  проезд Завода Серп и Молот, дом 6, корпус 1, <br />
+                  эт. 7, комн. 709
+                </span>
+              </li>
+              <li>
+                <a href="tel:+74994300054" className="lg:pointer-events-none">
+                  8 <span>(499)</span> 430 00 54
+                </a>
+              </li>
+              <li className="hover:translate-x-1 transition hover:text-black dark:hover:text-white">
+                <a href="mailto:info@argo.tech">E-mail: info@argo.tech</a>
+              </li>
+            </motion.ul>
+          </div>
+          <motion.div
             variants={itemVariants}
-            className="text-color font-sans text-sm md:text-[18px] font-light flex flex-col gap-2"
+            className="flex flex-col gap-5 items-start"
           >
-            <li>
-              <span>ООО «АРГО ТЕХНОЛОДЖИ ИСТ»</span>
-            </li>
-            <li>
-              <span>ИНН: 5010052504</span>
-            </li>
-            <li>
-              <span>ОКВЭД: 62.01</span>
-            </li>
-            <li>
-              <span>
-                Адрес: 111250, город Москва, <br />
-                проезд Завода Серп и Молот, дом 6, корпус 1, <br />
-                эт. 7, комн. 709
-              </span>
-            </li>
-            <li>
-              <a href="tel:+74994300054" className="lg:pointer-events-none">
-                8 <span>(499)</span> 430 00 54
+            <div>
+              <h4 className="title-color font-sans mb-2 md:text-[18px]">
+                Центр поддержки
+              </h4>
+              <p className="text-color font-sans text-sm md:text-[18px] font-light max-w-80 mb-5">
+                Для решения технических вопросов перейдите в наш онлайн-центр
+                поддержки и создайте заявку.
+              </p>
+              <a
+                className="button button-primary flex-center w-45"
+                href="https://service.argo.tech/"
+                target="_blank"
+              >
+                Создать заявку <ExternalLink width={18} height={18} />
               </a>
-            </li>
-            <li className="hover:translate-x-1 transition hover:text-black dark:hover:text-white">
-              <a href="mailto:info@argo.tech">E-mail: info@argo.tech</a>
-            </li>
-          </motion.ul>
+            </div>
+            <div>
+              <h4 className="title-color font-sans mb-2 md:text-[18px]">Отдел продаж</h4>
+              <p className="text-color font-sans text-sm md:text-[18px] font-light max-w-80 mb-5">
+                Обсудите свои требования, уточните детали или запросите
+                демонстрацию.
+              </p>
+              <button 
+                className="button button-primary flex-center w-45"
+                onClick={() => open("Обсудить проект")}
+              >
+                Обсудить проект <ExternalLink width={18} height={18} />
+              </button>
+            </div>
+          </motion.div>
         </div>
+
         <div className="pl-4 flex items-start justify-between">
           <div className="">
             <motion.h4
