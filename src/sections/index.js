@@ -37,3 +37,6 @@ export { News } from "./News";
 export { TextGrid } from "./TextGrid";
 export { SmallTextGrid } from "./SmallTextGrid";
 export { Faq } from "./Faq";
+
+/* blog */
+export { BlogContent } from "./blog/BlogContent";

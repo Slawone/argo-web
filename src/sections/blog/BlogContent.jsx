@@ -7,7 +7,7 @@ export const BlogContent = ({ content }) => (
     content={content}
     blocks={{
       paragraph: ({ children }) => <p className="font-light">{children}</p>,
-      quote: ({ children }) => <blockquote>{children}</blockquote>,
+      quote: ({ children }) => <blockquote className="font-light">{children}</blockquote>,
       image: ({ image }) => (
         <figure className="my-6">
           <img
