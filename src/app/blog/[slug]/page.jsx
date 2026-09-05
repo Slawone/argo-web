@@ -1,13 +1,17 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
+import { BlocksRenderer } from "@strapi/blocks-react-renderer";
 import { Breadcrumbs } from "@/components";
 import { getBlogPost, getBlogSlugs, getRelatedPosts } from "@/lib/mdx";
+import { MdxFile } from "@/components/mdx/MdxFile";
 import { BlogCard } from "@/sections/blog/BlogCard";
+import { BlogContent } from "@/sections";
 import { buildArticleJsonLd } from "@/lib/jsonLd";
 import { getTagColorClass } from "@/config";
 
-export function generateStaticParams() {
-  return getBlogSlugs().map((slug) => ({ slug }));
+export async function generateStaticParams() {
+  const slugs = await getBlogSlugs();
+  return slugs.map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }) {
@@ -54,7 +58,7 @@ export default async function BlogPostPage({ params }) {
   const post = await getBlogPost(slug);
   if (!post) notFound();
 
-  const relatedPosts = getRelatedPosts(post);
+  const relatedPosts = await getRelatedPosts(post);
   const articleJsonLd = buildArticleJsonLd(post);
 
   return (
@@ -82,7 +86,24 @@ export default async function BlogPostPage({ params }) {
           {post.title}
         </h1>
 
-        <div className="docs-prose prose">{post.content}</div>
+        {/* <div className="docs-prose prose">{post.content}</div> */}
+
+        <div className="docs-prose prose">
+          <BlogContent content={post.content} />
+        </div>
+
+        {post.files?.length > 0 && (
+          <div className="mt-8">
+            {post.files.map((file) => (
+              <MdxFile
+                key={file.url}
+                href={file.url}
+                name={file.name}
+                size={file.size}
+              />
+            ))}
+          </div>
+        )}
 
         {post.tags?.length > 0 && (
           <div className="mt-10 flex flex-wrap gap-2 border-t border-black/8 pt-5 dark:border-white/14">

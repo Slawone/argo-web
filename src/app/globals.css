@@ -88,7 +88,7 @@ body {
 .docs-prose {
   @apply max-w-none font-sans;
   --tw-prose-body: #52525b;
-  --tw-prose-headings: #000000;
+  --tw-prose-headings: #00b6cc;
   --tw-prose-lead: #52525b;
   --tw-prose-links: #00b6cc;
   --tw-prose-bold: #000000;
@@ -107,7 +107,6 @@ body {
 
 .dark .docs-prose {
   --tw-prose-body: #a1a1aa;
-  --tw-prose-headings: #ffffff;
   --tw-prose-lead: #a1a1aa;
   --tw-prose-bold: #ffffff;
   --tw-prose-hr: rgb(255 255 255 / 0.14);
