@@ -10,11 +10,11 @@
     "generate:og": "node scripts/generate-og-image.mjs"
   },
   "dependencies": {
+    "@strapi/blocks-react-renderer": "^1.0.2",
     "@tailwindcss/typography": "^0.5.20",
     "clsx": "^2.1.1",
     "framer-motion": "^12.36.0",
     "fuse.js": "^7.5.0",
-    "gray-matter": "^4.0.3",
     "lucide-react": "^0.577.0",
     "next": "16.1.4",
     "next-mdx-remote": "^6.0.0",
