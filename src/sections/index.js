@@ -36,6 +36,10 @@ export { GravitonSplit } from "./graviton/GravitonSplit";
 export { GravitonInfo } from "./graviton/GravitonInfo";
 export { GravitonProducts } from "./graviton/GravitonProducts";
 export { GravitonProperties } from "./graviton/GravitonProperties";
+export { GravitonProductHero } from "./graviton/GravitonProductHero";
+export { GravitonLogos } from "./graviton/GravitonLogos";
+export { GravitonCompound } from "./graviton/GravitonCompound";
+export { GravitonMechanisms } from "./graviton/GravitonMechanisms";
 
 /* about */
 export { AboutHero } from "./about/AboutHero";

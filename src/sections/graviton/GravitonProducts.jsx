@@ -1,15 +1,14 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
-import { useOrderForm } from "@/components";
 import { Button } from "@/ui";
 import { motionVariants, gravitonVariants } from "@/config";
 
 export const GravitonProducts = () => {
   const { containerVariants, textVariants } = motionVariants;
   const { products } = gravitonVariants;
-  const { open } = useOrderForm();
 
   return (
     <motion.section
@@ -69,14 +68,18 @@ export const GravitonProducts = () => {
                     <br />
                     {product.model}
                   </h3>
-                  <Button
-                    variant="secondary"
-                    className="button-graviton"
-                    disabled={!product.enabled}
-                    onClick={() => open(`Гравитон ${product.model}`)}
-                  >
-                    Подробнее
-                  </Button>
+                  {product.href ? (
+                    <Link
+                      href={product.href}
+                      className="button button-secondary button-graviton flex-center"
+                    >
+                      Подробнее
+                    </Link>
+                  ) : (
+                    <Button variant="secondary" className="button-graviton" disabled>
+                      Подробнее
+                    </Button>
+                  )}
                 </>
               )}
             </div>

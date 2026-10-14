@@ -15,9 +15,14 @@ export const GravitonInfo = ({ model, children }) => {
       className="page-container section-py px-4 text-center font-sans font-light text-base md:text-[28px] relative"
     >
       <motion.p variants={textVariants} className="max-w-245 mx-auto text-color">
-        <span className="text-black dark:text-white uppercase text-sm md:text-[24px]">
-          {model}:
-        </span> {children}
+        {model && (
+          <>
+            <span className="text-black dark:text-white uppercase text-sm md:text-[24px]">
+              {model}:
+            </span>{" "}
+          </>
+        )}
+        {children}
       </motion.p>
     </motion.section>
   );

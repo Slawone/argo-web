@@ -28,7 +28,7 @@ const products = [
     title: "Система хранения данных Гравитон",
     model: "СХ424А24БМ,ТСЦМ.466539.006-01",
     minprom: true,
-    enabled: true,
+    href: "/partners/graviton/skh424a24bm",
   },
   {
     title: "Система хранения данных Гравитон",

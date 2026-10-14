@@ -9,3 +9,4 @@ export { YM_ID } from "./constants";
 export { CONTACT_PRODUCTS } from "./constants";
 export { getTagColorClass } from "./tagColors";
 export { gravitonVariants } from "./gravitonVariants";
+export { gravitonProductsVariants } from "./gravitonProductsVariants";
