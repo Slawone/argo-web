@@ -8,6 +8,7 @@ const ruMap = {
   docs: "Документы",
   storage: "Хранение",
   partners: "Партнеры",
+  graviton: "Гравитон",
   about: "О компании",
   documentation: "Документация",
   blog: "Блог",

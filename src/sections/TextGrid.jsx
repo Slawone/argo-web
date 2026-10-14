@@ -3,8 +3,9 @@
 import { Plus } from 'lucide-react';
 import { motion } from "framer-motion";
 import { motionVariants } from "@/config";
+import { cn } from "@/utils";
 
-export const TextGrid = ({ items }) => {
+export const TextGrid = ({ items, titleClassName = "title-color", className }) => {
   const { containerVariants, textVariants } = motionVariants;
 
   return (
@@ -13,7 +14,7 @@ export const TextGrid = ({ items }) => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className="page-container section-border"
+      className={cn("page-container section-border", className)}
     >
       <div className="grid md:grid-cols-2 font-sans main-text">
         {items.map((item, index) => (
@@ -23,7 +24,7 @@ export const TextGrid = ({ items }) => {
           >
             <motion.h3
               variants={textVariants}
-              className="title-color mb-3 text-lg md:text-xl lg:text-2xl"
+              className={cn(titleClassName, "mb-3 text-lg md:text-xl lg:text-2xl")}
             >
               {item.title}
             </motion.h3>

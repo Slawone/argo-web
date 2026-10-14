@@ -61,6 +61,10 @@ body {
   @apply border-[#00B6CC];
 }
 
+.graviton-color {
+  @apply text-[#D40032] dark:text-white;
+}
+
 .tag-color-1 {
   @apply text-[#00B6CC] border-[#00B6CC];
 }
@@ -83,6 +87,10 @@ body {
 
 .button-secondary {
   @apply border-black/8 text-[#0a0a0a] dark:text-white hover:border-transparent hover:bg-black/4 dark:border-white/[.145] dark:hover:bg-[#1a1a1a];
+}
+
+.button-graviton {
+  @apply border-[#D40032] text-[#D40032] dark:border-white/[.145] dark:text-white;
 }
 
 .docs-prose {
