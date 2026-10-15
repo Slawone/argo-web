@@ -11,6 +11,9 @@ import { getTagColorClass } from "@/config";
 
 export async function generateStaticParams() {
   const slugs = await getBlogSlugs();
+  // output: export не собирается с пустым списком (например, при SKIP_STRAPI=true),
+  // поэтому отдаём заглушку — она отрендерится как 404
+  if (!slugs.length) return [{ slug: "empty" }];
   return slugs.map((slug) => ({ slug }));
 }
 

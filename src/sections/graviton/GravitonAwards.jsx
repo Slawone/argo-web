@@ -31,11 +31,11 @@ export const GravitonAwards = () => {
               className="shrink-0 w-14 md:w-auto h-auto"
             />
             <div>
-              <h3 className="title-color uppercase text-base md:text-lg lg:text-xl mb-1">
+              <h3 className="title-color uppercase text-base md:text-lg lg:text-xl mb-1 font-medium">
                 {award.title}
               </h3>
               {award.accent && (
-                <p className="uppercase text-sm md:text-base text-[#D40032] drop-shadow-[0_0_12px_rgba(212,0,50,0.8)]">
+                <p className="uppercase text-sm md:text-base lg:text-lg text-[#D40032] drop-shadow-[0_0_12px_rgba(212,0,50,0.8)]">
                   {award.accent}
                 </p>
               )}

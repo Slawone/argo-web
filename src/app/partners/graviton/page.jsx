@@ -53,8 +53,8 @@ export default function Graviton() {
       <GravitonAwards />
       <GravitonSplit
         left={
-          <p>
-            <span className="title-color">Компания Гравитон и ARGO.TECH</span>{" "}
+          <p className="font-normal leading-8.25">
+            <span className="title-color font-medium">Компания Гравитон и ARGO.TECH</span>{" "}
             сотрудничает с 2022 года. Наши команды объединяют аппаратные
             платформы Гравитон и программный комплекс ISCRA STORAGE. Результат:
             единые системы хранения, которые работают отказоустойчиво и строятся
@@ -68,10 +68,10 @@ export default function Graviton() {
             rel="noopener noreferrer"
             className="flex items-start gap-3 group"
           >
-            <p className="group-hover:title-color transition-colors">
+            <p className="group-hover:title-color transition-colors font-normal leading-8.25">
               Компания Гравитон и ARGO.TECH развернули программно-аппаратный
-              комплекс (ПАК) для ФБУН НИИ СБМ Роспотребнадзора:{" "}
-              <span className="title-color">
+              комплекс (ПАК) для ФБУН НИИ СБМ Роспотребнадзора: <br />
+              <span className="title-color font-medium">
                 Научно-исследовательского института системной биологии и
                 медицины
               </span>
@@ -92,8 +92,8 @@ export default function Graviton() {
       </GravitonInfo>
       <GravitonSplit
         left={
-          <p>
-            <span className="title-color">Гарантированная совместимость</span>
+          <p className="font-normal leading-8.25">
+            <span className="title-color font-medium">Гарантированная совместимость</span>
             <br />
             Поддерживаем весь спектр инфраструктурных решений: от операционных
             систем до платформ виртуализации, СЗИ и систем резервного
@@ -101,8 +101,8 @@ export default function Graviton() {
           </p>
         }
         right={
-          <p>
-            <span className="title-color">
+          <p className="font-normal leading-8.25">
+            <span className="title-color font-medium">
               Надёжность, подтверждённая масштабом.
             </span>
             <br />

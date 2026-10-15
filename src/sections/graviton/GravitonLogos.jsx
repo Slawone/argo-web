@@ -16,9 +16,9 @@ export const GravitonLogos = ({ count = 5 }) => {
               className="w-full md:hover:scale-105 transition-transform"
             >
               <Image
-                src="/partnersList/graviton.svg"
-                width={213}
-                height={41}
+                src="/graviton/logo.svg"
+                width={368}
+                height={68}
                 alt=""
                 className="w-full h-auto invert dark:invert-0"
               />

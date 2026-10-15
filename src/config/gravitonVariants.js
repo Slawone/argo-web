@@ -1,13 +1,13 @@
 const awards = [
   {
-    image: "/graviton/award-brand.png",
+    image: "/graviton/award-priority.png",
     width: 76,
     height: 95,
     title: "Приоритет - 2025",
     text: "Лауреат национальной премии в области промышленных технологий",
   },
   {
-    image: "/graviton/award-priority.png",
+    image: "/graviton/award-brand.png",
     width: 84,
     height: 83,
     title: "Бренд года в России 2025",
@@ -34,6 +34,7 @@ const products = [
     title: "Система хранения данных Гравитон",
     model: "СХ424И24БМ-АР ЕЦРТ.466539.012-05 10578748",
     minprom: true,
+    href: "/partners/graviton/skh424i24bm-ar",
   },
   {
     title: "Система хранения данных Гравитон",
@@ -44,6 +45,7 @@ const products = [
     title: "Система хранения данных Гравитон",
     model: "СХ424И24БМ-АР ЕЦРТ.466539.012 10488620",
     minprom: true,
+    href: "/partners/graviton/skh424i24bm-ar",
   },
   { soon: true },
   { soon: true },

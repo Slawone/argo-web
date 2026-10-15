@@ -12,7 +12,7 @@ import { Breadcrumbs } from "@/components";
 import { gravitonProductsVariants, faqVariants } from "@/config";
 
 const MODEL = "СХ424А24БМ, ТСЦМ.466539.006-01";
-const REESTR_URL = "https://reestr.digital.gov.ru/reestr/307200/";
+const REESTR_URL = "https://gisp.gov.ru/goods/#/product/5599310";
 
 const title = `СХД Гравитон ${MODEL} — ARGO.TECH`;
 const description =
@@ -54,16 +54,18 @@ export default function GravitonSkh424a24bm() {
       <GravitonProductHero
         title={`Система хранения данных Гравитон ${MODEL}`}
         subtitle="Одна система: множество государственных задач"
-        image={{ src: "/graviton/skh424a24bm-hero.png", width: 1584, height: 771 }}
-        imageLight={{ src: "/graviton/skh424a24bm-hero-light.svg", width: 671, height: 201 }}
+        image={{ src: "/graviton/skh424a24bm-hero.png", width: 792, height: 386 }}
+        imageLight={{ src: "/graviton/skh424a24bm-hero-light.svg", width: 792, height: 386 }}
       />
       <GravitonLogos />
       <GravitonInfo>
-        <span className="text-[#D40032]">Надёжность.</span>{" "}
-        <span className="title-color">Производительность. Гибкость.</span>
+        <span className="font-medium xl:text-[30px]">
+          <span className="text-[#D40032]">Надёжность.</span>{" "}
+          <span className="title-color">Производительность. Гибкость.</span>
+        </span>
       </GravitonInfo>
       <GravitonCompound tabs={compoundTabs} reestrHref={REESTR_URL}>
-        <span className="title-color">
+        <span className="title-color font-normal">
           Высокопроизводительная система хранения данных: {MODEL}:
         </span>{" "}
         Контроллеры системы хранения с AMD EPYC 7513, обеспечивают параллелизм
@@ -71,13 +73,17 @@ export default function GravitonSkh424a24bm() {
         <span className="title-color">Throughput</span>
       </GravitonCompound>
       <GravitonInfo>
-        <span className="title-color">Самый высокий</span>{" "}
-        <span className="text-[#D40032]">Throughput</span>
+        <span className="font-medium xl:text-[30px]">
+          <span className="title-color">Самый высокий</span>{" "}
+          <span className="text-[#D40032]">Throughput</span>
+        </span>
       </GravitonInfo>
       <TextGrid items={features} className="border-b!" />
       <GravitonInfo>
-        <span className="title-color">
-          Основные механизмы сохранности данных: {MODEL}
+        <span className="font-medium xl:text-[30px]">
+          <span className="title-color">
+            Основные механизмы сохранности данных: {MODEL}
+          </span>
         </span>
       </GravitonInfo>
       <GravitonMechanisms items={mechanisms} />

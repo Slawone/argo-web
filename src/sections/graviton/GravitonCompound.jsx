@@ -24,7 +24,7 @@ export const GravitonCompound = ({ children, tabs, reestrHref }) => {
         <div className="flex flex-col items-start gap-8 section-py px-4 border-b lg:border-b-0 lg:border-r main-border">
           <motion.h2
             variants={textVariants}
-            className="text-base md:text-xl lg:text-[28px] uppercase leading-none title-color"
+            className="text-base md:text-xl lg:text-[28px] uppercase leading-none title-color font-semibold"
           >
             Состав
           </motion.h2>

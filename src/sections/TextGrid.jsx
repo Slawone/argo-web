@@ -24,7 +24,7 @@ export const TextGrid = ({ items, titleClassName = "title-color", className }) =
           >
             <motion.h3
               variants={textVariants}
-              className={cn(titleClassName, "mb-3 text-lg md:text-xl lg:text-2xl")}
+              className={cn(titleClassName, "mb-3 text-lg md:text-xl lg:text-2xl font-medium")}
             >
               {item.title}
             </motion.h3>

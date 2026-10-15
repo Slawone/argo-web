@@ -17,7 +17,7 @@ export const GravitonInfo = ({ model, children }) => {
       <motion.p variants={textVariants} className="max-w-245 mx-auto text-color">
         {model && (
           <>
-            <span className="text-black dark:text-white uppercase text-sm md:text-[24px]">
+            <span className="text-black dark:text-white uppercase text-sm md:text-[24px] font-normal">
               {model}:
             </span>{" "}
           </>
