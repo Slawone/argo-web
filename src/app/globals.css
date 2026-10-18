@@ -73,6 +73,10 @@ body {
   @apply text-[#00FF66] border-[#00FF66];
 }
 
+.tag-color-3 {
+  @apply text-[#FF9000] border-[#FF9000];
+}
+
 .main-text {
   @apply text-sm font-light leading-5 md:text-base md:leading-6 lg:text-lg xl:text-xl lg:leading-7.5;
 }
