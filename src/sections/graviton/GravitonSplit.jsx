@@ -21,7 +21,7 @@ export const GravitonSplit = ({ left, right, gridClassName, rightClassName }) =>
     >
       <div
         className={cn(
-          "grid md:grid-cols-[59fr_41fr] text-base md:text-xl lg:text-[28px] lg:leading-[1.5]",
+          "grid md:grid-cols-[59fr_41fr] text-base md:text-xl lg:text-[28px] lg:leading-normal",
           gridClassName,
         )}
       >

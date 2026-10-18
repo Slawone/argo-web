@@ -30,7 +30,7 @@ export const GravitonCompound = ({ children, tabs, reestrHref }) => {
           </motion.h2>
           <motion.p
             variants={textVariants}
-            className="text-color text-base md:text-xl lg:text-[28px] lg:leading-[1.5]"
+            className="text-color text-base md:text-xl lg:text-[28px] lg:leading-normal"
           >
             {children}
           </motion.p>

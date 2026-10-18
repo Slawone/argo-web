@@ -63,7 +63,7 @@ export const GravitonProductHero = ({
             </motion.h1>
             <motion.p
               variants={textVariants}
-              className="title-color uppercase whitespace-pre-line text-sm leading-5 md:text-base md:leading-6 lg:text-lg lg:leading-7.5 xl:text-[20.5px] xl:leading-[1.5]"
+              className="title-color uppercase whitespace-pre-line text-sm leading-5 md:text-base md:leading-6 lg:text-lg lg:leading-7.5 xl:text-[20.5px] xl:leading-normal"
             >
               {subtitle}
             </motion.p>
