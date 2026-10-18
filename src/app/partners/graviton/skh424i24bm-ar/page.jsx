@@ -55,8 +55,9 @@ export default function GravitonSkh424i24bmAr() {
       <GravitonProductHero
         title={"Система хранения данных\nГравитон СХ424И24БМ-АР\nЕЦРТ.466539.012\nЕЦРТ.466539.012-05"}
         subtitle={"Корпоративная система хранения данных\nс отказоустойчивой архитектурой"}
-        image={{ src: "/graviton/skh424a24bm-hero1.svg", width: 792, height: 386 }}
-        imageLight={{ src: "/graviton/skh424a24bm-hero1-light.svg", width: 792, height: 386 }}
+        image={{ src: "/graviton/skh424a24bm-hero1.svg", width: 878, height: 386 }}
+        imageLight={{ src: "/graviton/skh424a24bm-hero1-light.svg", width: 878, height: 386 }}
+        serverOffset={{ x: 86, y: 83 }}
       />
       <GravitonLogos />
       <GravitonInfo>
