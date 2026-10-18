@@ -1,14 +1,14 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { IMaskInput } from "react-imask";
 import { MailCheck } from "lucide-react";
-import { Button } from "@/ui";
+import { Button, HoneypotField, HONEYPOT_NAME } from "@/ui";
 import { cn } from "@/utils";
 import { URL_BASE, CONTACT_PRODUCTS } from "@/config";
 
-// Временно выключено: send.php пока не принимает website, product и message
-const SUBMIT_ENABLED = false;
+// Выключатель отправки: false — кнопка disabled, заявки не уходят
+const SUBMIT_ENABLED = true;
 
 const initialForm = {
   name: "",
@@ -37,6 +37,13 @@ export const Contact = ({ source = "", className }) => {
   const [errors, setErrors] = useState({});
   const [status, setStatus] = useState("idle");
   const [serverError, setServerError] = useState("");
+  // антиспам: ловушка и время заполнения формы
+  const honeypotRef = useRef(null);
+  const openedAtRef = useRef(0);
+
+  useEffect(() => {
+    openedAtRef.current = Date.now();
+  }, []);
 
   const update = (id) => (e) =>
     setForm((prev) => ({ ...prev, [id]: e.target.value }));
@@ -71,15 +78,21 @@ export const Contact = ({ source = "", className }) => {
       const res = await fetch(URL_BASE, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...form, source }),
+        body: JSON.stringify({
+          ...form,
+          source,
+          [HONEYPOT_NAME]: honeypotRef.current?.value ?? "",
+          fill_time: Date.now() - openedAtRef.current,
+        }),
       });
       const data = await res.json();
       if (data.success) {
         setStatus("success");
         setForm(initialForm);
+        openedAtRef.current = Date.now();
       } else {
         setStatus("error");
-        setServerError(data.message || "Ошибка отправки. Попробуйте позже.");
+        setServerError(data.error || data.message || "Ошибка отправки. Попробуйте позже.");
       }
     } catch {
       setStatus("error");
@@ -118,8 +131,9 @@ export const Contact = ({ source = "", className }) => {
             <form
               noValidate
               onSubmit={handleSubmit}
-              className="grid md:grid-cols-2 gap-x-9 gap-y-4"
+              className="relative grid md:grid-cols-2 gap-x-9 gap-y-4"
             >
+              <HoneypotField ref={honeypotRef} />
               <Field id="name" label="Имя" error={errors.name}>
                 <input
                   id="name"

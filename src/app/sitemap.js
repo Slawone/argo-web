@@ -4,7 +4,17 @@ import { getBlogPosts } from "@/lib/mdx";
 
 const BASE_URL = "https://argo.tech";
 
-const staticRoutes = ["", "/about", "/storage", "/partners", "/docs", "/blog"];
+const staticRoutes = [
+  "",
+  "/about",
+  "/storage",
+  "/partners",
+  "/partners/graviton",
+  "/partners/graviton/skh424a24bm",
+  "/partners/graviton/skh424i24bm-ar",
+  "/docs",
+  "/blog",
+];
 
 export default async function sitemap() {
   const staticEntries = staticRoutes.map((route) => ({
