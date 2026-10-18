@@ -85,7 +85,7 @@ export const GravitonCompound = ({ children, tabs, reestrHref }) => {
                         key={line.label}
                         className={cn(
                           "flex gap-4 md:gap-6 px-1",
-                          line.highlight && "bg-black dark:bg-white",
+                          line.highlight && "bg-[#d5d5d5] dark:bg-white",
                         )}
                       >
                         <span className="w-2 shrink-0 text-color">{index + 1}</span>
@@ -97,7 +97,7 @@ export const GravitonCompound = ({ children, tabs, reestrHref }) => {
                             <span
                               className={
                                 line.highlight
-                                  ? "text-white dark:text-black"
+                                  ? "text-black"
                                   : "text-[#D40032]"
                               }
                             >

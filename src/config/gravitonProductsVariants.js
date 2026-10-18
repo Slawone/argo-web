@@ -17,10 +17,10 @@ const osTab = {
   label: "Операционные Системы",
   lines: [
     { label: "Базальт СПО" },
-    { label: "Ред ОС (8)" },
+    { label: "Ред ОС (8)", highlight: true },
     { label: "Ред ОС (7.3)" },
     { label: "ОСНОВА" },
-    { label: "Astra Linux", highlight: true },
+    { label: "Astra Linux" },
   ],
 };
 
