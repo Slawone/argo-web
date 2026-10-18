@@ -37,6 +37,7 @@ export { GravitonInfo } from "./graviton/GravitonInfo";
 export { GravitonProducts } from "./graviton/GravitonProducts";
 export { GravitonProperties } from "./graviton/GravitonProperties";
 export { GravitonProductHero } from "./graviton/GravitonProductHero";
+export { GravitonTextGrid } from "./graviton/GravitonTextGrid";
 export { GravitonLogos } from "./graviton/GravitonLogos";
 export { GravitonCompound } from "./graviton/GravitonCompound";
 export { GravitonMechanisms } from "./graviton/GravitonMechanisms";

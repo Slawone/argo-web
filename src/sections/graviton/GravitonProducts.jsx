@@ -63,7 +63,7 @@ export const GravitonProducts = () => {
                 <p className="text-color main-text">Скоро</p>
               ) : (
                 <>
-                  <h3 className="text-color main-text">
+                  <h3 className="text-color text-base md:text-lg lg:text-xl leading-6 lg:leading-6.25 whitespace-pre-line xl:whitespace-pre">
                     {product.title}
                     <br />
                     {product.model}

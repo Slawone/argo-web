@@ -6,7 +6,7 @@ import {
   GravitonInfo,
   GravitonProducts,
   GravitonProperties,
-  TextGrid,
+  GravitonTextGrid,
   Contact,
   Faq
 } from "@/sections";
@@ -52,13 +52,16 @@ export default function Graviton() {
       <GravitonHero />
       <GravitonAwards />
       <GravitonSplit
+        gridClassName="xl:grid-cols-[1fr_515px] xl:text-[26.5px]"
+        rightClassName="xl:pr-5"
         left={
           <p className="font-normal leading-8.25">
             <span className="title-color font-medium">Компания Гравитон и ARGO.TECH</span>{" "}
-            сотрудничает с 2022 года. Наши команды объединяют аппаратные
-            платформы Гравитон и программный комплекс ISCRA STORAGE. Результат:
-            единые системы хранения, которые работают отказоустойчиво и строятся
-            на российских технологиях.
+            сотрудничает с 2022 года.
+            <br className="hidden xl:inline" /> Наши команды объединяют аппаратные платформы Гравитон
+            <br className="hidden xl:inline" /> и программный комплекс ISCRA STORAGE. Результат: единые
+            <br className="hidden xl:inline" /> системы хранения, которые работают отказоустойчиво
+            <br className="hidden xl:inline" /> и строятся на российских технологиях.
           </p>
         }
         right={
@@ -66,14 +69,16 @@ export default function Graviton() {
             href={PAK_CASE_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-start gap-3 group"
+            className="flex items-start gap-3 xl:gap-2.5 group"
           >
-            <p className="group-hover:title-color transition-colors font-normal leading-8.25">
-              Компания Гравитон и ARGO.TECH развернули программно-аппаратный
-              комплекс (ПАК) для ФБУН НИИ СБМ Роспотребнадзора: <br />
+            <p className="group-hover:title-color transition-colors font-normal leading-8.25 xl:whitespace-nowrap">
+              Компания Гравитон и ARGO.TECH
+              <br className="hidden xl:inline" /> развернули программно-аппаратный
+              <br className="hidden xl:inline" /> комплекс (ПАК) для ФБУН НИИ СБМ
+              <br className="hidden xl:inline" /> Роспотребнадзора: <br />
               <span className="title-color font-medium">
-                Научно-исследовательского института системной биологии и
-                медицины
+                Научно-исследовательского института
+                <br className="hidden xl:inline" /> системной биологии и медицины
               </span>
             </p>
             <Image
@@ -87,27 +92,33 @@ export default function Graviton() {
         }
       />
       <GravitonInfo model="ГРАВИТОН СХ424А24БМ,ТСЦМ.466539.006-01">
-        Импортонезависимая высокопроизводительная СХД, для государственных
-        закупок и объектов <span className="title-color">КИИ</span>.
+        Импортонезависимая
+        <br className="hidden xl:inline" /> высокопроизводительная СХД, для государственных закупок и объектов{" "}
+        <span className="graviton-color">КИИ</span>.
       </GravitonInfo>
       <GravitonSplit
+        gridClassName="xl:grid-cols-[1fr_515px] xl:text-[26.5px]"
         left={
           <p className="font-normal leading-8.25">
             <span className="title-color font-medium">Гарантированная совместимость</span>
             <br />
-            Поддерживаем весь спектр инфраструктурных решений: от операционных
-            систем до платформ виртуализации, СЗИ и систем резервного
-            копирования. Локальных и международных. Без дополнительных настроек.
+            Поддерживаем весь спектр инфраструктурных решений:
+            <br className="hidden xl:inline" /> от операционных систем до платформ виртуализации, СЗИ
+            <br className="hidden xl:inline" /> и систем резервного копирования. Локальных
+            <br className="hidden xl:inline" /> и международных. Без дополнительных настроек.
           </p>
         }
         right={
-          <p className="font-normal leading-8.25">
+          <p className="font-normal leading-8.25 xl:whitespace-nowrap">
             <span className="title-color font-medium">
-              Надёжность, подтверждённая масштабом.
+              Надёжность, подтверждённая
+              <br className="hidden xl:inline" /> масштабом.
             </span>
             <br />
-            Ежедневно — десятки петабайт, под защитой: государственные
-            инфраструктуры, крупные операторы данных, задачи высшей категории.
+            Ежедневно — десятки петабайт,
+            <br className="hidden xl:inline" /> под защитой: государственные
+            <br className="hidden xl:inline" /> инфраструктуры, крупные операторы
+            <br className="hidden xl:inline" /> данных, задачи высшей категории.
           </p>
         }
       />
@@ -120,11 +131,7 @@ export default function Graviton() {
       <GravitonInfo model="СХ412И36БМ16Т-АР">
         Для хранения критически важной информации
       </GravitonInfo>
-      <TextGrid
-        items={useCases}
-        titleClassName="graviton-color"
-        className="border-b!"
-      />
+      <GravitonTextGrid items={useCases} titleClassName="graviton-color" />
       <Contact source="Гравитон" />
       <Faq variants={faqGraviton} titleClassName="text-[#D40032]" />
     </main>

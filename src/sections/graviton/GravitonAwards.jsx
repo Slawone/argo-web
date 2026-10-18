@@ -16,22 +16,23 @@ export const GravitonAwards = () => {
       viewport={{ once: true }}
       className="page-container font-sans font-light"
     >
-      <ul className="grid md:grid-cols-3">
+      <ul className="grid md:grid-cols-3 xl:flex xl:justify-between">
         {awards.map((award) => (
           <motion.li
             key={award.title}
             variants={textVariants}
-            className="flex items-start gap-6 px-4 py-4 md:py-8"
+            className="flex items-center gap-6 xl:gap-6.5 px-4 xl:px-0 py-4 md:py-8"
           >
             <Image
               src={award.image}
               width={award.width}
               height={award.height}
               alt=""
-              className="shrink-0 w-14 md:w-auto h-auto"
+              style={{ "--award-w": `${award.width}px` }}
+              className="shrink-0 w-14 md:w-(--award-w) h-auto"
             />
             <div>
-              <h3 className="title-color uppercase text-base md:text-lg lg:text-xl mb-1 font-medium">
+              <h3 className="title-color uppercase text-base md:text-lg lg:text-xl lg:leading-6.25 mb-1 font-medium xl:whitespace-pre">
                 {award.title}
               </h3>
               {award.accent && (
@@ -39,7 +40,7 @@ export const GravitonAwards = () => {
                   {award.accent}
                 </p>
               )}
-              <p className="text-color main-text">
+              <p className="title-color text-sm md:text-base lg:text-lg leading-5 md:leading-6 lg:leading-6.25 xl:whitespace-pre">
                 {award.text}
               </p>
             </div>

@@ -4,7 +4,7 @@ import {
   GravitonInfo,
   GravitonCompound,
   GravitonMechanisms,
-  TextGrid,
+  GravitonTextGrid,
   Contact,
   Faq,
 } from "@/sections";
@@ -52,7 +52,7 @@ export default function GravitonSkh424a24bm() {
         lastLabel="СХ424А24БМ"
       />
       <GravitonProductHero
-        title={`Система хранения данных Гравитон ${MODEL}`}
+        title={"Система хранения данных\nГравитон СХ424А24БМ, ТСЦМ.\n466539.006-01"}
         subtitle="Одна система: множество государственных задач"
         image={{ src: "/graviton/skh424a24bm-hero.png", width: 878, height: 386 }}
         imageLight={{ src: "/graviton/skh424a24bm-hero-light.svg", width: 878, height: 386 }}
@@ -79,7 +79,7 @@ export default function GravitonSkh424a24bm() {
           <span className="text-[#D40032]">Throughput</span>
         </span>
       </GravitonInfo>
-      <TextGrid items={features} className="border-b!" />
+      <GravitonTextGrid items={features} />
       <GravitonInfo>
         <span className="font-medium xl:text-[30px]">
           <span className="title-color">
