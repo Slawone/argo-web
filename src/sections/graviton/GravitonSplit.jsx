@@ -3,9 +3,13 @@
 import { motion } from "framer-motion";
 import { Plus } from "lucide-react";
 import { motionVariants } from "@/config";
+import { cn } from "@/utils";
 
-export const GravitonSplit = ({ left, right }) => {
+// Отступы карточек на xl — как в макете: 29 сверху, 38 снизу, 37 по бокам.
+// gridClassName / rightClassName — точечные правки сетки и правой карточки под конкретный блок
+export const GravitonSplit = ({ left, right, gridClassName, rightClassName }) => {
   const { containerVariants, textVariants } = motionVariants;
+  const cellClassName = "px-4 py-8 md:py-10 xl:pt-7.25 xl:pb-9.5 xl:px-9.25";
 
   return (
     <motion.section
@@ -15,14 +19,19 @@ export const GravitonSplit = ({ left, right }) => {
       viewport={{ once: true }}
       className="page-container border main-border relative font-sans font-light text-color"
     >
-      <div className="grid md:grid-cols-[59fr_41fr] text-base md:text-xl lg:text-[28px] lg:leading-[1.5]">
+      <div
+        className={cn(
+          "grid md:grid-cols-[59fr_41fr] text-base md:text-xl lg:text-[28px] lg:leading-[1.5]",
+          gridClassName,
+        )}
+      >
         <motion.div
           variants={textVariants}
-          className="px-4 py-8 md:py-10 border-b md:border-b-0 md:border-r main-border"
+          className={cn(cellClassName, "border-b md:border-b-0 md:border-r main-border")}
         >
           {left}
         </motion.div>
-        <motion.div variants={textVariants} className="px-4 py-8 md:py-10">
+        <motion.div variants={textVariants} className={cn(cellClassName, rightClassName)}>
           {right}
         </motion.div>
       </div>

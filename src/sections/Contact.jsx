@@ -20,11 +20,11 @@ const initialForm = {
 };
 
 const fieldClassName =
-  "w-full px-3 py-2 border rounded-lg bg-transparent title-color font-light text-base md:text-lg placeholder:text-zinc-400 dark:placeholder:text-zinc-500 focus:outline-none focus:ring-2 transition-colors";
+  "w-full h-11 px-3.25 border rounded-lg bg-transparent title-color font-light text-base md:text-lg xl:text-xl placeholder:text-zinc-400 dark:placeholder:text-[#a1a1a1] focus:outline-none focus:ring-2 transition-colors";
 
 const Field = ({ id, label, error, className, children }) => (
   <div className={cn("flex flex-col gap-2", className)}>
-    <label htmlFor={id} className="title-color text-base md:text-lg">
+    <label htmlFor={id} className="title-color font-normal text-base md:text-lg xl:text-xl xl:leading-[34px]">
       {label}
     </label>
     {children}
@@ -51,7 +51,7 @@ export const Contact = ({ source = "", className }) => {
   const borderClass = (id) =>
     errors[id]
       ? "border-red-500 focus:ring-red-300"
-      : "border-gray-300 dark:border-white/20 focus:ring-blue-300";
+      : "border-gray-300 dark:border-[#a1a1a1] focus:ring-blue-300";
 
   const validate = () => {
     const e = {};
@@ -103,19 +103,20 @@ export const Contact = ({ source = "", className }) => {
   return (
     <section
       id="contact"
-      className={cn("page-container py-5 md:py-10 font-sans font-light", className)}
+      className={cn("page-container py-5 md:py-10 xl:pt-12.75 xl:pb-19.5 font-sans font-light", className)}
     >
-      <div className="grid md:grid-cols-[1fr_2fr]">
-        <div className="px-4 py-5 md:py-10">
-          <h2 className="title-color uppercase text-base md:text-xl lg:text-[28px] leading-none mb-5">
+      <div className="grid md:grid-cols-[1fr_2fr] xl:grid-cols-[436px_1fr]">
+        <div className="px-4 py-5 md:py-10 xl:pt-11.25 xl:pb-0 xl:pl-8.75 xl:pr-0">
+          <h2 className="title-color uppercase text-base md:text-xl lg:text-[28px] xl:text-[30px] xl:leading-8.5 leading-none mb-5 xl:mb-4 xl:font-normal">
             Связаться с нами
           </h2>
-          <p className="text-color main-text">
-            Расскажем об опыте, покажем кейсы и дадим рекомендации
+          <p className="text-color main-text xl:text-[28px]! xl:leading-[33.2px]!">
+            Расскажем об опыте, покажем
+            <br className="hidden xl:inline" /> кейсы и дадим рекомендации
           </p>
         </div>
 
-        <div className="px-4 py-8 md:py-10">
+        <div className="px-4 py-8 md:py-10 xl:pt-16.25 xl:pb-0 xl:px-0 xl:pr-9.25">
           {status === "success" ? (
             <div className="flex flex-col items-center text-center gap-4 py-10">
               <MailCheck className="w-12 h-12 title-color" />
@@ -131,7 +132,7 @@ export const Contact = ({ source = "", className }) => {
             <form
               noValidate
               onSubmit={handleSubmit}
-              className="relative grid md:grid-cols-2 gap-x-9 gap-y-4"
+              className="relative grid md:grid-cols-2 gap-x-9 xl:gap-x-9.25 gap-y-4 xl:gap-y-3.5"
             >
               <HoneypotField ref={honeypotRef} />
               <Field id="name" label="Имя" error={errors.name}>
@@ -160,7 +161,7 @@ export const Contact = ({ source = "", className }) => {
                   value={form.phone}
                   onAccept={(value) => setForm((prev) => ({ ...prev, phone: value }))}
                   placeholder="+7 (999) 000-00-00"
-                  className={cn(fieldClassName, borderClass("phone"))}
+                  className={cn(fieldClassName, borderClass("phone"), "xl:placeholder:text-lg")}
                 />
               </Field>
               <Field id="website" label="Website компании">
@@ -169,7 +170,7 @@ export const Contact = ({ source = "", className }) => {
                   value={form.website}
                   onChange={update("website")}
                   placeholder="Example.com"
-                  className={cn(fieldClassName, borderClass("website"))}
+                  className={cn(fieldClassName, borderClass("website"), "xl:placeholder:text-lg")}
                 />
               </Field>
               <Field id="product" label="Выбор продукта" className="md:col-span-2">
@@ -181,7 +182,7 @@ export const Contact = ({ source = "", className }) => {
                     fieldClassName,
                     borderClass("product"),
                     "cursor-pointer dark:bg-black",
-                    !form.product && "text-zinc-400 dark:text-zinc-500",
+                    !form.product && "text-zinc-400! dark:text-[#a1a1a1]!",
                   )}
                 >
                   <option value="">Выберите продукт</option>
@@ -192,19 +193,19 @@ export const Contact = ({ source = "", className }) => {
                   ))}
                 </select>
               </Field>
-              <Field id="message" label="Комментарий" className="md:col-span-2">
+              <Field id="message" label="Ваш вопрос" className="md:col-span-2">
                 <textarea
                   id="message"
                   rows={4}
                   value={form.message}
                   onChange={update("message")}
                   placeholder="Поле для ввода"
-                  className={cn(fieldClassName, borderClass("message"), "resize-none")}
+                  className={cn(fieldClassName, borderClass("message"), "h-auto md:h-38.25 pt-1 resize-none")}
                 />
               </Field>
 
-              <div className="md:col-span-2 flex flex-col gap-3">
-                <p className="text-color text-sm">
+              <div className="md:col-span-2 flex flex-col gap-3 xl:gap-2.5">
+                <p className="text-color text-sm xl:text-[16.25px] xl:leading-[33.2px] xl:pl-3.5 xl:whitespace-nowrap">
                   Нажимая на кнопку, я соглашаюсь с{" "}
                   <a
                     href="/documents/Политика_о_защите,_хранении,_обработке_и_передаче_персональных_данных.pdf"
@@ -221,7 +222,7 @@ export const Contact = ({ source = "", className }) => {
                 <Button
                   type="submit"
                   disabled={!SUBMIT_ENABLED || status === "loading"}
-                  className="w-full md:w-1/2 flex-center"
+                  className="w-full md:w-1/2 xl:w-[calc((100%-37px)/2)] md:h-11! rounded-lg! xl:text-xl! flex-center"
                 >
                   {status === "loading" ? "Отправляем..." : "Отправить заявку"}
                 </Button>

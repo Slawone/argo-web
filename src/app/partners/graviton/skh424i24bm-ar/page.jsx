@@ -4,7 +4,7 @@ import {
   GravitonInfo,
   GravitonCompound,
   GravitonMechanisms,
-  TextGrid,
+  GravitonTextGrid,
   Contact,
   Faq,
 } from "@/sections";
@@ -78,7 +78,7 @@ export default function GravitonSkh424i24bmAr() {
           <span className="title-color">Флагман совместного решения</span>
         </span>
       </GravitonInfo>
-      <TextGrid items={features} className="border-b!" />
+      <GravitonTextGrid items={features} />
       <GravitonInfo>
         <span className="font-medium xl:text-[30px]">
           <span className="title-color">Основные механизмы сохранности данных:</span>

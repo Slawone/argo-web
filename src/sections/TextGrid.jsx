@@ -5,7 +5,14 @@ import { motion } from "framer-motion";
 import { motionVariants } from "@/config";
 import { cn } from "@/utils";
 
-export const TextGrid = ({ items, titleClassName = "title-color", className }) => {
+// cellClassName / labelClassName — точечные правки карточки и текста под конкретную страницу
+export const TextGrid = ({
+  items,
+  titleClassName = "title-color",
+  className,
+  cellClassName,
+  labelClassName,
+}) => {
   const { containerVariants, textVariants } = motionVariants;
 
   return (
@@ -20,7 +27,10 @@ export const TextGrid = ({ items, titleClassName = "title-color", className }) =
         {items.map((item, index) => (
           <div
             key={item.title}
-            className="px-5 py-10 flex flex-col justify-start border-b last-of-type:border-b-0 border-black/8 dark:border-white/14 md:border-b-0 md:odd:border-r md:nth-[-n+2]:border-b relative"
+            className={cn(
+              "px-5 py-10 flex flex-col justify-start border-b last-of-type:border-b-0 border-black/8 dark:border-white/14 md:border-b-0 md:odd:border-r md:nth-[-n+2]:border-b relative",
+              cellClassName,
+            )}
           >
             <motion.h3
               variants={textVariants}
@@ -30,7 +40,7 @@ export const TextGrid = ({ items, titleClassName = "title-color", className }) =
             </motion.h3>
             <motion.p
               variants={textVariants}
-              className="text-color"
+              className={cn("text-color", labelClassName)}
             >
               {item.label}
             </motion.p>

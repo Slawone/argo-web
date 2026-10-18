@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "build:test": "SKIP_STRAPI=true BUILD_DIR=out-test next build",
+    "postbuild": "find ${BUILD_DIR:-out} -name .DS_Store -delete",
     "start": "next start",
     "lint": "eslint",
     "generate:og": "node scripts/generate-og-image.mjs"
