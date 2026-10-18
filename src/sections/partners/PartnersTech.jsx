@@ -1,11 +1,13 @@
 import Image from "next/image";
+import Link from "next/link";
 import { ExternalLink } from "lucide-react";
 
 const images = [
   {
     source: "/partnersList/graviton.svg",
     alt: "graviton",
-    link: "https://graviton.ru/catalog/servery-i-khranenie-dannykh/skhd/skhd-graviton-skh424i24bm-ar/",
+    link: "/partners/graviton",
+    internal: true,
   },
   {
     source: "/partnersList/norsi.svg",
@@ -61,14 +63,20 @@ export const PartnersTech = () => {
       <div className="section-border grid grid-cols-2 md:grid-cols-3 divide-x divide-y divide-black/8 dark:divide-white/14 md:[&>*:nth-child(3n)]:border-r-0">
         {images.map((item, index) => (
           <div key={index} className="flex justify-center py-10">
-            <a href={item.link} className="flex items-center" target="_blank">
-              <Image
-                src={item.source}
-                alt={item.alt}
-                width={item.source === "/partnersList/loading.svg" ? 40 : 110}
-                height={50}
-              />
-            </a>
+            {item.internal ? (
+              <Link href={item.link} className="flex items-center">
+                <Image src={item.source} alt={item.alt} width={110} height={50} />
+              </Link>
+            ) : (
+              <a href={item.link} className="flex items-center" target="_blank">
+                <Image
+                  src={item.source}
+                  alt={item.alt}
+                  width={item.source === "/partnersList/loading.svg" ? 40 : 110}
+                  height={50}
+                />
+              </a>
+            )}
           </div>
         ))}
       </div>

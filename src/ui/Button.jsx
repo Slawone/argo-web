@@ -17,7 +17,7 @@ export const Button = ({
       className={cn(
         "button",
         variants[variant],
-        disabled && "opacity-50, cursor-not-allowed",
+        disabled && "opacity-50 cursor-not-allowed! md:hover:scale-100!",
         className,
       )}
       disabled={disabled}

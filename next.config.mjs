@@ -2,7 +2,7 @@
 
 const nextConfig = {
   output: 'export',
-  distDir: 'out',
+  distDir: process.env.BUILD_DIR || 'out',
   images: {
     unoptimized: true,
   },

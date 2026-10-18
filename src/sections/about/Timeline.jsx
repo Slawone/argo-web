@@ -242,7 +242,7 @@ export const Timeline = () => {
               />
               <span className="title-color">2023</span> – Внесение в реестр как
               СХД/ПАК (с оборудованием «Гравитон»). Первые поставки в цифровые
-              регионы. Создание ПАК Варя.
+              регионы.
             </p>
             <div className="flex items-center gap-5 justify-center flex-wrap mb-5 md:mb-10">
               <Image src="/about/graviton.svg" width={215} height={38} alt="" />
@@ -250,7 +250,7 @@ export const Timeline = () => {
             </div>
             <p className="">
               МТС предлагает корпоративным клиентам российские решения с
-              хранением от ARGO.TECH в составе ПАК Варя
+              хранением от ARGO.TECH.
             </p>
             <div className="flex gap-5 md:mb-20">
               <a

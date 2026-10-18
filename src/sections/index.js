@@ -29,6 +29,18 @@ export { PartnersDigital } from "./partners/PartnersDigital";
 export { PartnersWork } from "./partners/PartnersWork";
 export { PartnersUniver } from "./partners/PartnersUniver";
 
+/* graviton */
+export { GravitonHero } from "./graviton/GravitonHero";
+export { GravitonAwards } from "./graviton/GravitonAwards";
+export { GravitonSplit } from "./graviton/GravitonSplit";
+export { GravitonInfo } from "./graviton/GravitonInfo";
+export { GravitonProducts } from "./graviton/GravitonProducts";
+export { GravitonProperties } from "./graviton/GravitonProperties";
+export { GravitonProductHero } from "./graviton/GravitonProductHero";
+export { GravitonLogos } from "./graviton/GravitonLogos";
+export { GravitonCompound } from "./graviton/GravitonCompound";
+export { GravitonMechanisms } from "./graviton/GravitonMechanisms";
+
 /* about */
 export { AboutHero } from "./about/AboutHero";
 export { Timeline } from "./about/Timeline";
@@ -37,6 +49,7 @@ export { News } from "./News";
 export { TextGrid } from "./TextGrid";
 export { SmallTextGrid } from "./SmallTextGrid";
 export { Faq } from "./Faq";
+export { Contact } from "./Contact";
 
 /* blog */
 export { BlogContent } from "./blog/BlogContent";

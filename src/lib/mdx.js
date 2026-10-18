@@ -82,8 +82,12 @@ export async function getDocsArticles(productSlug) {
 
 const STRAPI_URL = process.env.STRAPI_URL || "https://cms.argo.tech";
 const STRAPI_API_TOKEN = process.env.STRAPI_API_TOKEN;
+// SKIP_STRAPI=true собирает сайт без обращений к Strapi: блог будет пустым
+const SKIP_STRAPI = process.env.SKIP_STRAPI === "true";
 
 async function strapiFetch(query) {
+  if (SKIP_STRAPI) return { data: [] };
+
   const res = await fetch(`${STRAPI_URL}${query}`, {
     headers: { Authorization: `Bearer ${STRAPI_API_TOKEN}` },
   });
