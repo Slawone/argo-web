@@ -165,7 +165,7 @@ export default function Graviton() {
         Высокий показатель <span className="accent-graviton">Throughput</span> в
         сегменте систем среднего уровня.
       </PartnerInfo>
-      <PartnerProperties items={properties} titleClassName="accent-graviton" />
+      <PartnerProperties items={properties} />
       <PartnerInfo model="СХ412И36БМ16Т-АР">
         Для хранения критически важной информации
       </PartnerInfo>

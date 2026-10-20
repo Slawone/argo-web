@@ -162,7 +162,7 @@ export default function NorsiTrans() {
       <PartnerInfo model="ПАНТЕРА-128">
         До 120 дисков в одном корпусе, идеал для холодного хранения.
       </PartnerInfo>
-      <PartnerProperties items={properties} titleClassName="accent-norsi" />
+      <PartnerProperties items={properties} />
       <PartnerInfo model="ТИАРА-А4">
         Российская СХД для задач, где нет права на ошибку
       </PartnerInfo>
