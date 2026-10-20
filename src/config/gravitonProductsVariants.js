@@ -1,4 +1,3 @@
-// Общие для всех СХД Гравитон данные
 const virtualizationTab = {
   id: "virtualization",
   label: "Виртуализация",

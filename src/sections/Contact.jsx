@@ -7,7 +7,6 @@ import { Button, HoneypotField, HONEYPOT_NAME } from "@/ui";
 import { cn } from "@/utils";
 import { URL_BASE, CONTACT_PRODUCTS } from "@/config";
 
-// Выключатель отправки: false — кнопка disabled, заявки не уходят
 const SUBMIT_ENABLED = true;
 
 const initialForm = {
@@ -37,7 +36,6 @@ export const Contact = ({ source = "", className }) => {
   const [errors, setErrors] = useState({});
   const [status, setStatus] = useState("idle");
   const [serverError, setServerError] = useState("");
-  // антиспам: ловушка и время заполнения формы
   const honeypotRef = useRef(null);
   const openedAtRef = useRef(0);
 

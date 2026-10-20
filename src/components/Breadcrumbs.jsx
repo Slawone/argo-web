@@ -9,6 +9,7 @@ const ruMap = {
   storage: "Хранение",
   partners: "Партнеры",
   graviton: "Гравитон",
+  norsitrans: "Норси Транс",
   about: "О компании",
   documentation: "Документация",
   blog: "Блог",

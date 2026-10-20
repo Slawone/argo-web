@@ -20,7 +20,6 @@ export const GravitonCompound = ({ children, tabs, reestrHref }) => {
       className="page-container border main-border font-sans font-light"
     >
       <div className="grid lg:grid-cols-2">
-        {/* Левая колонка */}
         <div className="flex flex-col items-start gap-8 section-py px-4 border-b lg:border-b-0 lg:border-r main-border">
           <motion.h2
             variants={textVariants}
@@ -50,7 +49,6 @@ export const GravitonCompound = ({ children, tabs, reestrHref }) => {
           </a>
         </div>
 
-        {/* Правая колонка */}
         <div className="section-py px-4 flex justify-center">
           <div className="w-full max-w-150 self-start rounded-xl border main-border overflow-hidden">
             <div className="grid grid-cols-3 border-b main-border">

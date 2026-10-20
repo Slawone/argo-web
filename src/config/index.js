@@ -10,3 +10,5 @@ export { CONTACT_PRODUCTS } from "./constants";
 export { getTagColorClass } from "./tagColors";
 export { gravitonVariants } from "./gravitonVariants";
 export { gravitonProductsVariants } from "./gravitonProductsVariants";
+export { norsiVariants } from "./norsiVariants";
+export { partnerVariants } from "./partnerVariants";
