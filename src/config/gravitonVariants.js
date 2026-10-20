@@ -23,71 +23,59 @@ const awards = [
   },
 ];
 
+const storageImage = {
+  light: "/graviton/storage-active-light.png",
+  dark: "/graviton/storage-active.png",
+};
+
+const soonImage = {
+  light: "/graviton/storage-soon.png",
+  dark: "/graviton/storage-soon.png",
+};
+
+const minprom = {
+  light: "/graviton/minprom-light.svg",
+  dark: "/graviton/minprom.svg",
+};
+
+const logos = Array(5).fill({
+  src: "/graviton/logo.svg",
+  width: 368,
+  height: 68,
+  href: "/partners/graviton",
+  label: "Гравитон",
+  className: "w-full invert dark:invert-0",
+});
+
 const products = [
   {
     title: "Система хранения данных Гравитон",
     model: "СХ424А24БМ,ТСЦМ.466539.006-01",
     minprom: true,
+    image: storageImage,
     href: "/partners/graviton/skh424a24bm",
   },
   {
     title: "Система хранения данных Гравитон",
     model: "СХ424И24БМ-АР ЕЦРТ.466539.012-05\n10578748",
     minprom: true,
+    image: storageImage,
     href: "/partners/graviton/skh424i24bm-ar",
   },
   {
     title: "Система хранения данных Гравитон",
     model: "СХ412И36БМ16Т-АР ЕЦРТ.466539.015-04\n10578753",
     minprom: true,
+    image: storageImage,
   },
   {
     title: "Система хранения данных Гравитон",
     model: "СХ424И24БМ-АР ЕЦРТ.466539.012\n10488620",
     minprom: true,
-    href: "/partners/graviton/skh424i24bm-ar",
+    image: storageImage,
   },
-  { soon: true },
-  { soon: true },
-];
-
-const properties = [
-  [
-    { title: "Протоколы доступа", text: "Блочный, файловый, объектный" },
-    {
-      title: "Поддержка уровней RAID",
-      text: "С уровнем чередования блоков\nс тройным контролем чётности",
-    },
-    {
-      title: "Атомарные снимки",
-      text: "Консистентные копии данных, с гарантией\nцелостности",
-    },
-  ],
-  [
-    {
-      title: "Изменение размера кэша",
-      text: "Онлайн изменение размера кэша\nвторого уровня на чтение, запись",
-    },
-    {
-      title: "Компрессия данных",
-      text: "С уровнем чередования блоков\nс тройным контролем чётности",
-    },
-    {
-      title: "Мгновенные снимки",
-      text: "Индивидуальная настройка\nпод различные виды нагрузок",
-    },
-  ],
-  [
-    { title: "Дедупликация данных", text: "Вариативный размер блока" },
-    {
-      title: "Фоновый контроль целостности",
-      text: "Поддержка фонового контроля целостности",
-    },
-    {
-      title: "Горячая замена",
-      text: "Поддержка дисков горячей замены\nв рамках дискового пула",
-    },
-  ],
+  { soon: true, image: soonImage },
+  { soon: true, image: soonImage },
 ];
 
 const useCases = [
@@ -115,7 +103,8 @@ const useCases = [
 
 export const gravitonVariants = {
   awards,
+  logos,
+  minprom,
   products,
-  properties,
   useCases,
 };

@@ -12,6 +12,7 @@ const staticRoutes = [
   "/partners/graviton",
   "/partners/graviton/skh424a24bm",
   "/partners/graviton/skh424i24bm-ar",
+  "/partners/norsitrans",
   "/docs",
   "/blog",
 ];

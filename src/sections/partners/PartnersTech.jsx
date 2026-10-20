@@ -12,7 +12,8 @@ const images = [
   {
     source: "/partnersList/norsi.svg",
     alt: "norsi",
-    link: "https://servers.nt.ru/catalog/shd/argo-tech-/dvukhkontrollernaya-sistema-khraneniya-dannykh-tiara-a4/?ysclid=mpnp5ueewy708705695",
+    link: "/partners/norsitrans",
+    internal: true,
   },
   {
     source: "/partnersList/depop.svg",

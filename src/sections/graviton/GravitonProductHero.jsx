@@ -4,9 +4,6 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { motionVariants } from "@/config";
 
-// serverOffset — где внутри картинки начинается корпус сервера (в единицах width/height картинки).
-// На десктопе картинку растягиваем и сдвигаем так, чтобы корпус вставал в край колонки
-// и вровень с верхом заголовка, а свечение уходило за пределы колонки.
 export const GravitonProductHero = ({
   title,
   subtitle,

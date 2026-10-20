@@ -1,17 +1,17 @@
 import Image from "next/image";
 import {
-  GravitonHero,
+  PartnerHero,
   GravitonAwards,
-  GravitonSplit,
-  GravitonInfo,
-  GravitonProducts,
-  GravitonProperties,
-  GravitonTextGrid,
+  PartnerSplit,
+  PartnerInfo,
+  PartnerProducts,
+  PartnerProperties,
+  PartnerTextGrid,
   Contact,
   Faq
 } from "@/sections";
 import { Breadcrumbs } from "@/components";
-import { gravitonVariants, faqVariants } from "@/config";
+import { gravitonVariants, partnerVariants, faqVariants } from "@/config";
 
 const PAK_CASE_URL =
   "https://companies.rbc.ru/news/IcQPkklepG/graviton-i-argotech-postavili-pak-dlya-fbun-nii-sbm-rospotrebnadzora/";
@@ -42,16 +42,49 @@ export const metadata = {
   },
 };
 
+const logo = {
+  light: "/graviton/logo-red.svg",
+  dark: "/graviton/logo.svg",
+  width: 368,
+  height: 68,
+  alt: "Гравитон",
+};
+
+const visual = (
+  <div className="relative w-80 lg:w-md aspect-448/461">
+    <Image
+      src="/graviton/logo-light.svg"
+      width={322}
+      height={327}
+      alt=""
+      className="dark:hidden absolute left-[14.06%] top-[15.6%] w-[71.875%] h-auto"
+    />
+    <Image
+      src="/graviton/logo-neon.svg"
+      width={448}
+      height={461}
+      alt=""
+      className="hidden dark:block absolute inset-0 w-full h-full"
+    />
+  </div>
+);
+
 export default function Graviton() {
-  const { useCases } = gravitonVariants;
+  const { products, minprom, useCases } = gravitonVariants;
+  const { properties } = partnerVariants;
   const { faqGraviton } = faqVariants;
 
   return (
     <main className="font-sans bg-white dark:bg-black">
       <Breadcrumbs className="page-container pt-2 mb-5 font-light text-color" />
-      <GravitonHero />
+      <PartnerHero logo={logo} visual={visual}>
+        Компания Гравитон надёжный партнёр в области импортозамещения,
+        <br className="hidden lg:inline" /> занимающий лидирующие позиции на
+        рынке российской
+        <br className="hidden lg:inline" /> вычислительной техники.
+      </PartnerHero>
       <GravitonAwards />
-      <GravitonSplit
+      <PartnerSplit
         gridClassName="xl:grid-cols-[1fr_515px] xl:text-[26.5px]"
         rightClassName="xl:pr-5"
         left={
@@ -91,12 +124,12 @@ export default function Graviton() {
           </a>
         }
       />
-      <GravitonInfo model="ГРАВИТОН СХ424А24БМ,ТСЦМ.466539.006-01">
+      <PartnerInfo model="ГРАВИТОН СХ424А24БМ,ТСЦМ.466539.006-01">
         Импортонезависимая
         <br className="hidden xl:inline" /> высокопроизводительная СХД, для государственных закупок и объектов{" "}
-        <span className="graviton-color">КИИ</span>.
-      </GravitonInfo>
-      <GravitonSplit
+        <span className="accent-graviton">КИИ</span>.
+      </PartnerInfo>
+      <PartnerSplit
         gridClassName="xl:grid-cols-[1fr_515px] xl:text-[26.5px]"
         left={
           <p className="font-normal leading-8.25">
@@ -122,16 +155,21 @@ export default function Graviton() {
           </p>
         }
       />
-      <GravitonProducts />
-      <GravitonInfo model="СХ424И24БМ-АР">
-        Высокий показатель <span className="graviton-color">Throughput</span> в
+      <PartnerProducts
+        products={products}
+        minprom={minprom}
+        buttonClassName="button-accent-graviton"
+        className="pt-10 md:pt-16 xl:pt-25"
+      />
+      <PartnerInfo model="СХ424И24БМ-АР">
+        Высокий показатель <span className="accent-graviton">Throughput</span> в
         сегменте систем среднего уровня.
-      </GravitonInfo>
-      <GravitonProperties />
-      <GravitonInfo model="СХ412И36БМ16Т-АР">
+      </PartnerInfo>
+      <PartnerProperties items={properties} titleClassName="accent-graviton" />
+      <PartnerInfo model="СХ412И36БМ16Т-АР">
         Для хранения критически важной информации
-      </GravitonInfo>
-      <GravitonTextGrid items={useCases} titleClassName="graviton-color" />
+      </PartnerInfo>
+      <PartnerTextGrid items={useCases} titleClassName="accent-graviton" />
       <Contact source="Гравитон" />
       <Faq variants={faqGraviton} titleClassName="text-[#D40032]" />
     </main>

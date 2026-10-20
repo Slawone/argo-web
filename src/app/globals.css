@@ -61,8 +61,12 @@ body {
   @apply border-[#00B6CC];
 }
 
-.graviton-color {
+.accent-graviton {
   @apply text-[#D40032] dark:text-white;
+}
+
+.accent-norsi {
+  @apply text-[#007AFF];
 }
 
 .tag-color-1 {
@@ -93,8 +97,12 @@ body {
   @apply border-black/8 text-[#0a0a0a] dark:text-white hover:border-transparent hover:bg-black/4 dark:border-white/[.145] dark:hover:bg-[#1a1a1a];
 }
 
-.button-graviton {
-  @apply border-[#D40032] text-[#D40032] dark:border-white/[.145] dark:text-white;
+.button-accent-graviton {
+  @apply border-transparent bg-[#D40032] text-white hover:bg-[#b8002b] dark:bg-transparent dark:border-white/[.145] dark:text-white dark:hover:bg-[#1a1a1a];
+}
+
+.button-accent-norsi {
+  @apply border-transparent bg-[#007AFF] text-white hover:bg-[#0066d6] dark:bg-transparent dark:border-white/[.145] dark:text-white dark:hover:bg-[#1a1a1a];
 }
 
 .docs-prose {

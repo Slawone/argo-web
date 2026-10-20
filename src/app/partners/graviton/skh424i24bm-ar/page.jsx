@@ -1,15 +1,15 @@
 import {
   GravitonProductHero,
-  GravitonLogos,
-  GravitonInfo,
+  PartnerLogos,
+  PartnerInfo,
   GravitonCompound,
   GravitonMechanisms,
-  GravitonTextGrid,
+  PartnerTextGrid,
   Contact,
   Faq,
 } from "@/sections";
 import { Breadcrumbs } from "@/components";
-import { gravitonProductsVariants, faqVariants } from "@/config";
+import { gravitonVariants, gravitonProductsVariants, faqVariants } from "@/config";
 
 const MODEL = "СХ424И24БМ-АР";
 const MODEL_FULL = "СХ424И24БМ-АР ЕЦРТ.466539.012 / ЕЦРТ.466539.012-05";
@@ -59,12 +59,12 @@ export default function GravitonSkh424i24bmAr() {
         imageLight={{ src: "/graviton/skh424a24bm-hero1-light.svg", width: 878, height: 386 }}
         serverOffset={{ x: 86, y: 83 }}
       />
-      <GravitonLogos />
-      <GravitonInfo>
+      <PartnerLogos items={gravitonVariants.logos} />
+      <PartnerInfo className="xl:pt-19.5">
         <span className="font-medium xl:text-[30px] title-color">
           Отказоустойчивость и Российское происхождение
         </span>
-      </GravitonInfo>
+      </PartnerInfo>
       <GravitonCompound tabs={compoundTabs} reestrHref={REESTR_URL}>
         <span className="title-color font-normal">
           Высокопроизводительная СХД ГРАВИТОН {MODEL_FULL} на процессорах Intel:
@@ -72,14 +72,14 @@ export default function GravitonSkh424i24bmAr() {
         Предназначена для задач, требующих максимальной скорости доступа к
         данным, бесперебойной работы и высокой отказоустойчивости.
       </GravitonCompound>
-      <GravitonInfo>
+      <PartnerInfo>
         <span className="font-medium xl:text-[30px]">
           <span className="text-[#D40032]">{MODEL}:</span>{" "}
           <span className="title-color">Флагман совместного решения</span>
         </span>
-      </GravitonInfo>
-      <GravitonTextGrid items={features} />
-      <GravitonInfo>
+      </PartnerInfo>
+      <PartnerTextGrid items={features} />
+      <PartnerInfo>
         <span className="font-medium xl:text-[30px]">
           <span className="title-color">Основные механизмы сохранности данных:</span>
           <br />
@@ -87,7 +87,7 @@ export default function GravitonSkh424i24bmAr() {
             {MODEL}: ЕЦРТ.466539.012; ЕЦРТ.466539.012-05
           </span>
         </span>
-      </GravitonInfo>
+      </PartnerInfo>
       <GravitonMechanisms items={mechanisms} />
       <Contact source={`Гравитон ${MODEL}`} />
       <Faq variants={faqGraviton} titleClassName="text-[#D40032]" />

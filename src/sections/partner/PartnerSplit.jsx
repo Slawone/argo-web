@@ -5,9 +5,7 @@ import { Plus } from "lucide-react";
 import { motionVariants } from "@/config";
 import { cn } from "@/utils";
 
-// Отступы карточек на xl — как в макете: 29 сверху, 38 снизу, 37 по бокам.
-// gridClassName / rightClassName — точечные правки сетки и правой карточки под конкретный блок
-export const GravitonSplit = ({ left, right, gridClassName, rightClassName }) => {
+export const PartnerSplit = ({ left, right, gridClassName, rightClassName }) => {
   const { containerVariants, textVariants } = motionVariants;
   const cellClassName = "px-4 py-8 md:py-10 xl:pt-7.25 xl:pb-9.5 xl:px-9.25";
 

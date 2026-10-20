@@ -13,7 +13,6 @@ export const OrderForm = ({ isOpen, onClose, source }) => {
   const [errors, setErrors] = useState({});
   const [status, setStatus] = useState("idle");
   const [serverError, setServerError] = useState("");
-  // антиспам: ловушка и время заполнения формы
   const honeypotRef = useRef(null);
   const openedAtRef = useRef(0);
 

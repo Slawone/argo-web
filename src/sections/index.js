@@ -29,16 +29,18 @@ export { PartnersDigital } from "./partners/PartnersDigital";
 export { PartnersWork } from "./partners/PartnersWork";
 export { PartnersUniver } from "./partners/PartnersUniver";
 
+/* partner */
+export { PartnerHero } from "./partner/PartnerHero";
+export { PartnerLogos } from "./partner/PartnerLogos";
+export { PartnerSplit } from "./partner/PartnerSplit";
+export { PartnerInfo } from "./partner/PartnerInfo";
+export { PartnerProducts } from "./partner/PartnerProducts";
+export { PartnerProperties } from "./partner/PartnerProperties";
+export { PartnerTextGrid } from "./partner/PartnerTextGrid";
+
 /* graviton */
-export { GravitonHero } from "./graviton/GravitonHero";
 export { GravitonAwards } from "./graviton/GravitonAwards";
-export { GravitonSplit } from "./graviton/GravitonSplit";
-export { GravitonInfo } from "./graviton/GravitonInfo";
-export { GravitonProducts } from "./graviton/GravitonProducts";
-export { GravitonProperties } from "./graviton/GravitonProperties";
 export { GravitonProductHero } from "./graviton/GravitonProductHero";
-export { GravitonTextGrid } from "./graviton/GravitonTextGrid";
-export { GravitonLogos } from "./graviton/GravitonLogos";
 export { GravitonCompound } from "./graviton/GravitonCompound";
 export { GravitonMechanisms } from "./graviton/GravitonMechanisms";
 

@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import { motionVariants } from "@/config";
 import { cn } from "@/utils";
 
-// cellClassName / labelClassName — точечные правки карточки и текста под конкретную страницу
 export const TextGrid = ({
   items,
   titleClassName = "title-color",

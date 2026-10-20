@@ -1,11 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { motionVariants, gravitonVariants } from "@/config";
+import { motionVariants } from "@/config";
+import { cn } from "@/utils";
 
-export const GravitonProperties = () => {
+export const PartnerProperties = ({ items, titleClassName = "title-color", className }) => {
   const { containerVariants, textVariants } = motionVariants;
-  const { properties } = gravitonVariants;
 
   return (
     <motion.section
@@ -13,11 +13,10 @@ export const GravitonProperties = () => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className="page-container py-5 md:py-10 font-sans font-light"
+      className={cn("page-container font-sans font-light", className)}
     >
-      {/* subgrid: строки общие для всех колонок, поэтому заголовки стоят на одном уровне */}
       <div className="grid md:grid-cols-3 gap-5 lg:gap-x-9.5">
-        {properties.map((column, index) => (
+        {items.map((column, index) => (
           <ul
             key={index}
             className="flex flex-col gap-5 md:grid md:grid-rows-subgrid md:row-span-3 md:gap-7 px-4 md:px-9 py-6 md:py-8 xl:gap-6.75 xl:px-9.25 xl:pt-7.25 xl:pb-19.75 border main-border"
@@ -26,7 +25,10 @@ export const GravitonProperties = () => {
               <li key={item.title} className="flex flex-col gap-1 md:gap-2 xl:gap-2.5">
                 <motion.h3
                   variants={textVariants}
-                  className="title-color text-lg md:text-xl lg:text-2xl xl:leading-5.5 font-medium xl:whitespace-nowrap"
+                  className={cn(
+                    titleClassName,
+                    "text-lg md:text-xl lg:text-2xl xl:leading-5.5 font-medium xl:whitespace-nowrap",
+                  )}
                 >
                   {item.title}
                 </motion.h3>
