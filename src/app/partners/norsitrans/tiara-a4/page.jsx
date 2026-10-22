@@ -8,7 +8,7 @@ import {
   Contact,
 } from "@/sections";
 import { Breadcrumbs } from "@/components";
-import { norsiVariants, norsiProductsVariants, partnerVariants } from "@/config";
+import { norsiVariants, norsiProductsVariants, partnerVariants, ogImage } from "@/config";
 
 const MODEL = "ТИАРА-А4";
 
@@ -29,13 +29,7 @@ export const metadata = {
     url: "https://argo.tech/partners/norsitrans/tiara-a4/",
     title,
     description,
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-      },
-    ],
+    images: [ogImage("tiara-a4")],
   },
 };
 

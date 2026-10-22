@@ -1,0 +1,78 @@
+export const ogImages = {
+  about: {
+    alt: "История компании ARGO.TECH",
+    title: "История компании ARGO.TECH",
+    subtitle: "Меняем правила игры",
+  },
+  blog: {
+    alt: "Блог ARGO.TECH",
+    title: "Блог",
+    subtitle: "Статьи о хранении данных и цифровом суверенитете",
+  },
+  docs: {
+    alt: "Документы и реквизиты ARGO.TECH",
+    title: "Документы и реквизиты",
+    subtitle: "Реестр российского ПО Минцифры №5850",
+  },
+  home: {
+    alt: "ARGO.TECH — системы хранения данных для импортозамещения",
+    title: "Системы хранения данных для импортозамещения",
+    subtitle: "Реестр Минцифры и Минпромторга",
+  },
+  graviton: {
+    alt: "ARGO.TECH × Гравитон",
+    title: "Российские системы хранения данных",
+    subtitle: "ISCRA STORAGE на платформах Гравитон",
+    accent: "#D40032",
+    partnerLogo: { src: "public/graviton/logo.svg", width: 216, height: 40 },
+    image: { src: "public/graviton/logo-neon.svg", width: 408, height: 420, right: 100 },
+  },
+  skh424a24bm: {
+    alt: "СХД Гравитон СХ424А24БМ",
+    title: "СХД Гравитон СХ424А24БМ",
+    subtitle: "Одна система: множество государственных задач",
+    accent: "#D40032",
+    partnerLogo: { src: "public/graviton/logo.svg", width: 216, height: 40 },
+    image: { src: "public/graviton/skh424a24bm-hero.png", width: 520, height: 228 },
+  },
+  "skh424i24bm-ar": {
+    alt: "СХД Гравитон СХ424И24БМ-АР",
+    title: "СХД Гравитон СХ424И24БМ-АР",
+    subtitle: "Корпоративная СХД с отказоустойчивой архитектурой",
+    accent: "#D40032",
+    partnerLogo: { src: "public/graviton/logo.svg", width: 216, height: 40 },
+    image: { src: "public/graviton/skh424a24bm-hero1.svg", width: 520, height: 229 },
+  },
+  norsitrans: {
+    alt: "ARGO.TECH × Норси Транс",
+    title: "Российские системы хранения данных",
+    subtitle: "ISCRA STORAGE на контроллерах Норси Транс",
+    accent: "#007AFF",
+    partnerLogo: { src: "public/norsitrans/logo.svg", width: 216, height: 44 },
+    image: { src: "src/assets/og/norsi-chrome.png", width: 464, height: 360, right: 80, top: 170 },
+  },
+  "tiara-a4": {
+    alt: "СХД Норси Транс ТИАРА-А4",
+    title: "Двухконтроллерная СХД ТИАРА-А4",
+    subtitle: "Два контроллера. Ноль простоев.",
+    accent: "#007AFF",
+    partnerLogo: { src: "public/norsitrans/logo.svg", width: 216, height: 44 },
+    image: { src: "public/norsitrans/tiara-hero.svg", width: 520, height: 229 },
+  },
+  partners: {
+    alt: "Партнёры ARGO.TECH",
+    title: "Партнерство в создании продуктов",
+    subtitle: "Технологические партнёры и интеграции",
+  },
+  storage: {
+    alt: "СХД АРГО",
+    title: "СХД АРГО",
+    subtitle: "Реестр Минцифры №5850, для госзаказчиков и импортозамещения",
+  },
+};
+export const ogImage = (name) => ({
+  url: `/og/${name}.png`,
+  width: 1200,
+  height: 630,
+  alt: ogImages[name].alt,
+});

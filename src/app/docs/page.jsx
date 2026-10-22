@@ -1,5 +1,6 @@
 import { Breadcrumbs } from "@/components";
 import { FileText, ChevronRight } from "lucide-react";
+import { ogImage } from "@/config";
 
 export const metadata = {
   title: "Документы и реквизиты ARGO.TECH — реестр Минцифры №5850",
@@ -16,13 +17,7 @@ export const metadata = {
     title: "Документы и реквизиты ARGO.TECH — реестр Минцифры №5850",
     description:
       "Официальные документы ООО «Арго Технолоджи Ист»: реквизиты компании, записи в реестре российского ПО Минцифры (№5850, №31727), свидетельство о регистрации программы для ЭВМ, политика обработки персональных данных, прайс-лист.",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-      },
-    ],
+    images: [ogImage("docs")],
   },
 };
 

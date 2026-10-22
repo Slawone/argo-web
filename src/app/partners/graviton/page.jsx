@@ -11,7 +11,7 @@ import {
   Faq
 } from "@/sections";
 import { Breadcrumbs } from "@/components";
-import { gravitonVariants, partnerVariants, faqVariants } from "@/config";
+import { gravitonVariants, partnerVariants, faqVariants, ogImage } from "@/config";
 
 const PAK_CASE_URL =
   "https://companies.rbc.ru/news/IcQPkklepG/graviton-i-argotech-postavili-pak-dlya-fbun-nii-sbm-rospotrebnadzora/";
@@ -32,13 +32,7 @@ export const metadata = {
     url: "https://argo.tech/partners/graviton/",
     title: "ARGO.TECH × Гравитон — российские системы хранения данных",
     description,
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-      },
-    ],
+    images: [ogImage("graviton")],
   },
 };
 

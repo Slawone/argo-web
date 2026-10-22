@@ -1,6 +1,7 @@
 import { Breadcrumbs } from "@/components";
 import { getBlogPosts } from "@/lib/mdx";
 import { BlogList } from "@/sections/blog/BlogList";
+import { ogImage } from "@/config";
 
 export const metadata = {
   title: "Блог ARGO.TECH — статьи о хранении данных и цифровом суверенитете",
@@ -17,13 +18,7 @@ export const metadata = {
     title: "Блог ARGO.TECH — статьи о хранении данных и цифровом суверенитете",
     description:
       "Блог ARGO.TECH: статьи о системах хранения данных, импортозамещении и цифровой независимости. Технические разборы, кейсы, тренды российского рынка СХД.",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-      },
-    ],
+    images: [ogImage("blog")],
   },
 };
 
