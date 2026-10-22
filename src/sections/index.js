@@ -37,12 +37,12 @@ export { PartnerInfo } from "./partner/PartnerInfo";
 export { PartnerProducts } from "./partner/PartnerProducts";
 export { PartnerProperties } from "./partner/PartnerProperties";
 export { PartnerTextGrid } from "./partner/PartnerTextGrid";
+export { PartnerProductHero } from "./partner/PartnerProductHero";
+export { PartnerCompound } from "./partner/PartnerCompound";
+export { PartnerMechanisms } from "./partner/PartnerMechanisms";
 
 /* graviton */
 export { GravitonAwards } from "./graviton/GravitonAwards";
-export { GravitonProductHero } from "./graviton/GravitonProductHero";
-export { GravitonCompound } from "./graviton/GravitonCompound";
-export { GravitonMechanisms } from "./graviton/GravitonMechanisms";
 
 /* about */
 export { AboutHero } from "./about/AboutHero";

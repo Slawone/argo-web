@@ -14,7 +14,7 @@ export const PartnerInfo = ({ model, className, children }) => {
       whileInView="visible"
       viewport={{ once: true }}
       className={cn(
-        "page-container px-4 pt-10 pb-11 md:pt-16 md:pb-18 xl:pt-25 xl:pb-27.5 text-center font-sans font-light text-base md:text-[28px] xl:leading-[33.2px] relative",
+        "page-container px-4 py-10 md:py-16 xl:py-25 text-center font-sans font-light text-base md:text-[28px] xl:leading-[33.2px] relative",
         className,
       )}
     >

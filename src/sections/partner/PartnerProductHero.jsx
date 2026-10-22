@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { motionVariants } from "@/config";
 
-export const GravitonProductHero = ({
+export const PartnerProductHero = ({
   title,
   subtitle,
   image,

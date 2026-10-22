@@ -1,15 +1,15 @@
 import {
-  GravitonProductHero,
+  PartnerProductHero,
   PartnerLogos,
   PartnerInfo,
-  GravitonCompound,
-  GravitonMechanisms,
+  PartnerCompound,
+  PartnerMechanisms,
   PartnerTextGrid,
   Contact,
   Faq,
 } from "@/sections";
 import { Breadcrumbs } from "@/components";
-import { gravitonVariants, gravitonProductsVariants, faqVariants } from "@/config";
+import { gravitonVariants, gravitonProductsVariants, partnerVariants, faqVariants } from "@/config";
 
 const MODEL = "СХ424И24БМ-АР";
 const MODEL_FULL = "СХ424И24БМ-АР ЕЦРТ.466539.012 / ЕЦРТ.466539.012-05";
@@ -52,7 +52,7 @@ export default function GravitonSkh424i24bmAr() {
         className="page-container pt-2 mb-5 font-light text-color"
         lastLabel={MODEL}
       />
-      <GravitonProductHero
+      <PartnerProductHero
         title={"Система хранения данных\nГравитон СХ424И24БМ-АР\nЕЦРТ.466539.012\nЕЦРТ.466539.012-05"}
         subtitle={"Корпоративная система хранения данных\nс отказоустойчивой архитектурой"}
         image={{ src: "/graviton/skh424a24bm-hero1.svg", width: 878, height: 386 }}
@@ -60,18 +60,18 @@ export default function GravitonSkh424i24bmAr() {
         serverOffset={{ x: 86, y: 83 }}
       />
       <PartnerLogos items={gravitonVariants.logos} />
-      <PartnerInfo className="xl:pt-19.5">
+      <PartnerInfo className="pt-2 md:pt-4 xl:pt-13">
         <span className="font-medium xl:text-[30px] title-color">
           Отказоустойчивость и Российское происхождение
         </span>
       </PartnerInfo>
-      <GravitonCompound tabs={compoundTabs} reestrHref={REESTR_URL}>
+      <PartnerCompound tabs={compoundTabs} reestrHref={REESTR_URL} accent={partnerVariants.accents.graviton}>
         <span className="title-color font-normal">
           Высокопроизводительная СХД ГРАВИТОН {MODEL_FULL} на процессорах Intel:
         </span>{" "}
         Предназначена для задач, требующих максимальной скорости доступа к
         данным, бесперебойной работы и высокой отказоустойчивости.
-      </GravitonCompound>
+      </PartnerCompound>
       <PartnerInfo>
         <span className="font-medium xl:text-[30px]">
           <span className="text-[#D40032]">{MODEL}:</span>{" "}
@@ -88,7 +88,7 @@ export default function GravitonSkh424i24bmAr() {
           </span>
         </span>
       </PartnerInfo>
-      <GravitonMechanisms items={mechanisms} />
+      <PartnerMechanisms items={mechanisms} />
       <Contact source={`Гравитон ${MODEL}`} />
       <Faq variants={faqGraviton} titleClassName="text-[#D40032]" />
     </main>
