@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { motionVariants } from "@/config";
 
-export const GravitonMechanisms = ({ items }) => {
+export const PartnerMechanisms = ({ items }) => {
   const { itemVariants } = motionVariants;
 
   return (

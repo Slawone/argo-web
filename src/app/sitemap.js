@@ -13,6 +13,7 @@ const staticRoutes = [
   "/partners/graviton/skh424a24bm",
   "/partners/graviton/skh424i24bm-ar",
   "/partners/norsitrans",
+  "/partners/norsitrans/tiara-a4",
   "/docs",
   "/blog",
 ];

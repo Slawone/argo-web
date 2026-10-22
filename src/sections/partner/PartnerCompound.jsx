@@ -3,13 +3,26 @@
 import { useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
+import { Button } from "@/ui";
 import { motionVariants } from "@/config";
 import { cn } from "@/utils";
 
-export const GravitonCompound = ({ children, tabs, reestrHref }) => {
+export const PartnerCompound = ({ children, tabs, reestrHref, accent }) => {
   const { containerVariants, textVariants } = motionVariants;
   const [activeTab, setActiveTab] = useState(tabs[0].id);
   const { lines } = tabs.find((tab) => tab.id === activeTab);
+  const reestrContent = (
+    <>
+      <Image
+        src="/reestr.svg"
+        width={20}
+        height={20}
+        alt=""
+        className="invert dark:invert-0"
+      />
+      Реестр программного обеспечения
+    </>
+  );
 
   return (
     <motion.section
@@ -33,20 +46,19 @@ export const GravitonCompound = ({ children, tabs, reestrHref }) => {
           >
             {children}
           </motion.p>
-          <a
-            href={reestrHref}
-            target="_blank"
-            className="button button-secondary flex-center"
-          >
-            <Image
-              src="/reestr.svg"
-              width={20}
-              height={20}
-              alt=""
-              className="invert dark:invert-0"
-            />
-            Реестр программного обеспечения
-          </a>
+          {reestrHref ? (
+            <a
+              href={reestrHref}
+              target="_blank"
+              className="button button-secondary flex-center"
+            >
+              {reestrContent}
+            </a>
+          ) : (
+            <Button variant="secondary" className="flex-center" disabled>
+              {reestrContent}
+            </Button>
+          )}
         </div>
 
         <div className="section-py px-4 flex justify-center">
@@ -57,9 +69,7 @@ export const GravitonCompound = ({ children, tabs, reestrHref }) => {
                   key={tab.id}
                   className={cn(
                     "cursor-pointer px-2 sm:px-5 py-4 text-[11px] sm:text-base border-r last-of-type:border-r-0 main-border transition-colors",
-                    activeTab === tab.id
-                      ? "bg-[#D40032] text-white"
-                      : "text-color hover:title-color",
+                    activeTab === tab.id ? accent.tab : "text-color hover:title-color",
                   )}
                   onClick={() => setActiveTab(tab.id)}
                 >
@@ -83,22 +93,16 @@ export const GravitonCompound = ({ children, tabs, reestrHref }) => {
                         key={line.label}
                         className={cn(
                           "flex gap-4 md:gap-6 px-1",
-                          line.highlight && "bg-[#d5d5d5] dark:bg-white",
+                          line.highlight && accent.row,
                         )}
                       >
                         <span className="w-2 shrink-0 text-color">{index + 1}</span>
                         <span>
-                          <span className={line.highlight ? "text-[#D40032]" : "text-color"}>
+                          <span className={line.highlight ? accent.text : "title-color"}>
                             {line.label}
                           </span>
                           {line.value && (
-                            <span
-                              className={
-                                line.highlight
-                                  ? "text-black"
-                                  : "text-[#D40032]"
-                              }
-                            >
+                            <span className={line.highlight ? accent.rowValue : accent.text}>
                               {line.value}
                             </span>
                           )}

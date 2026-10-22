@@ -11,4 +11,5 @@ export { getTagColorClass } from "./tagColors";
 export { gravitonVariants } from "./gravitonVariants";
 export { gravitonProductsVariants } from "./gravitonProductsVariants";
 export { norsiVariants } from "./norsiVariants";
+export { norsiProductsVariants } from "./norsiProductsVariants";
 export { partnerVariants } from "./partnerVariants";

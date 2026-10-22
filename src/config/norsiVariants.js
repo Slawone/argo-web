@@ -9,6 +9,15 @@ const logos = [
   className: `${logo.className} dark:invert-60`,
 }));
 
+const brandLogos = Array(5).fill({
+  src: "/norsitrans/logo.svg",
+  width: 369,
+  height: 75,
+  href: "/partners/norsitrans",
+  label: "Норси Транс",
+  className: "w-full max-w-41.5 invert dark:invert-0",
+});
+
 const image = (name) => ({
   light: `/norsitrans/${name}-light.png`,
   dark: `/norsitrans/${name}.png`,
@@ -22,6 +31,7 @@ const products = [
   {
     title: "Двухконтроллерная Система Хранения\nДанных ТИАРА-А4",
     minprom: true,
+    href: "/partners/norsitrans/tiara-a4",
     image: image("tiara"),
   },
   {
@@ -68,6 +78,7 @@ const useCases = [
 
 export const norsiVariants = {
   logos,
+  brandLogos,
   minprom,
   products,
   useCases,
