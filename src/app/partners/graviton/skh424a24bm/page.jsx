@@ -9,7 +9,7 @@ import {
   Faq,
 } from "@/sections";
 import { Breadcrumbs } from "@/components";
-import { gravitonVariants, gravitonProductsVariants, partnerVariants, faqVariants } from "@/config";
+import { gravitonVariants, gravitonProductsVariants, partnerVariants, faqVariants, ogImage } from "@/config";
 
 const MODEL = "СХ424А24БМ, ТСЦМ.466539.006-01";
 const REESTR_URL = "https://gisp.gov.ru/goods/#/product/5599310";
@@ -31,13 +31,7 @@ export const metadata = {
     url: "https://argo.tech/partners/graviton/skh424a24bm/",
     title,
     description,
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-      },
-    ],
+    images: [ogImage("skh424a24bm")],
   },
 };
 

@@ -8,6 +8,7 @@ import { CookieBanner } from "@/components";
 import { ConsentProvider } from "@/components";
 import { OrderFormProvider } from "@/components"
 import "./globals.css";
+import { ogImage } from "@/config";
 
 const oswald = Oswald({
   variable: "--font-oswald",
@@ -54,13 +55,7 @@ export const metadata = {
     title: "СХД РФ: Реестр Минцифры, Минпромторга для импортозамещения",
     description:
       "Российский разработчик и производитель систем хранения данных. Готовые СХД для импортозамещения: блочные и объектные решения. Включены в реестры Минцифры и Минпромторга. Надёжность, проверенная годами.",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-      },
-    ],
+    images: [ogImage("home")],
   },
 };
 

@@ -11,7 +11,7 @@ import {
   Faq,
 } from "@/sections";
 import { Breadcrumbs } from "@/components";
-import { norsiVariants, partnerVariants, faqVariants } from "@/config";
+import { norsiVariants, partnerVariants, faqVariants, ogImage } from "@/config";
 
 const ATLON_NEWS_URL =
   "https://atlon.ru/news/poleznaya_informacia/v_rf_stali_dostupny_unikalnye_sistemy_khraneniya_dannykh/";
@@ -33,13 +33,7 @@ export const metadata = {
     url: "https://argo.tech/partners/norsitrans/",
     title,
     description,
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-      },
-    ],
+    images: [ogImage("norsitrans")],
   },
 };
 
