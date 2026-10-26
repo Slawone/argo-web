@@ -16,6 +16,7 @@ const staticRoutes = [
   "/partners/norsitrans",
   "/partners/norsitrans/tiara-a4",
   "/docs",
+  "/storage/iscrastorage/certification",
   "/blog",
 ];
 

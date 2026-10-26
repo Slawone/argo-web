@@ -97,7 +97,7 @@ export default function IscraStorage() {
               <Download width={20} height={20} />
               Презентация
             </a>
-            <Link href="/certification/" className="button button-primary flex-center">
+            <Link href="/storage/iscrastorage/certification/" className="button button-primary flex-center">
               Совместимость
             </Link>
           </>

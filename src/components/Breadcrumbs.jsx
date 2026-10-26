@@ -11,6 +11,7 @@ const ruMap = {
   graviton: "Гравитон",
   norsitrans: "Норси Транс",
   iscrastorage: "ISCRA STORAGE",
+  certification: "Сертификаты",
   about: "О компании",
   documentation: "Документация",
   blog: "Блог",

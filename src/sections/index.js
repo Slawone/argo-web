@@ -57,6 +57,7 @@ export { TextGrid } from "./TextGrid";
 export { SmallTextGrid } from "./SmallTextGrid";
 export { Faq } from "./Faq";
 export { Contact } from "./Contact";
+export { DocumentList } from "./DocumentList";
 
 /* blog */
 export { BlogContent } from "./blog/BlogContent";

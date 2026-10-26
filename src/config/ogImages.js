@@ -66,6 +66,12 @@ export const ogImages = {
     accent: "#FF9000",
     image: { src: "public/iscra/hero.svg", width: 400, height: 393, right: 90 },
   },
+  certification: {
+    alt: "Сертификаты совместимости ISCRA STORAGE",
+    title: "Сертификаты совместимости",
+    subtitle: "ISCRA STORAGE (№5850 / 20.09.2019)",
+    accent: "#FF9000",
+  },
   partners: {
     alt: "Партнёры ARGO.TECH",
     title: "Партнерство в создании продуктов",
