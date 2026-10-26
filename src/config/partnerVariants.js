@@ -65,6 +65,7 @@ const osTab = {
 const mechanisms = [
   {
     title: "Ditto blocks",
+    href: "/storage/iscrastorage/dittoblocks/",
     text: "Функционал автоматического сохранения метаданных в нескольких копиях одного блока записи",
   },
   {

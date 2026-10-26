@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { motionVariants } from "@/config";
 import { cn } from "@/utils";
@@ -22,7 +23,16 @@ export const PartnerMechanisms = ({ items, columnClassName, textClassName }) => 
             className={cn("grid md:grid-cols-[300px_minmax(0,1fr)]", columnClassName)}
           >
             <dt className="title-color text-lg md:text-xl lg:text-2xl px-4 pt-5 md:py-8 xl:px-9.25 xl:py-8.25 xl:leading-[33.2px] xl:whitespace-pre md:border-r main-border font-bold">
-              {item.title}
+              {item.href ? (
+                <Link
+                  href={item.href}
+                  className="underline-offset-4 decoration-1 transition-colors hover:underline"
+                >
+                  {item.title}
+                </Link>
+              ) : (
+                item.title
+              )}
             </dt>
             <dd
               className={cn(

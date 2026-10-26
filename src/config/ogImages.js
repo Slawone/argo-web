@@ -66,6 +66,12 @@ export const ogImages = {
     accent: "#FF9000",
     image: { src: "public/iscra/hero.svg", width: 400, height: 393, right: 90 },
   },
+  dittoblocks: {
+    alt: "Ditto blocks Copies=N в ISCRA STORAGE",
+    title: "Ditto blocks Copies=N",
+    subtitle: "Защита от bit rot в ISCRA STORAGE",
+    accent: "#FF1500",
+  },
   nfs: {
     alt: "NFS в ISCRA STORAGE — Network File System",
     title: "Network File System",

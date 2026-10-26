@@ -13,6 +13,7 @@ const ruMap = {
   iscrastorage: "ISCRA STORAGE",
   certification: "Сертификаты",
   nfs: "NFS",
+  dittoblocks: "Ditto blocks",
   about: "О компании",
   documentation: "Документация",
   blog: "Блог",
