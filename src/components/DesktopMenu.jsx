@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ChevronDown } from "lucide-react";
@@ -15,40 +15,90 @@ const isActive = (pathname, href) =>
 
 const Dropdown = ({ item }) => {
   const pathname = usePathname();
+  const ref = useRef(null);
+  const [open, setOpen] = useState(false);
+  const [hovered, setHovered] = useState(false);
   const [closed, setClosed] = useState(false);
+  const visible = !closed && (open || hovered);
+
+  useEffect(() => {
+    if (!open) return;
+
+    const handlePointerDown = (event) => {
+      if (!ref.current?.contains(event.target)) setOpen(false);
+    };
+    const handleKeyDown = (event) => {
+      if (event.key === "Escape") setOpen(false);
+    };
+
+    document.addEventListener("pointerdown", handlePointerDown);
+    document.addEventListener("keydown", handleKeyDown);
+    return () => {
+      document.removeEventListener("pointerdown", handlePointerDown);
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [open]);
 
   const close = (event) => {
     setClosed(true);
+    setOpen(false);
     event.currentTarget.blur();
   };
 
+  const toggle = () => {
+    if (visible) {
+      setClosed(true);
+      setOpen(false);
+    } else {
+      setClosed(false);
+      setOpen(true);
+    }
+  };
+
   return (
-    <div className="group relative" onMouseLeave={() => setClosed(false)}>
-      <Link
-        href={item.href}
-        onClick={close}
-        className={cn(
-          linkClassName,
-          "flex items-center gap-1",
-          isActive(pathname, item.href) && activeClassName,
-        )}
-      >
-        {item.label}
-        <ChevronDown
-          width={16}
-          height={16}
+    <div
+      ref={ref}
+      className="group relative"
+      onPointerEnter={(event) =>
+        event.pointerType === "mouse" && setHovered(true)
+      }
+      onPointerLeave={(event) => {
+        if (event.pointerType !== "mouse") return;
+        setHovered(false);
+        setClosed(false);
+      }}
+    >
+      <div className="flex items-center gap-1">
+        <Link
+          href={item.href}
+          onClick={close}
           className={cn(
-            "transition-transform",
-            !closed && "group-hover:rotate-180 group-focus-within:rotate-180",
+            linkClassName,
+            isActive(pathname, item.href) && activeClassName,
           )}
-        />
-      </Link>
+        >
+          {item.label}
+        </Link>
+        <button
+          type="button"
+          onClick={toggle}
+          aria-expanded={visible}
+          aria-label={`Подменю: ${item.label}`}
+          className={cn(linkClassName, "-m-2 p-2 cursor-pointer")}
+        >
+          <ChevronDown
+            width={16}
+            height={16}
+            className={cn("transition-transform", visible && "rotate-180")}
+          />
+        </button>
+      </div>
       <div
         className={cn(
           "absolute left-0 top-full pt-4 transition-opacity",
-          closed
-            ? "invisible opacity-0"
-            : "invisible opacity-0 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100",
+          visible
+            ? "visible opacity-100"
+            : "invisible opacity-0 group-has-[:focus-visible]:visible group-has-[:focus-visible]:opacity-100",
         )}
       >
         <ul className="min-w-44 rounded-xl border main-border bg-white dark:bg-black p-2 shadow-lg">
