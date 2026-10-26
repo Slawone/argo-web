@@ -74,6 +74,7 @@ const mechanisms = [
   },
   {
     title: "Copies=N",
+    href: "/storage/iscrastorage/dittoblocks/",
     text: "Возможность управлять количеством копий пользовательских данных, которые хранит файловая\nсистема для конкретного набора данных",
   },
   {
@@ -96,6 +97,7 @@ const mechanisms = [
   },
   {
     title: "FMA\n(Fault Management\nArchitecture)",
+    href: "/storage/iscrastorage/fma/",
     text: "Система самодиагностики, которая автоматически диагностирует аппаратные\nи программные ошибки",
   },
   {

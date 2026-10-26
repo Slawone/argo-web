@@ -72,6 +72,12 @@ export const ogImages = {
     subtitle: "Защита от bit rot в ISCRA STORAGE",
     accent: "#FF1500",
   },
+  fma: {
+    alt: "FMA Fault Management Architecture в ISCRA STORAGE",
+    title: "FMA Fault Management Architecture",
+    subtitle: "Самодиагностика и автоматическая реакция на сбои в ISCRA STORAGE",
+    accent: "#20EC73",
+  },
   nfs: {
     alt: "NFS в ISCRA STORAGE — Network File System",
     title: "Network File System",

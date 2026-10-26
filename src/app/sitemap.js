@@ -19,6 +19,7 @@ const staticRoutes = [
   "/storage/iscrastorage/certification",
   "/storage/iscrastorage/nfs",
   "/storage/iscrastorage/dittoblocks",
+  "/storage/iscrastorage/fma",
   "/blog",
 ];
 

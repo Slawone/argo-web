@@ -30,7 +30,7 @@ export const metadata = {
 };
 
 const splitClassName = "xl:text-[26.5px] xl:min-h-91.25";
-const textClassName = "font-light leading-8.25";
+const textClassName = "font-normal leading-8.25";
 
 export default function IscraDittoBlocks() {
   return (

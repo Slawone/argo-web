@@ -41,6 +41,7 @@ export { PartnerProductHero } from "./partner/PartnerProductHero";
 export { PartnerCompound } from "./partner/PartnerCompound";
 export { PartnerMechanisms } from "./partner/PartnerMechanisms";
 export { PartnerDiagram } from "./partner/PartnerDiagram";
+export { PartnerTable } from "./partner/PartnerTable";
 
 /* iscra */
 export { IscraProtocols } from "./iscra/IscraProtocols";

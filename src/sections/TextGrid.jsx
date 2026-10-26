@@ -11,10 +11,13 @@ export const TextGrid = ({
   className,
   cellClassName,
   labelClassName,
+  fillEmpty = false,
 }) => {
   const { containerVariants, textVariants } = motionVariants;
   const count = items.length;
-  const odd = count % 2 === 1;
+  const filled = fillEmpty && count % 2 === 1;
+  const total = filled ? count + 1 : count;
+  const odd = total % 2 === 1;
 
   return (
     <motion.section
@@ -30,7 +33,8 @@ export const TextGrid = ({
             key={item.title}
             className={cn(
               "px-5 py-10 flex flex-col justify-start border-b last-of-type:border-b-0 border-black/8 dark:border-white/14 md:border-b-0 md:odd:border-r relative",
-              (index < count - 2 || (odd && index >= count - 2)) && "md:border-b",
+              (index < total - 2 || (odd && index >= total - 2)) && "md:border-b",
+              filled && index === count - 1 && "max-md:border-b-0",
               odd && "md:even:border-r md:last-of-type:border-b",
               cellClassName,
               item.cellClassName,
@@ -55,6 +59,7 @@ export const TextGrid = ({
             )}
           </div>
         ))}
+        {filled && <div aria-hidden="true" className="hidden md:block" />}
       </div>
     </motion.section>
   );
