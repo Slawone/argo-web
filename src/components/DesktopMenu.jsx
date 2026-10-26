@@ -98,7 +98,7 @@ const Dropdown = ({ item }) => {
           "absolute left-0 top-full pt-4 transition-opacity",
           visible
             ? "visible opacity-100"
-            : "invisible opacity-0 group-has-[:focus-visible]:visible group-has-[:focus-visible]:opacity-100",
+            : "invisible opacity-0 group-has-focus-visible:visible group-has-focus-visible:opacity-100",
         )}
       >
         <ul className="min-w-44 rounded-xl border main-border bg-white dark:bg-black p-2 shadow-lg">
