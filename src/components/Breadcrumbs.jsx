@@ -12,6 +12,7 @@ const ruMap = {
   norsitrans: "Норси Транс",
   iscrastorage: "ISCRA STORAGE",
   certification: "Сертификаты",
+  nfs: "NFS",
   about: "О компании",
   documentation: "Документация",
   blog: "Блог",

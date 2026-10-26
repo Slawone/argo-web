@@ -66,6 +66,12 @@ export const ogImages = {
     accent: "#FF9000",
     image: { src: "public/iscra/hero.svg", width: 400, height: 393, right: 90 },
   },
+  nfs: {
+    alt: "NFS в ISCRA STORAGE — Network File System",
+    title: "Network File System",
+    subtitle: "Протокол NFS в ISCRA STORAGE",
+    accent: "#007AFF",
+  },
   certification: {
     alt: "Сертификаты совместимости ISCRA STORAGE",
     title: "Сертификаты совместимости",

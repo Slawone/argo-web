@@ -44,6 +44,7 @@ export { PartnerDiagram } from "./partner/PartnerDiagram";
 
 /* iscra */
 export { IscraProtocols } from "./iscra/IscraProtocols";
+export { IscraProtocolHero } from "./iscra/IscraProtocolHero";
 
 /* graviton */
 export { GravitonAwards } from "./graviton/GravitonAwards";

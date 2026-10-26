@@ -42,12 +42,12 @@ export const TextGrid = ({
             >
               {item.title}
             </motion.h3>
-            <motion.p
+            <motion.div
               variants={textVariants}
               className={cn("text-color", labelClassName)}
             >
               {item.label}
-            </motion.p>
+            </motion.div>
             {index === 0 && (
               <Plus
                 className="absolute text-color right-0 bottom-0 translate-x-1/2 translate-y-1/2"
