@@ -40,6 +40,10 @@ export { PartnerTextGrid } from "./partner/PartnerTextGrid";
 export { PartnerProductHero } from "./partner/PartnerProductHero";
 export { PartnerCompound } from "./partner/PartnerCompound";
 export { PartnerMechanisms } from "./partner/PartnerMechanisms";
+export { PartnerDiagram } from "./partner/PartnerDiagram";
+
+/* iscra */
+export { IscraProtocols } from "./iscra/IscraProtocols";
 
 /* graviton */
 export { GravitonAwards } from "./graviton/GravitonAwards";

@@ -9,7 +9,11 @@ import { Button, Logo } from "@/ui";
 import ThemeToggle from "@/ui/theme-toggle";
 
 const navItems = [
-  { label: "Хранение", href: "/storage" },
+  {
+    label: "Хранение",
+    href: "/storage",
+    children: [{ label: "ISCRA STORAGE", href: "/storage/iscrastorage" }],
+  },
   { label: "Партнеры", href: "/partners" },
   { label: "О компании", href: "/about" },
   { label: "Блог", href: "/blog" },
@@ -30,6 +34,15 @@ export const Header = () => {
       document.body.style.overflow = "";
     };
   }, [open]);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) setOpen(false);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {

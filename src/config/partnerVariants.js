@@ -134,6 +134,17 @@ const accents = {
     row: "bg-[#d5d5d5] dark:bg-white",
     rowValue: "text-black",
   },
+  iscra: {
+    tab: "bg-[#FF9000] text-white",
+    tabIdle: "title-color",
+    text: "text-[#FF9000]",
+    title: "text-[#FF9000]",
+    line: "text-[#1f1f1f] dark:text-[#707070]",
+    number: "text-[#1f1f1f] dark:text-[#a1a1a1]",
+    row: "bg-[#FF9000]",
+    rowLabel: "text-black",
+    rowValue: "text-black",
+  },
   norsi: {
     tab: "bg-[#007AFF] text-white",
     text: "text-[#007AFF]",

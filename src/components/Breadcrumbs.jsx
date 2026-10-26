@@ -10,6 +10,7 @@ const ruMap = {
   partners: "Партнеры",
   graviton: "Гравитон",
   norsitrans: "Норси Транс",
+  iscrastorage: "ISCRA STORAGE",
   about: "О компании",
   documentation: "Документация",
   blog: "Блог",

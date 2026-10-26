@@ -59,6 +59,13 @@ export const ogImages = {
     partnerLogo: { src: "public/norsitrans/logo.svg", width: 216, height: 44 },
     image: { src: "public/norsitrans/tiara-hero.svg", width: 520, height: 229 },
   },
+  iscrastorage: {
+    alt: "ISCRA STORAGE — отечественная система хранения данных",
+    title: "ISCRA STORAGE",
+    subtitle: "Российская система хранения данных",
+    accent: "#FF9000",
+    image: { src: "public/iscra/hero.svg", width: 400, height: 393, right: 90 },
+  },
   partners: {
     alt: "Партнёры ARGO.TECH",
     title: "Партнерство в создании продуктов",

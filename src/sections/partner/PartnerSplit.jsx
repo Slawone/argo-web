@@ -5,9 +5,19 @@ import { Plus } from "lucide-react";
 import { motionVariants } from "@/config";
 import { cn } from "@/utils";
 
-export const PartnerSplit = ({ left, right, gridClassName, rightClassName }) => {
+export const PartnerSplit = ({
+  left,
+  right,
+  gridClassName,
+  cellClassName: extraCellClassName,
+  leftClassName,
+  rightClassName,
+}) => {
   const { containerVariants, textVariants } = motionVariants;
-  const cellClassName = "px-4 py-8 md:py-10 xl:pt-7.25 xl:pb-9.5 xl:px-9.25";
+  const cellClassName = cn(
+    "px-4 py-8 md:py-10 xl:pt-7.25 xl:pb-9.5 xl:px-9.25",
+    extraCellClassName,
+  );
 
   return (
     <motion.section
@@ -25,7 +35,7 @@ export const PartnerSplit = ({ left, right, gridClassName, rightClassName }) => 
       >
         <motion.div
           variants={textVariants}
-          className={cn(cellClassName, "border-b md:border-b-0 md:border-r main-border")}
+          className={cn(cellClassName, "border-b md:border-b-0 md:border-r main-border", leftClassName)}
         >
           {left}
         </motion.div>

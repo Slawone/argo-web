@@ -13,6 +13,8 @@ export const TextGrid = ({
   labelClassName,
 }) => {
   const { containerVariants, textVariants } = motionVariants;
+  const count = items.length;
+  const odd = count % 2 === 1;
 
   return (
     <motion.section
@@ -20,15 +22,18 @@ export const TextGrid = ({
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className={cn("page-container section-border", className)}
+      className={cn("page-container section-border", odd && "md:border-r-0!", className)}
     >
       <div className="grid md:grid-cols-2 font-sans main-text">
         {items.map((item, index) => (
           <div
             key={item.title}
             className={cn(
-              "px-5 py-10 flex flex-col justify-start border-b last-of-type:border-b-0 border-black/8 dark:border-white/14 md:border-b-0 md:odd:border-r md:nth-[-n+2]:border-b relative",
+              "px-5 py-10 flex flex-col justify-start border-b last-of-type:border-b-0 border-black/8 dark:border-white/14 md:border-b-0 md:odd:border-r relative",
+              (index < count - 2 || (odd && index >= count - 2)) && "md:border-b",
+              odd && "md:even:border-r md:last-of-type:border-b",
               cellClassName,
+              item.cellClassName,
             )}
           >
             <motion.h3
