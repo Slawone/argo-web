@@ -197,7 +197,7 @@ export default function IscraWritableClone() {
           "whitespace-nowrap text-center text-[100px] md:text-[120px] lg:text-[160px] xl:text-[200px] leading-none xl:pl-0 xl:mt-29.75 xl:w-144 xl:-ml-1.5",
           accentClassName,
         )}
-        textClassName="items-end text-right xl:gap-0 xl:pt-30.75 xl:pr-2.5"
+        textClassName="items-end text-right xl:gap-0 xl:pt-30.75 xl:pr-9"
         titleClassName="xl:text-[55px] xl:leading-[1.5]"
         subtitleClassName="text-[#a1a1a1] dark:text-[#a1a1a1] font-extralight xl:max-w-124 xl:pl-0 xl:text-[20.5px] xl:leading-[1.5]"
       >

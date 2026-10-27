@@ -46,7 +46,7 @@ export default function IscraDittoBlocks() {
         }
         className="xl:pb-7"
         nameClassName="whitespace-pre-line text-center text-[#FF1500] leading-none xl:text-[200px] xl:pl-0 xl:mt-18.5 xl:w-144 xl:-ml-1.5"
-        textClassName="items-end text-right xl:gap-0 xl:pt-30.75 xl:pr-2.5"
+        textClassName="items-end text-right xl:gap-0 xl:pt-30.75 xl:pr-9"
         titleClassName="xl:text-[55px] xl:leading-[1.5]"
         subtitleClassName="xl:max-w-124 xl:pl-0 xl:text-[20.5px] xl:leading-[1.5]"
       >
