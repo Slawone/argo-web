@@ -65,14 +65,17 @@ const osTab = {
 const mechanisms = [
   {
     title: "Ditto blocks",
+    href: "/storage/iscrastorage/dittoblocks/",
     text: "Функционал автоматического сохранения метаданных в нескольких копиях одного блока записи",
   },
   {
     title: "Writable Clone",
+    href: "/storage/iscrastorage/writableclone/",
     text: "Функционал создания Клонов (записываемых томов или файловых систем, начальное содержимое\nкоторых совпадает с набором данных, из которого он был создан)",
   },
   {
     title: "Copies=N",
+    href: "/storage/iscrastorage/dittoblocks/",
     text: "Возможность управлять количеством копий пользовательских данных, которые хранит файловая\nсистема для конкретного набора данных",
   },
   {
@@ -95,10 +98,12 @@ const mechanisms = [
   },
   {
     title: "FMA\n(Fault Management\nArchitecture)",
+    href: "/storage/iscrastorage/fma/",
     text: "Система самодиагностики, которая автоматически диагностирует аппаратные\nи программные ошибки",
   },
   {
     title: "C/ROW",
+    href: "/storage/iscrastorage/crow/",
     text: "При изменении данных: старый блок остаётся на месте, новый записывается в свободное пространство,\nа активное дерево переключается на него",
   },
   {
@@ -132,6 +137,17 @@ const accents = {
     tab: "bg-[#D40032] text-white",
     text: "text-[#D40032]",
     row: "bg-[#d5d5d5] dark:bg-white",
+    rowValue: "text-black",
+  },
+  iscra: {
+    tab: "bg-[#FF9000] text-white",
+    tabIdle: "title-color",
+    text: "text-[#FF9000]",
+    title: "text-[#FF9000]",
+    line: "text-[#1f1f1f] dark:text-[#707070]",
+    number: "text-[#1f1f1f] dark:text-[#a1a1a1]",
+    row: "bg-[#FF9000]",
+    rowLabel: "text-black",
     rowValue: "text-black",
   },
   norsi: {

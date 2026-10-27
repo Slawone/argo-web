@@ -65,6 +65,14 @@ body {
   @apply text-[#D40032] dark:text-white;
 }
 
+.accent-iscra {
+  @apply text-[#FF9000];
+}
+
+.page-iscra .text-color {
+  @apply text-[#1f1f1f] dark:text-[#a1a1a1];
+}
+
 .accent-norsi {
   @apply text-[#007AFF];
 }

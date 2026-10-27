@@ -11,8 +11,13 @@ export const TextGrid = ({
   className,
   cellClassName,
   labelClassName,
+  fillEmpty = false,
 }) => {
   const { containerVariants, textVariants } = motionVariants;
+  const count = items.length;
+  const filled = fillEmpty && count % 2 === 1;
+  const total = filled ? count + 1 : count;
+  const odd = total % 2 === 1;
 
   return (
     <motion.section
@@ -20,15 +25,19 @@ export const TextGrid = ({
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className={cn("page-container section-border", className)}
+      className={cn("page-container section-border", odd && "md:border-r-0!", className)}
     >
       <div className="grid md:grid-cols-2 font-sans main-text">
         {items.map((item, index) => (
           <div
             key={item.title}
             className={cn(
-              "px-5 py-10 flex flex-col justify-start border-b last-of-type:border-b-0 border-black/8 dark:border-white/14 md:border-b-0 md:odd:border-r md:nth-[-n+2]:border-b relative",
+              "px-5 py-10 flex flex-col justify-start border-b last-of-type:border-b-0 border-black/8 dark:border-white/14 md:border-b-0 md:odd:border-r relative",
+              (index < total - 2 || (odd && index >= total - 2)) && "md:border-b",
+              filled && index === count - 1 && "max-md:border-b-0",
+              odd && "md:even:border-r md:last-of-type:border-b",
               cellClassName,
+              item.cellClassName,
             )}
           >
             <motion.h3
@@ -37,12 +46,12 @@ export const TextGrid = ({
             >
               {item.title}
             </motion.h3>
-            <motion.p
+            <motion.div
               variants={textVariants}
               className={cn("text-color", labelClassName)}
             >
               {item.label}
-            </motion.p>
+            </motion.div>
             {index === 0 && (
               <Plus
                 className="absolute text-color right-0 bottom-0 translate-x-1/2 translate-y-1/2"
@@ -50,6 +59,7 @@ export const TextGrid = ({
             )}
           </div>
         ))}
+        {filled && <div aria-hidden="true" className="hidden md:block" />}
       </div>
     </motion.section>
   );

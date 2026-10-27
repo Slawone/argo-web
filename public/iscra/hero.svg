@@ -1,0 +1,50 @@
+<svg width="445" height="437" viewBox="0 0 445 437" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="&#208;&#161;&#209;&#130;&#209;&#128;&#208;&#176;&#208;&#189;&#208;&#184;&#209;&#134;&#209;&#139;_&#208;&#191;&#209;&#128;&#208;&#190;&#208;&#180;&#209;&#131;&#208;&#186;&#209;&#130;&#208;&#190;&#208;&#178;">
+<g id="iscra storage black">
+<g id="Frame 1321317880">
+<g id="Group 1321317801">
+<g id="S_2" filter="url(#filter0_f_1805_227)">
+<rect id="Rectangle 158240" x="118.86" y="60" width="260.789" height="84.2105" rx="20" stroke="#FE9000" stroke-opacity="0.3" stroke-width="20"/>
+<rect id="Rectangle 158244" x="60" y="291.871" width="260.789" height="84.2105" rx="20" stroke="#FE9000" stroke-opacity="0.3" stroke-width="20"/>
+<rect id="Rectangle 158241" x="60" y="117.074" width="102.047" height="84.2105" rx="20" stroke="#FE9000" stroke-opacity="0.3" stroke-width="20"/>
+<rect id="Rectangle 158243" x="282.953" y="233.012" width="102.047" height="84.2105" rx="20" stroke="#FE9000" stroke-opacity="0.3" stroke-width="20"/>
+<rect id="Rectangle 158242" x="118.86" y="175.938" width="201.93" height="84.2105" rx="20" stroke="#FE9000" stroke-opacity="0.3" stroke-width="20"/>
+</g>
+<g id="S_1">
+<rect id="Rectangle 158240_2" x="130.86" y="72" width="236.789" height="60.2105" rx="8" stroke="#FF9100" stroke-width="4"/>
+<rect id="Rectangle 158244_2" x="72" y="303.871" width="236.789" height="60.2105" rx="8" stroke="#FF9100" stroke-width="4"/>
+<rect id="Rectangle 158241_2" x="72" y="129.074" width="78.0468" height="60.2105" rx="8" stroke="#FF9100" stroke-width="4"/>
+<rect id="Rectangle 158243_2" x="294.953" y="245.012" width="78.0468" height="60.2105" rx="8" stroke="#FF9100" stroke-width="4"/>
+<rect id="Rectangle 158242_2" x="130.86" y="187.938" width="177.93" height="60.2105" rx="8" stroke="#FF9100" stroke-width="4"/>
+</g>
+<g id="S_0_&#208;&#145;&#208;&#181;&#208;&#187;&#209;&#139;&#208;&#185;">
+<rect id="Rectangle 158240_3" x="129.86" y="71" width="238.789" height="62.2105" rx="9" stroke="white" stroke-width="2"/>
+<rect id="Rectangle 158244_3" x="71" y="302.871" width="238.789" height="62.2105" rx="9" stroke="white" stroke-width="2"/>
+<rect id="Rectangle 158241_3" x="71" y="128.074" width="80.0468" height="62.2105" rx="9" stroke="white" stroke-width="2"/>
+<rect id="Rectangle 158243_3" x="293.953" y="244.012" width="80.0468" height="62.2105" rx="9" stroke="white" stroke-width="2"/>
+<rect id="Rectangle 158242_3" x="129.86" y="186.938" width="179.93" height="62.2105" rx="9" stroke="white" stroke-width="2"/>
+</g>
+<g id="S_3" filter="url(#filter1_f_1805_227)">
+<rect id="Rectangle 158240_4" x="123.86" y="65" width="250.789" height="74.2105" rx="15" stroke="#FE9000" stroke-opacity="0.3" stroke-width="10"/>
+<rect id="Rectangle 158244_4" x="65" y="296.871" width="250.789" height="74.2105" rx="15" stroke="#FE9000" stroke-opacity="0.3" stroke-width="10"/>
+<rect id="Rectangle 158241_4" x="65" y="122.074" width="92.0468" height="74.2105" rx="15" stroke="#FE9000" stroke-opacity="0.3" stroke-width="10"/>
+<rect id="Rectangle 158243_4" x="287.953" y="238.012" width="92.0468" height="74.2105" rx="15" stroke="#FE9000" stroke-opacity="0.3" stroke-width="10"/>
+<rect id="Rectangle 158242_4" x="123.86" y="180.938" width="191.93" height="74.2105" rx="15" stroke="#FE9000" stroke-opacity="0.3" stroke-width="10"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_f_1805_227" x="0" y="0" width="445" height="436.082" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="25" result="effect1_foregroundBlur_1805_227"/>
+</filter>
+<filter id="filter1_f_1805_227" x="35" y="35" width="375" height="366.082" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="12.5" result="effect1_foregroundBlur_1805_227"/>
+</filter>
+</defs>
+</svg>

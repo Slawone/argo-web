@@ -19,6 +19,8 @@
 /.next/
 /out/
 /out-test/
+/out-devtest/
+/out-*/
 
 # production
 /build

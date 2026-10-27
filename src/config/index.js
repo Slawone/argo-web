@@ -13,4 +13,6 @@ export { gravitonProductsVariants } from "./gravitonProductsVariants";
 export { norsiVariants } from "./norsiVariants";
 export { norsiProductsVariants } from "./norsiProductsVariants";
 export { partnerVariants } from "./partnerVariants";
+export { iscraVariants } from "./iscraVariants";
+export { documentsVariants } from "./documentsVariants";
 export { ogImages, ogImage } from "./ogImages";

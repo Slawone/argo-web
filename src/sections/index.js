@@ -40,6 +40,12 @@ export { PartnerTextGrid } from "./partner/PartnerTextGrid";
 export { PartnerProductHero } from "./partner/PartnerProductHero";
 export { PartnerCompound } from "./partner/PartnerCompound";
 export { PartnerMechanisms } from "./partner/PartnerMechanisms";
+export { PartnerDiagram } from "./partner/PartnerDiagram";
+export { PartnerTable } from "./partner/PartnerTable";
+
+/* iscra */
+export { IscraProtocols } from "./iscra/IscraProtocols";
+export { IscraProtocolHero } from "./iscra/IscraProtocolHero";
 
 /* graviton */
 export { GravitonAwards } from "./graviton/GravitonAwards";
@@ -53,6 +59,7 @@ export { TextGrid } from "./TextGrid";
 export { SmallTextGrid } from "./SmallTextGrid";
 export { Faq } from "./Faq";
 export { Contact } from "./Contact";
+export { DocumentList } from "./DocumentList";
 
 /* blog */
 export { BlogContent } from "./blog/BlogContent";

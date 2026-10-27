@@ -8,6 +8,7 @@ const staticRoutes = [
   "",
   "/about",
   "/storage",
+  "/storage/iscrastorage",
   "/partners",
   "/partners/graviton",
   "/partners/graviton/skh424a24bm",
@@ -15,12 +16,20 @@ const staticRoutes = [
   "/partners/norsitrans",
   "/partners/norsitrans/tiara-a4",
   "/docs",
+  "/storage/iscrastorage/certification",
+  "/storage/iscrastorage/nfs",
+  "/storage/iscrastorage/dittoblocks",
+  "/storage/iscrastorage/fma",
+  "/storage/iscrastorage/crow",
+  "/storage/iscrastorage/writableclone",
   "/blog",
 ];
 
 export default async function sitemap() {
+  const buildDate = new Date();
   const staticEntries = staticRoutes.map((route) => ({
     url: `${BASE_URL}${route}/`,
+    lastModified: buildDate,
   }));
 
   const posts = await getBlogPosts();

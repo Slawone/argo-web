@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { motionVariants } from "@/config";
 import { cn } from "@/utils";
 
-export const PartnerInfo = ({ model, className, children }) => {
+export const PartnerInfo = ({ model, className, textClassName, children }) => {
   const { containerVariants, textVariants } = motionVariants;
 
   return (
@@ -18,7 +18,7 @@ export const PartnerInfo = ({ model, className, children }) => {
         className,
       )}
     >
-      <motion.p variants={textVariants} className="max-w-245 mx-auto text-color">
+      <motion.p variants={textVariants} className={cn("max-w-245 mx-auto text-color", textClassName)}>
         {model && (
           <>
             <span className="text-black dark:text-white uppercase text-sm md:text-[24px] font-normal">
