@@ -72,6 +72,12 @@ export const ogImages = {
     subtitle: "Защита от bit rot в ISCRA STORAGE",
     accent: "#FF1500",
   },
+  crow: {
+    alt: "C/ROW Write hole в ISCRA STORAGE",
+    title: "C/ROW — Write hole",
+    subtitle: "Атомарность Native ZFS в ISCRA STORAGE",
+    accent: "#FF9000",
+  },
   fma: {
     alt: "FMA Fault Management Architecture в ISCRA STORAGE",
     title: "FMA Fault Management Architecture",

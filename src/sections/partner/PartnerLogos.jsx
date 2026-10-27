@@ -6,7 +6,7 @@ export const PartnerLogos = ({ items }) => {
     <section className="page-container px-4 py-8 md:py-12">
       <ul className="grid grid-cols-2 md:grid-cols-5 gap-x-8 lg:gap-x-12.75 gap-y-6">
         {items.map((item, index) => {
-          const alt = item.href ? "" : (item.label ?? "");
+          const alt = item.label ?? "";
           const imageClassName = `h-auto ${item.className ?? ""}`;
           const image = item.srcLight ? (
             <>

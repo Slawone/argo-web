@@ -20,12 +20,15 @@ const staticRoutes = [
   "/storage/iscrastorage/nfs",
   "/storage/iscrastorage/dittoblocks",
   "/storage/iscrastorage/fma",
+  "/storage/iscrastorage/crow",
   "/blog",
 ];
 
 export default async function sitemap() {
+  const buildDate = new Date();
   const staticEntries = staticRoutes.map((route) => ({
     url: `${BASE_URL}${route}/`,
+    lastModified: buildDate,
   }));
 
   const posts = await getBlogPosts();

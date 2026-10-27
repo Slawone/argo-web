@@ -15,6 +15,7 @@ const ruMap = {
   nfs: "NFS",
   dittoblocks: "Ditto blocks",
   fma: "FMA",
+  crow: "C/ROW",
   about: "О компании",
   documentation: "Документация",
   blog: "Блог",
