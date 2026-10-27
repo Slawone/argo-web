@@ -72,6 +72,12 @@ export const ogImages = {
     subtitle: "Защита от bit rot в ISCRA STORAGE",
     accent: "#FF1500",
   },
+  writableclone: {
+    alt: "Writable Clone в ISCRA STORAGE",
+    title: "Writable Clone",
+    subtitle: "Мгновенные записываемые копии данных в ISCRA STORAGE",
+    accent: "#20EC73",
+  },
   crow: {
     alt: "C/ROW Write hole в ISCRA STORAGE",
     title: "C/ROW — Write hole",

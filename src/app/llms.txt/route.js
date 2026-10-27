@@ -14,6 +14,7 @@ const sections = [
       ["/storage/iscrastorage/dittoblocks/", "Ditto blocks и Copies=N: защита от bit rot"],
       ["/storage/iscrastorage/fma/", "FMA (Fault Management Architecture): самодиагностика и реакция на сбои"],
       ["/storage/iscrastorage/crow/", "C/ROW и write hole: атомарность Native ZFS и redirect-on-write"],
+      ["/storage/iscrastorage/writableclone/", "Writable Clone: мгновенные записываемые копии данных"],
       ["/storage/iscrastorage/certification/", "Сертификаты и реестровые записи ISCRA STORAGE"],
     ],
   },
