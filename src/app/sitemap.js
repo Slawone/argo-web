@@ -17,11 +17,11 @@ const staticRoutes = [
   "/partners/norsitrans/tiara-a4",
   "/docs",
   "/storage/iscrastorage/certification",
-  "/storage/iscrastorage/nfs",
-  "/storage/iscrastorage/dittoblocks",
-  "/storage/iscrastorage/fma",
-  "/storage/iscrastorage/crow",
-  "/storage/iscrastorage/writableclone",
+  "/technology/nfs",
+  "/technology/dittoblocks",
+  "/technology/fma",
+  "/technology/crow",
+  "/technology/writableclone",
   "/blog",
 ];
 

@@ -17,13 +17,13 @@ export const metadata = {
   title,
   description,
   alternates: {
-    canonical: "/storage/iscrastorage/nfs/",
+    canonical: "/technology/nfs/",
   },
   openGraph: {
     type: "website",
     locale: "ru_RU",
     siteName: "ARGO.TECH",
-    url: "https://argo.tech/storage/iscrastorage/nfs/",
+    url: "https://argo.tech/technology/nfs/",
     title,
     description,
     images: [ogImage("nfs")],

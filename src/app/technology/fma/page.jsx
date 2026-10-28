@@ -19,13 +19,13 @@ export const metadata = {
   title,
   description,
   alternates: {
-    canonical: "/storage/iscrastorage/fma/",
+    canonical: "/technology/fma/",
   },
   openGraph: {
     type: "website",
     locale: "ru_RU",
     siteName: "ARGO.TECH",
-    url: "https://argo.tech/storage/iscrastorage/fma/",
+    url: "https://argo.tech/technology/fma/",
     title,
     description,
     images: [ogImage("fma")],

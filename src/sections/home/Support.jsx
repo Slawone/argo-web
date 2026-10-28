@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { motionVariants } from "@/config";
-import { ArgoChat, ArgoForm, ArgoStorage } from "@/ui";
+import { ArgoChat, ArgoForm, ArgoStorage } from "@/ui/svg";
 
 export const Support = () => {
   const { containerVariants, textVariants } = motionVariants;

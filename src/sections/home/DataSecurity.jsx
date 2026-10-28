@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { motionVariants } from "@/config";
-import { EcoSystem, WebStorage } from "@/ui";
+import { EcoSystem, WebStorage } from "@/ui/svg";
 
 export const DataSecurity = () => {
   const { containerVariants, textVariants, imageVariants } = motionVariants;

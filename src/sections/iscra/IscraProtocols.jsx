@@ -32,7 +32,7 @@ const boxes = [
     y: 133,
     w: 99,
     h: 232,
-    href: "/storage/iscrastorage/nfs/",
+    href: "/technology/nfs/",
   },
   { id: "ip-smb", group: "smb", kind: "ip", x: 366, y: 73, w: 100, h: 53 },
   { id: "smb", group: "smb", kind: "file", x: 366, y: 133, w: 100, h: 232 },

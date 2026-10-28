@@ -65,17 +65,17 @@ const osTab = {
 const mechanisms = [
   {
     title: "Ditto blocks",
-    href: "/storage/iscrastorage/dittoblocks/",
+    href: "/technology/dittoblocks/",
     text: "Функционал автоматического сохранения метаданных в нескольких копиях одного блока записи",
   },
   {
     title: "Writable Clone",
-    href: "/storage/iscrastorage/writableclone/",
+    href: "/technology/writableclone/",
     text: "Функционал создания Клонов (записываемых томов или файловых систем, начальное содержимое\nкоторых совпадает с набором данных, из которого он был создан)",
   },
   {
     title: "Copies=N",
-    href: "/storage/iscrastorage/dittoblocks/",
+    href: "/technology/dittoblocks/",
     text: "Возможность управлять количеством копий пользовательских данных, которые хранит файловая\nсистема для конкретного набора данных",
   },
   {
@@ -98,12 +98,12 @@ const mechanisms = [
   },
   {
     title: "FMA\n(Fault Management\nArchitecture)",
-    href: "/storage/iscrastorage/fma/",
+    href: "/technology/fma/",
     text: "Система самодиагностики, которая автоматически диагностирует аппаратные\nи программные ошибки",
   },
   {
     title: "C/ROW",
-    href: "/storage/iscrastorage/crow/",
+    href: "/technology/crow/",
     text: "При изменении данных: старый блок остаётся на месте, новый записывается в свободное пространство,\nа активное дерево переключается на него",
   },
   {

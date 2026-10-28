@@ -18,13 +18,13 @@ export const metadata = {
   title,
   description,
   alternates: {
-    canonical: "/storage/iscrastorage/crow/",
+    canonical: "/technology/crow/",
   },
   openGraph: {
     type: "website",
     locale: "ru_RU",
     siteName: "ARGO.TECH",
-    url: "https://argo.tech/storage/iscrastorage/crow/",
+    url: "https://argo.tech/technology/crow/",
     title,
     description,
     images: [ogImage("crow")],

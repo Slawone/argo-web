@@ -20,6 +20,7 @@ export { Partnerships } from "./storage/Partnerships";
 export { Scale } from "./storage/Scale";
 export { StorageInfo } from "./storage/StorageInfo";
 export { HardwareSection } from "./storage/HardwareSection";
+export { StorageSlogan } from "./storage/StorageSlogan";
 
 /* partners */
 export { PartnersHero } from "./partners/PartnersHero";

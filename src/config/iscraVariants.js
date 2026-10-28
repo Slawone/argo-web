@@ -67,7 +67,7 @@ const compoundTabs = [
       { label: "SLOG (Separate Log)" },
       { label: "ISCRA Scheduler" },
       { label: "Native Kernel SMB (CIFS)" },
-      { label: "NFS (v3/v4)", highlight: true, href: "/storage/iscrastorage/nfs/" },
+      { label: "NFS (v3/v4)", highlight: true, href: "/technology/nfs/" },
       { label: "Write Coalescing", accent: true },
       { label: "iSCSI & Fibre Channel" },
     ],

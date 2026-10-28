@@ -6,14 +6,3 @@ export { Tooltip } from "./Tooltip";
 export { InputField } from "./InputField";
 export { HoneypotField, HONEYPOT_NAME } from "./HoneypotField";
 
-/* svg */
-export { EcoSystem } from './svg';
-export { WebStorage } from './svg';
-export { Schedule } from './svg';
-export { MonitoringStat } from './svg';
-export { TopServices } from './svg';
-export { ArgoStorage } from './svg';
-export { ArgoForm } from './svg';
-export { ArgoChat } from './svg';
-export { Lines } from './svg';
-export { Pools } from './svg';

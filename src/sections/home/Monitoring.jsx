@@ -2,7 +2,8 @@
 
 import { motion } from "framer-motion";
 import { motionVariants } from "@/config";
-import { Button, MonitoringStat, Schedule, TopServices } from "@/ui";
+import { Button } from "@/ui";
+import { MonitoringStat, Schedule, TopServices } from "@/ui/svg";
 import { useOrderForm } from "@/components";
 
 export const Monitoring = () => {

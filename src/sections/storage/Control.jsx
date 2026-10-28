@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { motionVariants } from "@/config";
-import { Pools } from "@/ui";
+import { Pools } from "@/ui/svg";
 
 export const Control = () => {
   const { containerVariants, textVariants } = motionVariants;

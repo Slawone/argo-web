@@ -16,13 +16,13 @@ export const metadata = {
   title,
   description,
   alternates: {
-    canonical: "/storage/iscrastorage/dittoblocks/",
+    canonical: "/technology/dittoblocks/",
   },
   openGraph: {
     type: "website",
     locale: "ru_RU",
     siteName: "ARGO.TECH",
-    url: "https://argo.tech/storage/iscrastorage/dittoblocks/",
+    url: "https://argo.tech/technology/dittoblocks/",
     title,
     description,
     images: [ogImage("dittoblocks")],
