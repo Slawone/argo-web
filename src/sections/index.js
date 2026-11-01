@@ -47,6 +47,7 @@ export { PartnerTable } from "./partner/PartnerTable";
 /* iscra */
 export { IscraProtocols } from "./iscra/IscraProtocols";
 export { IscraProtocolHero } from "./iscra/IscraProtocolHero";
+export { IscraSnapshotDiagram } from "./iscra/IscraSnapshotDiagram";
 
 /* s3 */
 export { S3Hero } from "./s3/S3Hero";

@@ -72,6 +72,7 @@ export default function S3Storage() {
           </>
         }
         source="S3 STORAGE"
+        presentationHref="/s3/S3_ARGO.TECH_Web_10.pdf"
       />
       <PartnerSplit
         hidePlus

@@ -42,7 +42,7 @@ const tabs = [
               <Image
                 className="invert dark:invert-0"
                 src="/stars.svg"
-                alt="Логотип ARGO.TECH"
+                alt=""
                 width={20}
                 height={20}
                 priority

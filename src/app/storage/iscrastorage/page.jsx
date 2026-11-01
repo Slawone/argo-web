@@ -89,7 +89,7 @@ export default function IscraStorage() {
         actions={
           <>
             <a
-              href="/iscra/ISCRA_SolutionArchitec_1.58.10_Web.pdf"
+              href="/iscra/ISCRA_SolutionArchitec_Web_Online_10.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="button button-primary flex-center"

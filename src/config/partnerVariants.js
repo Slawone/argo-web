@@ -80,10 +80,12 @@ const mechanisms = [
   },
   {
     title: "Recursive Atomic\nSnapshot",
+    href: "/technology/atomicsnapshot/",
     text: "Рекурсивный снапшот, с свойством атомарности (Снапшот с одинаковым именем\nи моментом, для разных файловых систем и томов)",
   },
   {
     title: "Atomic Snapshot",
+    href: "/technology/atomicsnapshot/",
     text: "Атомарный снапшот (Снапшот с свойством атомарности)",
   },
   { title: "Compression", text: "Функционал блочной компрессии" },

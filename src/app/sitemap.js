@@ -23,6 +23,7 @@ const staticRoutes = [
   "/technology/fma",
   "/technology/crow",
   "/technology/writableclone",
+  "/technology/atomicsnapshot",
   "/blog",
 ];
 

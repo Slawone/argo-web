@@ -102,6 +102,12 @@ export const ogImages = {
     subtitle: "Протокол NFS в ISCRA STORAGE",
     accent: "#007AFF",
   },
+  atomicsnapshot: {
+    alt: "Atomic Snapshot в ISCRA STORAGE",
+    title: "Atomic Snapshot",
+    subtitle: "Атомарные снимки данных в ISCRA STORAGE",
+    accent: "#007AFF",
+  },
   certification: {
     alt: "Сертификаты совместимости ISCRA STORAGE",
     title: "Сертификаты совместимости",

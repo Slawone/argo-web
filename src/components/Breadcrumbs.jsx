@@ -19,6 +19,7 @@ const ruMap = {
   fma: "FMA",
   crow: "C/ROW",
   writableclone: "Writable Clone",
+  atomicsnapshot: "Atomic Snapshot",
   about: "О компании",
   documentation: "Документация",
   blog: "Блог",

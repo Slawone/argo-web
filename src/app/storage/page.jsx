@@ -9,6 +9,7 @@ import {
   PartnerSplit,
   Contact,
 } from "@/sections";
+import { Button } from "@/ui";
 import { iscraVariants, ogImage } from "@/config";
 import { cn } from "@/utils";
 
@@ -44,7 +45,8 @@ const links = {
   s3: { href: "/storage/s3storage/" },
 };
 
-const splitClassName = "md:grid-cols-[747fr_523fr] xl:text-[26.5px] xl:min-h-68.75";
+const splitClassName =
+  "md:grid-cols-[747fr_523fr] xl:text-[26.5px] xl:min-h-68.75";
 const textClassName = "font-light leading-8.25";
 const linkedCellClassName = "relative xl:pr-18";
 
@@ -94,7 +96,10 @@ export default function Storage() {
     <main className="page-iscra font-sans bg-white dark:bg-black">
       <Breadcrumbs className="page-container pt-2 mb-5 font-light text-color" />
       <StorageSlogan
-        left={{ title: "Сохраняй своё", text: "это не просто слоган. Это позиция." }}
+        left={{
+          title: "Сохраняй своё",
+          text: "это не просто слоган. Это позиция.",
+        }}
         right={{
           title: (
             <>
@@ -112,26 +117,33 @@ export default function Storage() {
         rightClassName={linkedCellClassName}
         left={
           <p className={textClassName}>
-            <span className="title-color font-normal">ARGO.TECH</span> разрабатывает не просто
-            решение для хранения данных. Наша команда создает среду, встроенную в файловую
-            систему, которая позволяет управлять хранением на уровне ядра: с полным контролем над
-            каждым механизмом и каждым свойством. Это не надстройка. Это архитектура.
+            <span className="title-color font-normal">ARGO.TECH</span>{" "}
+            разрабатывает не просто решение для хранения данных. Наша команда
+            создает среду, встроенную в файловую систему, которая позволяет
+            управлять хранением на уровне ядра: с полным контролем над каждым
+            механизмом и каждым свойством. Это не надстройка. Это архитектура.
           </p>
         }
         right={
           <>
             <p className={textClassName}>
-              Мы — первая инженерная организация, которая поставила цель не просто разработать
-              систему хранения, <br className="hidden xl:inline" /> а изменить рынок хранения
+              Мы — первая инженерная организация, которая поставила цель не
+              просто разработать систему хранения,{" "}
+              <br className="hidden xl:inline" /> а изменить рынок хранения
               <br className="hidden xl:inline" /> в России.
             </p>
-            <CardLink link={links.engineering} label="Подробнее об инженерной организации" />
+            <CardLink
+              link={links.engineering}
+              label="Подробнее об инженерной организации"
+            />
           </>
         }
       />
       <PartnerInfo textClassName="max-w-260">
         <span className="xl:text-[30px]">
-          <span className="title-color font-medium uppercase">Многоконтроллерность:</span>{" "}
+          <span className="title-color font-medium uppercase">
+            Многоконтроллерность:
+          </span>{" "}
           Повышает отказоустойчивость
         </span>
       </PartnerInfo>
@@ -141,16 +153,20 @@ export default function Storage() {
         rightClassName={linkedCellClassName}
         left={
           <p className={textClassName}>
-            Широкая и гарантированная совместимость. Наша команда и технологические партнёры постоянно тестируют и проверяют совместимость как с международными программными продуктами, так и с решениями из реестра Минцифры. Мы гарантируем работу со всем спектром программного обеспечения.
+            Широкая и гарантированная совместимость. Наша команда и
+            технологические партнёры постоянно тестируют и проверяют
+            совместимость как с международными программными продуктами, так и с
+            решениями из реестра Минцифры. Мы гарантируем работу со всем
+            спектром программного обеспечения.
           </p>
         }
         right={
           <>
             <p className={textClassName}>
-              <span className="title-color font-normal">ISCRA</span> благодаря архитектурному
-              подходу опережает по производительности не только российские аналоги, но и
-              зарубежные решения. Это не магия — это технологии, которые применяются в каждом
-              решении.
+              <span className="title-color font-normal">ISCRA</span> благодаря
+              архитектурному подходу опережает по производительности не только
+              российские аналоги, но и зарубежные решения. Это не магия — это
+              технологии, которые применяются в каждом решении.
             </p>
             <CardLink link={links.iscra} label="Подробнее об ISCRA" />
           </>
@@ -158,8 +174,11 @@ export default function Storage() {
       />
       <PartnerInfo textClassName="max-w-260">
         <span className="xl:text-[30px]">
-          <span className="title-color font-medium">Вся разработка в России.</span> Нет
-          зависимости, нет риска отзыва поддержки, нет риска «отключения» продукта.
+          <span className="title-color font-medium">
+            Вся разработка в России.
+          </span>{" "}
+          Нет зависимости, нет риска отзыва поддержки, нет риска «отключения»
+          продукта.
         </span>
       </PartnerInfo>
       <PartnerSplit
@@ -191,24 +210,27 @@ export default function Storage() {
             <p className={textClassName}>
               Защищённый интерфейс управления — это основа.
               <br className="hidden xl:inline" /> Мы делаем его интуитивным
-              <br className="hidden xl:inline" /> и понятным, сохраняя безопасность даже в
-              сложных enterprise-решениях.
+              <br className="hidden xl:inline" /> и понятным, сохраняя
+              безопасность даже в сложных enterprise-решениях.
             </p>
           }
           right={
             <p className={textClassName}>
               Управление на уровне файловой системы и низового программного слоя
-              <br className="hidden xl:inline" /> (low-level layer) позволяет кастомизировать
-              конфигурацию под каждого партнёра с индивидуальной маршрутизацией и синхронизацией
-              компонентов. Результат: независимость от производителя, предсказуемое поведение
-              системы и защита данных при сложных отказах.
+              <br className="hidden xl:inline" /> (low-level layer) позволяет
+              кастомизировать конфигурацию под каждого партнёра с индивидуальной
+              маршрутизацией и синхронизацией компонентов. Результат:
+              независимость от производителя, предсказуемое поведение системы и
+              защита данных при сложных отказах.
             </p>
           }
         />
       </div>
       <PartnerInfo textClassName="max-w-260">
         <span className="xl:text-[30px]">
-          <span className="title-color font-medium uppercase">Многоконтроллерность:</span>{" "}
+          <span className="title-color font-medium uppercase">
+            Многоконтроллерность:
+          </span>{" "}
           Повышает отказоустойчивость
         </span>
       </PartnerInfo>
@@ -218,21 +240,36 @@ export default function Storage() {
         rightClassName={linkedCellClassName}
         left={
           <p className={textClassName}>
-            <span className="title-color font-normal">ARGO.TECH</span> ведёт прямые переговоры со
-            всеми российскими производителями, участвует в разработке чипов и микропроцессоров,
-            консультирует ведущие университеты и сотрудничает с R&amp;D-подразделениями для
-            создания национальной платформы хранения данных.
+            <span className="title-color font-normal">ARGO.TECH</span> ведёт
+            прямые переговоры со всеми российскими производителями, участвует в
+            разработке чипов и микропроцессоров, консультирует ведущие
+            университеты и сотрудничает с R&amp;D-подразделениями для создания
+            национальной платформы хранения данных.
           </p>
         }
         right={
-          <>
+          <div className="flex flex-col gap-7.5">
             <p className="title-color font-light leading-8.25">
-              Программный комплекс хранения данных (СХД АРГО) с гибкой архитектурой (Node
-              Appliance), совместимый с оборудованием российских производителей ISCRA STORAGE
-              (Intellectual Scalable Clusterised Reliable Appliance)
+              Программный комплекс хранения данных (СХД АРГО) с гибкой
+              архитектурой (Node Appliance), совместимый с оборудованием
+              российских производителей ISCRA STORAGE (Intellectual Scalable
+              Clusterised Reliable Appliance)
             </p>
-            <CardLink link={links.partners} label="Подробнее об ISCRA STORAGE" />
-          </>
+            {/* <CardLink link={links.partners} label="Подробнее об ISCRA STORAGE" /> */}
+            <Link href="/storage/iscrastorage/">
+              <Button variant="primary" className="flex-center text-base">
+                Перейти к продукту
+                <Image
+                  className="invert dark:invert-0"
+                  src="/stars.svg"
+                  alt=""
+                  width={20}
+                  height={20}
+                  priority
+                />
+              </Button>
+            </Link>
+          </div>
         }
       />
       <div className="pt-10 xl:pt-12.75">
@@ -242,20 +279,35 @@ export default function Storage() {
           rightClassName={linkedCellClassName}
           left={
             <p className={textClassName}>
-              Программное решение для тех, кто устал от навязанных облачных рамок. S3 ARGO STORAGE
-              даёт широкий спектр функций без обязательного ежемесячного платежа. Объектное
-              хранение без облачной зависимости, на высокоскоростных серверах из реестра
+              Программное решение для тех, кто устал от навязанных облачных
+              рамок. S3 ARGO STORAGE даёт широкий спектр функций без
+              обязательного ежемесячного платежа. Объектное хранение без
+              облачной зависимости, на высокоскоростных серверах из реестра
               Минпромторга.
             </p>
           }
           right={
-            <>
+            <div className="flex flex-col gap-7.5">
               <p className="title-color font-light leading-8.25">
-                Программный комплекс объектного хранения, совместимый с оборудованием российских
-                производителей ARGO SIII (Secure. Immutable. Intelligent. Infrastructure.)
+                Программный комплекс объектного хранения, совместимый с
+                оборудованием российских производителей ARGO SIII (Secure.
+                Immutable. Intelligent. Infrastructure.)
               </p>
-              <CardLink link={links.s3} label="Подробнее об ARGO SIII" />
-            </>
+              {/* <CardLink link={links.s3} label="Подробнее об ARGO SIII" /> */}
+              <Link href="/storage/s3storage/">
+                <Button variant="primary" className="flex-center text-base">
+                  Перейти к продукту
+                  <Image
+                    className="invert dark:invert-0"
+                    src="/stars.svg"
+                    alt=""
+                    width={20}
+                    height={20}
+                    priority
+                  />
+                </Button>
+              </Link>
+            </div>
           }
         />
       </div>
