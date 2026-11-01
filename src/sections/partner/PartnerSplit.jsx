@@ -12,6 +12,7 @@ export const PartnerSplit = ({
   cellClassName: extraCellClassName,
   leftClassName,
   rightClassName,
+  hidePlus = false,
 }) => {
   const { containerVariants, textVariants } = motionVariants;
   const cellClassName = cn(
@@ -43,7 +44,7 @@ export const PartnerSplit = ({
           {right}
         </motion.div>
       </div>
-      <Plus className="absolute text-color right-[-12] top-[-12]" />
+      {!hidePlus && <Plus className="absolute text-color right-[-12] top-[-12]" />}
     </motion.section>
   );
 };

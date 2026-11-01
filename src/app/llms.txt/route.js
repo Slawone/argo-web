@@ -10,6 +10,7 @@ const sections = [
     links: [
       ["/storage/", "СХД АРГО: российские системы хранения данных, реестр Минцифры №5850"],
       ["/storage/iscrastorage/", "ISCRA STORAGE: программное обеспечение СХД на основе Native ZFS"],
+      ["/storage/s3storage/", "S3 STORAGE: ARGO SIII, S3-совместимое объектное хранилище"],
       ["/storage/iscrastorage/nfs/", "NFS в ISCRA STORAGE: сетевая файловая система"],
       ["/storage/iscrastorage/dittoblocks/", "Ditto blocks и Copies=N: защита от bit rot"],
       ["/storage/iscrastorage/fma/", "FMA (Fault Management Architecture): самодиагностика и реакция на сбои"],

@@ -12,7 +12,10 @@ const navItems = [
   {
     label: "Хранение",
     href: "/storage",
-    children: [{ label: "ISCRA STORAGE", href: "/storage/iscrastorage" }],
+    children: [
+      { label: "ISCRA STORAGE", href: "/storage/iscrastorage" },
+      { label: "S3 STORAGE", href: "/storage/s3storage" },
+    ],
   },
   { label: "Партнеры", href: "/partners" },
   { label: "О компании", href: "/about" },
