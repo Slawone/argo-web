@@ -48,6 +48,13 @@ export { PartnerTable } from "./partner/PartnerTable";
 export { IscraProtocols } from "./iscra/IscraProtocols";
 export { IscraProtocolHero } from "./iscra/IscraProtocolHero";
 
+/* s3 */
+export { S3Hero } from "./s3/S3Hero";
+export { S3CodeTabs } from "./s3/S3CodeTabs";
+export { S3Table } from "./s3/S3Table";
+export { S3Cluster } from "./s3/S3Cluster";
+export { S3Files } from "./s3/S3Files";
+
 /* graviton */
 export { GravitonAwards } from "./graviton/GravitonAwards";
 

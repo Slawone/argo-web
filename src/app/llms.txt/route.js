@@ -10,12 +10,13 @@ const sections = [
     links: [
       ["/storage/", "СХД АРГО: российские системы хранения данных, реестр Минцифры №5850"],
       ["/storage/iscrastorage/", "ISCRA STORAGE: программное обеспечение СХД на основе Native ZFS"],
+      ["/storage/iscrastorage/certification/", "Сертификаты и реестровые записи ISCRA STORAGE"],
       ["/technology/nfs/", "NFS в ISCRA STORAGE: сетевая файловая система"],
       ["/technology/dittoblocks/", "Ditto blocks и Copies=N: защита от bit rot"],
       ["/technology/fma/", "FMA (Fault Management Architecture): самодиагностика и реакция на сбои"],
       ["/technology/crow/", "C/ROW и write hole: атомарность Native ZFS и redirect-on-write"],
       ["/technology/writableclone/", "Writable Clone: мгновенные записываемые копии данных"],
-      ["/storage/iscrastorage/certification/", "Сертификаты и реестровые записи ISCRA STORAGE"],
+      ["/storage/s3storage/", "S3 STORAGE: ARGO SIII, S3-совместимое объектное хранилище"],
     ],
   },
   {

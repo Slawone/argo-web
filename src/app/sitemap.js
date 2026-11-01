@@ -9,6 +9,7 @@ const staticRoutes = [
   "/about",
   "/storage",
   "/storage/iscrastorage",
+  "/storage/s3storage",
   "/partners",
   "/partners/graviton",
   "/partners/graviton/skh424a24bm",

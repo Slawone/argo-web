@@ -16,3 +16,4 @@ export { partnerVariants } from "./partnerVariants";
 export { iscraVariants } from "./iscraVariants";
 export { documentsVariants } from "./documentsVariants";
 export { ogImages, ogImage } from "./ogImages";
+export { s3Variants } from "./s3Variants";

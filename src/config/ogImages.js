@@ -78,6 +78,12 @@ export const ogImages = {
     subtitle: "Мгновенные записываемые копии данных в ISCRA STORAGE",
     accent: "#20EC73",
   },
+  s3storage: {
+    alt: "S3 STORAGE: объектное хранилище ARGO SIII",
+    title: "S3 STORAGE — ARGO SIII",
+    subtitle: "Объектное хранилище: S3 API, Object Lock, Erasure Coding",
+    accent: "#7129FF",
+  },
   crow: {
     alt: "C/ROW Write hole в ISCRA STORAGE",
     title: "C/ROW — Write hole",
