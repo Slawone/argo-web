@@ -7,15 +7,15 @@ import { motionVariants } from "@/config";
 const diagrams = {
   snapshot: {
     label: "Snapshot",
-    srcLight: "/atomicsnapshot/snapshot-light.svg",
-    src: "/atomicsnapshot/snapshot-dark.svg",
+    srcLight: "/atomicsnapshot/snapshot-light.png",
+    src: "/atomicsnapshot/snapshot.png",
     width: 748,
     height: 183,
   },
   clone: {
     label: "Clone",
-    srcLight: "/atomicsnapshot/clone-light.svg",
-    src: "/atomicsnapshot/clone-dark.svg",
+    srcLight: "/atomicsnapshot/clone-light.png",
+    src: "/atomicsnapshot/clone.png",
     width: 747,
     height: 322,
   },

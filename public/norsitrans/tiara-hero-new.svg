@@ -1,4 +1,5 @@
-<svg width="790" height="338" viewBox="0 0 790 338" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="878" height="386" viewBox="0 0 878 386" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g transform="translate(-1.965 3.712) scale(1.112071)">
 <g filter="url(#filter0_f_2878_1681)">
 <mask id="stroke0_2878_1681" maskUnits="userSpaceOnUse" x="80.3125" y="80.002" width="630" height="178" fill="black">
 <rect fill="white" x="80.3125" y="80.002" width="630" height="178"/>
@@ -524,6 +525,7 @@
 <path d="M92.0682 121.887C93.3787 121.887 94.4411 122.949 94.4411 124.26L94.4411 213.742C94.4411 215.053 93.3787 216.115 92.0682 216.115C90.7577 216.115 89.6953 215.053 89.6953 213.742L89.6953 124.26C89.6953 122.949 90.7577 121.887 92.0682 121.887Z" stroke-width="2" stroke="#007AFF"/>
 <path d="M683.232 216.117H687.978V204.254H683.232V216.117Z" stroke-width="2" stroke="#007AFF"/>
 <path d="M102.168 204.252H106.914V216.115H102.168V204.252Z" stroke-width="2" stroke="#007AFF"/>
+</g>
 <defs>
 <filter id="filter0_f_2878_1681" x="55.3125" y="55.0098" width="679.43" height="227.992" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>

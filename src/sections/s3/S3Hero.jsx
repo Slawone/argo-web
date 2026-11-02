@@ -21,50 +21,6 @@ const neonRects = [
   [858, 510, 1033, 556],
 ];
 
-const CYCLE = 11;
-
-const routePoints = [
-  [570, 62],
-  [1153, 62],
-  [1153, 164],
-  [1024, 199],
-  [1024, 285],
-  [1153, 272],
-  [1153, 596],
-  [1024, 547],
-  [267, 548],
-  [267, 199],
-  [138, 165],
-  [138, 62],
-  [570, 62],
-];
-const routePath = `M${routePoints.map((point) => point.join(",")).join(" L")}`;
-
-const segmentLengths = routePoints
-  .slice(1)
-  .map((point, index) =>
-    Math.hypot(point[0] - routePoints[index][0], point[1] - routePoints[index][1]),
-  );
-const routeLength = segmentLengths.reduce((sum, length) => sum + length, 0);
-
-const arrivals = neonRects.map(([x0, y0, x1, y1]) => {
-  let passed = 0;
-  for (let segment = 0; segment < segmentLengths.length; segment += 1) {
-    const [ax, ay] = routePoints[segment];
-    const [bx, by] = routePoints[segment + 1];
-    for (let step = 0; step < segmentLengths[segment]; step += 1) {
-      const t = step / segmentLengths[segment];
-      const x = ax + (bx - ax) * t;
-      const y = ay + (by - ay) * t;
-      if (x >= x0 && x <= x1 && y >= y0 && y <= y1) {
-        return ((passed + step) / routeLength) * CYCLE;
-      }
-    }
-    passed += segmentLengths[segment];
-  }
-  return 0;
-});
-
 const contactClassName =
   "border border-black bg-white text-[#1f1f1f] hover:bg-black/4 dark:border-0 dark:bg-[#ededed] dark:text-[#0a0a0a] dark:hover:bg-[#ccc]";
 const presentationClassName =
@@ -111,8 +67,6 @@ export const S3Hero = ({ title, alt, source = "Связаться", presentation
               top: `${(y0 / IMAGE_HEIGHT) * 100}%`,
               width: `${(width / IMAGE_WIDTH) * 100}%`,
               height: `${(height / IMAGE_HEIGHT) * 100}%`,
-              "--neon-delay": `${arrivals[index].toFixed(2)}s`,
-              "--neon-duration": `${CYCLE}s`,
             };
             const imageStyle = {
               width: `${(IMAGE_WIDTH / width) * 100}%`,
@@ -122,7 +76,7 @@ export const S3Hero = ({ title, alt, source = "Связаться", presentation
 
             return (
               <div key={index} style={style} className="absolute overflow-hidden">
-                <div className="neon-pulse-light absolute inset-0 mix-blend-multiply dark:hidden">
+                <div className="absolute inset-0 mix-blend-multiply dark:hidden">
                   <Image
                     src="/s3/hero-light.webp"
                     width={IMAGE_WIDTH}
@@ -132,7 +86,7 @@ export const S3Hero = ({ title, alt, source = "Связаться", presentation
                     className="absolute max-w-none h-auto"
                   />
                 </div>
-                <div className="neon-pulse-dark absolute inset-0 mix-blend-screen hidden dark:block">
+                <div className="absolute inset-0 mix-blend-screen hidden dark:block">
                   <Image
                     src="/s3/hero-dark.webp"
                     width={IMAGE_WIDTH}
@@ -145,26 +99,6 @@ export const S3Hero = ({ title, alt, source = "Связаться", presentation
               </div>
             );
           })}
-          <svg
-            viewBox={`0 0 ${IMAGE_WIDTH} ${IMAGE_HEIGHT}`}
-            className="absolute inset-0 size-full overflow-visible motion-reduce:hidden"
-          >
-            <defs>
-              <filter id="s3-neon-glow" x="-50%" y="-50%" width="200%" height="200%">
-                <feGaussianBlur stdDeviation="4" />
-              </filter>
-            </defs>
-            <g>
-              <circle r="11" filter="url(#s3-neon-glow)" className="fill-[#7129ff] dark:fill-[#a855f7]" />
-              <circle r="4.5" className="fill-[#7129ff] dark:fill-white" />
-              <animateMotion
-                path={routePath}
-                calcMode="paced"
-                dur={`${CYCLE}s`}
-                repeatCount="indefinite"
-              />
-            </g>
-          </svg>
         </div>
         <div className="px-4 pt-6 pb-8 flex flex-col items-center gap-5 text-center lg:absolute lg:inset-x-0 lg:top-[51%] lg:p-0 lg:gap-6.5">
           <motion.h1

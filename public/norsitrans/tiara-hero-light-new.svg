@@ -1,4 +1,5 @@
-<svg width="626" height="172" viewBox="0 0 626 172" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="878" height="386" viewBox="0 0 878 386" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g transform="translate(84.764 94.338) scale(1.130990)">
 <mask id="stroke0_2878_877" maskUnits="userSpaceOnUse" x="2.3125" y="0.00195312" width="624" height="172" fill="black">
 <rect fill="white" x="2.3125" y="0.00195312" width="624" height="172"/>
 <path d="M4.3125 170.002H623.743L623.743 2.00993H4.3125V31.4085L4.3125 140.603L4.3125 170.002Z"/>
@@ -502,4 +503,5 @@
 <path d="M11.0682 38.8867C12.3787 38.8867 13.4411 39.9491 13.4411 41.2596L13.4411 130.742C13.4411 132.053 12.3787 133.115 11.0682 133.115C9.75769 133.115 8.69531 132.053 8.69531 130.742L8.69531 41.2596C8.69531 39.9491 9.75769 38.8867 11.0682 38.8867Z" stroke-width="2" stroke="#007AFF"/>
 <path d="M602.232 133.117H606.978V121.254H602.232V133.117Z" stroke-width="2" stroke="#007AFF"/>
 <path d="M21.168 121.252H25.9137V133.115H21.168V121.252Z" stroke-width="2" stroke="#007AFF"/>
+</g>
 </svg>
