@@ -45,8 +45,8 @@ export default function NorsiTiaraA4() {
       <PartnerProductHero
         title={"Двухконтроллерная\nсистема хранения данных\nТИАРА-А4"}
         subtitle={"Два контроллера. Ноль простоев.\nОдна система: множество государственных задач"}
-        image={{ src: "/norsitrans/tiara-hero-new.svg", width: 878, height: 386 }}
-        imageLight={{ src: "/norsitrans/tiara-hero-light-new.svg", width: 878, height: 386 }}
+        image={{ src: "/norsitrans/tiara-hero.svg", width: 768, height: 353 }}
+        imageLight={{ src: "/norsitrans/tiara-hero-light.svg", width: 768, height: 353 }}
         serverOffset={{ x: 86, y: 85 }}
       />
       <PartnerLogos items={norsiVariants.brandLogos} />
