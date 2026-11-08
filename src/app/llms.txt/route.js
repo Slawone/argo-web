@@ -17,6 +17,7 @@ const sections = [
       ["/technology/crow/", "C/ROW и write hole: атомарность Native ZFS и redirect-on-write"],
       ["/technology/writableclone/", "Writable Clone: мгновенные записываемые копии данных"],
       ["/technology/atomicsnapshot/", "Atomic Snapshot: атомарные рекурсивные снимки с единым моментом времени"],
+      ["/technology/arc/", "ARC и L2ARC: адаптивный кэш замещения в оперативной памяти и на SSD"],
       ["/storage/s3storage/", "S3 STORAGE: ARGO SIII, S3-совместимое объектное хранилище"],
     ],
   },

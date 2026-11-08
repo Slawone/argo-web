@@ -108,6 +108,12 @@ export const ogImages = {
     subtitle: "Атомарные снимки данных в ISCRA STORAGE",
     accent: "#007AFF",
   },
+  arc: {
+    alt: "ARC и L2ARC в ISCRA STORAGE — Adaptive Replacement Cache",
+    title: "ARC — Adaptive Replacement Cache",
+    subtitle: "Адаптивный кэш замещения в ISCRA STORAGE",
+    accent: "#007AFF",
+  },
   certification: {
     alt: "Сертификаты совместимости ISCRA STORAGE",
     title: "Сертификаты совместимости",

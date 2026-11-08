@@ -24,6 +24,7 @@ const staticRoutes = [
   "/technology/crow",
   "/technology/writableclone",
   "/technology/atomicsnapshot",
+  "/technology/arc",
   "/blog",
 ];
 

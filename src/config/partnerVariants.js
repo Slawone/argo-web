@@ -92,6 +92,7 @@ const mechanisms = [
   { title: "Deduplication", text: "Функционал блочной дедупликации" },
   {
     title: "L2 ARC\n(Adaptive\nReplacement Cache)",
+    href: "/technology/arc/",
     text: "Второй уровень кэша, который использует быстрые накопители для хранения часто читаемых данных,\nне поместившихся в оперативную память",
   },
   {

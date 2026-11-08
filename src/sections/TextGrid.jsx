@@ -11,6 +11,7 @@ export const TextGrid = ({
   className,
   cellClassName,
   labelClassName,
+  gridClassName,
   fillEmpty = false,
 }) => {
   const { containerVariants, textVariants } = motionVariants;
@@ -27,7 +28,7 @@ export const TextGrid = ({
       viewport={{ once: true }}
       className={cn("page-container section-border", odd && "md:border-r-0!", className)}
     >
-      <div className="grid md:grid-cols-2 font-sans main-text">
+      <div className={cn("grid md:grid-cols-2 font-sans main-text", gridClassName)}>
         {items.map((item, index) => (
           <div
             key={item.title}
