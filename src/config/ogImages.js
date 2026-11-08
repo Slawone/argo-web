@@ -114,6 +114,18 @@ export const ogImages = {
     subtitle: "Адаптивный кэш замещения в ISCRA STORAGE",
     accent: "#007AFF",
   },
+  slog: {
+    alt: "SLOG в ISCRA STORAGE — Separate Log, журнал ZIL",
+    title: "SLOG — Separate Log",
+    subtitle: "Выделенный журнал синхронных транзакций ZIL в ISCRA STORAGE",
+    accent: "#7129FF",
+  },
+  mrumfu: {
+    alt: "MRU и MFU в ISCRA STORAGE — списки адаптивного кэша ARC",
+    title: "MRU / MFU",
+    subtitle: "Списки Most Recently Used и Most Frequently Used в ISCRA STORAGE",
+    accent: "#7129FF",
+  },
   certification: {
     alt: "Сертификаты совместимости ISCRA STORAGE",
     title: "Сертификаты совместимости",

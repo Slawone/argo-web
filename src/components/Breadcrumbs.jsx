@@ -21,6 +21,8 @@ const ruMap = {
   writableclone: "Writable Clone",
   atomicsnapshot: "Atomic Snapshot",
   arc: "ARC",
+  slog: "SLOG",
+  mrumfu: "MRU / MFU",
   about: "О компании",
   documentation: "Документация",
   blog: "Блог",

@@ -25,6 +25,8 @@ const staticRoutes = [
   "/technology/writableclone",
   "/technology/atomicsnapshot",
   "/technology/arc",
+  "/technology/slog",
+  "/technology/mrumfu",
   "/blog",
 ];
 

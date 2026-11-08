@@ -97,6 +97,7 @@ const mechanisms = [
   },
   {
     title: "SLOG",
+    href: "/technology/slog/",
     text: "Логическая часть пула на быстрых носителях, для записи ZIL (журнал синхронной записи)",
   },
   {

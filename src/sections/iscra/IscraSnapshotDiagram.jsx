@@ -28,6 +28,30 @@ const diagrams = {
     height: 312,
     imageCellClassName: "px-4 pt-6 pb-10 md:pt-8 md:pb-14 xl:px-9.25 xl:pt-8 xl:pb-14",
   },
+  withoutslog: {
+    label: "Without SLOG",
+    srcLight: "/slog/withoutslog-light.png",
+    src: "/slog/withoutslog-darkpng.png",
+    width: 921,
+    height: 452,
+    imageCellClassName: "px-4 pt-6 pb-10 md:pt-8 md:pb-14 xl:px-9.25 xl:pt-8 xl:pb-14",
+  },
+  withslog: {
+    label: "With SLOG",
+    srcLight: "/slog/withslog-light.png",
+    src: "/slog/withslog-dark.png",
+    width: 921,
+    height: 452,
+    imageCellClassName: "px-4 pt-6 pb-10 md:pt-8 md:pb-14 xl:px-9.25 xl:pt-8 xl:pb-14",
+  },
+  mrumfu: {
+    label: "MRU / MFU",
+    srcLight: "/mrumfu/withoutslog-light.png",
+    src: "/mrumfu/withoutslog-dark.png",
+    width: 745,
+    height: 308,
+    imageCellClassName: "px-4 pt-6 pb-10 md:pt-8 md:pb-14 xl:px-9.25 xl:pt-8 xl:pb-14",
+  },
 };
 
 export const IscraSnapshotDiagram = ({ variant = "snapshot" }) => {

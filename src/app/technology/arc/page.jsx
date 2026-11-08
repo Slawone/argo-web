@@ -81,7 +81,7 @@ const hierarchyItems = [
   {
     title: "hierarchy-2",
     label: (
-      <span className="block text-sm md:text-base lg:text-lg xl:text-[20px] xl:leading-[33px]">
+      <span className="block text-sm md:text-base lg:text-lg xl:text-[20px] xl:leading-8.25">
         <span className="title-color font-medium">
           MRU (Most Recently Used) и MFU (Most Frequently Used)
         </span>
@@ -250,7 +250,7 @@ export default function IscraArc() {
               и не дополняют друг друга напрямую в Native ZFS ISCRA STORAGE они решают
               разные задачи.
             </p>
-            <div className="mt-6 xl:mt-[95px]">
+            <div className="mt-6 xl:mt-23.75">
               <Link href="/technology/slog/" className={pillLinkClassName}>
                 SLOG (Separate Log)
                 <Sparkles className="size-4 text-[#007AFF]" />
