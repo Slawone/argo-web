@@ -33,7 +33,7 @@ export const ogImages = {
     subtitle: "Одна система: множество государственных задач",
     accent: "#D40032",
     partnerLogo: { src: "public/graviton/logo.svg", width: 216, height: 40 },
-    image: { src: "public/graviton/skh424a24bm-hero.png", width: 520, height: 228 },
+    image: { src: "public/graviton/graviton-amd.svg", width: 520, height: 239 },
   },
   "skh424i24bm-ar": {
     alt: "СХД Гравитон СХ424И24БМ-АР",
@@ -41,7 +41,7 @@ export const ogImages = {
     subtitle: "Корпоративная СХД с отказоустойчивой архитектурой",
     accent: "#D40032",
     partnerLogo: { src: "public/graviton/logo.svg", width: 216, height: 40 },
-    image: { src: "public/graviton/skh424a24bm-hero1.svg", width: 520, height: 229 },
+    image: { src: "public/graviton/graviton-intel.svg", width: 520, height: 239 },
   },
   norsitrans: {
     alt: "ARGO.TECH × Норси Транс",
