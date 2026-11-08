@@ -74,7 +74,7 @@ export default function IscraSlog() {
         }
         right={
           <div className="flex h-full flex-col">
-            <p className="text-color font-normal text-base md:text-lg xl:text-[20px] xl:leading-[33px]">
+            <p className="text-color font-normal text-base md:text-lg xl:text-[20px] xl:leading-8.25">
               <span className="title-color font-medium">
                 MRU (Most Recently Used) и MFU (Most Frequently Used)
               </span>
