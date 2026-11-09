@@ -1,6 +1,5 @@
 import { Suspense } from "react";
 import { ThemeProvider } from "next-themes";
-import { Oswald } from "next/font/google";
 import { Header } from "@/widgets";
 import { Footer } from "@/widgets";
 import { Metrika } from "@/components";
@@ -9,12 +8,6 @@ import { ConsentProvider } from "@/components";
 import { OrderFormProvider } from "@/components"
 import "./globals.css";
 import { ogImage } from "@/config";
-
-const oswald = Oswald({
-  variable: "--font-oswald",
-  subsets: ["cyrillic"],
-  weight: ["300", "400", "500", "700"],
-});
 
 const organizationJsonLd = {
   "@context": "https://schema.org",
@@ -62,7 +55,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ru" suppressHydrationWarning>
-      <body className={`${oswald.variable} antialiased`}>
+      <body className="antialiased">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}

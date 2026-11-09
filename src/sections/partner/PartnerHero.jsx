@@ -46,7 +46,7 @@ export const PartnerHero = ({ logo, title, visual, className, children }) => {
           {title && (
             <motion.h1
               variants={textVariants}
-              className="text-[#1f1f1f] dark:text-[#ededed] uppercase font-medium whitespace-pre-line text-2xl leading-[1.45] md:text-[32px] xl:text-[40px] xl:leading-[59px]"
+              className="text-[#1f1f1f] dark:text-[#ededed] uppercase font-medium whitespace-pre-line text-2xl leading-[1.45] md:text-[32px] xl:text-[40px] xl:leading-14.75"
             >
               {title}
             </motion.h1>

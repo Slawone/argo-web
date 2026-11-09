@@ -57,7 +57,7 @@ export const PartnerCompound = ({
     <div
       className={cn(
         "w-full rounded-xl border main-border overflow-hidden",
-        card ? "max-w-144 lg:self-end" : "max-w-150 self-start",
+        card ? "max-w-xl lg:self-end" : "max-w-150 self-start",
       )}
     >
       <div className="grid grid-cols-3 border-b main-border">
@@ -205,7 +205,7 @@ export const PartnerCompound = ({
 
         {card ? (
           <div className="flex justify-center lg:justify-end px-4 lg:px-0 py-8 lg:py-0 lg:pt-7.25">
-            <div className="flex flex-col gap-8 w-full max-w-144">
+            <div className="flex flex-col gap-8 w-full max-w-xl">
               {panel}
               {actions && (
                 <div className="flex flex-wrap justify-center gap-4 xl:gap-8">
