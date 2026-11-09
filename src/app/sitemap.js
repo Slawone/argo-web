@@ -18,6 +18,7 @@ const staticRoutes = [
   "/partners/norsitrans/tiara-a4",
   "/partners/norsitrans/pantera-128",
   "/partners/norsitrans/paladin-212",
+  "/partners/norsitrans/paladin-14",
   "/docs",
   "/storage/iscrastorage/certification",
   "/technology/nfs",
