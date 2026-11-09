@@ -59,6 +59,14 @@ export const ogImages = {
     partnerLogo: { src: "public/norsitrans/logo.svg", width: 216, height: 44 },
     image: { src: "public/norsitrans/tiara-hero.svg", width: 520, height: 229 },
   },
+  "pantera-128": {
+    alt: "СХД Норси Транс ПАНТЕРА-128",
+    title: "Одноконтроллерная СХД ПАНТЕРА-128",
+    subtitle: "128 дисков LFF в 5U для архивов и холодного хранения",
+    accent: "#007AFF",
+    partnerLogo: { src: "public/norsitrans/logo.svg", width: 216, height: 44 },
+    image: { src: "public/norsitrans/pantera-dark.svg", width: 520, height: 273 },
+  },
   iscrastorage: {
     alt: "ISCRA STORAGE — отечественная система хранения данных",
     title: "ISCRA STORAGE",

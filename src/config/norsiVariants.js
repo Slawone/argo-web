@@ -47,6 +47,7 @@ const products = [
   {
     title: "Контроллер Системы Хранения Данных\nНорси Транс: ПАНТЕРА-128",
     minprom: true,
+    href: "/partners/norsitrans/pantera-128",
     image: image("pantera"),
   },
   { soon: true, minprom: true, image: soonImage },

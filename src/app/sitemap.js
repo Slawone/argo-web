@@ -16,6 +16,7 @@ const staticRoutes = [
   "/partners/graviton/skh424i24bm-ar",
   "/partners/norsitrans",
   "/partners/norsitrans/tiara-a4",
+  "/partners/norsitrans/pantera-128",
   "/docs",
   "/storage/iscrastorage/certification",
   "/technology/nfs",
