@@ -47,15 +47,15 @@ export default function NorsiPantera128() {
       <PartnerProductHero
         title={"Одноконтроллерная\nсистема хранения данных\nПАНТЕРА-128"}
         subtitle={"Плотность под конкретные задачи:\nархивы, бэкап, холодное хранение."}
-        image={{ src: "/norsitrans/pantera-dark.svg", width: 790, height: 415 }}
-        imageLight={{ src: "/norsitrans/pantera-light.svg", width: 790, height: 415 }}
+        image={{ src: "/norsitrans/pantera-dark.svg", width: 768, height: 353 }}
+        imageLight={{ src: "/norsitrans/pantera-light.svg", width: 768, height: 353 }}
         serverOffset={{ x: 86, y: 85 }}
       />
       <PartnerLogos items={norsiVariants.brandLogos} />
       <PartnerInfo className="pt-2 md:pt-4 xl:pt-13">
         <span className="font-medium xl:text-[30px]">
           <span className="accent-norsi">Плотность,</span>{" "}
-          <span className="title-color">недостижимая для классических платформ</span>
+          <span className="title-color font-normal">недостижимая для классических платформ</span>
         </span>
       </PartnerInfo>
       <PartnerCompound tabs={compoundTabs} reestrHref={REESTR_URL} accent={partnerVariants.accents.norsi}>
@@ -66,8 +66,8 @@ export default function NorsiPantera128() {
       </PartnerCompound>
       <PartnerInfo>
         <span className="xl:text-[30px]">
-          <span className="title-color font-normal">{MODEL}:</span>{" "}
-          <span className="accent-norsi">Место для роста. без замены платформы</span>
+          <span className="title-color font-medium">{MODEL}:</span>{" "}
+          <span className="accent-norsi font-normal">Место для роста. без замены платформы</span>
         </span>
       </PartnerInfo>
       <PartnerTextGrid items={features} />
