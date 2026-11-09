@@ -10,21 +10,21 @@ const diagrams = {
     label: "Snapshot",
     srcLight: "/atomicsnapshot/snapshot-light.png",
     src: "/atomicsnapshot/snapshot.png",
-    width: 748,
-    height: 183,
+    width: 745,
+    height: 182,
   },
   clone: {
     label: "Clone",
     srcLight: "/atomicsnapshot/clone-light.png",
     src: "/atomicsnapshot/clone.png",
-    width: 747,
+    width: 614,
     height: 322,
   },
   arc: {
     label: "ARC L1 / L2",
     srcLight: "/arc/arc_l1-light.png",
-    src: "/arc/arcl1-dark.png",
-    width: 746,
+    src: "/arc/arcl_l1-dark.png",
+    width: 714,
     height: 312,
     imageCellClassName: "px-4 pt-6 pb-10 md:pt-8 md:pb-14 xl:px-9.25 xl:pt-8 xl:pb-14",
   },
@@ -32,23 +32,23 @@ const diagrams = {
     label: "Without SLOG",
     srcLight: "/slog/withoutslog-light.png",
     src: "/slog/withoutslog-darkpng.png",
-    width: 921,
-    height: 452,
+    width: 745,
+    height: 281,
     imageCellClassName: "px-4 pt-6 pb-10 md:pt-8 md:pb-14 xl:px-9.25 xl:pt-8 xl:pb-14",
   },
   withslog: {
     label: "With SLOG",
     srcLight: "/slog/withslog-light.png",
     src: "/slog/withslog-dark.png",
-    width: 921,
-    height: 452,
+    width: 745,
+    height: 308,
     imageCellClassName: "px-4 pt-6 pb-10 md:pt-8 md:pb-14 xl:px-9.25 xl:pt-8 xl:pb-14",
   },
   mrumfu: {
     label: "MRU / MFU",
     srcLight: "/mrumfu/withoutslog-light.png",
     src: "/mrumfu/withoutslog-dark.png",
-    width: 745,
+    width: 499,
     height: 308,
     imageCellClassName: "px-4 pt-6 pb-10 md:pt-8 md:pb-14 xl:px-9.25 xl:pt-8 xl:pb-14",
   },
@@ -85,14 +85,14 @@ export const IscraSnapshotDiagram = ({ variant = "snapshot" }) => {
             width={diagram.width}
             height={diagram.height}
             alt={diagram.label}
-            className="h-auto w-full dark:hidden"
+            className="dark:hidden m-auto"
           />
           <Image
             src={diagram.src}
             width={diagram.width}
             height={diagram.height}
             alt={diagram.label}
-            className="hidden h-auto w-full dark:block"
+            className="hidden dark:block m-auto"
           />
         </motion.div>
       </div>
