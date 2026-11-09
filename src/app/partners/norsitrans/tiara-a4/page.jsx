@@ -11,6 +11,7 @@ import { Breadcrumbs } from "@/components";
 import { norsiVariants, norsiProductsVariants, partnerVariants, ogImage } from "@/config";
 
 const MODEL = "ТИАРА-А4";
+const REESTR_URL = "https://gisp.gov.ru/goods/#/product/5137895";
 
 const title = `Двухконтроллерная СХД Норси Транс ${MODEL} — ARGO.TECH`;
 const description =
@@ -57,7 +58,7 @@ export default function NorsiTiaraA4() {
           <span className="title-color">Отказоустойчивость.</span>
         </span>
       </PartnerInfo>
-      <PartnerCompound tabs={compoundTabs} accent={partnerVariants.accents.norsi}>
+      <PartnerCompound tabs={compoundTabs} reestrHref={REESTR_URL} accent={partnerVariants.accents.norsi}>
         <span className="title-color font-normal">
           Двухконтроллерная система хранения данных: {MODEL}:
         </span>{" "}
