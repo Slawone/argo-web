@@ -67,6 +67,14 @@ export const ogImages = {
     partnerLogo: { src: "public/norsitrans/logo.svg", width: 216, height: 44 },
     image: { src: "public/norsitrans/pantera-dark.svg", width: 520, height: 273 },
   },
+  "paladin-212": {
+    alt: "Контроллер СХД Норси Транс ПАЛАДИН-212",
+    title: "Контроллер СХД ПАЛАДИН-212",
+    subtitle: "Один контроллер — любая конфигурация хранения данных",
+    accent: "#007AFF",
+    partnerLogo: { src: "public/norsitrans/logo.svg", width: 216, height: 44 },
+    image: { src: "public/norsitrans/paladin212-dark.svg", width: 520, height: 375 },
+  },
   iscrastorage: {
     alt: "ISCRA STORAGE — отечественная система хранения данных",
     title: "ISCRA STORAGE",

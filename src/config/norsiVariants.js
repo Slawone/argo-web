@@ -37,6 +37,7 @@ const products = [
   {
     title: "Контроллер Системы Хранения Данных\nНорси Транс: ПАЛАДИН-212\nНИКА.469555.001",
     minprom: true,
+    href: "/partners/norsitrans/paladin-212",
     image: image("paladin"),
   },
   {

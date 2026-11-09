@@ -65,9 +65,9 @@ export default function NorsiPantera128() {
         2 ТБ памяти дают ресурс под самые требовательные задачи хранения.
       </PartnerCompound>
       <PartnerInfo>
-        <span className="xl:text-[30px]">
-          <span className="title-color font-medium">{MODEL}:</span>{" "}
-          <span className="accent-norsi font-normal">Место для роста. без замены платформы</span>
+        <span className="title-color xl:text-[30px]">
+          <span className="font-medium">{MODEL}:</span>{" "}
+          <span className="font-normal">Место для роста. без замены платформы</span>
         </span>
       </PartnerInfo>
       <PartnerTextGrid items={features} />
