@@ -250,7 +250,7 @@ export default function IscraStorage() {
                 Список обновляется по мере выхода новых версий ISCRA STORAGE OS и появления новых моделей оборудования.
               </p>
               <div className="mt-6">
-                <Link href="/technology/arc/" className={pillLinkClassName}>
+                <Link href="/storage/iscrastorage/hcl" className={pillLinkClassName}>
                   Hardware Compatibility List
                   <Sparkles className="size-4 text-[#FF9000]" />
                 </Link>
