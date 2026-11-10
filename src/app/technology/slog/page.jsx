@@ -11,9 +11,9 @@ import {
 } from "@/sections";
 import { iscraVariants, ogImage } from "@/config";
 
-const title = "SLOG в ISCRA STORAGE — отдельный журнал синхронных записей ZIL | ARGO.TECH";
+const title = "SLOG в ISCRA STORAGE(СХД АРГО): отдельный журнал ZIL | ARGO.TECH";
 const description =
-  "SLOG (Separate Log) в ISCRA STORAGE: выделенное устройство для журнала намерений ZFS (ZIL) синхронных транзакций. Как работает синхронная запись без SLOG на HDD и с SLOG на SSD/NVMe: задержка, IOPS, подтверждение операций.";
+  "SLOG выделенное устройство для журнала намерений ZFS (ZIL). Синхронная запись на HDD и на SSD/NVMe: задержка, IOPS, подтверждение операций.";
 
 export const metadata = {
   title,

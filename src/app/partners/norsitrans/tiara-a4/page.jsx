@@ -10,12 +10,11 @@ import {
 import { Breadcrumbs } from "@/components";
 import { norsiVariants, norsiProductsVariants, partnerVariants, ogImage } from "@/config";
 
-const MODEL = "ТИАРА-А4";
 const REESTR_URL = "https://gisp.gov.ru/goods/#/product/5137895";
 
-const title = `Двухконтроллерная СХД Норси Транс ${MODEL} — ARGO.TECH`;
+const title = `Двухконтроллерная СХД Норси-Транс ТИАРА-А4 | ARGO.TECH`;
 const description =
-  "Двухконтроллерная система хранения данных Норси Транс ТИАРА-А4 с программным комплексом ISCRA STORAGE: отечественная СХД в корпусе 4U, до 24 накопителей, Ethernet до 100 Гбит/с, Fibre Channel 16/32 Гбит/с.";
+  "СХД ТИАРА-А4 в корпусе 4U с ISCRA STORAGE(СХД АРГО): два контроллера, до 24 накопителей, Ethernet до 100 Гбит/с, Fibre Channel 16/32 Гбит/с. Запросите КП.";
 
 export const metadata = {
   title,

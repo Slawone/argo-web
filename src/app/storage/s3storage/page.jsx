@@ -14,9 +14,9 @@ import {
 } from "@/sections";
 import { s3Variants, faqVariants, ogImage } from "@/config";
 
-const title = "S3 STORAGE — ARGO SIII, S3-совместимое объектное хранилище | ARGO.TECH";
+const title = "S3 STORAGE: объектное хранилище с S3 API | ARGO.TECH";
 const description =
-  "ARGO SIII (Secure. Immutable. Intelligent. Infrastructure.) — российский программный комплекс объектного хранения на основе SeaweedFS: S3 API, Object Lock, версионирование, Erasure Coding, геораспределённое масштабирование и мультипротокольный доступ.";
+  "Российский комплекс объектного хранения на основе SeaweedFS: S3 API, Object Lock, версионирование, Erasure Coding, георазнесённое масштабирование.";
 
 export const metadata = {
   title,

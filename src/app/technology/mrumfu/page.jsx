@@ -12,9 +12,9 @@ import {
 } from "@/sections";
 import { iscraVariants, ogImage } from "@/config";
 
-const title = "MRU и MFU в ISCRA STORAGE — списки адаптивного кэша ARC | ARGO.TECH";
+const title = "MRU и MFU в ISCRA STORAGE(СХД АРГО): списки кэша ARC | ARGO.TECH";
 const description =
-  "MRU (Most Recently Used) и MFU (Most Frequently Used): два списка алгоритма ARC в ISCRA STORAGE. Как кэш адаптируется к нагрузке — балансировка, первое чтение, автоматическое расширение и эффективность без ручной настройки.";
+  "MRU (недавние данные) и MFU (частые) два списка алгоритма ARC. Как кэш адаптируется к нагрузке: балансировка, первое чтение, автоматическое расширение.";
 
 export const metadata = {
   title,

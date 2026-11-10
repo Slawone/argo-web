@@ -17,9 +17,9 @@ import {
 import { Breadcrumbs } from "@/components";
 import { iscraVariants, partnerVariants, faqVariants, ogImage } from "@/config";
 
-const title = "ISCRA STORAGE — отечественная система хранения данных | ARGO.TECH";
+const title = "ISCRA STORAGE (СХД АРГО) российская СХД на Native ZFS | ARGO.TECH";
 const description =
-  "ISCRA STORAGE: российская система хранения данных, разработанная ARGO.TECH. Двухконтроллерная отказоустойчивая платформа на ZFS с блочными и файловыми протоколами доступа: iSCSI, Fibre Channel, NFS, SMB.";
+  "ISCRA STORAGE(СХД АРГО): двухконтроллерная отказоустойчивая СХД на Native ZFS. Блочный и файловый доступ: iSCSI, Fibre Channel, NFS, SMB. Реестр Минцифры №5850.";
 
 export const metadata = {
   title,

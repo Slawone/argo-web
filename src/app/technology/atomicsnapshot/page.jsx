@@ -13,9 +13,9 @@ import {
 import { iscraVariants, ogImage } from "@/config";
 import { cn } from "@/utils";
 
-const title = "Atomic Snapshot в ISCRA STORAGE — атомарные снимки данных | ARGO.TECH";
+const title = "Atomic Snapshot в  STORAGE(СХД АРГО): снимки данных | ARGO.TECH";
 const description =
-  "Atomic Snapshot в ISCRA STORAGE: снимок создаётся как единая неделимая операция и фиксирует строго согласованное состояние данных на один момент времени, даже для нескольких файловых систем. Native ZFS, транзакционная целостность, единая основа для Clone и Replication.";
+  "Atomic Snapshot: снимок создаётся как единая неделимая операция и фиксирует согласованное состояние данных, в том числе для нескольких файловых систем";
 
 export const metadata = {
   title,

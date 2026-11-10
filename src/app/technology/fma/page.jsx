@@ -11,9 +11,9 @@ import {
 import { iscraVariants, ogImage } from "@/config";
 import { cn } from "@/utils";
 
-const title = "FMA (Fault Management Architecture) в ISCRA STORAGE — самодиагностика и реакция на сбои | ARGO.TECH";
+const title = "FMA в ISCRA STORAGE(СХД АРГО): управление отказами СХД | ARGO.TECH";
 const description =
-  "FMA в ISCRA STORAGE — подсистема управления отказами, которая автоматически обнаруживает, диагностирует и изолирует неисправности оборудования и программного обеспечения. Детекторы ошибок, модуль диагностики, агенты реагирования и интеграция с Native ZFS.";
+  "FMA подсистема управления отказами: детекторы ошибок, модуль диагностики, агенты реагирования, интеграция с Native ZFS. Как определяется неисправность.";
 
 export const metadata = {
   title,

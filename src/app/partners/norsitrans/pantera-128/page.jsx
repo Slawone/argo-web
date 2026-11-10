@@ -11,12 +11,11 @@ import {
 import { Breadcrumbs } from "@/components";
 import { norsiVariants, norsiProductsVariants, partnerVariants, ogImage } from "@/config";
 
-const MODEL = "ПАНТЕРА-128";
 const REESTR_URL = "https://gisp.gov.ru/goods/#/product/4798350";
 
-const title = `Одноконтроллерная СХД Норси Транс ${MODEL} — ARGO.TECH`;
+const title = `СХД Норси-Транс ПАНТЕРА-128 с ISCRA STORAGE(СХД АРГО) | ARGO.TECH`;
 const description =
-  "Одноконтроллерная система хранения данных Норси Транс ПАНТЕРА-128 с программным комплексом ISCRA STORAGE: 128 дисков LFF в корпусе 5U, два процессора Intel Xeon Scalable, до 2 ТБ памяти, Ethernet до 100 Гбит/с. Для архивов, бэкапа и холодного хранения.";
+  "СХД на платформе Норси-Транс ПАНТЕРА-128 с ISCRA STORAGE(СХД АРГО): 5U, до 128 дисков LFF SAS 12G, два Intel Xeon Scalable, до 2048 ГБ ОЗУ. Запросите КП";
 
 export const metadata = {
   title,

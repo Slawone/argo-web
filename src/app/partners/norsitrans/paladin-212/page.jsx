@@ -12,12 +12,11 @@ import {
 import { Breadcrumbs } from "@/components";
 import { norsiVariants, norsiProductsVariants, partnerVariants, ogImage } from "@/config";
 
-const MODEL = "ПАЛАДИН-212";
 const REESTR_URL = "https://gisp.gov.ru/goods/#/product/4427665";
 
-const title = `Контроллер СХД Норси Транс ${MODEL} — ARGO.TECH`;
+const title = `СХД Норси-Транс ПАЛАДИН-Х12 с ISCRA STORAGE(СХД АРГО) | ARGO.TECH`;
 const description =
-  "Контроллер системы хранения данных Норси Транс ПАЛАДИН-212 с программным комплексом ISCRA STORAGE: от базовой СХД до отказоустойчивого кластера из 4 контроллеров, до 10 полок JBOD 12/25 или 85 узлов ПАНТЕРА-128, Ethernet до 100 Гбит/с, Fibre Channel до 64 Гбит/с.";
+  "СХД на платформе Норси-Транс ПАЛАДИН-Х12 с ISCRA STORAGE(СХД АРГО): корпус 2U, два Intel Xeon Scalable, 12 диска LFF, 2 слота M.2, DDR4. Запросите КП";
 
 export const metadata = {
   title,

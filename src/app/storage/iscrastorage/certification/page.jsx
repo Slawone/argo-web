@@ -2,9 +2,9 @@ import { Breadcrumbs } from "@/components";
 import { DocumentList, Contact } from "@/sections";
 import { documentsVariants, ogImage } from "@/config";
 
-const title = "Сертификаты совместимости ISCRA STORAGE (№5850) — ARGO.TECH";
+const title = "Сертификаты совместимости ISCRA STORAGE (СХД АРГО) | ARGO.TECH";
 const description =
-  "Сертификаты совместимости ISCRA STORAGE (№5850 от 20.09.2019) с российскими операционными системами и платформами виртуализации: РЕД ОС, РЕД Виртуализация, Горизонт ВС, UTINET Glovirt, zVirt, Base ALT, ROSA Virtualization, РОСА ХРОМ.";
+  "ISCRA STORAGE(СХД АРГО) (реестр №5850) совместима с РЕД ОС, РЕД Виртуализация, Горизонт ВС, UTINET Glovirt, zVirt, Base ALT, ROSA Virtualization, РОСА ХРОМ.";
 
 export const metadata = {
   title,

@@ -15,9 +15,9 @@ const MODEL = "СХ424И24БМ-АР";
 const MODEL_FULL = "СХ424И24БМ-АР ЕЦРТ.466539.012 / ЕЦРТ.466539.012-05";
 const REESTR_URL = "https://gisp.gov.ru/goods/#/product/3978889";
 
-const title = `СХД Гравитон ${MODEL} на процессорах Intel — ARGO.TECH`;
+const title = `СХД Гравитон СХ424И24БМ-АР (ЕЦРТ.466539.012 / ЕЦРТ.466539.012-05)(СХД АРГО)| ARGO.TECH`;
 const description =
-  "Корпоративная система хранения данных Гравитон СХ424И24БМ-АР на процессорах Intel с программным комплексом ISCRA STORAGE: отказоустойчивая архитектура, 24 HDD и 24 SSD, Ethernet до 100 Гбит/с, Fibre Channel 16/32 Гбит/с.";
+  "СХ424И24БМ-АР на процессорах Intel с ISCRA STORAGE(СХД АРГО): 24 HDD и 24 SSD, Ethernet до 100 Гбит/с, Fibre Channel 16/32 Гбит/с. Запросите КП.";
 
 export const metadata = {
   title,

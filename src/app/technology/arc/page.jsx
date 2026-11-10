@@ -12,9 +12,9 @@ import {
 } from "@/sections";
 import { iscraVariants, ogImage } from "@/config";
 
-const title = "ARC и L2ARC в ISCRA STORAGE — адаптивный кэш замещения | ARGO.TECH";
+const title = "ARC и L2ARC в ISCRA STORAGE(СХД АРГО): адаптивный кэш | ARGO.TECH";
 const description =
-  "ARC (Adaptive Replacement Cache) в ISCRA STORAGE: адаптивный кэш в оперативной памяти, балансирующий между MRU (свежие) и MFU (частые) данными, и L2ARC — второй уровень кэша на SSD. Когда L2ARC полезен, а когда вреден.";
+  "ARC адаптивный кэш в ОЗУ с балансом между MRU и MFU, L2ARC второй уровень на SSD. Когда L2ARC полезен, а когда вреден.";
 
 export const metadata = {
   title,

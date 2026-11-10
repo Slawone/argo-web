@@ -8,9 +8,9 @@ import {
 } from "@/sections";
 import { iscraVariants, ogImage } from "@/config";
 
-const title = "Ditto blocks Copies=N в ISCRA STORAGE — защита от bit rot | ARGO.TECH";
+const title = "Ditto blocks в ISCRA STORAGE(СХД АРГО): защита от bit rot | ARGO.TECH";
 const description =
-  "Технология Ditto blocks в ISCRA STORAGE автоматически дублирует метаданные Native ZFS, а Copies=N управляет числом копий данных. Защита от bit rot (тихого повреждения данных) и надёжное хранение на уровне байта.";
+  "Ditto blocks дублируют метаданные Native ZFS, а Copies=N задаёт число копий данных. Защита от bit rot, тихого повреждения данных.";
 
 export const metadata = {
   title,

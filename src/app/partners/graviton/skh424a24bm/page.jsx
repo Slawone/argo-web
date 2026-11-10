@@ -11,12 +11,11 @@ import {
 import { Breadcrumbs } from "@/components";
 import { gravitonVariants, gravitonProductsVariants, partnerVariants, faqVariants, ogImage } from "@/config";
 
-const MODEL = "СХ424А24БМ, ТСЦМ.466539.006-01";
 const REESTR_URL = "https://gisp.gov.ru/goods/#/product/5599310";
 
-const title = `СХД Гравитон ${MODEL} — ARGO.TECH`;
+const title = `СХД Гравитон СХ424А24БМ (ТСЦМ.466539.006-01)(СХД АРГО)| ARGO.TECH`;
 const description =
-  "Система хранения данных Гравитон СХ424А24БМ на AMD EPYC 7513 с программным комплексом ISCRA STORAGE: два активных контроллера, до 24 накопителей, Ethernet до 200 Гбит/с, Fibre Channel до 64 Гбит/с.";
+  "СХ424А24БМ на AMD EPYC 7513 с ISCRA STORAGE(СХД АРГО): два активных контроллера, до 24 накопителей, Ethernet до 200 Гбит/с, Fibre Channel до 64 Гбит/с. Запросите КП.";
 
 export const metadata = {
   title,

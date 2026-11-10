@@ -10,9 +10,9 @@ import {
 import { iscraVariants, ogImage } from "@/config";
 import { cn } from "@/utils";
 
-const title = "C/ROW и write hole в ISCRA STORAGE — атомарность Native ZFS | ARGO.TECH";
+const title = "C/ROW и write hole в ISCRA  STORAGE(СХД АРГО): Native ZFS | ARGO.TECH";
 const description =
-  "C/ROW (copy-on-write и redirect-on-write) в ISCRA STORAGE: Native ZFS не перезаписывает используемые блоки, исключает write hole и обеспечивает быстрые снимки, контрольные суммы end-to-end и единую архитектуру с RAID-Z.";
+  "C/ROW: Native ZFS не перезаписывает используемые блоки, исключает write hole, даёт быстрые снимки и контрольные суммы end-to-end.";
 
 export const metadata = {
   title,

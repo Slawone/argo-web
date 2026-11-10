@@ -16,9 +16,9 @@ import { norsiVariants, partnerVariants, faqVariants, ogImage } from "@/config";
 const ATLON_NEWS_URL =
   "https://atlon.ru/news/poleznaya_informacia/v_rf_stali_dostupny_unikalnye_sistemy_khraneniya_dannykh/";
 
-const title = "ARGO.TECH × Норси Транс — российские системы хранения данных";
+const title = "Российские СХД Норси-Транс с ISCRA STORAGE(СХД АРГО) | ARGO.TECH";
 const description =
-  "ARGO.TECH и Норси Транс: отечественные системы хранения данных на контроллерах Норси Транс с программным комплексом ISCRA STORAGE — от компактных решений до распределённых СХД на десятки тысяч дисков.";
+  "СХД на контроллерах Норси-Транс с ПО ISCRA STORAGE(СХД АРГО): от компактных решений до распределённых систем на десятки тысяч дисков. Запросите конфигурацию.";
 
 export const metadata = {
   title,

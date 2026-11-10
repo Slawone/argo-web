@@ -9,9 +9,9 @@ import {
 } from "@/sections";
 import { iscraVariants, ogImage } from "@/config";
 
-const title = "NFS в ISCRA STORAGE — сетевой протокол доступа к файлам | ARGO.TECH";
+const title = "NFS в ISCRA STORAGE(СХД АРГО): поддержка NFSv2, v3 и v4 | ARGO.TECH";
 const description =
-  "Network File System в ISCRA STORAGE: нативная сетевая файловая система, интегрированная с ядром ОС и файловой системой. Поддержка NFSv2, NFSv3 и NFSv4 в программном обеспечении ISCRA STORAGE (№5850).";
+  "Network File System в ISCRA STORAGE (реестр №5850): нативная сетевая файловая система, интегрированная с ядром ОС. Поддержка NFSv2, NFSv3 и NFSv4.";
 
 export const metadata = {
   title,

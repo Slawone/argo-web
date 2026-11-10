@@ -11,9 +11,9 @@ import {
 import { iscraVariants, ogImage } from "@/config";
 import { cn } from "@/utils";
 
-const title = "Writable Clone в ISCRA STORAGE — мгновенные записываемые копии данных | ARGO.TECH";
+const title = "Writable Clone в ISCRA STORAGE(СХД АРГО): мгновенные клоны | ARGO.TECH";
 const description =
-  "Writable Clone в ISCRA STORAGE: механизм Native ZFS, позволяющий создать записываемую копию файловой системы или тома на основе снапшота. Клон создаётся за секунды и не занимает места, пока в нём не начали писать.";
+  "Writable Clone создаёт записываемую копию файловой системы или тома из снапшота за секунды. Не занимает места, пока в клоне не начали писать.";
 
 export const metadata = {
   title,

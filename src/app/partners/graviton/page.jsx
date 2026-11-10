@@ -17,10 +17,10 @@ const PAK_CASE_URL =
   "https://companies.rbc.ru/news/IcQPkklepG/graviton-i-argotech-postavili-pak-dlya-fbun-nii-sbm-rospotrebnadzora/";
 
 const description =
-  "ARGO.TECH и Гравитон: российские системы хранения данных на аппаратных платформах Гравитон с программным комплексом ISCRA STORAGE. СХД в реестре Минпромторга для госзакупок и объектов КИИ.";
+  "СХД на платформах Гравитон с ПО ISCRA STORAGE(СХД АРГО): запись в реестре Минпромторга, подходит для госзакупок и объектов КИИ. Запросите конфигурацию.";
 
 export const metadata = {
-  title: "ARGO.TECH × Гравитон — российские системы хранения данных",
+  title: "Российские СХД Гравитон с ISCRA STORAGE(СХД АРГО)| ARGO.TECH",
   description,
   alternates: {
     canonical: "/partners/graviton/",
@@ -30,7 +30,7 @@ export const metadata = {
     locale: "ru_RU",
     siteName: "ARGO.TECH",
     url: "https://argo.tech/partners/graviton/",
-    title: "ARGO.TECH × Гравитон — российские системы хранения данных",
+    title: "Российские СХД Гравитон с ISCRA STORAGE(СХД АРГО)| ARGO.TECH",
     description,
     images: [ogImage("graviton")],
   },
