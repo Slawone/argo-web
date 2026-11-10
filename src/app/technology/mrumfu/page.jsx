@@ -113,7 +113,7 @@ export default function IscraMruMfu() {
         }
         right={
           <div className="flex h-full flex-col">
-            <p className="text-color font-normal text-base md:text-lg xl:text-[20px] xl:leading-[33px]">
+            <p className="text-color font-normal text-base md:text-lg xl:text-[20px] xl:leading-8.25">
               <span className="title-color font-medium">
                 ARC (Adaptive Replacement Cache)
               </span>

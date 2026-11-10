@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Download } from "lucide-react";
+import { Download, Sparkles } from "lucide-react";
 import {
   PartnerHero,
   PartnerLogos,
@@ -58,6 +58,10 @@ const visual = (
     />
   </div>
 );
+
+const pillLinkClassName =
+  "inline-flex items-center gap-1.5 rounded-lg border border-[#e5e5e5] dark:border-white/20 bg-white px-4 py-1.5 text-sm md:text-base font-normal text-[#1f1f1f] shadow-sm transition-transform md:hover:scale-105";
+const splitGridClassName = "xl:text-[27px] xl:leading-[33.2px] xl:min-h-68.5";
 
 const reliability = {
   dark: { src: "/iscra/reliability.svg", width: 983, height: 478, place: { left: -33, top: -31, width: 983 } },
@@ -228,7 +232,34 @@ export default function IscraStorage() {
           }
         />
       </div>
-      <div className="pt-6 xl:pt-13">
+      <div className="pt-10 xl:pt-20">
+        <PartnerSplit
+          gridClassName={splitGridClassName}
+          left={
+            <p className="text-color leading-8.25">
+              <span className="title-color font-medium">HCL (Hardware Compatibility List)</span>
+              <span className="font-light">
+                {" "}
+                это верифицированный перечень серверных платформ, HBA-адаптеров (SAS/SATA, Fibre Channel), накопителей (SSD, HDD, NVMe), дисковых полок (JBOD), сетевых адаптеров и компонентов питания, которые прошли многоуровневое тестирование на совместимость с Native ZFS в среде ISCRA STORAGE и подтверждены для промышленной эксплуатации в составе программных комплексов.
+              </span>
+            </p>
+          }
+          right={
+            <div className="flex h-full flex-col justify-between">
+              <p className="text-color font-light text-base md:text-lg xl:text-[20px] xl:leading-8.25">
+                Список обновляется по мере выхода новых версий ISCRA STORAGE OS и появления новых моделей оборудования.
+              </p>
+              <div className="mt-6">
+                <Link href="/technology/arc/" className={pillLinkClassName}>
+                  Hardware Compatibility List
+                  <Sparkles className="size-4 text-[#FF9000]" />
+                </Link>
+              </div>
+            </div>
+          }
+        />
+      </div>
+      <div className="pt-10 xl:pt-20">
         <Faq variants={faqIscra} titleClassName="text-[#FF9000]" />
       </div>
       <Contact source="ISCRA STORAGE" />
