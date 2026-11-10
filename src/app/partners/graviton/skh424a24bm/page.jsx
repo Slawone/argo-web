@@ -12,6 +12,7 @@ import { Breadcrumbs } from "@/components";
 import { gravitonVariants, gravitonProductsVariants, partnerVariants, faqVariants, ogImage } from "@/config";
 
 const REESTR_URL = "https://gisp.gov.ru/goods/#/product/5599310";
+const MODEL = "СХ424А24БМ";
 
 const title = `СХД Гравитон СХ424А24БМ (ТСЦМ.466539.006-01)(СХД АРГО)| ARGO.TECH`;
 const description =
