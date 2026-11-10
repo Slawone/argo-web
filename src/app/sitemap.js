@@ -21,6 +21,7 @@ const staticRoutes = [
   "/partners/norsitrans/paladin-14",
   "/docs",
   "/storage/iscrastorage/certification",
+  "/storage/iscrastorage/hcl",
   "/technology/nfs",
   "/technology/dittoblocks",
   "/technology/fma",

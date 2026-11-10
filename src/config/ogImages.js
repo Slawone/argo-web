@@ -156,6 +156,12 @@ export const ogImages = {
     subtitle: "ISCRA STORAGE (№5850 / 20.09.2019)",
     accent: "#FF9000",
   },
+  hcl: {
+    alt: "HCL — Hardware Compatibility List ISCRA STORAGE",
+    title: "Hardware Compatibility List",
+    subtitle: "Верифицированные платформы и компоненты ISCRA STORAGE",
+    accent: "#FF9000",
+  },
   partners: {
     alt: "Партнёры ARGO.TECH",
     title: "Партнерство в создании продуктов",

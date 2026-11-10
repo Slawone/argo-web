@@ -17,9 +17,9 @@ export const PartnerMechanisms = ({ items, columnClassName, textClassName }) => 
       className="page-container border main-border font-sans font-light"
     >
       <dl className="divide-y divide-black/8 dark:divide-white/14">
-        {items.map((item) => (
+        {items.map((item, index) => (
           <div
-            key={item.title}
+            key={index}
             className={cn("grid md:grid-cols-[300px_minmax(0,1fr)]", columnClassName)}
           >
             <dt className="title-color text-lg md:text-xl lg:text-2xl px-4 pt-5 md:py-8 xl:px-9.25 xl:py-8.25 xl:leading-[33.2px] xl:whitespace-pre md:border-r main-border font-bold">

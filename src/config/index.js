@@ -14,6 +14,7 @@ export { norsiVariants } from "./norsiVariants";
 export { norsiProductsVariants } from "./norsiProductsVariants";
 export { partnerVariants } from "./partnerVariants";
 export { iscraVariants } from "./iscraVariants";
+export { hclVariants } from "./hclVariants";
 export { documentsVariants } from "./documentsVariants";
 export { ogImages, ogImage } from "./ogImages";
 export { s3Variants } from "./s3Variants";

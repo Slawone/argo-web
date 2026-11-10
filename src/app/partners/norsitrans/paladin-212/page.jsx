@@ -13,6 +13,7 @@ import { Breadcrumbs } from "@/components";
 import { norsiVariants, norsiProductsVariants, partnerVariants, ogImage } from "@/config";
 
 const REESTR_URL = "https://gisp.gov.ru/goods/#/product/4427665";
+const MODEL = "ПАЛАДИН-212";
 
 const title = `СХД Норси-Транс ПАЛАДИН-Х12 с ISCRA STORAGE(СХД АРГО) | ARGO.TECH`;
 const description =

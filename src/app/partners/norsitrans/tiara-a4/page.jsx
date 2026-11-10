@@ -11,6 +11,7 @@ import { Breadcrumbs } from "@/components";
 import { norsiVariants, norsiProductsVariants, partnerVariants, ogImage } from "@/config";
 
 const REESTR_URL = "https://gisp.gov.ru/goods/#/product/5137895";
+const MODEL = "ТИАРА-А4";
 
 const title = `Двухконтроллерная СХД Норси-Транс ТИАРА-А4 | ARGO.TECH`;
 const description =
