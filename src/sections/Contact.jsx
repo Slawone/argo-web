@@ -23,7 +23,7 @@ const fieldClassName =
 
 const Field = ({ id, label, error, className, children }) => (
   <div className={cn("flex flex-col gap-2", className)}>
-    <label htmlFor={id} className="title-color font-normal text-base md:text-lg xl:text-xl xl:leading-[34px]">
+    <label htmlFor={id} className="title-color font-normal text-base md:text-lg xl:text-xl xl:leading-8.5">
       {label}
     </label>
     {children}
