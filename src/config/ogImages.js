@@ -9,6 +9,11 @@ export const ogImages = {
     title: "Блог",
     subtitle: "Статьи о хранении данных и цифровом суверенитете",
   },
+  contacts: {
+    alt: "Контакты ARGO.TECH",
+    title: "Контакты ARGO.TECH",
+    subtitle: "Реквизиты и техническая поддержка",
+  },
   docs: {
     alt: "Документы и реквизиты ARGO.TECH",
     title: "Документы и реквизиты",

@@ -23,7 +23,7 @@ const fieldClassName =
 
 const Field = ({ id, label, error, className, children }) => (
   <div className={cn("flex flex-col gap-2", className)}>
-    <label htmlFor={id} className="title-color font-normal text-base md:text-lg xl:text-xl xl:leading-[34px]">
+    <label htmlFor={id} className="title-color font-normal text-base md:text-lg xl:text-xl xl:leading-8.5">
       {label}
     </label>
     {children}
@@ -31,7 +31,7 @@ const Field = ({ id, label, error, className, children }) => (
   </div>
 );
 
-export const Contact = ({ source = "", className }) => {
+export const Contact = ({ source = "", className, gridClassName, descriptionClassName }) => {
   const [form, setForm] = useState(initialForm);
   const [errors, setErrors] = useState({});
   const [status, setStatus] = useState("idle");
@@ -103,8 +103,8 @@ export const Contact = ({ source = "", className }) => {
       id="contact"
       className={cn("page-container py-5 md:py-10 xl:pt-12.75 xl:pb-19.5 font-sans font-light", className)}
     >
-      <div className="grid md:grid-cols-[1fr_2fr] xl:grid-cols-[436px_1fr]">
-        <div className="px-4 py-5 md:py-10 xl:pt-11.25 xl:pb-0 xl:pl-8.75 xl:pr-0">
+      <div className={cn("grid md:grid-cols-[1fr_2fr] xl:grid-cols-[436px_1fr]", gridClassName)}>
+        <div className={cn("px-4 py-5 md:py-10 xl:pt-11.25 xl:pb-0 xl:pl-8.75 xl:pr-0", descriptionClassName)}>
           <h2 className="title-color uppercase text-base md:text-xl lg:text-[28px] xl:text-[30px] xl:leading-8.5 leading-none mb-5 xl:mb-4 xl:font-normal">
             Связаться с нами
           </h2>

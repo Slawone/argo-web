@@ -11,14 +11,6 @@ export const MobileMenu = ({ items, open, onClick }) => {
   const isActive = (href) =>
     pathname === href || pathname.startsWith(`${href}/`);
 
-  const scrollToElement = (elementId) => {
-    const element = document.getElementById(elementId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth", block: "start" });
-      onClick();
-    }
-  };
-
   return (
     <>
       <div
@@ -75,9 +67,9 @@ export const MobileMenu = ({ items, open, onClick }) => {
             </div>
           ))}
         </nav>
-        <Button variant="secondary" onClick={() => scrollToElement("footer")}>
+        <Link href="/contacts" className="button button-secondary inline-flex items-center justify-center" onClick={onClick}>
           Контакты
-        </Button>
+        </Link>
       </div>
     </>
   );

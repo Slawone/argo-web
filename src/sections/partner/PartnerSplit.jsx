@@ -8,6 +8,7 @@ import { cn } from "@/utils";
 export const PartnerSplit = ({
   left,
   right,
+  className,
   gridClassName,
   cellClassName: extraCellClassName,
   leftClassName,
@@ -26,12 +27,13 @@ export const PartnerSplit = ({
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className="page-container border main-border relative font-sans font-light text-color"
+      className={cn("page-container border main-border relative font-sans font-light text-color", className)}
     >
       <div
         className={cn(
           "grid md:grid-cols-[59fr_41fr] text-base md:text-xl lg:text-[28px] lg:leading-normal",
-          gridClassName,
+          className,
+  gridClassName,
         )}
       >
         <motion.div
