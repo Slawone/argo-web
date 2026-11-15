@@ -1,0 +1,20 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Modal">
+<mask id="stroke0_0_11" fill="white">
+<path d="M45 0L83.9711 67.5H6.02886L45 0Z"/>
+</mask>
+<path id="Polygon 11" d="M45 0L83.9711 67.5H6.02886L45 0Z" stroke-width="4" stroke="#00FF66" mask="url(#stroke0_0_11)"/>
+<mask id="stroke1_0_11" fill="white">
+<path d="M45 0L83.9711 67.5H6.02886L45 0Z"/>
+</mask>
+<path id="Polygon 10" d="M45 0L83.9711 67.5H6.02886L45 0Z" stroke-width="4" stroke="#00FF66" mask="url(#stroke1_0_11)"/>
+<mask id="stroke2_0_11" fill="white">
+<path d="M45 0L83.9711 67.5H6.02886L45 0Z"/>
+</mask>
+<path id="Polygon 9" d="M45 0L83.9711 67.5H6.02886L45 0Z" stroke-width="4" stroke="#00FF66" mask="url(#stroke2_0_11)"/>
+<mask id="stroke3_0_11" fill="white">
+<path d="M45 0L83.9711 67.5H6.02886L45 0Z"/>
+</mask>
+<path id="Polygon 8" d="M45 0L83.9711 67.5H6.02886L45 0Z" stroke-width="4" stroke="#00FF66" mask="url(#stroke3_0_11)"/>
+</g>
+</svg>

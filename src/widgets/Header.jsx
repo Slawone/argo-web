@@ -57,13 +57,6 @@ export const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollToBottom = (elementId) => {
-    const element = document.getElementById(elementId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth", block: "start"});
-    }
-  };
-
   return (
     <header
       className={cn(
@@ -79,13 +72,9 @@ export const Header = () => {
         </Link>
         <DesktopMenu items={navItems} />
         <div className="flex-center gap-2 ml-auto">
-          <Button
-            variant="secondary"
-            className="hidden md:flex items-center"
-            onClick={() => scrollToBottom("footer")}
-          >
+          <Link href="/contacts" className="button button-secondary hidden items-center md:flex">
             Контакты
-          </Button>
+          </Link>
           <Button
             variant="secondary"
             className="md:hidden border-none"

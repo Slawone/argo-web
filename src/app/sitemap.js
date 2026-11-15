@@ -7,6 +7,7 @@ const BASE_URL = "https://argo.tech";
 const staticRoutes = [
   "",
   "/about",
+  "/contacts",
   "/storage",
   "/storage/iscrastorage",
   "/storage/s3storage",
