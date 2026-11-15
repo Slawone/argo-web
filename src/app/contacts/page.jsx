@@ -57,7 +57,6 @@ const details = [
   ],
   ["Контактные телефоны организации", "Тел./факс. 8 (499) 430-00-54"],
   [
-    // "Руководитель организации (должность, Ф.И.О.)",
     <>
       Руководитель организации <br /> (должность, Ф.И.О.)
     </>,
@@ -86,11 +85,11 @@ const details = [
 export default function ContactsPage() {
   return (
     <main className="page-iscra bg-white font-sans text-[#1f1f1f] dark:bg-black dark:text-[#ededed]">
-      <div className="page-container xl:max-w-317.5!">
+      <div className="page-container">
         <h1 className="sr-only">Контакты ARGO.TECH</h1>
         <div
           className={cn(
-            "relative isolate aspect-[1.55] overflow-hidden border-y md:aspect-[1270/718]",
+            "relative isolate aspect-[1.55] overflow-hidden border-y md:aspect-1270/718",
             borderColor,
           )}
           aria-hidden="true"
@@ -145,7 +144,7 @@ export default function ContactsPage() {
             <span
               key={role}
               className={cn(
-                "absolute left-[clamp(10%,var(--role-x),90%)] -translate-1/2 rounded-lg bg-white p-[clamp(.125rem,.7vw,.625rem)] text-[length:clamp(.5rem,1.3vw,1.125rem)] font-light whitespace-nowrap md:left-(--role-x) dark:bg-black",
+                "absolute left-[clamp(10%,var(--role-x),90%)] -translate-1/2 rounded-lg bg-white p-[clamp(.125rem,.7vw,.625rem)] text-[clamp(.5rem,1.3vw,1.125rem)] font-light whitespace-nowrap md:left-(--role-x) dark:bg-black",
                 accent
                   ? "border-2 border-(--role-accent) shadow-[0_0_.65rem_color-mix(in_srgb,var(--role-accent)_45%,transparent)]"
                   : "border border-[#b8b8b8] dark:border-[#394050]",
