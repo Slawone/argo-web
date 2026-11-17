@@ -24,6 +24,8 @@ const staticRoutes = [
   "/storage/iscrastorage/certification",
   "/storage/iscrastorage/hcl",
   "/technology/native",
+  "/technology/uberblock",
+  "/technology/dataset",
   "/technology/nfs",
   "/technology/dittoblocks",
   "/technology/fma",

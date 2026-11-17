@@ -1,4 +1,16 @@
 export const ogImages = {
+  dataset: {
+    alt: "Dataset в Native ZFS ISCRA STORAGE",
+    title: "Dataset",
+    subtitle: "Управление хранением и свойствами данных",
+    accent: "#B600EF",
+  },
+  uberblock: {
+    alt: "Uberblock в Native ZFS ISCRA STORAGE",
+    title: "Uberblock",
+    subtitle: "Атомарность и целостность данных",
+    accent: "#B600EF",
+  },
   native: {
     alt: "Native ZFS в ISCRA STORAGE",
     title: "Native ZFS",

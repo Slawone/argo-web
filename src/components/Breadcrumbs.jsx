@@ -15,6 +15,8 @@ const ruMap = {
   certification: "Сертификаты",
   technology: "Технологии",
   native: "Native ZFS",
+  uberblock: "Uberblock",
+  dataset: "Dataset",
   nfs: "NFS",
   dittoblocks: "Ditto blocks",
   fma: "FMA",

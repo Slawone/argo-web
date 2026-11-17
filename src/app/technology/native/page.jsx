@@ -35,7 +35,7 @@ const sections = [
       <>
         <p>
           {" "}
-          <span className="title-color font-medium">{`Кто создал ZFS? `}</span>{" "}
+          <span className="text-[#1f1f1f] dark:text-white font-medium">{`Кто создал ZFS? `}</span>{" "}
           <span>{`ZFS разрабатывалась в Sun Microsystems командой под руководством Джеффа Бонвика (Jeff Bonwick) и Мэтью Аренса (Matthew Ahrens). Именно они считаются создателями ZFS — файловой системы, которая позже легла `}</span>{" "}
         </p>{" "}
         <p>
@@ -59,7 +59,9 @@ const sections = [
       <>
         <p>
           {" "}
-          <span className="title-color font-medium">ZFS</span>{" "}
+          <span className="text-[#1f1f1f] dark:text-white font-medium">
+            ZFS
+          </span>{" "}
           <span>{` объединяет файловую систему и менеджер томов. `}</span>{" "}
         </p>{" "}
         <p>{`В классической схеме диски, RAID-контроллер, LVM и файловая система работают как отдельные слои, и каждый видит только свой кусок задачи. ZFS управляет всем стеком сразу: размещением блоков, избыточностью, контрольными суммами, снимками `}</p>{" "}
@@ -79,9 +81,11 @@ const sections = [
     label: "Copy-on-Write (C/ROW)",
     left: (
       <>
-        <span className="title-color font-medium">ZFS</span>{" "}
+        <span className="text-[#1f1f1f] dark:text-white font-medium">ZFS</span>{" "}
         <span>{` никогда не перезаписывает используемые блоки. Новые данные и метаданные пишутся в свободное место, и только после этого новое состояние фиксируется одной записью в корне дерева `}</span>{" "}
-        <span className="title-color font-medium">(uberblock)</span>{" "}
+        <span className="text-[#1f1f1f] dark:text-white font-medium">
+          (uberblock)
+        </span>{" "}
         <span>
           . При сбое остаётся либо полностью старое, либо полностью новое
           состояние. Промежуточного состояния нет, поэтому не нужна проверка
@@ -102,11 +106,17 @@ const sections = [
     label: "RAID Z (ISCRA)",
     left: (
       <>
-        <span className="title-color font-medium">RAID-Z</span>{" "}
+        <span className="text-[#1f1f1f] dark:text-white font-medium">
+          RAID-Z
+        </span>{" "}
         <span>{` это программный RAID в файловой системе ZFS, который защищает данные от отказа дисков с помощью чётности. Уровни `}</span>{" "}
-        <span className="title-color font-medium">RAID-Z1, RAID-Z2</span>{" "}
+        <span className="text-[#1f1f1f] dark:text-white font-medium">
+          RAID-Z1, RAID-Z2
+        </span>{" "}
         <span>{` и `}</span>{" "}
-        <span className="title-color font-medium">RAID-Z3</span>{" "}
+        <span className="text-[#1f1f1f] dark:text-white font-medium">
+          RAID-Z3
+        </span>{" "}
         <span>{` выдерживают отказ одного, двух и трёх дисков в группе соответственно. В отличие от аппаратного RAID, RAID-Z не требует отдельного контроллера и проверяет целостность данных контрольными суммами.`}</span>
       </>
     ),
@@ -125,13 +135,15 @@ const sections = [
         <p>
           {" "}
           <span>{`Благодаря `}</span>{" "}
-          <span className="title-color font-medium">{`Copy-on-Write `}</span>{" "}
+          <span className="text-[#1f1f1f] dark:text-white font-medium">{`Copy-on-Write `}</span>{" "}
           <span>{`снимок это просто сохранённый корень дерева блоков. Он создаётся практически мгновенно, в момент создания не занимает места и растёт только по мере изменения данных. Для работы не нужен заранее зарезервированный объём `}</span>{" "}
         </p>{" "}
         <p>
           {" "}
           <span>{`и не возникает штрафа на первую запись, как в классических схемах `}</span>{" "}
-          <span className="title-color font-medium">Copy-on-Write</span>{" "}
+          <span className="text-[#1f1f1f] dark:text-white font-medium">
+            Copy-on-Write
+          </span>{" "}
           <span>.</span>{" "}
         </p>
       </>
@@ -149,7 +161,7 @@ const sections = [
       <>
         <p>
           {" "}
-          <span className="title-color font-medium">{`ARC `}</span>{" "}
+          <span className="text-[#1f1f1f] dark:text-white font-medium">{`ARC `}</span>{" "}
           <span>{`основной кэш чтения, он всегда присутствует в системе `}</span>{" "}
         </p>{" "}
         <p>
@@ -169,7 +181,7 @@ const sections = [
     label: "SLOG (Separate Log)",
     left: (
       <>
-        <span className="title-color font-medium">SLOG</span>{" "}
+        <span className="text-[#1f1f1f] dark:text-white font-medium">SLOG</span>{" "}
         <span>{` Когда приложение требует гарантии записи, ZFS обязана подтвердить операцию только после сохранения данных в стабильном хранилище. Такие записи сначала попадают в журнал ZIL. SLOG выносит ZIL на отдельный низколатентный носитель (SSD или NVMe), поэтому подтверждение приходит быстрее. Позже данные записываются в основной пул обычным путём.`}</span>
       </>
     ),
@@ -187,7 +199,7 @@ const sections = [
     left: (
       <>
         <span>{`Метаданные (структура каталогов, деревья блоков, косвенные блоки) обслуживаются при каждой операции с файлами. На HDD-пуле они конкурируют с основными данными и тормозят всю систему. `}</span>{" "}
-        <span className="title-color font-medium">{`Special VDEV `}</span>{" "}
+        <span className="text-[#1f1f1f] dark:text-white font-medium">{`Special VDEV `}</span>{" "}
         <span>{`выделяет им быстрый носитель. `}</span>
       </>
     ),
@@ -206,7 +218,7 @@ const sections = [
         <p>
           {" "}
           <span>{`В зеркальной группе `}</span>{" "}
-          <span className="title-color font-medium">{`Mirror VDEV `}</span>{" "}
+          <span className="text-[#1f1f1f] dark:text-white font-medium">{`Mirror VDEV `}</span>{" "}
           <span>{`одинаковые блоки пишутся `}</span>{" "}
         </p>{" "}
         <p>{`на все диски. В ISCRA поддерживается зеркалирование на 2, 3, 4 `}</p>{" "}
@@ -224,7 +236,7 @@ const sections = [
     label: "Inline Compression",
     left: (
       <>
-        <span className="title-color font-medium">{`LZ4, ZSTD `}</span>{" "}
+        <span className="text-[#1f1f1f] dark:text-white font-medium">{`LZ4, ZSTD `}</span>{" "}
         <span>
           два разных алгоритма сжатия данных без потерь, которые Native ZFS
           ISCRA STORAGE использует для Inline-сжатия. Они решают одну задачу, но
@@ -245,7 +257,9 @@ const sections = [
     label: "Thin provisioning",
     left: (
       <>
-        <span className="title-color font-medium">Thin provisioning</span>{" "}
+        <span className="text-[#1f1f1f] dark:text-white font-medium">
+          Thin provisioning
+        </span>{" "}
         <span>{` или Тонкое выделение в Native ZFS ISCRA STORAGE это технология, которая позволяет выделять дисковое пространство “виртуально”, не резервируя его физически на дисках сразу. Проще говоря, вы можете создать том (zvol) на 1 ТБ, но на дисках он будет занимать лишь столько места, сколько реально данных в него записано.`}</span>
       </>
     ),
@@ -257,7 +271,7 @@ const sections = [
     label: "Deduplication",
     left: (
       <>
-        <span className="title-color font-medium">{`Deduplication `}</span>{" "}
+        <span className="text-[#1f1f1f] dark:text-white font-medium">{`Deduplication `}</span>{" "}
         <span>
           или Дедупликация: это механизм Native ZFS ISCRA STORAGE, который
           устраняет повторное хранение одинаковых блоков данных. Если один и тот
@@ -278,7 +292,9 @@ const sections = [
     label: "UNMAP",
     left: (
       <>
-        <span className="title-color font-medium">UNMAP</span>{" "}
+        <span className="text-[#1f1f1f] dark:text-white font-medium">
+          UNMAP
+        </span>{" "}
         <span>{` дает возможность возврата освобождённого пространства в пул, SCSI-команда, которая сообщает системе хранения, что определённые блоки данных больше не используются и их физическое пространство можно освободить. В ISCRA STORAGE UNMAP работает на уровне Native ZFS и возвращает освобождённые блоки обратно в пул, не дожидаясь, пока том будет удалён.`}</span>
       </>
     ),
@@ -385,7 +401,9 @@ const management = [
 
 const Heading = ({ children }) => (
   <PartnerInfo className="py-8 md:py-12.75" textClassName="max-w-none">
-    <span className="title-color font-medium xl:text-2xl">{children}</span>
+    <span className="text-[#1f1f1f] dark:text-white font-medium xl:text-2xl">
+      {children}
+    </span>
   </PartnerInfo>
 );
 const Split = ({ index }) => {
@@ -419,7 +437,7 @@ const Split = ({ index }) => {
 const Grid = ({ items }) => (
   <PartnerTextGrid
     items={items}
-    titleClassName="title-color xl:mb-[10.4px]"
+    titleClassName="text-[#1f1f1f] dark:text-white xl:mb-[10.4px]"
     labelClassName="xl:whitespace-normal xl:text-[20.5px] xl:leading-6"
     cellClassName="xl:pb-8"
   />
@@ -427,7 +445,7 @@ const Grid = ({ items }) => (
 
 export default function NativePage() {
   return (
-    <main className="page-iscra bg-white font-sans dark:bg-black xl:[&_.page-container]:max-w-317.5!">
+    <main className="page-iscra bg-white font-sans dark:bg-black">
       <Breadcrumbs className="page-container pt-2 mb-5 font-light text-color" />
       <IscraProtocolHero
         name="NATIVE"
@@ -439,9 +457,9 @@ export default function NativePage() {
           </>
         }
         className="xl:min-h-125.5 xl:pb-7"
-        nameClassName="text-[88px] sm:text-[140px] md:text-[clamp(100px,13vw,140px)] lg:text-[175px] xl:text-[200px] leading-normal bg-[linear-gradient(180deg,#9CE84B_0%,#60A91C_100%)] bg-clip-text text-transparent xl:pl-0"
+        nameClassName="text-[88px] sm:text-[140px] md:text-[clamp(100px,13vw,140px)] lg:text-[175px] xl:text-[200px] leading-normal bg-[linear-gradient(180deg,#20ec73_0%,#ff9000_100%)] bg-clip-text text-transparent xl:pl-0"
         textClassName="items-end text-right xl:gap-0 xl:pt-30.75 xl:pr-9"
-        titleClassName="md:text-3xl lg:text-5xl xl:text-[55px] xl:leading-[1.5]"
+        titleClassName="text-[#1f1f1f] dark:text-white md:text-3xl lg:text-5xl xl:text-[55px] xl:leading-[1.5]"
         subtitleClassName="text-[#a1a1a1] font-light xl:max-w-124 xl:pl-0 xl:text-[20.5px] xl:leading-[1.5]"
       >
         как устроена файловая система,
@@ -450,9 +468,11 @@ export default function NativePage() {
       </IscraProtocolHero>
       <PartnerLogos items={iscraVariants.logos} />
       <PartnerInfo className="py-8 md:py-12.75" textClassName="max-w-260">
-        <span className="title-color xl:text-[30px]">
-          <strong className="font-bold">ISCRA STORAGE:</strong> Преимущества ZFS
-          в системах хранения данных
+        <span className="text-color xl:text-[30px]">
+          <strong className="font-bold text-[#1f1f1f] dark:text-white">
+            ISCRA STORAGE:
+          </strong>{" "}
+          Преимущества ZFS в системах хранения данных
         </span>
       </PartnerInfo>
       <Split index={0} />
