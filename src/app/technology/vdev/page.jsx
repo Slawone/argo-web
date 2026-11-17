@@ -232,8 +232,8 @@ export default function VdevPage() {
               {" "}
               <span className="font-medium text-[#1f1f1f] dark:text-[#fffff1]">
                 VDEV в ISCRA STORAGE (Virtual Device)
-              </span>{" "}
-              <span className="font-medium">{` `}</span>{" "}
+              </span>
+              <span className="font-medium">{` `}</span>
               <span>{`это виртуальное устройство в Native ZFS, которое представляет собой логическую группу физических устройств (дисков, файлов, LUN) с определённой схемой избыточности `}</span>{" "}
             </p>{" "}
             <p>{`и размещения данных. `}</p>
