@@ -1,4 +1,28 @@
 export const ogImages = {
+  vdev: {
+    alt: "VDEV в Native ZFS ISCRA STORAGE",
+    title: "VDEV — Virtual Device",
+    subtitle: "Архитектура пула и физическое хранение данных",
+    accent: "#FF9100",
+  },
+  dataset: {
+    alt: "Dataset в Native ZFS ISCRA STORAGE",
+    title: "Dataset",
+    subtitle: "Управление хранением и свойствами данных",
+    accent: "#B600EF",
+  },
+  uberblock: {
+    alt: "Uberblock в Native ZFS ISCRA STORAGE",
+    title: "Uberblock",
+    subtitle: "Атомарность и целостность данных",
+    accent: "#B600EF",
+  },
+  native: {
+    alt: "Native ZFS в ISCRA STORAGE",
+    title: "Native ZFS",
+    subtitle: "Архитектура файловой системы ISCRA STORAGE",
+    accent: "#8CCD37",
+  },
   about: {
     alt: "История компании ARGO.TECH",
     title: "История компании ARGO.TECH",
