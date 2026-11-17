@@ -26,6 +26,7 @@ const staticRoutes = [
   "/technology/native",
   "/technology/uberblock",
   "/technology/dataset",
+  "/technology/vdev",
   "/technology/nfs",
   "/technology/dittoblocks",
   "/technology/fma",

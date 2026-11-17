@@ -17,6 +17,7 @@ const ruMap = {
   native: "Native ZFS",
   uberblock: "Uberblock",
   dataset: "Dataset",
+  vdev: "VDEV",
   nfs: "NFS",
   dittoblocks: "Ditto blocks",
   fma: "FMA",

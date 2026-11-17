@@ -1,4 +1,10 @@
 export const ogImages = {
+  vdev: {
+    alt: "VDEV в Native ZFS ISCRA STORAGE",
+    title: "VDEV — Virtual Device",
+    subtitle: "Архитектура пула и физическое хранение данных",
+    accent: "#FF9100",
+  },
   dataset: {
     alt: "Dataset в Native ZFS ISCRA STORAGE",
     title: "Dataset",

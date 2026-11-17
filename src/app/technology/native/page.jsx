@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Breadcrumbs } from "@/components";
 import {
   IscraProtocolHero,
@@ -55,6 +56,7 @@ const sections = [
   },
   {
     label: "Uberblock",
+    href: "/technology/uberblock/",
     left: (
       <>
         <p>
@@ -79,6 +81,7 @@ const sections = [
   },
   {
     label: "Copy-on-Write (C/ROW)",
+    href: "/technology/crow/",
     left: (
       <>
         <span className="text-[#1f1f1f] dark:text-white font-medium">ZFS</span>{" "}
@@ -130,6 +133,7 @@ const sections = [
   },
   {
     label: "Atomic Snapshot",
+    href: "/technology/atomicsnapshot/",
     left: (
       <>
         <p>
@@ -157,6 +161,7 @@ const sections = [
   },
   {
     label: "Adaptive Replacement Cache",
+    href: "/technology/arc/",
     left: (
       <>
         <p>
@@ -179,6 +184,7 @@ const sections = [
   },
   {
     label: "SLOG (Separate Log)",
+    href: "/technology/slog/",
     left: (
       <>
         <span className="text-[#1f1f1f] dark:text-white font-medium">SLOG</span>{" "}
@@ -196,6 +202,7 @@ const sections = [
   },
   {
     label: "Special VDEV",
+    href: "/technology/vdev/",
     left: (
       <>
         <span>{`Метаданные (структура каталогов, деревья блоков, косвенные блоки) обслуживаются при каждой операции с файлами. На HDD-пуле они конкурируют с основными данными и тормозят всю систему. `}</span>{" "}
@@ -408,6 +415,7 @@ const Heading = ({ children }) => (
 );
 const Split = ({ index }) => {
   const section = sections[index];
+  const Action = section.href ? Link : "button";
   return (
     <div className="[&+div]:mt-8 md:[&+div]:mt-12.75">
       <PartnerSplit
@@ -421,13 +429,14 @@ const Split = ({ index }) => {
             <div className="text-base md:text-lg xl:min-h-41.25 xl:text-xl xl:leading-[33.2px]">
               {section.right}
             </div>
-            <button
-              type="button"
+            <Action
+              href={section.href}
+              type={section.href ? undefined : "button"}
               className="inline-flex min-h-10 w-full max-w-62.5 items-center justify-center gap-2.5 self-start rounded-lg border border-[#a1a1a1] bg-[#ededed] px-4 py-2 text-base font-light text-black"
             >
               {section.label}
               <Image src="/native/button.svg" width={19} height={19} alt="" />
-            </button>
+            </Action>
           </div>
         }
       />
@@ -457,7 +466,7 @@ export default function NativePage() {
           </>
         }
         className="xl:min-h-125.5 xl:pb-7"
-        nameClassName="text-[88px] sm:text-[140px] md:text-[clamp(100px,13vw,140px)] lg:text-[175px] xl:text-[200px] leading-normal bg-[linear-gradient(180deg,#20ec73_0%,#ff9000_100%)] bg-clip-text text-transparent xl:pl-0"
+        nameClassName="text-center text-[88px] sm:text-[140px] md:text-[clamp(100px,13vw,140px)] lg:text-[175px] xl:text-[200px] leading-normal bg-[linear-gradient(180deg,#20ec73_0%,#ff9000_100%)] bg-clip-text text-transparent xl:pl-0"
         textClassName="items-end text-right xl:gap-0 xl:pt-30.75 xl:pr-9"
         titleClassName="text-[#1f1f1f] dark:text-white md:text-3xl lg:text-5xl xl:text-[55px] xl:leading-[1.5]"
         subtitleClassName="text-[#a1a1a1] font-light xl:max-w-124 xl:pl-0 xl:text-[20.5px] xl:leading-[1.5]"
