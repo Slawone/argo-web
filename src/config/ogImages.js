@@ -1,4 +1,10 @@
 export const ogImages = {
+  native: {
+    alt: "Native ZFS в ISCRA STORAGE",
+    title: "Native ZFS",
+    subtitle: "Архитектура файловой системы ISCRA STORAGE",
+    accent: "#8CCD37",
+  },
   about: {
     alt: "История компании ARGO.TECH",
     title: "История компании ARGO.TECH",
