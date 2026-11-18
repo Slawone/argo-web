@@ -246,7 +246,7 @@ export default function UberblockPage() {
         <strong className="font-bold text-[#1f1f1f] dark:text-[#fffff1]">
           ISCRA STORAGE:
         </strong>{" "}
-        Атомарность как основное свойство ВСЕЙ системы
+        Атомарность как основное свойство всей системы
       </Heading>
       <PartnerSplit
         hidePlus
