@@ -226,7 +226,7 @@ export default function DatasetPage() {
           </>
         }
         className="xl:grid-cols-[55fr_45fr] xl:min-h-125.5 xl:pb-7"
-        nameClassName="text-center text-[80px] sm:text-[120px] md:text-[clamp(96px,12vw,140px)] lg:text-[170px] xl:text-[200px] leading-normal bg-[linear-gradient(180deg,#7129ff_26.442%,#ff00e5_65.385%)] bg-clip-text text-transparent xl:pl-0"
+        nameClassName="text-center text-[80px] sm:text-[120px] md:text-[clamp(96px,12vw,140px)] lg:text-[130px] xl:text-[180px] leading-normal bg-[linear-gradient(180deg,#7129ff_26.442%,#ff00e5_65.385%)] bg-clip-text text-transparent xl:pl-0"
         textClassName="items-end text-right xl:gap-0 xl:pt-30.75 xl:pr-9"
         titleClassName="text-[#1f1f1f] dark:text-[#fffff1] md:text-3xl lg:text-5xl xl:text-[55px] xl:leading-[1.5]"
         subtitleClassName="text-[#a1a1a1] font-light xl:max-w-127.5 xl:pl-0 xl:text-[20.5px] xl:leading-[1.5]"
