@@ -157,7 +157,7 @@ export default function IscraAtomicSnapshot() {
         }
         className="xl:pb-7 xl:min-h-125.5"
         nameClassName={cn(
-          "text-center uppercase text-[64px] sm:text-[72px] md:text-[88px] lg:text-[100px] xl:text-[120px] leading-normal",
+          "text-center uppercase text-[64px] sm:text-[72px] md:text-[80px] lg:text-[100px] xl:text-[120px] leading-[1.1] xl:mt-30.75 xl:pl-0",
           accentClassName,
         )}
         textClassName="items-end text-right xl:gap-0 xl:pt-30.75 xl:pr-9"

@@ -7,6 +7,7 @@ import {
   Contact,
 } from "@/sections";
 import { iscraVariants, ogImage } from "@/config";
+import { DittoBlocksDetails } from "@/sections/iscra/DittoBlocksDetails";
 
 const title = "Ditto blocks в ISCRA STORAGE(СХД АРГО): защита от bit rot | ARGO.TECH";
 const description =
@@ -130,7 +131,7 @@ export default function IscraDittoBlocks() {
           </p>
         }
       />
-      <div className="pt-10 xl:pt-20" />
+      <DittoBlocksDetails />
       <Contact source="ISCRA STORAGE Ditto blocks" />
     </main>
   );

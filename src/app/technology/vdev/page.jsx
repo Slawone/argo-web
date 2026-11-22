@@ -12,9 +12,9 @@ import {
 } from "@/sections";
 import { iscraVariants, ogImage } from "@/config";
 
-const title = "VDEV в Native ZFS: Virtual Device | ARGO.TECH";
+const title = "VDEV в Native ZFS (СХД АРГО): что это и какие бывают, ARGO.TECH";
 const description =
-  "VDEV в ISCRA STORAGE: устройство пула Native ZFS, физические диски, RAID-Z, Special VDEV, метаданные и журнал синхронной записи SLOG.";
+  "VDEV строительный блок пула Native ZFS: mirror, RAID-Z, special, SLOG. Как тип vdev влияет на отказоустойчивость и скорость в ISCRA STORAGE (СХД АРГО)";
 export const metadata = {
   title,
   description,
@@ -254,6 +254,7 @@ export default function VdevPage() {
       <div className="pt-8 md:pt-12.75">
         <Topic
           label="POOL Native ZFS"
+          href="/technology/pool/"
           left={
             <>
               <span className="text-[#1f1f1f] dark:text-[#fffff1]">{`VDEV в ISCRA STORAGE (Virtual Device) `}</span>{" "}
@@ -371,8 +372,7 @@ export default function VdevPage() {
             <>
               <span>{`Если нагрузка `}</span> <span>в ISCRA STORAGE</span>{" "}
               <span>
-                {" "}
-                {` требует синхронной записи (базы данных, NFS, виртуализация) и вы хотите снизить задержку то используйте SLOG на быстром SSD/NVMe`}{" "}
+                {`требует синхронной записи (базы данных, NFS, виртуализация), и вы хотите снизить задержку, то используйте SLOG на быстром SSD/NVMe`}{" "}
                 <br /> <br />{" "}
               </span>
             </>

@@ -10,7 +10,8 @@ export const AboutHero = () => {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
+    const timer = setTimeout(() => setMounted(true), 0);
+    return () => clearTimeout(timer);
   }, []);
 
   const srcPath =
@@ -20,47 +21,46 @@ export const AboutHero = () => {
 
   return (
     <>
-      <section className="page-container section-border py-5 md:py-15 grid place-items-center px-4">
-        <Image 
-          src={srcPath}
-          width={888}
-          height={265}
-          alt=""
-          className=""
-        />
+      <section className="page-container py-5 md:py-15 grid place-items-center px-4">
+        <Image src={srcPath} width={888} height={265} alt="" className="" />
       </section>
-      <section
-        className="page-container section-border text-color font-sans px-4 grid md:grid-cols-[7fr_5fr] items-start"
-      >
-        <div className="py-5 md:py-10 md:border-r md:border-r-black/8 md:dark:border-r-white/14">
-          <div className="w-25 md:w-30 text-center text-[12px] md:text-sm text-[#00B6CC] border rounded-full px-4 py-2 uppercase mb-5">
-            Миссия
+      <section className="page-container py-5 md:py-10 xl:pt-15.25 xl:pb-12.75">
+        <div className="grid border main-border md:grid-cols-[747fr_523fr] text-[#1f1f1f] dark:text-[#a1a1a1]">
+          <div className="border-b main-border px-4 py-6 md:border-b-0 md:border-r xl:px-9.25 xl:pt-7.25 xl:pb-9.25">
+            <span className="mb-5 inline-flex h-10 items-center rounded-full border border-[#00B6CC] px-4 text-sm font-light text-[#00B6CC]">
+              Миссия
+            </span>
+            <p className="text-sm font-light leading-6 md:text-base lg:text-lg xl:text-[20.5px]">
+              <span className="font-medium text-[#1f1f1f] dark:text-white">
+                Меняем правила игры:
+              </span>{" "}
+              создаем инновационные программные решения, чтобы Российский бизнес
+              работал на собственных технологиях — стабильно, безопасно,
+              эффективно. Мы не просто пишем код — мы строим цифровую
+              инфраструктуру будущего.{" "}
+              <span className="font-medium text-[#1f1f1f] dark:text-white">
+                Каждый наш продукт
+              </span>{" "}
+              — это шаг к технологической независимости, возможность для
+              компаний работать без сбоев, защищать данные и уверенно
+              развиваться в условиях глобальных вызовов.
+            </p>
           </div>
-          <p
-            className="wrap-balance text-sm md:text-base lg:text-lg font-light leading-6 max-w-162.5"
-          >
-            <span className="title-color">Меняем правила игры:</span> создаем инновационные программные решения, чтобы Российский бизнес работал на собственных технологиях - стабильно, безопасно. эффективно. Мы не просто пишем код - мы строим цифровую инфраструктуру будущего. <span className="title-color">Каждый наш продукт</span> - это шаг к технологической независимости, возможность для компаний работать без сбоев, защищать данные и уверенно развиваться в условиях глобальных вызовов.
-          </p>
-        </div>
-        <div className="py-5 md:py-10 md:pl-4">
-          <div className="w-25 md:w-30 text-center text-[12px] md:text-sm text-[#00B6CC] border rounded-full px-4 py-2 uppercase mb-5 hidden md:block invisible">
-            О Компании
-          </div>
-          <p
-            className="mb-5 text-sm md:text-base lg:text-lg font-light leading-6"
-          >
-            Мы создаем решения с учетом политики импортозамещения и стандартов
-            критической информационной инфраструктуры.
-          </p>
-          <div
-            className="flex items-center gap-5"
-          >
+          <div className="flex flex-col items-start gap-5 px-4 py-6 xl:px-9.25 xl:pt-24.5 xl:pb-11">
+            <p className="text-sm font-light leading-6 md:text-base lg:text-lg xl:text-[20.5px]">
+              <span className="font-medium text-[#1f1f1f] dark:text-[#ededed]">
+                Мы — одна из первых команд в России
+              </span>
+              , разработавшая классическую систему хранения данных. Наша цель —
+              создать для России инструменты для уверенного роста.
+            </p>
             <a
-              className="button button-primary flex-center"
+              className="button button-primary flex-center rounded-lg!"
               href="https://www.cnews.ru/news/line/2025-11-20_argotech_vpervye_predstavila?ysclid=mpv1gkokj5920313653"
               target="_blank"
+              rel="noopener noreferrer"
             >
-              Подробнее <ExternalLink width={18} height={18} />
+              Подробнее <ExternalLink width={16} height={16} />
             </a>
           </div>
         </div>

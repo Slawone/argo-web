@@ -1,4 +1,46 @@
 export const ogImages = {
+  calculator: {
+    alt: "Калькулятор Native ZFS ISCRA STORAGE",
+    title: "ZFS Pool Calculator",
+    subtitle: "Полезная ёмкость, эффективность и отказоустойчивость пула",
+    accent: "#D036B4",
+  },
+  error: {
+    alt: "URE — невосстановимая ошибка чтения",
+    title: "Unrecoverable Read Error",
+    subtitle: "Причины URE и защита данных в Native ZFS ISCRA STORAGE",
+    accent: "#FF1500",
+  },
+  "raid-z3": {
+    alt: "RAID-Z3 в Native ZFS ISCRA STORAGE",
+    title: "RAID-Z3 — тройная чётность",
+    subtitle: "Максимальная отказоустойчивость при отказе трёх дисков",
+    accent: "#4B48F8",
+  },
+  "raid-z2": {
+    alt: "RAID-Z2 в Native ZFS ISCRA STORAGE",
+    title: "RAID-Z2 — двойная чётность",
+    subtitle: "Защита данных при отказе любых двух дисков",
+    accent: "#FF00E5",
+  },
+  "raid-z1": {
+    alt: "RAID-Z1 в Native ZFS ISCRA STORAGE",
+    title: "RAID-Z1 — однократная чётность",
+    subtitle: "Экономичная избыточность и самовосстановление данных",
+    accent: "#004EDE",
+  },
+  "raid-z": {
+    alt: "RAID-Z в Native ZFS ISCRA STORAGE",
+    title: "RAID-Z — защита данных",
+    subtitle: "Переменная ширина страйпа и самовосстановление",
+    accent: "#FF9000",
+  },
+  pool: {
+    alt: "Pool в Native ZFS ISCRA STORAGE",
+    title: "POOL — объединение VDEV",
+    subtitle: "Единое пространство хранения Native ZFS",
+    accent: "#00B6CC",
+  },
   vdev: {
     alt: "VDEV в Native ZFS ISCRA STORAGE",
     title: "VDEV — Virtual Device",
@@ -17,7 +59,7 @@ export const ogImages = {
     subtitle: "Атомарность и целостность данных",
     accent: "#B600EF",
   },
-  native: {
+  nativezfs: {
     alt: "Native ZFS в ISCRA STORAGE",
     title: "Native ZFS",
     subtitle: "Архитектура файловой системы ISCRA STORAGE",

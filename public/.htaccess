@@ -2,3 +2,6 @@
 Options -Indexes
 
 ErrorDocument 404 /404.html
+
+# Keep links to the previous Native ZFS URL working.
+RedirectMatch 301 ^/technology/native/?$ /technology/nativezfs/

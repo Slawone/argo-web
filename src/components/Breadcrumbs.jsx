@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { buildBreadcrumbJsonLd } from "@/lib/jsonLd";
 
 const ruMap = {
+  calculator: "Калькулятор Native ZFS",
   docs: "Документы",
   storage: "Хранение",
   partners: "Партнеры",
@@ -14,10 +15,16 @@ const ruMap = {
   s3storage: "S3 STORAGE",
   certification: "Сертификаты",
   technology: "Технологии",
-  native: "Native ZFS",
+  nativezfs: "Native ZFS",
   uberblock: "Uberblock",
   dataset: "Dataset",
   vdev: "VDEV",
+  pool: "POOL",
+  "raid-z": "RAID-Z",
+  "raid-z1": "RAID-Z1",
+  "raid-z2": "RAID-Z2",
+  "raid-z3": "RAID-Z3",
+  error: "Unrecoverable Read Error",
   nfs: "NFS",
   dittoblocks: "Ditto blocks",
   fma: "FMA",
