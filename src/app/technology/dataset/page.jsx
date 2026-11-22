@@ -64,7 +64,7 @@ const objects = [
   [
     <span key="label">Файл</span>,
     <span key="value">
-      Внутри датасета(Dataset): единица данных внутри файловой системы
+      Внутри датасета (Dataset): единица данных внутри файловой системы
     </span>,
   ],
   [
@@ -88,39 +88,39 @@ const categories = [
   [
     <span key="label">Ускорить</span>,
     <span key="value">
-      recordsize/ compression/ primarycache/ secondarycache/ atime/
+      recordsize / compression / primarycache / secondarycache / atime /
       special_smal_blocks
     </span>,
   ],
   [
     <span key="label">Защитить</span>,
     <span key="value">
-      copies/ checksum/ redundant_metadata/ readonly/ snapshot_limit
+      copies / checksum / redundant_metadata / readonly / snapshot_limit
     </span>,
   ],
   [
     <span key="label">Ограничить доступ</span>,
     <span key="value">
-      aclinherit/ aclmode/ setuid/ encryption/ encryption/ snapshot_limit
+      aclinherit / aclmode / setuid / encryption / encryption / snapshot_limit
     </span>,
   ],
   [
     <span key="label">Сэкономить</span>,
     <span key="value">
-      compression/ dedup/ quota/ refquota/ reservation/ snapshot_limit
+      compression / dedup / quota / refquota / reservation / snapshot_limit
     </span>,
   ],
   [
     <span key="label">Изолировать</span>,
-    <span key="value">quota/ userquota/ groupquota/ filesystem_limit</span>,
+    <span key="value">quota / userquota / groupquota / filesystem_limit</span>,
   ],
   [
     <span key="label">{`Отдать по сети `}</span>,
-    <span key="value">sharenfs/ sharesmb/ mountpoint/ snapdir</span>,
+    <span key="value">sharenfs / sharesmb / mountpoint / snapdir</span>,
   ],
   [
     <span key="label">Совместимость</span>,
-    <span key="value">casesensitivity/ normalization/ utf8only/ version</span>,
+    <span key="value">casesensitivity / normalization / utf8only / version</span>,
   ],
 ];
 const properties = [
@@ -149,7 +149,7 @@ const properties = [
     title: "Можно менять (45+ свойств)",
     label: (
       <>
-        <p>Задаёт администратор черезzfs set. Делятся на:</p>{" "}
+        <p>Задаёт администратор через zfs set. Делятся на:</p>{" "}
         <p>
           {" "}
           {`Наследуемые: задал на родителе, получили все потомки `} <br />{" "}
@@ -288,10 +288,10 @@ export default function DatasetPage() {
                 <br />{" "}
               </span>{" "}
               <span>
-                Логический объектв пространстве имён ZFS; Единица управлениявсё
+                Логический объект в пространстве имён ZFS; Единица управления всё
                 администрирование идёт через датасеты; Типизированный объект
                 filesystem, volume, snapshot, clone, bookmark;
-                Иерархическоедерево с наследованием свойств. Транзакционное
+                Иерархическое дерево с наследованием свойств. Транзакционное
                 свойство изменения фиксируются через TXG и uberblock.
               </span>
             </div>
@@ -305,10 +305,7 @@ export default function DatasetPage() {
               <span className="text-[#1f1f1f] dark:text-[#fffff1] font-medium">{` `}</span>{" "}
               <span>{`в ISCRA STORAGE обладает возможностью использовать 86 параметров, управляющих поведением `}</span>{" "}
               <span className="text-[#1f1f1f] dark:text-[#fffff1] font-medium">
-                Dataset
-              </span>{" "}
-              <span className="text-[#1f1f1f] dark:text-[#fffff1] font-medium">
-                .
+                Dataset.
               </span>
             </div>
           }
@@ -343,9 +340,7 @@ export default function DatasetPage() {
               <p>
                 {" "}
                 <span className="text-[#1f1f1f] dark:text-[#fffff1] font-medium">
-                  Native ZFS ISCRA STORAGE
-                </span>{" "}
-                <span className="text-[#1f1f1f] dark:text-[#fffff1]">,</span>{" "}
+                  Native ZFS ISCRA STORAGE,</span>{" "}
                 <span>{` разделяет физическое хранение (VDEV) и логическое управление данными (Dataset), но они работают вместе: датасеты (Dataset) потребляют пространство из пула, который состоит из VDEV, а Native ZFS распределяет блоки датасетов (Dataset) по всем доступным top-level vdev.`}</span>{" "}
               </p>{" "}
               <p>​</p>
