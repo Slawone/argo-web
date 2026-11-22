@@ -423,6 +423,10 @@ const tracks = [
   },
 ];
 const duration = 10;
+const raidPages = {
+  1: "/technology/raid-z1/",
+  2: "/technology/raid-z2/",
+};
 
 export const PoolRaidDiagram = () => {
   const reducedMotion = useReducedMotion();
@@ -434,8 +438,8 @@ export const PoolRaidDiagram = () => {
       {[1, 2, 3].map((level, row) => (
         <div key={level} className="flex items-center gap-1.75">
           <span className="w-20 shrink-0 text-base font-medium text-[#a1a1a1] dark:text-[#fffff1] xl:w-27.5 xl:text-[20.5px] xl:leading-6">
-            {level === 1 ? (
-              <Link href="/technology/raid-z1/" className="underline-offset-4 hover:underline">
+            {raidPages[level] ? (
+              <Link href={raidPages[level]} className="underline-offset-4 hover:underline">
                 RAID Z-{level}
               </Link>
             ) : `RAID Z-${level}`}

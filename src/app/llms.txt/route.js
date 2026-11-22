@@ -15,6 +15,7 @@ const sections = [
       ["/technology/nfs/", "NFS в ISCRA STORAGE: сетевая файловая система"],
       ["/technology/raid-z/", "RAID-Z в Native ZFS: распределённая чётность и самовосстановление данных"],
       ["/technology/raid-z1/", "RAID-Z1 в Native ZFS: однократная чётность и защита при отказе одного диска"],
+      ["/technology/raid-z2/", "RAID-Z2 в Native ZFS: двойная чётность и защита при отказе двух дисков"],
       ["/technology/dittoblocks/", "Ditto blocks и Copies=N: защита от bit rot"],
       ["/technology/fma/", "FMA (Fault Management Architecture): самодиагностика и реакция на сбои"],
       ["/technology/crow/", "C/ROW и write hole: атомарность Native ZFS и redirect-on-write"],

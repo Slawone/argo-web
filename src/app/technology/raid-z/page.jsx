@@ -190,7 +190,7 @@ const comparison = [
     </span>,
   ],
   [
-    "RAIDZ2",
+    <Link key="raid-z2" href="/technology/raid-z2/">RAIDZ2</Link>,
     "RAID 6",
     "Допускает одновременный отказ двух дисков без потери данных",
   ],
