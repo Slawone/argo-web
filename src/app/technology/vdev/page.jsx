@@ -254,6 +254,7 @@ export default function VdevPage() {
       <div className="pt-8 md:pt-12.75">
         <Topic
           label="POOL Native ZFS"
+          href="/technology/pool/"
           left={
             <>
               <span className="text-[#1f1f1f] dark:text-[#fffff1]">{`VDEV в ISCRA STORAGE (Virtual Device) `}</span>{" "}

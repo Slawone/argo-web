@@ -18,6 +18,7 @@ const ruMap = {
   uberblock: "Uberblock",
   dataset: "Dataset",
   vdev: "VDEV",
+  pool: "POOL",
   nfs: "NFS",
   dittoblocks: "Ditto blocks",
   fma: "FMA",

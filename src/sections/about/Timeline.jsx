@@ -28,7 +28,7 @@ const TimelineEvent = ({
           alt=""
           className={
             start
-              ? "absolute left-0 top-0 h-[122px] w-9 dark:invert-0 invert"
+              ? "absolute left-0 top-0 h-30.5 w-9 dark:invert-0 invert"
               : "absolute left-0 top-0 h-9 w-9"
           }
         />
@@ -86,7 +86,7 @@ export const Timeline = () => (
   <section className="page-container relative pb-10 font-sans text-[#1f1f1f] dark:text-[#a1a1a1]">
     <div
       aria-hidden="true"
-      className="hidden md:block absolute bottom-10 left-4 top-0 w-px bg-[linear-gradient(180deg,#ff6600_0%,#ff00e5_25%,#c300ff_50%,#00b6cc_75%,#00b6cc_100%)] md:left-[351px]"
+      className="hidden md:block absolute bottom-10 left-4 top-0 w-px bg-[linear-gradient(180deg,#ff6600_0%,#ff00e5_25%,#c300ff_50%,#00b6cc_75%,#00b6cc_100%)] md:left-87.75"
     />
     <div className="flex flex-col gap-12 md:gap-[127.5px]">
       <TimelineEvent label="Начало пути" start materials={logos.intel}>
@@ -401,7 +401,7 @@ export const Timeline = () => (
         </span>{" "}
         <span>{` каналов.`}</span>
       </TimelineEvent>
-      <div className="md:ml-[389px]">
+      <div className="md:ml-97.25">
         <Separator_3 className="h-auto w-full max-w-143.75" />
       </div>
       <TimelineEvent

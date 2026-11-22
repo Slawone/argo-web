@@ -1,4 +1,10 @@
 export const ogImages = {
+  pool: {
+    alt: "Pool в Native ZFS ISCRA STORAGE",
+    title: "POOL — объединение VDEV",
+    subtitle: "Единое пространство хранения Native ZFS",
+    accent: "#00B6CC",
+  },
   vdev: {
     alt: "VDEV в Native ZFS ISCRA STORAGE",
     title: "VDEV — Virtual Device",
