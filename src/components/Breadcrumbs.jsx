@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { buildBreadcrumbJsonLd } from "@/lib/jsonLd";
 
 const ruMap = {
+  calculator: "Калькулятор Native ZFS",
   docs: "Документы",
   storage: "Хранение",
   partners: "Партнеры",

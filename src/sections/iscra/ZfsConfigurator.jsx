@@ -1,4 +1,5 @@
 import { TechnologyLines as DesignLines } from "@/components/TechnologyLines";
+import Link from "next/link";
 import { PoolRaidDiagram } from "./PoolRaidDiagram";
 import { cn } from "@/utils";
 
@@ -11,7 +12,7 @@ export const ZfsConfigurator = ({ className }) => (
   >
     <div className="min-w-0 border-b main-border px-4 py-8 md:border-b-0 md:border-r xl:px-9.25 xl:pt-7.25 xl:pb-9.25">
       <h2 className="mb-5.75 text-2xl font-medium uppercase text-[#1f1f1f] tracking-[-1.5px] dark:text-[#ededed] xl:text-[30px] xl:leading-[33.2px]">
-        Конфигуратор
+        <Link href="/calculator/">Конфигуратор</Link>
       </h2>
       <p className="text-base font-light md:text-lg xl:text-[20.5px] xl:leading-7.5">
         <DesignLines

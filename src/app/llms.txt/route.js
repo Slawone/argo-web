@@ -19,6 +19,7 @@ const sections = [
       ["/technology/raid-z3/", "RAID-Z3 в Native ZFS: тройная чётность и защита при отказе трёх дисков"],
       ["/technology/dittoblocks/", "Ditto blocks и Copies=N: защита от bit rot"],
       ["/technology/error/", "URE: невосстановимая ошибка чтения и защита данных в Native ZFS"],
+      ["/calculator/", "Калькулятор Native ZFS: полезная ёмкость, конфигурация VDEV и симуляция отказов"],
       ["/technology/fma/", "FMA (Fault Management Architecture): самодиагностика и реакция на сбои"],
       ["/technology/crow/", "C/ROW и write hole: атомарность Native ZFS и redirect-on-write"],
       ["/technology/writableclone/", "Writable Clone: мгновенные записываемые копии данных"],

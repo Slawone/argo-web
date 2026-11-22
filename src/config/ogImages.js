@@ -1,4 +1,10 @@
 export const ogImages = {
+  calculator: {
+    alt: "Калькулятор Native ZFS ISCRA STORAGE",
+    title: "ZFS Pool Calculator",
+    subtitle: "Полезная ёмкость, эффективность и отказоустойчивость пула",
+    accent: "#D036B4",
+  },
   error: {
     alt: "URE — невосстановимая ошибка чтения",
     title: "Unrecoverable Read Error",
