@@ -23,7 +23,7 @@ export const ogImages = {
     subtitle: "Атомарность и целостность данных",
     accent: "#B600EF",
   },
-  native: {
+  nativezfs: {
     alt: "Native ZFS в ISCRA STORAGE",
     title: "Native ZFS",
     subtitle: "Архитектура файловой системы ISCRA STORAGE",

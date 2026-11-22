@@ -14,7 +14,7 @@ const ruMap = {
   s3storage: "S3 STORAGE",
   certification: "Сертификаты",
   technology: "Технологии",
-  native: "Native ZFS",
+  nativezfs: "Native ZFS",
   uberblock: "Uberblock",
   dataset: "Dataset",
   vdev: "VDEV",

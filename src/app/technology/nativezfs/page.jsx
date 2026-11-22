@@ -17,15 +17,15 @@ const description =
 export const metadata = {
   title,
   description,
-  alternates: { canonical: "/technology/native/" },
+  alternates: { canonical: "/technology/nativezfs/" },
   openGraph: {
     type: "website",
     locale: "ru_RU",
     siteName: "ARGO.TECH",
-    url: "https://argo.tech/technology/native/",
+    url: "https://argo.tech/technology/nativezfs/",
     title,
     description,
-    images: [ogImage("native")],
+    images: [ogImage("nativezfs")],
   },
 };
 

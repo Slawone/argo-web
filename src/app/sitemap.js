@@ -23,7 +23,7 @@ const staticRoutes = [
   "/docs",
   "/storage/iscrastorage/certification",
   "/storage/iscrastorage/hcl",
-  "/technology/native",
+  "/technology/nativezfs",
   "/technology/uberblock",
   "/technology/dataset",
   "/technology/vdev",
