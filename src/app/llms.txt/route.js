@@ -13,6 +13,7 @@ const sections = [
       ["/storage/iscrastorage/certification/", "Сертификаты и реестровые записи ISCRA STORAGE"],
       ["/storage/iscrastorage/hcl/", "HCL: верифицированные платформы, адаптеры и накопители ISCRA STORAGE"],
       ["/technology/nfs/", "NFS в ISCRA STORAGE: сетевая файловая система"],
+      ["/technology/raid-z/", "RAID-Z в Native ZFS: распределённая чётность и самовосстановление данных"],
       ["/technology/dittoblocks/", "Ditto blocks и Copies=N: защита от bit rot"],
       ["/technology/fma/", "FMA (Fault Management Architecture): самодиагностика и реакция на сбои"],
       ["/technology/crow/", "C/ROW и write hole: атомарность Native ZFS и redirect-on-write"],

@@ -107,6 +107,7 @@ const sections = [
   },
   {
     label: "RAID Z (ISCRA)",
+    href: "/technology/raid-z/",
     left: (
       <>
         <span className="text-[#1f1f1f] dark:text-white font-medium">
