@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
 
 // Keyframes and times exported from the three RAID-Z rows in Figma.
@@ -433,7 +434,11 @@ export const PoolRaidDiagram = () => {
       {[1, 2, 3].map((level, row) => (
         <div key={level} className="flex items-center gap-1.75">
           <span className="w-20 shrink-0 text-base font-medium text-[#a1a1a1] dark:text-[#fffff1] xl:w-27.5 xl:text-[20.5px] xl:leading-6">
-            RAID Z-{level}
+            {level === 1 ? (
+              <Link href="/technology/raid-z1/" className="underline-offset-4 hover:underline">
+                RAID Z-{level}
+              </Link>
+            ) : `RAID Z-${level}`}
           </span>
           <div
             aria-hidden="true"

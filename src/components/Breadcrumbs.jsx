@@ -20,6 +20,7 @@ const ruMap = {
   vdev: "VDEV",
   pool: "POOL",
   "raid-z": "RAID-Z",
+  "raid-z1": "RAID-Z1",
   nfs: "NFS",
   dittoblocks: "Ditto blocks",
   fma: "FMA",

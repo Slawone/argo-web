@@ -183,7 +183,7 @@ const comparison = [
   ["RAID 0", "Single", "При отказе диска теряются все данные"],
   ["MIRROR", "RAID 1", "Возможно зеркалирование на 2 / 3 / 4 / 5 дисков"],
   [
-    "RAIDZ1",
+    <Link key="raid-z1" href="/technology/raid-z1/">RAIDZ1</Link>,
     "RAID 5",
     <span key="description" className="xl:min-h-[67px]">
       Допускает отказ одного диска без потери данных
@@ -206,9 +206,9 @@ const comparison = [
 (Отказоустойчивость зависит от отказоустойчивости каждого VDEV)`}</Text>,
   ],
 ];
-const Heading = ({ children }) => (
+const Heading = ({ children, className = "" }) => (
   <PartnerInfo
-    className="py-8 md:py-12.75 xl:py-12.75"
+    className={`py-8 md:py-12.75 xl:py-12.75 ${className}`}
     textClassName="max-w-none"
   >
     <span className={`${primary} xl:text-[30px]`}>{children}</span>
@@ -458,7 +458,7 @@ export default function RaidZPage() {
           </div>
         </div>
       </section>
-      <Heading>
+      <Heading className="xl:pt-25">
         <strong className="font-bold">RAID Z:</strong>{" "}
         <span className="font-light">
           Архитектура защиты данных, где избыточность встроена в файловую

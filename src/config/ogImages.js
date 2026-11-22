@@ -1,4 +1,10 @@
 export const ogImages = {
+  "raid-z1": {
+    alt: "RAID-Z1 в Native ZFS ISCRA STORAGE",
+    title: "RAID-Z1 — однократная чётность",
+    subtitle: "Экономичная избыточность и самовосстановление данных",
+    accent: "#004EDE",
+  },
   "raid-z": {
     alt: "RAID-Z в Native ZFS ISCRA STORAGE",
     title: "RAID-Z — защита данных",
