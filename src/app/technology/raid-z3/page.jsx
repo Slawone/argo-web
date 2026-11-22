@@ -331,13 +331,13 @@ export default function RaidZ3Page() {
                 <Text>{`Для больших HDD (8 ТБ и выше) риск URE при восстановлении
 становится очень высоким.`}</Text>
               </div>
-              <button
-                type="button"
+              <Link
+                href="/technology/error/"
                 className="mt-auto inline-flex min-h-11 w-full max-w-62.5 items-center justify-center gap-2.5 self-start rounded-lg border border-[#1f1f1f] bg-[#ededed] px-4 py-2 text-base font-light text-black dark:border-white"
               >
                 Unrecoverable Read Error
                 <Image src="/raid-z/button.svg" width={19} height={19} alt="" />
-              </button>
+              </Link>
             </div>
           }
         />

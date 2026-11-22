@@ -1,4 +1,10 @@
 export const ogImages = {
+  error: {
+    alt: "URE — невосстановимая ошибка чтения",
+    title: "Unrecoverable Read Error",
+    subtitle: "Причины URE и защита данных в Native ZFS ISCRA STORAGE",
+    accent: "#FF1500",
+  },
   "raid-z3": {
     alt: "RAID-Z3 в Native ZFS ISCRA STORAGE",
     title: "RAID-Z3 — тройная чётность",

@@ -23,6 +23,7 @@ const ruMap = {
   "raid-z1": "RAID-Z1",
   "raid-z2": "RAID-Z2",
   "raid-z3": "RAID-Z3",
+  error: "Unrecoverable Read Error",
   nfs: "NFS",
   dittoblocks: "Ditto blocks",
   fma: "FMA",
