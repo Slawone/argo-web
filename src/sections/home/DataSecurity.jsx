@@ -37,7 +37,7 @@ export const DataSecurity = () => {
             Безопасная разработка и защита данных
           </motion.div>
           <motion.p variants={textVariants} className="mb-5">
-            <span className="title-color">Более 10 лет</span> лет создаём
+            <span className="title-color">Более 10 лет</span> создаём
             средства информационной безопасности. ARGO.TECH лицензирована ФСТЭК
             России (Л050-00107-00/00581308 от 13.08.2021), что подтверждает
             соответствие требованиям.

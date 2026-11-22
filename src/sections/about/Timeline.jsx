@@ -34,7 +34,7 @@ export const Timeline = () => {
           <div className="flex flex-col gap-5 main-text">
             <p className="relative">
               <span className="title-color">2009</span> – Начало разработки
-              собственной архитектуры хранения данных участникамми OpenSolaris
+              собственной архитектуры хранения данных участниками OpenSolaris
               Community и формирование коммерческой версии.
             </p>
             <Image
@@ -219,7 +219,7 @@ export const Timeline = () => {
               <Image src="/about/openyard.svg" width={150} height={38} alt="" />
             </div>
             <p>
-              Соглашение о сотрудничестве с ведущим Дистрибьютером России
+              Соглашение о сотрудничестве с ведущим Дистрибьютором России
               Treolan (входит в группу «Ланит»)
             </p>
             <div className="flex gap-5 md:mb-20">
@@ -346,7 +346,7 @@ export const Timeline = () => {
             <p className="">
               Еще больше функциональных возможностей в новой версии{" "}
               <span className="text-[#00FF66]">STORAGE</span>, <br /> будут доступны для
-              всех инсталированых систем
+              всех инсталлированных систем
             </p>
             <Image 
               src="/about/newvers.svg"

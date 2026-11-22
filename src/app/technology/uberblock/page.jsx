@@ -34,21 +34,21 @@ const commit = [
     title: "Атомарность",
     label: (
       <>
-        <p>
-          {" "}
-          <span>{`Атомарность (Atomicity) в `}</span> <span>ISCRA STORAGE</span>{" "}
-          <span>
-            {" "}
-            {` это свойство операции `} <br />{" "}
-            {`или транзакции выполняться как единое неделимое целое: либо все изменения применяются полностью и успешно, либо не применяются вовсе, `}{" "}
-          </span>{" "}
-        </p>{" "}
-        <p>
-          {" "}
-          {`без промежуточных состояний. Внешний наблюдатель никогда не увидит операцию “наполовину выполненной”: при сбое система остаётся `}{" "}
-          <br />{" "}
-          {`в состоянии до операции, а не в повреждённом промежуточном состоянии. `}{" "}
-        </p>
+        {"Атомарность (Atomicity) в ISCRA STORAGE это свойство операции"}
+        <br className="hidden xl:block" />{" "}
+        {"или транзакции выполняться как единое неделимое целое: либо все"}
+        <br className="hidden xl:block" />{" "}
+        {
+          "изменения применяются полностью и успешно, либо не применяются вовсе,"
+        }
+        <br className="hidden xl:block" />{" "}
+        {"без промежуточных состояний. Внешний наблюдатель никогда не увидит"}
+        <br className="hidden xl:block" />{" "}
+        {"операцию “наполовину выполненной”: при сбое система остаётся"}
+        <br className="hidden xl:block" />{" "}
+        {
+          "в состоянии до операции, а не в повреждённом промежуточном состоянии."
+        }
       </>
     ),
   },
@@ -56,14 +56,12 @@ const commit = [
     title: "Write Hole",
     label: (
       <>
-        <p>
-          Атомарность Native ZFS в ISCRA STORAGE решает проблему write-hole:
-        </p>{" "}
-        <p>
-          {" "}
-          {`не перезаписывая используемые блоки на прежнем месте. Изменение выполняется как новая транзакция. Новые данные записываются `}{" "}
-          <br />в свободное место.{" "}
-        </p>
+        {"Атомарность Native ZFS в ISCRA STORAGE решает проблему write-hole:"}
+        <br className="hidden xl:block" />{" "}
+        {"не перезаписывая используемые блоки на прежнем месте. Изменение"}
+        <br className="hidden xl:block" />{" "}
+        {"выполняется как новая транзакция. Новые данные записываются"}
+        <br className="hidden xl:block" /> {"в свободное место."}
       </>
     ),
   },
@@ -71,9 +69,13 @@ const commit = [
     title: "Сохранение контрольных сумм",
     label: (
       <>
-        {`Сохранение контрольных сумм в родительских block pointer. В родительских block pointer сохраняются контрольные суммы дочерних блоков. `}{" "}
-        <br /> Это обеспечивает целостность всей цепочки: при чтении ZFS может
-        проверить каждый блок на любом уровне дерева.
+        {"В родительских block pointer сохраняются контрольные суммы дочерних"}
+        <br className="hidden xl:block" />{" "}
+        {
+          "блоков. Это обеспечивает целостность всей цепочки: при чтении ZFS может"
+        }
+        <br className="hidden xl:block" />{" "}
+        {"проверить каждый блок на любом уровне дерева."}
       </>
     ),
   },
@@ -81,13 +83,14 @@ const commit = [
     title: "Формирование новой полосы RAID-Z",
     label: (
       <>
-        <p>
-          Для RAID-Z одновременно создаётся новая полная полоса (stripe),
-          содержащая как данные, так и соответствующую чётность (parity). Старые
-          блоки не перезаписываются новые данные всегда размещаются в свободных
-          областях.
-        </p>{" "}
-        <p>​</p>
+        {"Для RAID-Z одновременно создаётся новая полная полоса (stripe),"}
+        <br className="hidden xl:block" />{" "}
+        {
+          "содержащая как данные, так и соответствующую чётность (parity). Старые"
+        }
+        <br className="hidden xl:block" />{" "}
+        {"блоки не перезаписываются, новые данные всегда размещаются в"}
+        <br className="hidden xl:block" /> {"свободных областях."}
       </>
     ),
   },
@@ -209,12 +212,12 @@ const Heading = ({ children, secondary = false }) => (
     </span>
   </PartnerInfo>
 );
-const Grid = ({ items }) => (
+const Grid = ({ items, cellClassName = "" }) => (
   <PartnerTextGrid
     items={items}
     titleClassName="text-[#1f1f1f] dark:text-[#fffff1] xl:mb-[10.4px]"
     labelClassName="xl:whitespace-normal xl:text-[20.5px] xl:leading-6"
-    cellClassName="xl:pb-8"
+    cellClassName={`xl:pb-8 ${cellClassName}`}
   />
 );
 
@@ -268,7 +271,7 @@ export default function UberblockPage() {
                 Copy-on-Write
               </span>{" "}
               <span className="text-[#1f1f1f] dark:text-[#fffff1]">
-                , Uberblock
+                Uberblock
               </span>{" "}
               <span>{` гарантирует целостность данных при сбоях: без валидного Uberblock импорт пула Native ZFS невозможен.`}</span>{" "}
             </p>{" "}
@@ -277,10 +280,10 @@ export default function UberblockPage() {
         }
       />
       <Heading>
-        <strong className="font-bold">Uberblock:</strong> является точкой
-        фиксации транзакции
+        <strong className="font-bold">Uberblock:</strong> точка фиксации
+        транзакции
       </Heading>
-      <Grid items={commit} />
+      <Grid items={commit} cellClassName="xl:px-6" />
       <section className="page-container my-8 border main-border md:my-12.75">
         <div className="grid md:grid-cols-[350fr_920fr]">
           <h2 className="text-[#1f1f1f] dark:text-[#fffff1] border-b main-border px-5 py-8 text-xl font-normal md:border-b-0 md:border-r xl:pl-12.5 xl:pt-12.5 xl:text-[28px]">
@@ -305,13 +308,12 @@ export default function UberblockPage() {
         </div>
       </section>
       <Heading>
-        <strong className="font-bold">Uberblock</strong> “переключатель”,
-        который атомарно переводит пул на новое состояние
+        <strong className="font-bold">Uberblock</strong> «переключатель», который атомарно переводит пул на новое состояние
       </Heading>
       <Grid items={metadataItems} />
       <Heading>
         <strong className="font-bold">
-          Атомарность: это часть архитектуры ISCRA STORAGE
+          Атомарность: часть архитектуры ISCRA STORAGE
         </strong>
       </Heading>
       <Grid items={atomicity} />

@@ -143,7 +143,7 @@ export default function IscraStorage() {
             </span>{" "}
             с<br className="hidden xl:inline" /> модульным дисковым массивом и одновременной
             <br className="hidden xl:inline" /> поддержкой блочных и файловых протоколов доступа
-            <br className="hidden xl:inline" /> к данным, выполненный по технологии
+            <br className="hidden xl:inline" /> к данным, выполненная по технологии
             <br className="hidden xl:inline" /> без единой точки отказа.
           </p>
         }
