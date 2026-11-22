@@ -426,6 +426,7 @@ const duration = 10;
 const raidPages = {
   1: "/technology/raid-z1/",
   2: "/technology/raid-z2/",
+  3: "/technology/raid-z3/",
 };
 
 export const PoolRaidDiagram = () => {

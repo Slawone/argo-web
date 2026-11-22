@@ -31,6 +31,7 @@ const staticRoutes = [
   "/technology/raid-z",
   "/technology/raid-z1",
   "/technology/raid-z2",
+  "/technology/raid-z3",
   "/technology/nfs",
   "/technology/dittoblocks",
   "/technology/fma",

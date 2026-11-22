@@ -16,6 +16,13 @@ const themes = {
     question: "dark:text-white",
     icon: "/raid-z2/chevron-dark.svg",
   },
+  3: {
+    accent: "text-[#4b48f8]",
+    border: "border-[#d4d4d4]",
+    divider: "md:border-r-[#d4d4d4]",
+    question: "dark:text-[#fffff1]",
+    icon: "/raid-z3/chevron-dark.svg",
+  },
 };
 
 export const RaidZFaq = ({ items, level = 1 }) => {
@@ -23,7 +30,7 @@ export const RaidZFaq = ({ items, level = 1 }) => {
   const variants = items.map((item) => ({
     ...item,
     answer: (
-      <div className="pt-4 pb-3">
+      <div className="pt-4 pb-3 whitespace-pre-line">
         {item.answer
           .split(/(write hole)/g)
           .map((part, index) =>

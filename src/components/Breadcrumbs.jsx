@@ -22,6 +22,7 @@ const ruMap = {
   "raid-z": "RAID-Z",
   "raid-z1": "RAID-Z1",
   "raid-z2": "RAID-Z2",
+  "raid-z3": "RAID-Z3",
   nfs: "NFS",
   dittoblocks: "Ditto blocks",
   fma: "FMA",
