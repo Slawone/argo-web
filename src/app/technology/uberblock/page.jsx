@@ -11,9 +11,9 @@ import {
 } from "@/sections";
 import { iscraVariants, ogImage } from "@/config";
 
-const title = "Uberblock в Native ZFS: атомарность данных | ARGO.TECH";
+const title = "Uberblock в Native ZFS (СХД АРГО): что это и как работает, ARGO.TECH";
 const description =
-  "Uberblock в ISCRA STORAGE: корневой блок метаданных Native ZFS, фиксация транзакций, контрольные суммы и согласованность данных после сбоя.";
+  "Uberblock корневая запись пула Native ZFS: указывает на актуальное состояние данных и помогает восстановиться после сбоя. Как это работает в ISCRA STORAGE (СХД АРГО)";
 export const metadata = {
   title,
   description,

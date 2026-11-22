@@ -11,9 +11,9 @@ import {
 } from "@/sections";
 import { iscraVariants, ogImage } from "@/config";
 
-const title = "Native ZFS в ISCRA STORAGE: файловая система | ARGO.TECH";
+const title = "Native ZFS в ISCRA STORAGE (СХД АРГО): как это работает, ARGO.TECH";
 const description =
-  "Архитектура Native ZFS в ISCRA STORAGE: контрольные суммы, RAID-Z, снимки, ARC, SLOG, сжатие и управление хранением данных.";
+  "Как работает Native ZFS в ISCRA STORAGE (СХД АРГО): сквозные контрольные суммы, copy-on-write, снапшоты, scrub и самовосстановление данных. Архитектура и преимущества.";
 export const metadata = {
   title,
   description,

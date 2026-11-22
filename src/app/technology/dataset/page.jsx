@@ -12,9 +12,9 @@ import {
 } from "@/sections";
 import { iscraVariants, ogImage } from "@/config";
 
-const title = "Dataset в Native ZFS: управление хранением | ARGO.TECH";
+const title = "Dataset в Native ZFS (СХД АРГО): что это и зачем нужен, ARGO.TECH";
 const description =
-  "Датасеты Native ZFS в ISCRA STORAGE: файловые системы, тома, снимки, клоны, наследование свойств, квоты и политики хранения.";
+  "Dataset единица управления данными в Native ZFS: файловые системы, тома, снапшоты и клоны со своими квотами и сжатием. Как это работает в ISCRA STORAGE (СХД АРГО)";
 export const metadata = {
   title,
   description,

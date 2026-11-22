@@ -12,9 +12,9 @@ import {
 } from "@/sections";
 import { iscraVariants, ogImage } from "@/config";
 
-const title = "VDEV в Native ZFS: Virtual Device | ARGO.TECH";
+const title = "VDEV в Native ZFS (СХД АРГО): что это и какие бывают, ARGO.TECH";
 const description =
-  "VDEV в ISCRA STORAGE: устройство пула Native ZFS, физические диски, RAID-Z, Special VDEV, метаданные и журнал синхронной записи SLOG.";
+  "VDEV строительный блок пула Native ZFS: mirror, RAID-Z, special, SLOG. Как тип vdev влияет на отказоустойчивость и скорость в ISCRA STORAGE (СХД АРГО)";
 export const metadata = {
   title,
   description,
